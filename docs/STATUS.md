@@ -16,6 +16,16 @@ Read this first when resuming work.
 
 ## Next (toward B1)
 
+Superseded by [plan-b1.md](plan-b1.md): harness first (H1, H2), then
+taxonomy and realism (G1 to G4), then convergence with Track 2.
+Claim tasks here per the plan.
+
+## In progress
+
+(nothing claimed)
+
+## Original B0 next-list (folded into plan-b1.md)
+
 - Realism screws: truncated References, quoted-reply duplication (`occurrence:
   quoted`), address/company changes, near-duplicate invoices, rasterized PDFs
   (Typst).
