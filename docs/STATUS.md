@@ -22,7 +22,7 @@ Claim tasks here per the plan.
 
 ## In progress
 
-(nothing claimed)
+- H1 harness core + oracle self-test (claimed 2026-07-17)
 
 ## Original B0 next-list (folded into plan-b1.md)
 
