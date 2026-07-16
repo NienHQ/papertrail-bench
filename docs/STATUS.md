@@ -22,7 +22,7 @@ Claim tasks here per the plan.
 
 ## In progress
 
-(nothing claimed)
+- H2 internal baselines (claimed 2026-07-17)
 
 ## 2026-07-17 - task H1 done: harness core + oracle self-test
 
