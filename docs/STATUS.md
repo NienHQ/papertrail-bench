@@ -22,7 +22,18 @@ Claim tasks here per the plan.
 
 ## In progress
 
-- H1 harness core + oracle self-test (claimed 2026-07-17)
+(nothing claimed)
+
+## 2026-07-17 - task H1 done: harness core + oracle self-test
+
+- harness/ (TypeScript, zero runtime deps): SystemCorpus/TruthCorpus wall,
+  Adapter interface, deterministic scorers for every answer type, citation
+  precision/recall with message/doc leniency, JSON+markdown reports (never
+  one blended number), CLI, and papertrail-protocol v1 (PROTOCOL.md) for
+  subprocess adapters with timeouts.
+- Oracle adapter scores 100.0 accuracy and 100/100 citation P/R on every
+  category of the committed 295-message fixture; refuse adapter scores 0.
+  52 harness tests. Next: H2 baselines.
 
 ## Original B0 next-list (folded into plan-b1.md)
 
