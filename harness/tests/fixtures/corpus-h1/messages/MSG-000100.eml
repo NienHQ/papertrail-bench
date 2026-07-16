@@ -1,0 +1,40 @@
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Grace Whitfield <grace.whitfield@quarrytrading.example>
+Subject: Invoice INV-2024-0037 from Oakfield Fabrication
+Date: Mon, 11 Mar 2024 09:07:00 +0000
+Message-ID: <MSG-000100@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000100"
+
+--=-PTB-MSG-000100
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Grace,
+
+Please find attached invoice INV-2024-0037 for $2,465.00.
+Payment is due by 2024-03-26 per our NET15 terms.
+
+Regards,
+Tara
+Oakfield Fabrication
+
+--=-PTB-MSG-000100
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0037.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0037
+Date: 2024-03-11
+Party: Quarry Trading
+
+Invoice number: INV-2024-0037
+Issuer: Oakfield Fabrication
+Bill to: Quarry Trading
+Issue date: 2024-03-11
+Due date: 2024-03-26
+Terms: NET15
+Total: $2,465.00
+
+--=-PTB-MSG-000100--

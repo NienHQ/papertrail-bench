@@ -1,0 +1,39 @@
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@redwoodindustrial.example>
+Subject: Purchase order PO-2024-0002 - safety gloves
+Date: Fri, 26 Jan 2024 09:00:00 +0000
+Message-ID: <MSG-000030@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000030"
+
+--=-PTB-MSG-000030
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Iris,
+
+Please find attached purchase order PO-2024-0002 for 135 units of safety glov=
+es at $15.71 per unit.
+The order total is $2,120.85.
+
+Kind regards,
+Quinn
+Oakfield Fabrication
+
+--=-PTB-MSG-000030
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0002.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0002
+Date: 2024-01-26
+Party: Redwood Industrial
+
+Po number: PO-2024-0002
+Item: safety gloves
+Qty: 135
+Unit price: $15.71
+Total: $2,120.85
+
+--=-PTB-MSG-000030--

@@ -1,0 +1,45 @@
+From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0041 - shipping cartons
+Date: Tue, 28 May 2024 09:00:00 +0000
+Message-ID: <MSG-000230@vantageindustrial.example>
+In-Reply-To: <MSG-000224@vantageindustrial.example>
+References: <MSG-000223@oakfieldfabrication.example>
+ <MSG-000224@vantageindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000230"
+
+--=-PTB-MSG-000230
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Victor,
+
+Please find attached invoice INV-2024-0062 against PO-2024-0041 for $10,284.4=
+0.
+Payment is due by 2024-07-12 per our NET45 terms.
+
+Best,
+Quinn
+Vantage Industrial
+
+--=-PTB-MSG-000230
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0062.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0062
+Date: 2024-05-28
+Party: Vantage Industrial
+
+Invoice number: INV-2024-0062
+Issuer: Vantage Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-05-28
+Due date: 2024-07-12
+Terms: NET45
+Total: $10,284.40
+Po ref: PO-2024-0041
+
+--=-PTB-MSG-000230--

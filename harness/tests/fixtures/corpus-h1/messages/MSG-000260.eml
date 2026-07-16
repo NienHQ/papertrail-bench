@@ -1,0 +1,39 @@
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+Subject: Purchase order PO-2024-0049 - shipping cartons
+Date: Tue, 18 Jun 2024 09:07:00 +0000
+Message-ID: <MSG-000260@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000260"
+
+--=-PTB-MSG-000260
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Quinn,
+
+Please find attached purchase order PO-2024-0049 for 35 units of shipping car=
+tons at $73.46 per unit.
+The order total is $2,571.10.
+
+Regards,
+Quinn
+Oakfield Fabrication
+
+--=-PTB-MSG-000260
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0049.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0049
+Date: 2024-06-18
+Party: Vantage Industrial
+
+Po number: PO-2024-0049
+Item: shipping cartons
+Qty: 35
+Unit price: $73.46
+Total: $2,571.10
+
+--=-PTB-MSG-000260--

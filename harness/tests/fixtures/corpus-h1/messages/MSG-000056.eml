@@ -1,0 +1,39 @@
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+Subject: Purchase order PO-2024-0012 - LED panels
+Date: Mon, 12 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000056@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000056"
+
+--=-PTB-MSG-000056
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Ava,
+
+Please find attached purchase order PO-2024-0012 for 100 units of LED panels =
+at $79.50 per unit.
+The order total is $7,950.00.
+
+Regards,
+Quinn
+Oakfield Fabrication
+
+--=-PTB-MSG-000056
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0012.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0012
+Date: 2024-02-12
+Party: Yellowstone Supplies
+
+Po number: PO-2024-0012
+Item: LED panels
+Qty: 100
+Unit price: $79.50
+Total: $7,950.00
+
+--=-PTB-MSG-000056--

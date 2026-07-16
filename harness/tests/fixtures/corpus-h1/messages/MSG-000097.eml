@@ -1,0 +1,44 @@
+From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0013 - LED panels
+Date: Sun, 10 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000097@yellowstonesupplies.example>
+In-Reply-To: <MSG-000090@yellowstonesupplies.example>
+References: <MSG-000068@oakfieldfabrication.example>
+ <MSG-000069@yellowstonesupplies.example>
+ <MSG-000073@oakfieldfabrication.example>
+ <MSG-000082@oakfieldfabrication.example>
+ <MSG-000087@oakfieldfabrication.example>
+ <MSG-000090@yellowstonesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000097"
+
+--=-PTB-MSG-000097
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Victor,
+
+We have issued credit note CN-2024-0002 for $1,204.56 against invoice INV-202=
+4-0018 (damaged goods).
+
+Regards,
+Ava
+Yellowstone Supplies
+
+--=-PTB-MSG-000097
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0002.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0002
+Date: 2024-03-10
+Party: Yellowstone Supplies
+
+Credit note number: CN-2024-0002
+Invoice ref: INV-2024-0018
+Amount: $1,204.56
+Reason: damaged goods
+
+--=-PTB-MSG-000097--

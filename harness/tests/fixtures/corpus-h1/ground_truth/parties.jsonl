@@ -1,0 +1,7 @@
+{"domain": "oakfieldfabrication.example", "is_self": true, "kind": "self", "name": "Oakfield Fabrication", "party_id": "PTY-0001"}
+{"domain": "redwoodindustrial.example", "is_self": false, "kind": "vendor", "name": "Redwood Industrial", "party_id": "PTY-0002"}
+{"domain": "yellowstonesupplies.example", "is_self": false, "kind": "vendor", "name": "Yellowstone Supplies", "party_id": "PTY-0003"}
+{"domain": "vantageindustrial.example", "is_self": false, "kind": "vendor", "name": "Vantage Industrial", "party_id": "PTY-0004"}
+{"domain": "quarrytrading.example", "is_self": false, "kind": "customer", "name": "Quarry Trading", "party_id": "PTY-0005"}
+{"domain": "silvertontrading.example", "is_self": false, "kind": "customer", "name": "Silverton Trading", "party_id": "PTY-0006"}
+{"domain": "graniteproperties.example", "is_self": false, "kind": "landlord", "name": "Granite Properties", "party_id": "PTY-0007"}

@@ -1,0 +1,39 @@
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Grace Whitfield <grace.whitfield@quarrytrading.example>
+Subject: Re: Invoice INV-2024-0064 from Oakfield Fabrication
+Date: Thu, 23 May 2024 09:21:00 +0000
+Message-ID: <MSG-000225@oakfieldfabrication.example>
+In-Reply-To: <MSG-000209@oakfieldfabrication.example>
+References: <MSG-000209@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000225"
+
+--=-PTB-MSG-000225
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Grace,
+
+We have issued credit note CN-2024-0006 for $477.40 against invoice INV-2024-=
+0064 (damaged goods).
+
+Best,
+Tara
+Oakfield Fabrication
+
+--=-PTB-MSG-000225
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0006.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0006
+Date: 2024-05-23
+Party: Quarry Trading
+
+Credit note number: CN-2024-0006
+Invoice ref: INV-2024-0064
+Amount: $477.40
+Reason: damaged goods
+
+--=-PTB-MSG-000225--

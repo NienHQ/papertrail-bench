@@ -1,0 +1,11 @@
+{"entity": "PTY-0006", "fact_id": "FCT-000001", "relation": "payment_terms", "source_event": "EVT-000008", "valid_from": "2024-01-02", "valid_to": null, "value": "NET30"}
+{"entity": "PTY-0002", "fact_id": "FCT-000002", "relation": "payment_terms", "source_event": "EVT-000001", "valid_from": "2024-01-04", "valid_to": "2024-04-08", "value": "NET60"}
+{"entity": "PTY-0007", "fact_id": "FCT-000003", "relation": "monthly_rent", "source_event": "EVT-000009", "valid_from": "2024-01-05", "valid_to": null, "value": 197518}
+{"entity": "PTY-0002", "fact_id": "FCT-000004", "relation": "unit_price:safety gloves", "source_event": "EVT-000002", "valid_from": "2024-01-08", "valid_to": null, "value": 1571}
+{"entity": "PTY-0003", "fact_id": "FCT-000005", "relation": "payment_terms", "source_event": "EVT-000003", "valid_from": "2024-01-08", "valid_to": "2024-05-10", "value": "NET60"}
+{"entity": "PTY-0004", "fact_id": "FCT-000006", "relation": "unit_price:shipping cartons", "source_event": "EVT-000006", "valid_from": "2024-01-08", "valid_to": null, "value": 7346}
+{"entity": "PTY-0005", "fact_id": "FCT-000007", "relation": "payment_terms", "source_event": "EVT-000007", "valid_from": "2024-01-08", "valid_to": null, "value": "NET15"}
+{"entity": "PTY-0004", "fact_id": "FCT-000008", "relation": "payment_terms", "source_event": "EVT-000005", "valid_from": "2024-01-10", "valid_to": null, "value": "NET45"}
+{"entity": "PTY-0003", "fact_id": "FCT-000009", "relation": "unit_price:LED panels", "source_event": "EVT-000004", "valid_from": "2024-01-11", "valid_to": null, "value": 7950}
+{"entity": "PTY-0002", "fact_id": "FCT-000010", "relation": "payment_terms", "source_event": "EVT-000010", "valid_from": "2024-04-08", "valid_to": null, "value": "NET15"}
+{"entity": "PTY-0003", "fact_id": "FCT-000011", "relation": "payment_terms", "source_event": "EVT-000011", "valid_from": "2024-05-10", "valid_to": null, "value": "NET15"}

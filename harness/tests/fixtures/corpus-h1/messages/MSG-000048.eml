@@ -1,0 +1,44 @@
+From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0014 - LED panels
+Date: Tue, 06 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000048@yellowstonesupplies.example>
+In-Reply-To: <MSG-000041@yellowstonesupplies.example>
+References: <MSG-000040@oakfieldfabrication.example>
+ <MSG-000041@yellowstonesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000048"
+
+--=-PTB-MSG-000048
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Victor,
+
+Please find attached invoice INV-2024-0019 against PO-2024-0014 for $9,540.00.
+Payment is due by 2024-04-06 per our NET60 terms.
+
+Best,
+Ava
+Yellowstone Supplies
+
+--=-PTB-MSG-000048
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0019.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0019
+Date: 2024-02-06
+Party: Yellowstone Supplies
+
+Invoice number: INV-2024-0019
+Issuer: Yellowstone Supplies
+Bill to: Oakfield Fabrication
+Issue date: 2024-02-06
+Due date: 2024-04-06
+Terms: NET60
+Total: $9,540.00
+Po ref: PO-2024-0014
+
+--=-PTB-MSG-000048--

@@ -1,0 +1,40 @@
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Jonas Drake <jonas.drake@silvertontrading.example>
+Subject: Invoice INV-2024-0011 from Oakfield Fabrication
+Date: Wed, 24 Jan 2024 09:14:00 +0000
+Message-ID: <MSG-000028@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000028"
+
+--=-PTB-MSG-000028
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Jonas,
+
+Please find attached invoice INV-2024-0011 for $6,015.00.
+Payment is due by 2024-02-23 per our NET30 terms.
+
+Best regards,
+Tara
+Oakfield Fabrication
+
+--=-PTB-MSG-000028
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0011.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0011
+Date: 2024-01-24
+Party: Silverton Trading
+
+Invoice number: INV-2024-0011
+Issuer: Oakfield Fabrication
+Bill to: Silverton Trading
+Issue date: 2024-01-24
+Due date: 2024-02-23
+Terms: NET30
+Total: $6,015.00
+
+--=-PTB-MSG-000028--

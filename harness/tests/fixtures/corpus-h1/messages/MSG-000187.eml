@@ -1,0 +1,46 @@
+From: Iris Vance <iris.vance@redwoodindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0029 - safety gloves
+Date: Sun, 05 May 2024 09:00:00 +0000
+Message-ID: <MSG-000187@redwoodindustrial.example>
+In-Reply-To: <MSG-000175@oakfieldfabrication.example>
+References: <MSG-000162@oakfieldfabrication.example>
+ <MSG-000163@redwoodindustrial.example>
+ <MSG-000175@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000187"
+
+--=-PTB-MSG-000187
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Victor,
+
+Please find attached invoice INV-2024-0045 against PO-2024-0029-A1 for $549.8=
+5.
+Payment is due by 2024-05-20 per our NET15 terms.
+
+Kind regards,
+Iris
+Redwood Industrial
+
+--=-PTB-MSG-000187
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0045.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0045
+Date: 2024-05-05
+Party: Redwood Industrial
+
+Invoice number: INV-2024-0045
+Issuer: Redwood Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-05-05
+Due date: 2024-05-20
+Terms: NET15
+Total: $549.85
+Po ref: PO-2024-0029-A1
+
+--=-PTB-MSG-000187--
