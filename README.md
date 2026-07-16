@@ -7,6 +7,30 @@ attachment corpus, with citation-correctness scoring.
 are working; the question taxonomy is partial (3 of 7 categories) and the
 evaluation harness does not exist yet. Nothing here is a stable interface.
 
+## Two tracks, one thesis
+
+Agents can't do finance work unless they can retrieve old records — and reason
+over them — with provable provenance. The repo holds two complementary tracks
+built on the same principle (*the generator is the oracle*: ground truth is
+authored first, the messy corpus is rendered from it):
+
+- **Track 1 — Retrieval & citation** (`generator/`, this README): can a system
+  find the right record across years of email, respect amendment chains and
+  temporal supersession, and cite the exact source message? Scored down to
+  character spans.
+- **Track 2 — CorpSim: operational finance QA** (`corpsim/`): a full 24-month
+  company — 15 vendors, ~50 employees on payroll, 10 customers, one bank
+  account — emitted as ~4,400 documents (negotiation email threads, POs,
+  invoices, timesheets, payslips, chained bank statements) with a held-out
+  SQLite truth DB and a programmatic judge. Can a system do the *bookkeeper's
+  job*: 3-way matching, anomaly detection, aging, reconciliation, payroll
+  totals? See [corpsim/README.md](corpsim/README.md).
+
+The tracks share DNA and will converge: B1 folds CorpSim's richer world model
+(payroll, banking, planted anomalies, negotiation narratives) into the
+Track 1 event-log schema so every CorpSim answer also carries citation-level
+provenance.
+
 ## Why
 
 Agents can't do finance work unless they can retrieve old records with provable
