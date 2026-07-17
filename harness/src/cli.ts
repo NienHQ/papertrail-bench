@@ -7,6 +7,9 @@ import type { Adapter } from "./adapter.js";
 import { loadTruthCorpus } from "./corpus.js";
 import { OracleAdapter } from "./adapters/oracle.js";
 import { RefuseAdapter } from "./adapters/refuse.js";
+import { Bm25Adapter } from "./baselines/bm25.js";
+import { HybridRrfAdapter } from "./baselines/hybrid-rrf.js";
+import { NaiveVectorAdapter } from "./baselines/naive-vector.js";
 import { reportToMarkdown } from "./report.js";
 import { runAdapterWithTruth } from "./run.js";
 import { SubprocessAdapter } from "./subprocess.js";
@@ -14,7 +17,8 @@ import { SubprocessAdapter } from "./subprocess.js";
 const USAGE = `Usage: papertrail-eval --corpus <dir> (--adapter <name|path> | --subprocess <cmd>) [--out report.json]
 
   --corpus      corpus directory (manifest.json, messages/, ground_truth/, questions.jsonl)
-  --adapter     built-in adapter name ("oracle", "refuse") or a path to a JS
+  --adapter     built-in adapter name ("oracle", "refuse", "bm25",
+                "naive-vector", "hybrid-rrf") or a path to a JS
                 module whose default export is an Adapter, or a factory
                 function returning one
   --subprocess  shell command speaking the JSONL protocol (see PROTOCOL.md)
@@ -77,6 +81,12 @@ async function main(): Promise<void> {
     adapter = new OracleAdapter(truth);
   } else if (values.adapter === "refuse") {
     adapter = new RefuseAdapter();
+  } else if (values.adapter === "bm25") {
+    adapter = new Bm25Adapter();
+  } else if (values.adapter === "naive-vector") {
+    adapter = new NaiveVectorAdapter();
+  } else if (values.adapter === "hybrid-rrf") {
+    adapter = new HybridRrfAdapter();
   } else {
     adapter = await loadModuleAdapter(values.adapter as string);
   }

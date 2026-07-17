@@ -22,7 +22,20 @@ Claim tasks here per the plan.
 
 ## In progress
 
-- H2 internal baselines (claimed 2026-07-17)
+(nothing claimed)
+
+## 2026-07-17 - task H2 done: internal baselines
+
+- bm25 (FTS5 + stopword-filtered OR queries), naive-vector (64-dim hash
+  embedder), hybrid-rrf, all behind the same no-ground-truth wall
+  (enforced by a source-scan test). Question-text template extraction,
+  citations from the parsed chunks. 60 harness tests.
+- docs/baselines-b0.md: scorecards on the fixture and the seed-42
+  corpus. Headline: bm25 100/100/100 vs naive-vector 25/75/100 (fixture)
+  and 0/9/75 (seed-42) because exact-match ids drown in a hash embedder;
+  hybrid-rrf recovers bm25 accuracy with better citation precision.
+  Reproduction commands committed. Next: H3 protocol freeze + Docket
+  adapter/ablations (Docket repo task 3.3).
 
 ## 2026-07-17 - task H1 done: harness core + oracle self-test
 
