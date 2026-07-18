@@ -1,17 +1,39 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Mona Joshi <mona.joshi@meridiandistribution.example>
-Subject: Payment terms review - Meridian Distribution
-Date: Sat, 01 Jun 2024 09:00:00 +0000
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+Subject: Purchase order PO-2024-0070 - copper wire 12AWG
+Date: Fri, 14 Jun 2024 09:21:00 +0000
 Message-ID: <MSG-000351@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000351"
+
+--=-PTB-MSG-000351
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-MIME-Version: 1.0
 
-Hi Mona,
+Hi Dev,
 
-Given our trading volume this year, we would like to revise payment terms fro=
-m 15 to 30 days going forward.
+Please find attached purchase order PO-2024-0070 for 145 units of copper wire=
+ 12AWG at $78.26 per unit.
+The order total is $11,347.70.
 
 Best,
-Uma
+Hugo
 Vantage Fabrication
+
+--=-PTB-MSG-000351
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0070.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0070
+Date: 2024-06-14
+Party: Yellowstone Components
+
+Po number: PO-2024-0070
+Item: copper wire 12AWG
+Qty: 145
+Unit price: $78.26
+Total: $11,347.70
+
+--=-PTB-MSG-000351--

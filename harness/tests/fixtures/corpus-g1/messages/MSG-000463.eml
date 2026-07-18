@@ -1,44 +1,42 @@
-From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0084 - rubber gaskets
-Date: Mon, 15 Jul 2024 09:14:00 +0000
-Message-ID: <MSG-000463@bluepinematerials.example>
-In-Reply-To: <MSG-000451@bluepinematerials.example>
-References: <MSG-000450@vantagefabrication.example>
- <MSG-000451@bluepinematerials.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Jonas Sato <jonas.sato@quarrypackaging.example>
+Subject: Re: Purchase order PO-2024-0076 - safety gloves
+Date: Sun, 28 Jul 2024 09:00:00 +0000
+Message-ID: <MSG-000463@vantagefabrication.example>
+In-Reply-To: <MSG-000455@quarrypackaging.example>
+References:
+ <MSG-000454@vantagefabrication.example> <MSG-000455@quarrypackaging.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000463"
 
 --=-PTB-MSG-000463
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Dear Carla,
+Hello Jonas,
 
-Please find attached invoice INV-2024-0113 against PO-2024-0084 for $627.40.
-Payment is due by 2024-07-30 per our NET15 terms.
+Please amend PO-2024-0076: quantity is now 35 units of safety gloves, revised=
+ order total $153.65.
+The amended purchase order is attached as PO-2024-0076-A1.
 
-Regards,
-Rosa
-Bluepine Materials
+Best regards,
+Hugo
+Vantage Fabrication
 
 --=-PTB-MSG-000463
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0113.txt"
+Content-Disposition: attachment; filename="PO-2024-0076-A1.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0113
-Date: 2024-07-15
-Party: Bluepine Materials
+PURCHASE ORDER PO-2024-0076-A1
+Date: 2024-07-28
+Party: Quarry Packaging
 
-Invoice number: INV-2024-0113
-Issuer: Bluepine Materials
-Bill to: Vantage Fabrication
-Issue date: 2024-07-15
-Due date: 2024-07-30
-Terms: NET15
-Total: $627.40
-Po ref: PO-2024-0084
+Po number: PO-2024-0076
+Item: safety gloves
+Qty: 35
+Unit price: $4.39
+Total: $153.65
 
 --=-PTB-MSG-000463--

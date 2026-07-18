@@ -1,18 +1,39 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0065 - copper wire 12AWG
-Date: Tue, 07 May 2024 11:00:00 +0000
-Message-ID: <MSG-000295@yellowstonecomponents.example>
-In-Reply-To: <MSG-000294@vantagefabrication.example>
-References: <MSG-000294@vantagefabrication.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Purchase order PO-2024-0051 - LED panels
+Date: Mon, 27 May 2024 09:14:00 +0000
+Message-ID: <MSG-000295@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000295"
+
+--=-PTB-MSG-000295
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Kira,
+
+Please find attached purchase order PO-2024-0051 for 175 units of LED panels =
+at $50.28 per unit.
+The order total is $8,799.00.
+
+Kind regards,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000295
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0051.txt"
 MIME-Version: 1.0
 
-Hi Hugo,
+PURCHASE ORDER PO-2024-0051
+Date: 2024-05-27
+Party: Delta Ridge Supplies
 
-Confirming receipt of PO-2024-0065; we will schedule this for delivery.
+Po number: PO-2024-0051
+Item: LED panels
+Qty: 175
+Unit price: $50.28
+Total: $8,799.00
 
-Best,
-Hugo
-Yellowstone Components
+--=-PTB-MSG-000295--

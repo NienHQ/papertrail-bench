@@ -1,40 +1,18 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Mona Joshi <mona.joshi@meridiandistribution.example>
-Subject: Invoice INV-2024-0038 from Vantage Fabrication
-Date: Tue, 06 Feb 2024 09:21:00 +0000
-Message-ID: <MSG-000075@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000075"
-
---=-PTB-MSG-000075
+From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0019 - LED panels
+Date: Mon, 12 Feb 2024 16:07:00 +0000
+Message-ID: <MSG-000075@deltaridgesupplies.example>
+In-Reply-To: <MSG-000074@vantagefabrication.example>
+References: <MSG-000074@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-
-Dear Mona,
-
-Please find attached invoice INV-2024-0038 for $2,980.00.
-Payment is due by 2024-02-21 per our NET15 terms.
-
-Best regards,
-Uma
-Vantage Fabrication
-
---=-PTB-MSG-000075
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0038.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0038
-Date: 2024-02-06
-Party: Meridian Distribution
+Hugo,
 
-Invoice number: INV-2024-0038
-Issuer: Vantage Fabrication
-Bill to: Meridian Distribution
-Issue date: 2024-02-06
-Due date: 2024-02-21
-Terms: NET15
-Total: $2,980.00
+Confirming receipt of PO-2024-0019; we will schedule this for delivery.
 
---=-PTB-MSG-000075--
+Thanks,
+Dev
+Yellowstone Components

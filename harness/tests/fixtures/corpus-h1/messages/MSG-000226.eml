@@ -1,21 +1,40 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Re: Purchase order PO-2024-0023 - LED panels
-Date: Fri, 24 May 2024 09:00:00 +0000
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Grace Whitfield <grace.whitfield@quarrytrading.example>
+Subject: Invoice INV-2024-0066 from Oakfield Fabrication
+Date: Mon, 13 May 2024 09:07:00 +0000
 Message-ID: <MSG-000226@oakfieldfabrication.example>
-In-Reply-To: <MSG-000132@yellowstonesupplies.example>
-References: <MSG-000109@oakfieldfabrication.example>
- <MSG-000110@yellowstonesupplies.example>
- <MSG-000132@yellowstonesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000226"
+
+--=-PTB-MSG-000226
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
+
+Grace,
+
+Please find attached invoice INV-2024-0066 for $5,140.00.
+Payment is due by 2024-05-28 per our NET15 terms.
+
+Best,
+Tara
+Oakfield Fabrication
+
+--=-PTB-MSG-000226
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0066.txt"
 MIME-Version: 1.0
 
-Ava,
+INVOICE INV-2024-0066
+Date: 2024-05-13
+Party: Quarry Trading
 
-Payment of $2,782.50 for invoice INV-2024-0033 was sent today by bank transfe=
-r.
+Invoice number: INV-2024-0066
+Issuer: Oakfield Fabrication
+Bill to: Quarry Trading
+Issue date: 2024-05-13
+Due date: 2024-05-28
+Terms: NET15
+Total: $5,140.00
 
-Regards,
-Victor
-Oakfield Fabrication
+--=-PTB-MSG-000226--

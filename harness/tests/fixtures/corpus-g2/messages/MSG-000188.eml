@@ -1,0 +1,44 @@
+From: Mona Yates <mona.yates@cardinalcomponents.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0017 - hex bolts M8
+Date: Tue, 19 Mar 2024 09:07:00 +0000
+Message-ID: <MSG-000188@cardinalcomponents.example>
+In-Reply-To: <MSG-000187@cardinalcomponents.example>
+References: <MSG-000120@junctionfabrication.example>
+ <MSG-000121@cardinalcomponents.example>
+ <MSG-000133@junctionfabrication.example>
+ <MSG-000161@cardinalcomponents.example>
+ <MSG-000170@junctionfabrication.example>
+ <MSG-000187@cardinalcomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000188"
+
+--=-PTB-MSG-000188
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Ava,
+
+We have issued credit note CN-2024-0007 for $1,416.31 against invoice INV-202=
+4-0021 (duplicate line item).
+
+Best regards,
+Mona
+Cardinal Components
+
+--=-PTB-MSG-000188
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0007.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0007
+Date: 2024-03-19
+Party: Cardinal Components
+
+Credit note number: CN-2024-0007
+Invoice ref: INV-2024-0021
+Amount: $1,416.31
+Reason: duplicate line item
+
+--=-PTB-MSG-000188--

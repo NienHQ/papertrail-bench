@@ -1,0 +1,39 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Jonas Tanaka <jonas.tanaka@northgatepackaging.example>
+Subject: Purchase order PO-2024-0096 - shipping cartons
+Date: Mon, 15 Jul 2024 09:07:00 +0000
+Message-ID: <MSG-000528@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000528"
+
+--=-PTB-MSG-000528
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Jonas,
+
+Please find attached purchase order PO-2024-0096 for 45 units of shipping car=
+tons at $44.94 per unit.
+The order total is $2,022.30.
+
+Kind regards,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000528
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0096.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0096
+Date: 2024-07-15
+Party: Northgate Packaging
+
+Po number: PO-2024-0096
+Item: shipping cartons
+Qty: 45
+Unit price: $44.94
+Total: $2,022.30
+
+--=-PTB-MSG-000528--

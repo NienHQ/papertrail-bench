@@ -1,44 +1,18 @@
-From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0016 - rubber gaskets
-Date: Thu, 22 Feb 2024 09:07:00 +0000
-Message-ID: <MSG-000112@bluepinematerials.example>
-In-Reply-To: <MSG-000098@bluepinematerials.example>
-References: <MSG-000097@vantagefabrication.example>
- <MSG-000098@bluepinematerials.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000112"
-
---=-PTB-MSG-000112
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0029 - safety gloves
+Date: Mon, 04 Mar 2024 14:14:00 +0000
+Message-ID: <MSG-000112@quarrypackaging.example>
+In-Reply-To: <MSG-000111@vantagefabrication.example>
+References: <MSG-000111@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-
-Dear Carla,
-
-Please find attached invoice INV-2024-0021 against PO-2024-0016 for $7,842.50.
-Payment is due by 2024-03-08 per our NET15 terms.
-
-Best,
-Rosa
-Bluepine Materials
-
---=-PTB-MSG-000112
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0021.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0021
-Date: 2024-02-22
-Party: Bluepine Materials
+Dear Hugo,
 
-Invoice number: INV-2024-0021
-Issuer: Bluepine Materials
-Bill to: Vantage Fabrication
-Issue date: 2024-02-22
-Due date: 2024-03-08
-Terms: NET15
-Total: $7,842.50
-Po ref: PO-2024-0016
+Confirming receipt of PO-2024-0029; we will schedule this for delivery.
 
---=-PTB-MSG-000112--
+Thanks,
+Jonas
+Quarry Packaging

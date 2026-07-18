@@ -1,41 +1,20 @@
-From: Mona Adler <mona.adler@lakeshoreproperties.example>
-To: Mona Lund <mona.lund@vantagefabrication.example>
-Subject: Re: Lease agreement LEASE-2024-001
-Date: Mon, 08 Jul 2024 09:00:00 +0000
-Message-ID: <MSG-000445@lakeshoreproperties.example>
-In-Reply-To: <MSG-000001@lakeshoreproperties.example>
-References: <MSG-000001@lakeshoreproperties.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000445"
-
---=-PTB-MSG-000445
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Dear Mona,
-
-As per our review clause, monthly rent under lease LEASE-2024-001 is revised =
-to $2,980.46 effective 2024-07-08.
-The amendment document LEASE-2024-001-A1 is attached.
-
-Kind regards,
-Mona
-Lakeshore Properties
-
---=-PTB-MSG-000445
+From: Carla Costa <carla.costa@vantagefabrication.example>
+To: Jonas Sato <jonas.sato@quarrypackaging.example>
+Subject: Re: Purchase order PO-2024-0064 - safety gloves
+Date: Sat, 20 Jul 2024 09:14:00 +0000
+Message-ID: <MSG-000445@vantagefabrication.example>
+In-Reply-To: <MSG-000369@quarrypackaging.example>
+References: <MSG-000343@vantagefabrication.example>
+ <MSG-000344@quarrypackaging.example> <MSG-000362@vantagefabrication.example>
+ <MSG-000369@quarrypackaging.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="LEASE-2024-001-A1.txt"
 MIME-Version: 1.0
 
-LEASE AGREEMENT LEASE-2024-001-A1
-Date: 2024-07-08
-Party: Lakeshore Properties
+Jonas,
 
-Lease number: LEASE-2024-001
-Monthly rent: $2,980.46
-Term months: 36
-Start date: 2024-01-03
-Amended date: 2024-07-08
+Payment of $504.85 for invoice INV-2024-0093 was sent today by bank transfer.
 
---=-PTB-MSG-000445--
+Best,
+Carla
+Vantage Fabrication

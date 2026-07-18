@@ -1,23 +1,44 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Re: Purchase order PO-2024-0012 - LED panels
-Date: Wed, 24 Apr 2024 09:00:00 +0000
-Message-ID: <MSG-000166@oakfieldfabrication.example>
-In-Reply-To: <MSG-000083@yellowstonesupplies.example>
-References: <MSG-000056@oakfieldfabrication.example>
- <MSG-000057@yellowstonesupplies.example>
- <MSG-000065@oakfieldfabrication.example>
- <MSG-000080@yellowstonesupplies.example>
- <MSG-000083@yellowstonesupplies.example>
+From: Quinn Tanaka <qtanaka@vantageindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0037 - shipping cartons
+Date: Fri, 12 Apr 2024 09:07:00 +0000
+Message-ID: <MSG-000166@vantageindustrial.example>
+In-Reply-To: <MSG-000164@vantageindustrial.example>
+References: <MSG-000163@oakfieldfabrication.example>
+ <MSG-000164@vantageindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000166"
+
+--=-PTB-MSG-000166
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
+
+Hi Victor,
+
+Please find attached invoice INV-2024-0053 against PO-2024-0037 for $4,040.30.
+Payment is due by 2024-05-27 per our NET45 terms.
+
+Best,
+Quinn
+Vantage Industrial
+
+--=-PTB-MSG-000166
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0053.txt"
 MIME-Version: 1.0
 
-Ava,
+INVOICE INV-2024-0053
+Date: 2024-04-12
+Party: Vantage Industrial
 
-Payment of $4,785.72 for invoice INV-2024-0017 was sent today by bank transfe=
-r.
+Invoice number: INV-2024-0053
+Issuer: Vantage Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-04-12
+Due date: 2024-05-27
+Terms: NET45
+Total: $4,040.30
+Po ref: PO-2024-0037
 
-Regards,
-Victor
-Oakfield Fabrication
+--=-PTB-MSG-000166--

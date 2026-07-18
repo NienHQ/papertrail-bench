@@ -1,39 +1,18 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Purchase order PO-2024-0018 - rubber gaskets
-Date: Wed, 14 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000095@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000095"
-
---=-PTB-MSG-000095
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Rosa,
-
-Please find attached purchase order PO-2024-0018 for 70 units of rubber gaske=
-ts at $62.74 per unit.
-The order total is $4,391.80.
-
-Regards,
-Hugo
-Vantage Fabrication
-
---=-PTB-MSG-000095
+From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0018 - LED panels
+Date: Sat, 24 Feb 2024 10:00:00 +0000
+Message-ID: <MSG-000095@deltaridgesupplies.example>
+In-Reply-To: <MSG-000094@vantagefabrication.example>
+References: <MSG-000094@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0018.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0018
-Date: 2024-02-14
-Party: Bluepine Materials
+Hello Hugo,
 
-Po number: PO-2024-0018
-Item: rubber gaskets
-Qty: 70
-Unit price: $62.74
-Total: $4,391.80
+Confirming receipt of PO-2024-0018; we will schedule this for delivery.
 
---=-PTB-MSG-000095--
+Best regards,
+Dev
+Yellowstone Components

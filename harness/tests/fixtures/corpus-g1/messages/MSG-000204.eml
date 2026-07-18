@@ -1,20 +1,41 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Re: Purchase order PO-2024-0030 - rubber gaskets
-Date: Fri, 29 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000204@vantagefabrication.example>
-In-Reply-To: <MSG-000173@bluepinematerials.example>
-References: <MSG-000143@vantagefabrication.example>
- <MSG-000144@bluepinematerials.example> <MSG-000173@bluepinematerials.example>
+From: Kira Novak <kira.novak@deltaridgesupplies.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0039 - LED panels
+Date: Mon, 15 Apr 2024 09:21:00 +0000
+Message-ID: <MSG-000204@deltaridgesupplies.example>
+In-Reply-To: <MSG-000194@deltaridgesupplies.example>
+References: <MSG-000170@vantagefabrication.example>
+ <MSG-000171@deltaridgesupplies.example>
+ <MSG-000194@deltaridgesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000204"
+
+--=-PTB-MSG-000204
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-MIME-Version: 1.0
 
-Rosa,
+Carla,
 
-Payment of $9,411.00 for invoice INV-2024-0041 was sent today by bank transfe=
-r.
+We have issued credit note CN-2024-0009 for $2,194.92 against invoice INV-202=
+4-0056 (short delivery).
 
 Best,
-Carla
-Vantage Fabrication
+Kira
+Delta Ridge Supplies
+
+--=-PTB-MSG-000204
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0009.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0009
+Date: 2024-04-15
+Party: Delta Ridge Supplies
+
+Credit note number: CN-2024-0009
+Invoice ref: INV-2024-0056
+Amount: $2,194.92
+Reason: short delivery
+
+--=-PTB-MSG-000204--

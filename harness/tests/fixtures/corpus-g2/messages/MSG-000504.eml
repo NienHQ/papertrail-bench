@@ -1,0 +1,39 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Rosa Costa <rosa.costa@nightingalepackaging.example>
+Subject: Purchase order PO-2024-0105 - aluminum sheet 2mm
+Date: Wed, 10 Jul 2024 09:07:00 +0000
+Message-ID: <MSG-000504@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000504"
+
+--=-PTB-MSG-000504
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Rosa,
+
+Please find attached purchase order PO-2024-0105 for 35 units of aluminum she=
+et 2mm at $72.82 per unit.
+The order total is $2,548.70.
+
+Thanks,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000504
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0105.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0105
+Date: 2024-07-10
+Party: Nightingale Packaging
+
+Po number: PO-2024-0105
+Item: aluminum sheet 2mm
+Qty: 35
+Unit price: $72.82
+Total: $2,548.70
+
+--=-PTB-MSG-000504--

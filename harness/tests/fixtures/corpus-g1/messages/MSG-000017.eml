@@ -1,18 +1,40 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
-To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0005 - safety gloves
-Date: Fri, 19 Jan 2024 17:00:00 +0000
-Message-ID: <MSG-000017@quarrypackaging.example>
-In-Reply-To: <MSG-000016@vantagefabrication.example>
-References: <MSG-000016@vantagefabrication.example>
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Invoice INV-2024-0017 from Vantage Fabrication
+Date: Wed, 17 Jan 2024 09:14:00 +0000
+Message-ID: <MSG-000017@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000017"
+
+--=-PTB-MSG-000017
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+
+Hello Mona,
+
+Please find attached invoice INV-2024-0017 for $8,755.00.
+Payment is due by 2024-02-01 per our NET15 terms.
+
+Thanks,
+Uma
+Vantage Fabrication
+
+--=-PTB-MSG-000017
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0017.txt"
 MIME-Version: 1.0
 
-Dear Hugo,
+INVOICE INV-2024-0017
+Date: 2024-01-17
+Party: Meridian Distribution
 
-Confirming receipt of PO-2024-0005; we will schedule this for delivery.
+Invoice number: INV-2024-0017
+Issuer: Vantage Fabrication
+Bill to: Meridian Distribution
+Issue date: 2024-01-17
+Due date: 2024-02-01
+Terms: NET15
+Total: $8,755.00
 
-Kind regards,
-Jonas
-Quarry Packaging
+--=-PTB-MSG-000017--

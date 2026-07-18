@@ -1,7 +1,7 @@
 From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Purchase order PO-2024-0004 - LED panels
-Date: Thu, 18 Jan 2024 09:00:00 +0000
+To: Iris Vance <iris.vance@redwoodindustrial.example>
+Subject: Purchase order PO-2024-0003 - safety gloves
+Date: Fri, 19 Jan 2024 09:00:00 +0000
 Message-ID: <MSG-000014@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000014"
@@ -10,30 +10,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000014"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hello Ava,
+Hi Iris,
 
-Please find attached purchase order PO-2024-0004 for 115 units of LED panels =
-at $79.50 per unit.
-The order total is $9,142.50.
+Please find attached purchase order PO-2024-0003 for 65 units of safety glove=
+s at $15.71 per unit.
+The order total is $1,021.15.
 
-Regards,
+Kind regards,
 Quinn
 Oakfield Fabrication
 
 --=-PTB-MSG-000014
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0004.txt"
+Content-Disposition: attachment; filename="PO-2024-0003.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0004
-Date: 2024-01-18
-Party: Yellowstone Supplies
+PURCHASE ORDER PO-2024-0003
+Date: 2024-01-19
+Party: Redwood Industrial
 
-Po number: PO-2024-0004
-Item: LED panels
-Qty: 115
-Unit price: $79.50
-Total: $9,142.50
+Po number: PO-2024-0003
+Item: safety gloves
+Qty: 65
+Unit price: $15.71
+Total: $1,021.15
 
 --=-PTB-MSG-000014--

@@ -1,40 +1,39 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Jonas Drake <jonas.drake@silvertontrading.example>
-Subject: Invoice INV-2024-0028 from Oakfield Fabrication
-Date: Tue, 06 Feb 2024 09:14:00 +0000
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@redwoodindustrial.example>
+Subject: Purchase order PO-2024-0010 - safety gloves
+Date: Mon, 05 Feb 2024 09:07:00 +0000
 Message-ID: <MSG-000049@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000049"
 
 --=-PTB-MSG-000049
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Hi Jonas,
+Hello Iris,
 
-Please find attached invoice INV-2024-0028 for $5,835.00.
-Payment is due by 2024-03-07 per our NET30 terms.
+Please find attached purchase order PO-2024-0010 for 85 units of safety glove=
+s at $15.71 per unit.
+The order total is $1,335.35.
 
-Kind regards,
-Tara
+Regards,
+Quinn
 Oakfield Fabrication
 
 --=-PTB-MSG-000049
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0028.txt"
+Content-Disposition: attachment; filename="PO-2024-0010.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0028
-Date: 2024-02-06
-Party: Silverton Trading
+PURCHASE ORDER PO-2024-0010
+Date: 2024-02-05
+Party: Redwood Industrial
 
-Invoice number: INV-2024-0028
-Issuer: Oakfield Fabrication
-Bill to: Silverton Trading
-Issue date: 2024-02-06
-Due date: 2024-03-07
-Terms: NET30
-Total: $5,835.00
+Po number: PO-2024-0010
+Item: safety gloves
+Qty: 85
+Unit price: $15.71
+Total: $1,335.35
 
 --=-PTB-MSG-000049--

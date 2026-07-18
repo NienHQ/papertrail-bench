@@ -1,7 +1,7 @@
 From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Purchase order PO-2024-0004 - safety gloves
-Date: Wed, 17 Jan 2024 09:00:00 +0000
+To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+Subject: Purchase order PO-2024-0008 - LED panels
+Date: Tue, 16 Jan 2024 09:00:00 +0000
 Message-ID: <MSG-000012@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000012"
@@ -10,11 +10,11 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000012"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dear Jonas,
+Dear Dev,
 
-Please find attached purchase order PO-2024-0004 for 50 units of safety glove=
-s at $4.39 per unit.
-The order total is $219.50.
+Please find attached purchase order PO-2024-0008 for 165 units of LED panels =
+at $50.28 per unit.
+The order total is $8,296.20.
 
 Kind regards,
 Hugo
@@ -23,17 +23,17 @@ Vantage Fabrication
 --=-PTB-MSG-000012
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0004.txt"
+Content-Disposition: attachment; filename="PO-2024-0008.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0004
-Date: 2024-01-17
-Party: Quarry Packaging
+PURCHASE ORDER PO-2024-0008
+Date: 2024-01-16
+Party: Delta Ridge Supplies
 
-Po number: PO-2024-0004
-Item: safety gloves
-Qty: 50
-Unit price: $4.39
-Total: $219.50
+Po number: PO-2024-0008
+Item: LED panels
+Qty: 165
+Unit price: $50.28
+Total: $8,296.20
 
 --=-PTB-MSG-000012--

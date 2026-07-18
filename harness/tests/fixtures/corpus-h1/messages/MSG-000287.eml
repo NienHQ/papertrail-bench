@@ -1,22 +1,39 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Re: Purchase order PO-2024-0047 - LED panels
-Date: Tue, 09 Jul 2024 09:00:00 +0000
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Victor Tanaka <victor.tanaka@redwoodindustrial.example>
+Subject: Purchase order PO-2024-0048 - safety gloves
+Date: Wed, 19 Jun 2024 09:07:00 +0000
 Message-ID: <MSG-000287@oakfieldfabrication.example>
-In-Reply-To: <MSG-000273@yellowstonesupplies.example>
-References: <MSG-000252@oakfieldfabrication.example>
- <MSG-000253@yellowstonesupplies.example>
- <MSG-000263@oakfieldfabrication.example>
- <MSG-000273@yellowstonesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000287"
+
+--=-PTB-MSG-000287
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
+
+Victor,
+
+Please find attached purchase order PO-2024-0048 for 70 units of safety glove=
+s at $15.71 per unit.
+The order total is $1,099.70.
+
+Regards,
+Quinn
+Oakfield Fabrication
+
+--=-PTB-MSG-000287
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0048.txt"
 MIME-Version: 1.0
 
-Hi Ava,
+PURCHASE ORDER PO-2024-0048
+Date: 2024-06-19
+Party: Redwood Industrial
 
-Payment of $9,540.00 for invoice INV-2024-0073 was sent today by bank transfe=
-r.
+Po number: PO-2024-0048
+Item: safety gloves
+Qty: 70
+Unit price: $15.71
+Total: $1,099.70
 
-Best regards,
-Victor
-Oakfield Fabrication
+--=-PTB-MSG-000287--

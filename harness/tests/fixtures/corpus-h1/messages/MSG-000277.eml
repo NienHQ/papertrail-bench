@@ -1,40 +1,22 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Grace Whitfield <grace.whitfield@quarrytrading.example>
-Subject: Invoice INV-2024-0077 from Oakfield Fabrication
-Date: Thu, 27 Jun 2024 09:00:00 +0000
+From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@yellowstonesupplies.example>
+Subject: Re: Purchase order PO-2024-0040 - LED panels
+Date: Fri, 14 Jun 2024 09:00:00 +0000
 Message-ID: <MSG-000277@oakfieldfabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000277"
-
---=-PTB-MSG-000277
+In-Reply-To: <MSG-000258@yellowstonesupplies.example>
+References: <MSG-000240@oakfieldfabrication.example>
+ <MSG-000241@yellowstonesupplies.example>
+ <MSG-000251@oakfieldfabrication.example>
+ <MSG-000258@yellowstonesupplies.example>
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
 
-Hi Grace,
+Iris,
 
-Please find attached invoice INV-2024-0077 for $4,115.00.
-Payment is due by 2024-07-12 per our NET15 terms.
+Payment of $9,540.00 for invoice INV-2024-0060 was sent today by bank transfe=
+r.
 
 Best,
-Tara
+Victor
 Oakfield Fabrication
-
---=-PTB-MSG-000277
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0077.txt"
-MIME-Version: 1.0
-
-INVOICE INV-2024-0077
-Date: 2024-06-27
-Party: Quarry Trading
-
-Invoice number: INV-2024-0077
-Issuer: Oakfield Fabrication
-Bill to: Quarry Trading
-Issue date: 2024-06-27
-Due date: 2024-07-12
-Terms: NET15
-Total: $4,115.00
-
---=-PTB-MSG-000277--

@@ -1,0 +1,42 @@
+From: Quinn Tanaka <qtanaka@vantageindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0051 - shipping cartons
+Date: Wed, 03 Jul 2024 09:00:00 +0000
+Message-ID: <MSG-000313@vantageindustrial.example>
+In-Reply-To: <MSG-000303@vantageindustrial.example>
+References: <MSG-000282@oakfieldfabrication.example>
+ <MSG-000283@vantageindustrial.example>
+ <MSG-000298@oakfieldfabrication.example>
+ <MSG-000303@vantageindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000313"
+
+--=-PTB-MSG-000313
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Victor,
+
+We have issued credit note CN-2024-0007 for $1,916.48 against invoice INV-202=
+4-0075 (short delivery).
+
+Best,
+Quinn
+Vantage Industrial
+
+--=-PTB-MSG-000313
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0007.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0007
+Date: 2024-07-03
+Party: Vantage Industrial
+
+Credit note number: CN-2024-0007
+Invoice ref: INV-2024-0075
+Amount: $1,916.48
+Reason: short delivery
+
+--=-PTB-MSG-000313--

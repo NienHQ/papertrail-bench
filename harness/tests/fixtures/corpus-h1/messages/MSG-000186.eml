@@ -1,40 +1,44 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Grace Whitfield <grace.whitfield@quarrytrading.example>
-Subject: Invoice INV-2024-0066 from Oakfield Fabrication
-Date: Fri, 03 May 2024 09:14:00 +0000
-Message-ID: <MSG-000186@oakfieldfabrication.example>
+From: Victor Tanaka <victor.tanaka@redwoodindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0023 - safety gloves
+Date: Sat, 20 Apr 2024 09:07:00 +0000
+Message-ID: <MSG-000186@redwoodindustrial.example>
+In-Reply-To: <MSG-000185@redwoodindustrial.example>
+References: <MSG-000140@oakfieldfabrication.example>
+ <MSG-000141@redwoodindustrial.example>
+ <MSG-000145@oakfieldfabrication.example>
+ <MSG-000156@redwoodindustrial.example>
+ <MSG-000165@oakfieldfabrication.example>
+ <MSG-000185@redwoodindustrial.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000186"
 
 --=-PTB-MSG-000186
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Hi Grace,
+Hello Victor,
 
-Please find attached invoice INV-2024-0066 for $3,800.00.
-Payment is due by 2024-05-18 per our NET15 terms.
+We have issued credit note CN-2024-0005 for $22.51 against invoice INV-2024-0=
+034 (quantity mismatch).
 
-Thanks,
-Tara
-Oakfield Fabrication
+Regards,
+Victor
+Redwood Industrial
 
 --=-PTB-MSG-000186
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0066.txt"
+Content-Disposition: attachment; filename="CN-2024-0005.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0066
-Date: 2024-05-03
-Party: Quarry Trading
+CREDIT NOTE CN-2024-0005
+Date: 2024-04-20
+Party: Redwood Industrial
 
-Invoice number: INV-2024-0066
-Issuer: Oakfield Fabrication
-Bill to: Quarry Trading
-Issue date: 2024-05-03
-Due date: 2024-05-18
-Terms: NET15
-Total: $3,800.00
+Credit note number: CN-2024-0005
+Invoice ref: INV-2024-0034
+Amount: $22.51
+Reason: quantity mismatch
 
 --=-PTB-MSG-000186--

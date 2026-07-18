@@ -1,44 +1,42 @@
-From: Iris Vance <iris.vance@redwoodindustrial.example>
-To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0036 - safety gloves
-Date: Fri, 24 May 2024 09:07:00 +0000
-Message-ID: <MSG-000227@redwoodindustrial.example>
-In-Reply-To: <MSG-000204@redwoodindustrial.example>
-References: <MSG-000203@oakfieldfabrication.example>
- <MSG-000204@redwoodindustrial.example>
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Victor Tanaka <victor.tanaka@redwoodindustrial.example>
+Subject: Re: Purchase order PO-2024-0039 - safety gloves
+Date: Tue, 14 May 2024 09:00:00 +0000
+Message-ID: <MSG-000227@oakfieldfabrication.example>
+In-Reply-To: <MSG-000219@redwoodindustrial.example>
+References: <MSG-000218@oakfieldfabrication.example>
+ <MSG-000219@redwoodindustrial.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000227"
 
 --=-PTB-MSG-000227
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
 Victor,
 
-Please find attached invoice INV-2024-0057 against PO-2024-0036 for $1,021.15.
-Payment is due by 2024-06-08 per our NET15 terms.
+Please amend PO-2024-0039: quantity is now 145 units of safety gloves, revise=
+d order total $2,277.95.
+The amended purchase order is attached as PO-2024-0039-A1.
 
 Regards,
-Iris
-Redwood Industrial
+Quinn
+Oakfield Fabrication
 
 --=-PTB-MSG-000227
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0057.txt"
+Content-Disposition: attachment; filename="PO-2024-0039-A1.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0057
-Date: 2024-05-24
+PURCHASE ORDER PO-2024-0039-A1
+Date: 2024-05-14
 Party: Redwood Industrial
 
-Invoice number: INV-2024-0057
-Issuer: Redwood Industrial
-Bill to: Oakfield Fabrication
-Issue date: 2024-05-24
-Due date: 2024-06-08
-Terms: NET15
-Total: $1,021.15
-Po ref: PO-2024-0036
+Po number: PO-2024-0039
+Item: safety gloves
+Qty: 145
+Unit price: $15.71
+Total: $2,277.95
 
 --=-PTB-MSG-000227--

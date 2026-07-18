@@ -1,20 +1,40 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-Subject: Re: Purchase order PO-2024-0033 - shipping cartons
-Date: Tue, 18 Jun 2024 09:00:00 +0000
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Jonas Drake <jonas.drake@silvertontrading.example>
+Subject: Invoice INV-2024-0083 from Oakfield Fabrication
+Date: Tue, 04 Jun 2024 09:07:00 +0000
 Message-ID: <MSG-000259@oakfieldfabrication.example>
-In-Reply-To: <MSG-000188@vantageindustrial.example>
-References: <MSG-000173@oakfieldfabrication.example>
- <MSG-000174@vantageindustrial.example> <MSG-000188@vantageindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000259"
+
+--=-PTB-MSG-000259
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
+
+Dear Jonas,
+
+Please find attached invoice INV-2024-0083 for $5,995.00.
+Payment is due by 2024-07-04 per our NET30 terms.
+
+Best,
+Tara
+Oakfield Fabrication
+
+--=-PTB-MSG-000259
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0083.txt"
 MIME-Version: 1.0
 
-Hello Quinn,
+INVOICE INV-2024-0083
+Date: 2024-06-04
+Party: Silverton Trading
 
-Payment of $3,305.70 for invoice INV-2024-0049 was sent today by bank transfe=
-r.
+Invoice number: INV-2024-0083
+Issuer: Oakfield Fabrication
+Bill to: Silverton Trading
+Issue date: 2024-06-04
+Due date: 2024-07-04
+Terms: NET30
+Total: $5,995.00
 
-Thanks,
-Victor
-Oakfield Fabrication
+--=-PTB-MSG-000259--

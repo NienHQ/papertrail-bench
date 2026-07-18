@@ -1,8 +1,11 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Purchase order PO-2024-0038 - LED panels
-Date: Mon, 18 Mar 2024 09:14:00 +0000
-Message-ID: <MSG-000182@vantagefabrication.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0026 - rubber gaskets
+Date: Sat, 06 Apr 2024 09:07:00 +0000
+Message-ID: <MSG-000182@bluepinematerials.example>
+In-Reply-To: <MSG-000165@bluepinematerials.example>
+References: <MSG-000147@vantagefabrication.example>
+ <MSG-000148@bluepinematerials.example> <MSG-000165@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000182"
 
@@ -10,30 +13,28 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000182"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hi Dev,
+Hi Carla,
 
-Please find attached purchase order PO-2024-0038 for 90 units of LED panels a=
-t $50.28 per unit.
-The order total is $4,525.20.
+We have issued credit note CN-2024-0006 for $795.02 against invoice INV-2024-=
+0037 (pricing error).
 
-Kind regards,
-Hugo
-Vantage Fabrication
+Best regards,
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000182
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0038.txt"
+Content-Disposition: attachment; filename="CN-2024-0006.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0038
-Date: 2024-03-18
-Party: Delta Ridge Supplies
+CREDIT NOTE CN-2024-0006
+Date: 2024-04-06
+Party: Bluepine Materials
 
-Po number: PO-2024-0038
-Item: LED panels
-Qty: 90
-Unit price: $50.28
-Total: $4,525.20
+Credit note number: CN-2024-0006
+Invoice ref: INV-2024-0037
+Amount: $795.02
+Reason: pricing error
 
 --=-PTB-MSG-000182--

@@ -1,44 +1,45 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
 To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0004 - safety gloves
-Date: Fri, 26 Jan 2024 09:07:00 +0000
-Message-ID: <MSG-000043@quarrypackaging.example>
-In-Reply-To: <MSG-000013@quarrypackaging.example>
-References:
- <MSG-000012@vantagefabrication.example> <MSG-000013@quarrypackaging.example>
+Subject: Re: Purchase order PO-2024-0003 - rubber gaskets
+Date: Fri, 26 Jan 2024 09:00:00 +0000
+Message-ID: <MSG-000043@bluepinematerials.example>
+In-Reply-To: <MSG-000033@bluepinematerials.example>
+References: <MSG-000032@vantagefabrication.example>
+ <MSG-000033@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000043"
 
 --=-PTB-MSG-000043
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
 Hello Carla,
 
-Please find attached invoice INV-2024-0004 against PO-2024-0004 for $219.50.
-Payment is due by 2024-03-11 per our NET45 terms.
+Please find attached invoice INV-2024-0003 against PO-2024-0003 for $10,038.4=
+0.
+Payment is due by 2024-02-10 per our NET15 terms.
 
 Kind regards,
-Jonas
-Quarry Packaging
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000043
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0004.txt"
+Content-Disposition: attachment; filename="INV-2024-0003.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0004
+INVOICE INV-2024-0003
 Date: 2024-01-26
-Party: Quarry Packaging
+Party: Bluepine Materials
 
-Invoice number: INV-2024-0004
-Issuer: Quarry Packaging
+Invoice number: INV-2024-0003
+Issuer: Bluepine Materials
 Bill to: Vantage Fabrication
 Issue date: 2024-01-26
-Due date: 2024-03-11
-Terms: NET45
-Total: $219.50
-Po ref: PO-2024-0004
+Due date: 2024-02-10
+Terms: NET15
+Total: $10,038.40
+Po ref: PO-2024-0003
 
 --=-PTB-MSG-000043--

@@ -1,20 +1,43 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Re: Purchase order PO-2024-0046 - safety gloves
-Date: Tue, 23 Apr 2024 09:07:00 +0000
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Re: Purchase order PO-2024-0050 - LED panels
+Date: Tue, 14 May 2024 09:35:00 +0000
 Message-ID: <MSG-000263@vantagefabrication.example>
-In-Reply-To: <MSG-000242@quarrypackaging.example>
-References: <MSG-000220@vantagefabrication.example>
- <MSG-000221@quarrypackaging.example> <MSG-000230@vantagefabrication.example>
- <MSG-000242@quarrypackaging.example>
+In-Reply-To: <MSG-000252@vantagefabrication.example>
+References: <MSG-000243@vantagefabrication.example>
+ <MSG-000244@deltaridgesupplies.example>
+ <MSG-000252@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000263"
+
+--=-PTB-MSG-000263
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Kira,
+
+Please amend PO-2024-0050: quantity is now 100 units of LED panels, revised o=
+rder total $5,028.00.
+The amended purchase order is attached as PO-2024-0050-A2.
+
+Best,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000263
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0050-A2.txt"
 MIME-Version: 1.0
 
-Hello Jonas,
+PURCHASE ORDER PO-2024-0050-A2
+Date: 2024-05-14
+Party: Delta Ridge Supplies
 
-We dispute $189.23 on invoice INV-2024-0062: quantity mismatch.
+Po number: PO-2024-0050
+Item: LED panels
+Qty: 100
+Unit price: $50.28
+Total: $5,028.00
 
-Regards,
-Carla
-Vantage Fabrication
+--=-PTB-MSG-000263--

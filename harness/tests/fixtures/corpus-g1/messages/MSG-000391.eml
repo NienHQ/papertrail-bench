@@ -1,44 +1,18 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0079 - copper wire 12AWG
-Date: Thu, 13 Jun 2024 09:07:00 +0000
-Message-ID: <MSG-000391@yellowstonecomponents.example>
-In-Reply-To: <MSG-000384@yellowstonecomponents.example>
-References: <MSG-000383@vantagefabrication.example>
- <MSG-000384@yellowstonecomponents.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000391"
-
---=-PTB-MSG-000391
+From: Kira Novak <kira.novak@deltaridgesupplies.example>
+To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0080 - LED panels
+Date: Tue, 02 Jul 2024 14:14:00 +0000
+Message-ID: <MSG-000391@deltaridgesupplies.example>
+In-Reply-To: <MSG-000390@vantagefabrication.example>
+References: <MSG-000390@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
 
-Carla,
+Hugo,
 
-Please find attached invoice INV-2024-0104 against PO-2024-0079 for $5,478.20.
-Payment is due by 2024-08-12 per our NET60 terms.
+Confirming receipt of PO-2024-0080; we will schedule this for delivery.
 
 Thanks,
-Hugo
-Yellowstone Components
-
---=-PTB-MSG-000391
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0104.txt"
-MIME-Version: 1.0
-
-INVOICE INV-2024-0104
-Date: 2024-06-13
-Party: Yellowstone Components
-
-Invoice number: INV-2024-0104
-Issuer: Yellowstone Components
-Bill to: Vantage Fabrication
-Issue date: 2024-06-13
-Due date: 2024-08-12
-Terms: NET60
-Total: $5,478.20
-Po ref: PO-2024-0079
-
---=-PTB-MSG-000391--
+Kira
+Delta Ridge Supplies

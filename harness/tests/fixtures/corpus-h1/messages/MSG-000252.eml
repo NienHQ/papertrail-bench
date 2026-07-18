@@ -1,39 +1,23 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Purchase order PO-2024-0047 - LED panels
-Date: Thu, 13 Jun 2024 09:14:00 +0000
+From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+To: Victor Tanaka <victor.tanaka@redwoodindustrial.example>
+Subject: Re: Purchase order PO-2024-0023 - safety gloves
+Date: Fri, 31 May 2024 09:00:00 +0000
 Message-ID: <MSG-000252@oakfieldfabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000252"
-
---=-PTB-MSG-000252
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Ava,
-
-Please find attached purchase order PO-2024-0047 for 160 units of LED panels =
-at $79.50 per unit.
-The order total is $12,720.00.
-
-Best regards,
-Quinn
-Oakfield Fabrication
-
---=-PTB-MSG-000252
+In-Reply-To: <MSG-000186@redwoodindustrial.example>
+References: <MSG-000140@oakfieldfabrication.example>
+ <MSG-000141@redwoodindustrial.example>
+ <MSG-000145@oakfieldfabrication.example>
+ <MSG-000156@redwoodindustrial.example>
+ <MSG-000165@oakfieldfabrication.example>
+ <MSG-000185@redwoodindustrial.example> <MSG-000186@redwoodindustrial.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0047.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0047
-Date: 2024-06-13
-Party: Yellowstone Supplies
+Dear Victor,
 
-Po number: PO-2024-0047
-Item: LED panels
-Qty: 160
-Unit price: $79.50
-Total: $12,720.00
+Payment of $56.04 for invoice INV-2024-0034 was sent today by bank transfer.
 
---=-PTB-MSG-000252--
+Best regards,
+Victor
+Oakfield Fabrication

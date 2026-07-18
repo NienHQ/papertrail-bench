@@ -1,8 +1,12 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Purchase order PO-2024-0015 - LED panels
-Date: Thu, 22 Feb 2024 09:07:00 +0000
-Message-ID: <MSG-000074@oakfieldfabrication.example>
+From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0016 - shipping cartons
+Date: Sun, 18 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000074@vantageindustrial.example>
+In-Reply-To: <MSG-000060@oakfieldfabrication.example>
+References: <MSG-000054@oakfieldfabrication.example>
+ <MSG-000055@vantageindustrial.example>
+ <MSG-000060@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000074"
 
@@ -10,30 +14,33 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000074"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hi Ava,
+Hi Victor,
 
-Please find attached purchase order PO-2024-0015 for 140 units of LED panels =
-at $79.50 per unit.
-The order total is $11,130.00.
+Please find attached invoice INV-2024-0021 against PO-2024-0016-A1 for $16,52=
+8.50.
+Payment is due by 2024-04-03 per our NET45 terms.
 
 Kind regards,
 Quinn
-Oakfield Fabrication
+Vantage Industrial
 
 --=-PTB-MSG-000074
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0015.txt"
+Content-Disposition: attachment; filename="INV-2024-0021.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0015
-Date: 2024-02-22
-Party: Yellowstone Supplies
+INVOICE INV-2024-0021
+Date: 2024-02-18
+Party: Vantage Industrial
 
-Po number: PO-2024-0015
-Item: LED panels
-Qty: 140
-Unit price: $79.50
-Total: $11,130.00
+Invoice number: INV-2024-0021
+Issuer: Vantage Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-02-18
+Due date: 2024-04-03
+Terms: NET45
+Total: $16,528.50
+Po ref: PO-2024-0016-A1
 
 --=-PTB-MSG-000074--

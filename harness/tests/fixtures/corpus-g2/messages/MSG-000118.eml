@@ -1,0 +1,39 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Mona Yates <mona.yates@cardinalcomponents.example>
+Subject: Purchase order PO-2024-0016 - hex bolts M8
+Date: Mon, 26 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000118@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000118"
+
+--=-PTB-MSG-000118
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Mona,
+
+Please find attached purchase order PO-2024-0016 for 175 units of hex bolts M=
+8 at $18.35 per unit.
+The order total is $3,211.25.
+
+Regards,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000118
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0016.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0016
+Date: 2024-02-26
+Party: Cardinal Components
+
+Po number: PO-2024-0016
+Item: hex bolts M8
+Qty: 175
+Unit price: $18.35
+Total: $3,211.25
+
+--=-PTB-MSG-000118--

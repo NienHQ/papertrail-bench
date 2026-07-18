@@ -1,0 +1,9 @@
+{"domain": "junctionfabrication.example", "is_self": true, "kind": "self", "name": "Junction Fabrication", "party_id": "PTY-0001"}
+{"domain": "cardinalcomponents.example", "is_self": false, "kind": "vendor", "name": "Cardinal Components", "party_id": "PTY-0002"}
+{"domain": "northgatepackaging.example", "is_self": false, "kind": "vendor", "name": "Northgate Packaging", "party_id": "PTY-0003"}
+{"domain": "silvertonsupplies.example", "is_self": false, "kind": "vendor", "name": "Silverton Supplies", "party_id": "PTY-0004"}
+{"domain": "yellowstonematerials.example", "is_self": false, "kind": "vendor", "name": "Yellowstone Materials", "party_id": "PTY-0005"}
+{"domain": "nightingalepackaging.example", "is_self": false, "kind": "vendor", "name": "Nightingale Packaging", "party_id": "PTY-0006"}
+{"domain": "meridianretail.example", "is_self": false, "kind": "customer", "name": "Meridian Retail", "party_id": "PTY-0007"}
+{"domain": "quarrydistribution.example", "is_self": false, "kind": "customer", "name": "Quarry Distribution", "party_id": "PTY-0008"}
+{"domain": "lakeshoreproperties.example", "is_self": false, "kind": "landlord", "name": "Lakeshore Properties", "party_id": "PTY-0009"}

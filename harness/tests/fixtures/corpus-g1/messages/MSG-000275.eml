@@ -1,20 +1,39 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Re: Purchase order PO-2024-0051 - copper wire 12AWG
-Date: Mon, 29 Apr 2024 09:21:00 +0000
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+Subject: Purchase order PO-2024-0056 - copper wire 12AWG
+Date: Mon, 20 May 2024 09:07:00 +0000
 Message-ID: <MSG-000275@vantagefabrication.example>
-In-Reply-To: <MSG-000264@yellowstonecomponents.example>
-References: <MSG-000245@vantagefabrication.example>
- <MSG-000246@yellowstonecomponents.example>
- <MSG-000264@yellowstonecomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000275"
+
+--=-PTB-MSG-000275
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Dev,
+
+Please find attached purchase order PO-2024-0056 for 30 units of copper wire =
+12AWG at $78.26 per unit.
+The order total is $2,347.80.
+
+Regards,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000275
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0056.txt"
 MIME-Version: 1.0
 
-Hello Hugo,
+PURCHASE ORDER PO-2024-0056
+Date: 2024-05-20
+Party: Yellowstone Components
 
-We dispute $20.87 on invoice INV-2024-0067: duplicate line item.
+Po number: PO-2024-0056
+Item: copper wire 12AWG
+Qty: 30
+Unit price: $78.26
+Total: $2,347.80
 
-Best,
-Carla
-Vantage Fabrication
+--=-PTB-MSG-000275--

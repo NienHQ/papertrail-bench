@@ -1,42 +1,44 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Re: Purchase order PO-2024-0039 - LED panels
-Date: Thu, 16 May 2024 09:00:00 +0000
-Message-ID: <MSG-000205@oakfieldfabrication.example>
-In-Reply-To: <MSG-000199@yellowstonesupplies.example>
-References: <MSG-000198@oakfieldfabrication.example>
- <MSG-000199@yellowstonesupplies.example>
+From: Victor Tanaka <victor.tanaka@redwoodindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0032 - safety gloves
+Date: Wed, 01 May 2024 09:00:00 +0000
+Message-ID: <MSG-000205@redwoodindustrial.example>
+In-Reply-To: <MSG-000197@redwoodindustrial.example>
+References: <MSG-000196@oakfieldfabrication.example>
+ <MSG-000197@redwoodindustrial.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000205"
 
 --=-PTB-MSG-000205
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Hi Ava,
+Hi Victor,
 
-Please amend PO-2024-0039: quantity is now 70 units of LED panels, revised or=
-der total $5,565.00.
-The amended purchase order is attached as PO-2024-0039-A1.
+Please find attached invoice INV-2024-0048 against PO-2024-0032 for $549.85.
+Payment is due by 2024-05-16 per our NET15 terms.
 
-Regards,
-Quinn
-Oakfield Fabrication
+Kind regards,
+Victor
+Redwood Industrial
 
 --=-PTB-MSG-000205
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0039-A1.txt"
+Content-Disposition: attachment; filename="INV-2024-0048.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0039-A1
-Date: 2024-05-16
-Party: Yellowstone Supplies
+INVOICE INV-2024-0048
+Date: 2024-05-01
+Party: Redwood Industrial
 
-Po number: PO-2024-0039
-Item: LED panels
-Qty: 70
-Unit price: $79.50
-Total: $5,565.00
+Invoice number: INV-2024-0048
+Issuer: Redwood Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-05-01
+Due date: 2024-05-16
+Terms: NET15
+Total: $549.85
+Po ref: PO-2024-0032
 
 --=-PTB-MSG-000205--

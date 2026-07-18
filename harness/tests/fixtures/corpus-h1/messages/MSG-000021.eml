@@ -1,18 +1,39 @@
-From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0005 - LED panels
-Date: Tue, 23 Jan 2024 04:07:00 +0000
-Message-ID: <MSG-000021@yellowstonesupplies.example>
-In-Reply-To: <MSG-000020@oakfieldfabrication.example>
-References: <MSG-000020@oakfieldfabrication.example>
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+Subject: Purchase order PO-2024-0007 - LED panels
+Date: Mon, 22 Jan 2024 09:14:00 +0000
+Message-ID: <MSG-000021@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000021"
+
+--=-PTB-MSG-000021
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Ava,
+
+Please find attached purchase order PO-2024-0007 for 60 units of LED panels a=
+t $79.50 per unit.
+The order total is $4,770.00.
+
+Thanks,
+Quinn
+Oakfield Fabrication
+
+--=-PTB-MSG-000021
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0007.txt"
 MIME-Version: 1.0
 
-Quinn,
+PURCHASE ORDER PO-2024-0007
+Date: 2024-01-22
+Party: Yellowstone Supplies
 
-Confirming receipt of PO-2024-0005; we will schedule this for delivery.
+Po number: PO-2024-0007
+Item: LED panels
+Qty: 60
+Unit price: $79.50
+Total: $4,770.00
 
-Regards,
-Ava
-Yellowstone Supplies
+--=-PTB-MSG-000021--

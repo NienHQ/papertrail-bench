@@ -1,7 +1,7 @@
 From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Purchase order PO-2024-0012 - copper wire 12AWG
-Date: Fri, 19 Jan 2024 09:14:00 +0000
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Purchase order PO-2024-0004 - rubber gaskets
+Date: Thu, 18 Jan 2024 09:07:00 +0000
 Message-ID: <MSG-000020@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000020"
@@ -10,30 +10,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000020"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hugo,
+Hello Rosa,
 
-Please find attached purchase order PO-2024-0012 for 35 units of copper wire =
-12AWG at $78.26 per unit.
-The order total is $2,739.10.
+Please find attached purchase order PO-2024-0004 for 140 units of rubber gask=
+ets at $62.74 per unit.
+The order total is $8,783.60.
 
-Best,
+Kind regards,
 Hugo
 Vantage Fabrication
 
 --=-PTB-MSG-000020
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0012.txt"
+Content-Disposition: attachment; filename="PO-2024-0004.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0012
-Date: 2024-01-19
-Party: Yellowstone Components
+PURCHASE ORDER PO-2024-0004
+Date: 2024-01-18
+Party: Bluepine Materials
 
-Po number: PO-2024-0012
-Item: copper wire 12AWG
-Qty: 35
-Unit price: $78.26
-Total: $2,739.10
+Po number: PO-2024-0004
+Item: rubber gaskets
+Qty: 140
+Unit price: $62.74
+Total: $8,783.60
 
 --=-PTB-MSG-000020--

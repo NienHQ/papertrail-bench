@@ -1,18 +1,40 @@
-From: Iris Vance <iris.vance@redwoodindustrial.example>
-To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0001 - safety gloves
-Date: Wed, 24 Jan 2024 20:00:00 +0000
-Message-ID: <MSG-000026@redwoodindustrial.example>
-In-Reply-To: <MSG-000025@oakfieldfabrication.example>
-References: <MSG-000025@oakfieldfabrication.example>
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Grace Whitfield <grace.whitfield@quarrytrading.example>
+Subject: Invoice INV-2024-0011 from Oakfield Fabrication
+Date: Mon, 22 Jan 2024 09:35:00 +0000
+Message-ID: <MSG-000026@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000026"
+
+--=-PTB-MSG-000026
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-MIME-Version: 1.0
 
-Dear Quinn,
+Dear Grace,
 
-Confirming receipt of PO-2024-0001; we will schedule this for delivery.
+Please find attached invoice INV-2024-0011 for $7,860.00.
+Payment is due by 2024-02-06 per our NET15 terms.
 
 Kind regards,
-Iris
-Redwood Industrial
+Tara
+Oakfield Fabrication
+
+--=-PTB-MSG-000026
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0011.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0011
+Date: 2024-01-22
+Party: Quarry Trading
+
+Invoice number: INV-2024-0011
+Issuer: Oakfield Fabrication
+Bill to: Quarry Trading
+Issue date: 2024-01-22
+Due date: 2024-02-06
+Terms: NET15
+Total: $7,860.00
+
+--=-PTB-MSG-000026--

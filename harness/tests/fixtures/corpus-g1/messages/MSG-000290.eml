@@ -1,12 +1,11 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0052 - copper wire 12AWG
-Date: Sat, 04 May 2024 09:07:00 +0000
-Message-ID: <MSG-000290@yellowstonecomponents.example>
-In-Reply-To: <MSG-000279@yellowstonecomponents.example>
-References: <MSG-000256@vantagefabrication.example>
- <MSG-000257@yellowstonecomponents.example>
- <MSG-000279@yellowstonecomponents.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Re: Purchase order PO-2024-0053 - LED panels
+Date: Sun, 26 May 2024 09:07:00 +0000
+Message-ID: <MSG-000290@vantagefabrication.example>
+In-Reply-To: <MSG-000287@deltaridgesupplies.example>
+References: <MSG-000286@vantagefabrication.example>
+ <MSG-000287@deltaridgesupplies.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000290"
 
@@ -14,28 +13,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000290"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hi Carla,
+Dear Kira,
 
-We have issued credit note CN-2024-0011 for $62.33 against invoice INV-2024-0=
-068 (returned items).
+Please amend PO-2024-0053: quantity is now 80 units of LED panels, revised or=
+der total $4,022.40.
+The amended purchase order is attached as PO-2024-0053-A1.
 
-Regards,
+Thanks,
 Hugo
-Yellowstone Components
+Vantage Fabrication
 
 --=-PTB-MSG-000290
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0011.txt"
+Content-Disposition: attachment; filename="PO-2024-0053-A1.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0011
-Date: 2024-05-04
-Party: Yellowstone Components
+PURCHASE ORDER PO-2024-0053-A1
+Date: 2024-05-26
+Party: Delta Ridge Supplies
 
-Credit note number: CN-2024-0011
-Invoice ref: INV-2024-0068
-Amount: $62.33
-Reason: returned items
+Po number: PO-2024-0053
+Item: LED panels
+Qty: 80
+Unit price: $50.28
+Total: $4,022.40
 
 --=-PTB-MSG-000290--

@@ -1,19 +1,39 @@
-From: Dev Ueda <dev.ueda@granitedistribution.example>
-To: Uma Garvey <uma.garvey@vantagefabrication.example>
-Subject: Re: Invoice INV-2024-0054 from Vantage Fabrication
-Date: Fri, 03 May 2024 09:00:00 +0000
-Message-ID: <MSG-000286@granitedistribution.example>
-In-Reply-To: <MSG-000136@vantagefabrication.example>
-References: <MSG-000136@vantagefabrication.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Purchase order PO-2024-0053 - LED panels
+Date: Thu, 23 May 2024 09:14:00 +0000
+Message-ID: <MSG-000286@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000286"
+
+--=-PTB-MSG-000286
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
+
+Hello Kira,
+
+Please find attached purchase order PO-2024-0053 for 50 units of LED panels a=
+t $50.28 per unit.
+The order total is $2,514.00.
+
+Regards,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000286
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0053.txt"
 MIME-Version: 1.0
 
-Hello Uma,
+PURCHASE ORDER PO-2024-0053
+Date: 2024-05-23
+Party: Delta Ridge Supplies
 
-Payment of $4,810.00 for invoice INV-2024-0054 was sent today by bank transfe=
-r.
+Po number: PO-2024-0053
+Item: LED panels
+Qty: 50
+Unit price: $50.28
+Total: $2,514.00
 
-Thanks,
-Dev
-Granite Distribution
+--=-PTB-MSG-000286--

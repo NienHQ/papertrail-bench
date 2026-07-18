@@ -1,39 +1,44 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Purchase order PO-2024-0072 - safety gloves
-Date: Tue, 25 Jun 2024 09:14:00 +0000
-Message-ID: <MSG-000410@vantagefabrication.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0075 - rubber gaskets
+Date: Sun, 07 Jul 2024 09:07:00 +0000
+Message-ID: <MSG-000410@bluepinematerials.example>
+In-Reply-To: <MSG-000389@bluepinematerials.example>
+References: <MSG-000388@vantagefabrication.example>
+ <MSG-000389@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000410"
 
 --=-PTB-MSG-000410
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Jonas,
+Carla,
 
-Please find attached purchase order PO-2024-0072 for 20 units of safety glove=
-s at $4.39 per unit.
-The order total is $87.80.
+Please find attached invoice INV-2024-0109 against PO-2024-0075 for $2,823.30.
+Payment is due by 2024-07-22 per our NET15 terms.
 
 Regards,
-Hugo
-Vantage Fabrication
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000410
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0072.txt"
+Content-Disposition: attachment; filename="INV-2024-0109.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0072
-Date: 2024-06-25
-Party: Quarry Packaging
+INVOICE INV-2024-0109
+Date: 2024-07-07
+Party: Bluepine Materials
 
-Po number: PO-2024-0072
-Item: safety gloves
-Qty: 20
-Unit price: $4.39
-Total: $87.80
+Invoice number: INV-2024-0109
+Issuer: Bluepine Materials
+Bill to: Vantage Fabrication
+Issue date: 2024-07-07
+Due date: 2024-07-22
+Terms: NET15
+Total: $2,823.30
+Po ref: PO-2024-0075
 
 --=-PTB-MSG-000410--

@@ -1,39 +1,18 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Purchase order PO-2024-0088 - safety gloves
-Date: Tue, 23 Jul 2024 09:00:00 +0000
-Message-ID: <MSG-000480@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000480"
-
---=-PTB-MSG-000480
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Dear Jonas,
-
-Please find attached purchase order PO-2024-0088 for 150 units of safety glov=
-es at $4.39 per unit.
-The order total is $658.50.
-
-Regards,
-Hugo
-Vantage Fabrication
-
---=-PTB-MSG-000480
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0090 - safety gloves
+Date: Tue, 06 Aug 2024 01:14:00 +0000
+Message-ID: <MSG-000480@quarrypackaging.example>
+In-Reply-To: <MSG-000479@vantagefabrication.example>
+References: <MSG-000479@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0088.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0088
-Date: 2024-07-23
-Party: Quarry Packaging
+Hello Hugo,
 
-Po number: PO-2024-0088
-Item: safety gloves
-Qty: 150
-Unit price: $4.39
-Total: $658.50
+Confirming receipt of PO-2024-0090; we will schedule this for delivery.
 
---=-PTB-MSG-000480--
+Best,
+Jonas
+Quarry Packaging

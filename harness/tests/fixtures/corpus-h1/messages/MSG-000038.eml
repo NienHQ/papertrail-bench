@@ -1,11 +1,11 @@
-From: Iris Vance <iris.vance@redwoodindustrial.example>
+From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
 To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0002 - safety gloves
-Date: Thu, 01 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000038@redwoodindustrial.example>
-In-Reply-To: <MSG-000031@redwoodindustrial.example>
-References: <MSG-000030@oakfieldfabrication.example>
- <MSG-000031@redwoodindustrial.example>
+Subject: Re: Purchase order PO-2024-0007 - LED panels
+Date: Sat, 27 Jan 2024 09:07:00 +0000
+Message-ID: <MSG-000038@yellowstonesupplies.example>
+In-Reply-To: <MSG-000022@yellowstonesupplies.example>
+References: <MSG-000021@oakfieldfabrication.example>
+ <MSG-000022@yellowstonesupplies.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000038"
 
@@ -13,32 +13,32 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000038"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 
-Dear Victor,
+Victor,
 
-Please find attached invoice INV-2024-0002 against PO-2024-0002 for $2,120.85.
-Payment is due by 2024-04-01 per our NET60 terms.
+Please find attached invoice INV-2024-0007 against PO-2024-0007 for $4,770.00.
+Payment is due by 2024-03-27 per our NET60 terms.
 
-Thanks,
-Iris
-Redwood Industrial
+Regards,
+Ava
+Yellowstone Supplies
 
 --=-PTB-MSG-000038
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0002.txt"
+Content-Disposition: attachment; filename="INV-2024-0007.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0002
-Date: 2024-02-01
-Party: Redwood Industrial
+INVOICE INV-2024-0007
+Date: 2024-01-27
+Party: Yellowstone Supplies
 
-Invoice number: INV-2024-0002
-Issuer: Redwood Industrial
+Invoice number: INV-2024-0007
+Issuer: Yellowstone Supplies
 Bill to: Oakfield Fabrication
-Issue date: 2024-02-01
-Due date: 2024-04-01
+Issue date: 2024-01-27
+Due date: 2024-03-27
 Terms: NET60
-Total: $2,120.85
-Po ref: PO-2024-0002
+Total: $4,770.00
+Po ref: PO-2024-0007
 
 --=-PTB-MSG-000038--

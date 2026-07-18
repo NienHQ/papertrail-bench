@@ -1,0 +1,39 @@
+From: Ben Okafor <ben.okafor@junctionfabrication.example>
+To: Grace Novak <grace.novak@quarrydistribution.example>
+Subject: Re: Invoice INV-2024-0056 from Junction Fabrication
+Date: Tue, 12 Mar 2024 09:07:00 +0000
+Message-ID: <MSG-000169@junctionfabrication.example>
+In-Reply-To: <MSG-000157@junctionfabrication.example>
+References: <MSG-000157@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000169"
+
+--=-PTB-MSG-000169
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Grace,
+
+We have issued credit note CN-2024-0012 for $2,380.14 against invoice INV-202=
+4-0056 (damaged goods).
+
+Best regards,
+Ben
+Junction Fabrication
+
+--=-PTB-MSG-000169
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0012.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0012
+Date: 2024-03-12
+Party: Quarry Distribution
+
+Credit note number: CN-2024-0012
+Invoice ref: INV-2024-0056
+Amount: $2,380.14
+Reason: damaged goods
+
+--=-PTB-MSG-000169--

@@ -1,7 +1,7 @@
 From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Iris Vance <iris.vance@redwoodindustrial.example>
-Subject: Purchase order PO-2024-0010 - safety gloves
-Date: Tue, 20 Feb 2024 09:00:00 +0000
+To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+Subject: Purchase order PO-2024-0019 - shipping cartons
+Date: Wed, 14 Feb 2024 09:14:00 +0000
 Message-ID: <MSG-000070@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000070"
@@ -10,11 +10,11 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000070"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dear Iris,
+Dear Quinn,
 
-Please find attached purchase order PO-2024-0010 for 25 units of safety glove=
-s at $15.71 per unit.
-The order total is $392.75.
+Please find attached purchase order PO-2024-0019 for 125 units of shipping ca=
+rtons at $73.46 per unit.
+The order total is $9,182.50.
 
 Kind regards,
 Quinn
@@ -23,17 +23,17 @@ Oakfield Fabrication
 --=-PTB-MSG-000070
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0010.txt"
+Content-Disposition: attachment; filename="PO-2024-0019.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0010
-Date: 2024-02-20
-Party: Redwood Industrial
+PURCHASE ORDER PO-2024-0019
+Date: 2024-02-14
+Party: Vantage Industrial
 
-Po number: PO-2024-0010
-Item: safety gloves
-Qty: 25
-Unit price: $15.71
-Total: $392.75
+Po number: PO-2024-0019
+Item: shipping cartons
+Qty: 125
+Unit price: $73.46
+Total: $9,182.50
 
 --=-PTB-MSG-000070--

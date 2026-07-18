@@ -1,0 +1,39 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Kira Novak <kira.novak@silvertonsupplies.example>
+Subject: Purchase order PO-2024-0022 - steel brackets
+Date: Mon, 05 Feb 2024 09:28:00 +0000
+Message-ID: <MSG-000068@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000068"
+
+--=-PTB-MSG-000068
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Kira,
+
+Please find attached purchase order PO-2024-0022 for 185 units of steel brack=
+ets at $27.27 per unit.
+The order total is $5,044.95.
+
+Kind regards,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000068
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0022.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0022
+Date: 2024-02-05
+Party: Silverton Supplies
+
+Po number: PO-2024-0022
+Item: steel brackets
+Qty: 185
+Unit price: $27.27
+Total: $5,044.95
+
+--=-PTB-MSG-000068--

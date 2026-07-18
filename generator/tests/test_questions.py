@@ -10,18 +10,18 @@ def _docs_by_id(corpus):
 
 def test_question_counts_and_categories(corpus):
     cats = {q.category for q in corpus.questions}
-    assert cats == {1, 2, 3, 4, 6}
+    assert cats == {1, 2, 3, 4, 5, 6}
     assert len(corpus.questions) >= corpus.sim.config.n_questions * 0.8
 
 
 def test_deprecated_n_questions_splits_evenly():
     from papertrail.simulate import Config
     assert Config(n_questions=30).resolved_category_counts() == \
-        {1: 6, 2: 6, 3: 6, 4: 6, 6: 6}
+        {1: 5, 2: 5, 3: 5, 4: 5, 5: 5, 6: 5}
     assert Config(n_questions=32).resolved_category_counts() == \
-        {1: 7, 2: 7, 3: 6, 4: 6, 6: 6}
+        {1: 6, 2: 6, 3: 5, 4: 5, 5: 5, 6: 5}
     assert Config().resolved_category_counts() == \
-        {1: 16, 2: 16, 3: 16, 4: 16, 6: 16}
+        {1: 16, 2: 16, 3: 16, 4: 16, 5: 16, 6: 16}
 
 
 def test_answers_recompute(corpus):
@@ -73,12 +73,43 @@ def test_answers_recompute(corpus):
                 assert a["value"] == len(evs)
             else:
                 assert a["value"] == [e.payload["invoice_ref"] for e in evs]
+        elif q.template == "person_po_count":
+            person = _person(corpus, q.params["person_id"])
+            addrs = {ap.address for ap in person.addresses}
+            n = 0
+            for m in corpus.render_result.messages:
+                if not any(addr in addrs for _, addr in m.to):
+                    continue
+                n += sum(1 for doc_id in m.attachments
+                         if docs[doc_id].kind == "po"
+                         and docs[doc_id].version == 1)
+            assert a["value"] == n >= 1
+        elif q.template == "person_invoices_list":
+            person = _person(corpus, q.params["person_id"])
+            addrs = {ap.address for ap in person.addresses}
+            got = [doc_id for m in corpus.render_result.messages
+                   if m.from_address in addrs
+                   for doc_id in m.attachments
+                   if docs[doc_id].kind == "invoice"]
+            assert a["value"] == got
+            assert len(got) >= 1
+        elif q.template == "person_address_at":
+            person = _person(corpus, q.params["person_id"])
+            cands = [ap for ap in person.addresses
+                     if person.party_on(ap.from_date) == q.params["party_id"]]
+            assert len(cands) == 1
+            assert a["value"] == cands[0].address
         elif q.template in ("nonexistent_invoice_total",
                             "nonexistent_vendor_terms",
                             "nonexistent_po_chain"):
             assert a == {"type": "abstain", "value": None}
         else:
             raise AssertionError(f"untested template {q.template}")
+
+
+def _person(corpus, person_id):
+    return next(p for p in corpus.sim.world.people
+                if p.person_id == person_id)
 
 
 def _vendor_disputes(corpus, vendor):
@@ -129,13 +160,37 @@ def test_abstention_ids_provably_absent(corpus):
 
 
 def test_default_config_emits_15_plus_per_category(default_corpus):
-    """G1 done-when: default config, seed 42, >= 15 questions in each of
-    categories 1, 2, 3, 4, 6."""
+    """G1/G2 done-when: default config, seed 42, >= 15 questions in each of
+    categories 1 to 6."""
     from collections import Counter
     by_cat = Counter(q.category for q in default_corpus.questions)
-    assert set(by_cat) == {1, 2, 3, 4, 6}
-    for cat in (1, 2, 3, 4, 6):
+    assert set(by_cat) == {1, 2, 3, 4, 5, 6}
+    for cat in (1, 2, 3, 4, 5, 6):
         assert by_cat[cat] >= 15, (cat, by_cat)
+
+
+def test_category5_covers_the_mover(corpus):
+    """The moved person is the interesting case: they anchor at least 4 of
+    the category 5 questions, and their invoice list spans both employers
+    (two sending addresses at two domains)."""
+    movers = [p for p in corpus.sim.world.people if len(p.employments) > 1]
+    assert len(movers) == 1
+    mover = movers[0]
+    q5 = [q for q in corpus.questions if q.category == 5]
+    assert len(q5) >= 4
+    mover_qs = [q for q in q5 if q.params["person_id"] == mover.person_id]
+    assert len(mover_qs) >= 4
+    inv_senders = {m.from_address
+                   for m in corpus.render_result.messages
+                   if m.from_person == mover.person_id
+                   and any(d.startswith("INV-") for d in m.attachments)}
+    assert len(inv_senders) == 2
+    assert len({s.split("@", 1)[1] for s in inv_senders}) == 2
+
+
+def test_person_names_unique(corpus):
+    people = corpus.sim.world.people
+    assert len({p.name for p in people}) == len(people)
 
 
 def test_temporal_questions_straddle_boundaries(corpus):

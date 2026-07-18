@@ -1,18 +1,45 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
-To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0033 - safety gloves
-Date: Tue, 05 Mar 2024 17:28:00 +0000
-Message-ID: <MSG-000142@quarrypackaging.example>
-In-Reply-To: <MSG-000141@vantagefabrication.example>
-References: <MSG-000141@vantagefabrication.example>
+From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0034 - copper wire 12AWG
+Date: Tue, 19 Mar 2024 09:07:00 +0000
+Message-ID: <MSG-000142@yellowstonecomponents.example>
+In-Reply-To: <MSG-000134@yellowstonecomponents.example>
+References: <MSG-000133@vantagefabrication.example>
+ <MSG-000134@yellowstonecomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000142"
+
+--=-PTB-MSG-000142
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Carla,
+
+Please find attached invoice INV-2024-0045 against PO-2024-0034 for $14,478.1=
+0.
+Payment is due by 2024-05-18 per our NET60 terms.
+
+Thanks,
+Hugo
+Yellowstone Components
+
+--=-PTB-MSG-000142
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0045.txt"
 MIME-Version: 1.0
 
-Dear Hugo,
+INVOICE INV-2024-0045
+Date: 2024-03-19
+Party: Yellowstone Components
 
-Confirming receipt of PO-2024-0033; we will schedule this for delivery.
+Invoice number: INV-2024-0045
+Issuer: Yellowstone Components
+Bill to: Vantage Fabrication
+Issue date: 2024-03-19
+Due date: 2024-05-18
+Terms: NET60
+Total: $14,478.10
+Po ref: PO-2024-0034
 
-Kind regards,
-Jonas
-Quarry Packaging
+--=-PTB-MSG-000142--

@@ -1,44 +1,42 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
 To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0057 - safety gloves
-Date: Thu, 16 May 2024 09:00:00 +0000
-Message-ID: <MSG-000318@quarrypackaging.example>
-In-Reply-To: <MSG-000301@quarrypackaging.example>
-References:
- <MSG-000300@vantagefabrication.example> <MSG-000301@quarrypackaging.example>
+Subject: Re: Purchase order PO-2024-0043 - rubber gaskets
+Date: Wed, 05 Jun 2024 09:00:00 +0000
+Message-ID: <MSG-000318@bluepinematerials.example>
+In-Reply-To: <MSG-000306@bluepinematerials.example>
+References: <MSG-000291@vantagefabrication.example>
+ <MSG-000292@bluepinematerials.example>
+ <MSG-000302@vantagefabrication.example>
+ <MSG-000306@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000318"
 
 --=-PTB-MSG-000318
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Carla,
+Hi Carla,
 
-Please find attached invoice INV-2024-0077 against PO-2024-0057 for $658.50.
-Payment is due by 2024-06-15 per our NET30 terms.
+We have issued credit note CN-2024-0010 for $2,437.02 against invoice INV-202=
+4-0066 (returned items).
 
-Best,
-Jonas
-Quarry Packaging
+Thanks,
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000318
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0077.txt"
+Content-Disposition: attachment; filename="CN-2024-0010.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0077
-Date: 2024-05-16
-Party: Quarry Packaging
+CREDIT NOTE CN-2024-0010
+Date: 2024-06-05
+Party: Bluepine Materials
 
-Invoice number: INV-2024-0077
-Issuer: Quarry Packaging
-Bill to: Vantage Fabrication
-Issue date: 2024-05-16
-Due date: 2024-06-15
-Terms: NET30
-Total: $658.50
-Po ref: PO-2024-0057
+Credit note number: CN-2024-0010
+Invoice ref: INV-2024-0066
+Amount: $2,437.02
+Reason: returned items
 
 --=-PTB-MSG-000318--

@@ -1,42 +1,18 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Re: Purchase order PO-2024-0058 - safety gloves
-Date: Tue, 07 May 2024 09:00:00 +0000
-Message-ID: <MSG-000296@vantagefabrication.example>
-In-Reply-To: <MSG-000283@quarrypackaging.example>
-References:
- <MSG-000282@vantagefabrication.example> <MSG-000283@quarrypackaging.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000296"
-
---=-PTB-MSG-000296
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Dear Jonas,
-
-Please amend PO-2024-0058: quantity is now 135 units of safety gloves, revise=
-d order total $592.65.
-The amended purchase order is attached as PO-2024-0058-A1.
-
-Regards,
-Hugo
-Vantage Fabrication
-
---=-PTB-MSG-000296
+From: Kira Novak <kira.novak@deltaridgesupplies.example>
+To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0051 - LED panels
+Date: Tue, 28 May 2024 11:14:00 +0000
+Message-ID: <MSG-000296@deltaridgesupplies.example>
+In-Reply-To: <MSG-000295@vantagefabrication.example>
+References: <MSG-000295@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0058-A1.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0058-A1
-Date: 2024-05-07
-Party: Quarry Packaging
+Hi Hugo,
 
-Po number: PO-2024-0058
-Item: safety gloves
-Qty: 135
-Unit price: $4.39
-Total: $592.65
+Confirming receipt of PO-2024-0051; we will schedule this for delivery.
 
---=-PTB-MSG-000296--
+Best,
+Kira
+Delta Ridge Supplies

@@ -1,11 +1,12 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Re: Purchase order PO-2024-0041 - copper wire 12AWG
-Date: Sun, 17 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000177@vantagefabrication.example>
-In-Reply-To: <MSG-000169@yellowstonecomponents.example>
-References: <MSG-000168@vantagefabrication.example>
- <MSG-000169@yellowstonecomponents.example>
+From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0032 - LED panels
+Date: Thu, 04 Apr 2024 09:14:00 +0000
+Message-ID: <MSG-000177@deltaridgesupplies.example>
+In-Reply-To: <MSG-000164@vantagefabrication.example>
+References: <MSG-000156@vantagefabrication.example>
+ <MSG-000157@deltaridgesupplies.example>
+ <MSG-000164@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000177"
 
@@ -13,30 +14,33 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000177"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dear Hugo,
+Dear Carla,
 
-Please amend PO-2024-0041: quantity is now 145 units of copper wire 12AWG, re=
-vised order total $11,347.70.
-The amended purchase order is attached as PO-2024-0041-A1.
+Please find attached invoice INV-2024-0043 against PO-2024-0032-A1 for $2,514=
+.00.
+Payment is due by 2024-05-19 per our NET45 terms.
 
 Thanks,
-Hugo
-Vantage Fabrication
+Dev
+Yellowstone Components
 
 --=-PTB-MSG-000177
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0041-A1.txt"
+Content-Disposition: attachment; filename="INV-2024-0043.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0041-A1
-Date: 2024-03-17
-Party: Yellowstone Components
+INVOICE INV-2024-0043
+Date: 2024-04-04
+Party: Delta Ridge Supplies
 
-Po number: PO-2024-0041
-Item: copper wire 12AWG
-Qty: 145
-Unit price: $78.26
-Total: $11,347.70
+Invoice number: INV-2024-0043
+Issuer: Delta Ridge Supplies
+Bill to: Vantage Fabrication
+Issue date: 2024-04-04
+Due date: 2024-05-19
+Terms: NET45
+Total: $2,514.00
+Po ref: PO-2024-0032-A1
 
 --=-PTB-MSG-000177--

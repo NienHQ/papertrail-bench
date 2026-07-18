@@ -1,40 +1,18 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Dev Ueda <dev.ueda@granitedistribution.example>
-Subject: Invoice INV-2024-0143 from Vantage Fabrication
-Date: Mon, 05 Aug 2024 09:14:00 +0000
-Message-ID: <MSG-000504@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000504"
-
---=-PTB-MSG-000504
+From: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0098 - copper wire 12AWG
+Date: Tue, 20 Aug 2024 01:28:00 +0000
+Message-ID: <MSG-000504@yellowstonecomponents.example>
+In-Reply-To: <MSG-000503@vantagefabrication.example>
+References: <MSG-000503@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-
-Dev,
-
-Please find attached invoice INV-2024-0143 for $4,305.00.
-Payment is due by 2024-09-19 per our NET45 terms.
-
-Best,
-Uma
-Vantage Fabrication
-
---=-PTB-MSG-000504
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0143.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0143
-Date: 2024-08-05
-Party: Granite Distribution
+Hi Hugo,
 
-Invoice number: INV-2024-0143
-Issuer: Vantage Fabrication
-Bill to: Granite Distribution
-Issue date: 2024-08-05
-Due date: 2024-09-19
-Terms: NET45
-Total: $4,305.00
+Confirming receipt of PO-2024-0098; we will schedule this for delivery.
 
---=-PTB-MSG-000504--
+Kind regards,
+Dev
+Yellowstone Components

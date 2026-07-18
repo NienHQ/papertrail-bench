@@ -1,44 +1,19 @@
-From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0018 - shipping cartons
-Date: Sun, 18 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000067@vantageindustrial.example>
-In-Reply-To: <MSG-000062@vantageindustrial.example>
-References: <MSG-000061@oakfieldfabrication.example>
- <MSG-000062@vantageindustrial.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000067"
-
---=-PTB-MSG-000067
+From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@redwoodindustrial.example>
+Subject: Re: Purchase order PO-2024-0010 - safety gloves
+Date: Wed, 14 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000067@oakfieldfabrication.example>
+In-Reply-To: <MSG-000057@redwoodindustrial.example>
+References: <MSG-000049@oakfieldfabrication.example>
+ <MSG-000050@redwoodindustrial.example> <MSG-000057@redwoodindustrial.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-
-Hello Victor,
-
-Please find attached invoice INV-2024-0023 against PO-2024-0018 for $6,978.70.
-Payment is due by 2024-04-03 per our NET45 terms.
-
-Best,
-Quinn
-Vantage Industrial
-
---=-PTB-MSG-000067
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0023.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0023
-Date: 2024-02-18
-Party: Vantage Industrial
+Hello Iris,
 
-Invoice number: INV-2024-0023
-Issuer: Vantage Industrial
-Bill to: Oakfield Fabrication
-Issue date: 2024-02-18
-Due date: 2024-04-03
-Terms: NET45
-Total: $6,978.70
-Po ref: PO-2024-0018
+We dispute $607.28 on invoice INV-2024-0015: quantity mismatch.
 
---=-PTB-MSG-000067--
+Regards,
+Victor
+Oakfield Fabrication

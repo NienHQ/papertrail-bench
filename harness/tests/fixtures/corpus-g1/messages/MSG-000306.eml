@@ -1,40 +1,46 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Dev Ueda <dev.ueda@granitedistribution.example>
-Subject: Invoice INV-2024-0088 from Vantage Fabrication
-Date: Fri, 10 May 2024 09:14:00 +0000
-Message-ID: <MSG-000306@vantagefabrication.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0043 - rubber gaskets
+Date: Sat, 01 Jun 2024 09:00:00 +0000
+Message-ID: <MSG-000306@bluepinematerials.example>
+In-Reply-To: <MSG-000302@vantagefabrication.example>
+References: <MSG-000291@vantagefabrication.example>
+ <MSG-000292@bluepinematerials.example>
+ <MSG-000302@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000306"
 
 --=-PTB-MSG-000306
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Dear Dev,
+Carla,
 
-Please find attached invoice INV-2024-0088 for $890.00.
-Payment is due by 2024-07-09 per our NET60 terms.
+Please find attached invoice INV-2024-0066 against PO-2024-0043-A1 for $9,097=
+.30.
+Payment is due by 2024-06-16 per our NET15 terms.
 
-Thanks,
-Uma
-Vantage Fabrication
+Regards,
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000306
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0088.txt"
+Content-Disposition: attachment; filename="INV-2024-0066.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0088
-Date: 2024-05-10
-Party: Granite Distribution
+INVOICE INV-2024-0066
+Date: 2024-06-01
+Party: Bluepine Materials
 
-Invoice number: INV-2024-0088
-Issuer: Vantage Fabrication
-Bill to: Granite Distribution
-Issue date: 2024-05-10
-Due date: 2024-07-09
-Terms: NET60
-Total: $890.00
+Invoice number: INV-2024-0066
+Issuer: Bluepine Materials
+Bill to: Vantage Fabrication
+Issue date: 2024-06-01
+Due date: 2024-06-16
+Terms: NET15
+Total: $9,097.30
+Po ref: PO-2024-0043-A1
 
 --=-PTB-MSG-000306--

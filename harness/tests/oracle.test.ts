@@ -18,8 +18,15 @@ describe("oracle self-test (the done criterion)", () => {
     expect(report.categories.length).toBeGreaterThan(0);
     for (const c of report.categories) {
       expect(c.accuracy, `category ${String(c.category)} accuracy`).toBe(1);
-      expect(c.citationPrecision, `category ${String(c.category)} precision`).toBe(1);
-      expect(c.citationRecall, `category ${String(c.category)} recall`).toBe(1);
+      if (c.category === 6) {
+        // abstention: no evidence and no predicted citations, so the
+        // citation metrics are null rather than numbers
+        expect(c.citationPrecision).toBeNull();
+        expect(c.citationRecall).toBeNull();
+      } else {
+        expect(c.citationPrecision, `category ${String(c.category)} precision`).toBe(1);
+        expect(c.citationRecall, `category ${String(c.category)} recall`).toBe(1);
+      }
     }
     expect(report.citationPrecision).toBe(1);
     expect(report.citationRecall).toBe(1);
@@ -49,15 +56,15 @@ describe("oracle self-test (the done criterion)", () => {
 });
 
 describe("refuse adapter", () => {
-  it("scores 0 accuracy on categories 1 to 3 with zero citation recall", async () => {
+  it("scores 1.0 only on abstention, 0 elsewhere, with zero citation recall", async () => {
     const truth = loadTruthCorpus(FIXTURE);
     const report = await runAdapterWithTruth(new RefuseAdapter(), truth);
 
     for (const c of report.categories) {
-      expect([1, 2, 3]).toContain(c.category);
-      expect(c.accuracy, `category ${String(c.category)} accuracy`).toBe(0);
+      expect([1, 2, 3, 4, 5, 6]).toContain(c.category);
+      expect(c.accuracy, `category ${String(c.category)} accuracy`).toBe(c.category === 6 ? 1 : 0);
       expect(c.citationPrecision).toBeNull();
-      expect(c.citationRecall).toBe(0);
+      expect(c.citationRecall).toBe(c.category === 6 ? null : 0);
     }
     expect(report.citationPrecision).toBeNull();
     expect(report.citationRecall).toBe(0);

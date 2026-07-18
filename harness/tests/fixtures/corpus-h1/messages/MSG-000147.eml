@@ -1,17 +1,46 @@
 From: Iris Vance <iris.vance@redwoodindustrial.example>
 To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Payment terms review - Oakfield Fabrication
-Date: Sat, 06 Apr 2024 09:00:00 +0000
+Subject: Re: Purchase order PO-2024-0021 - safety gloves
+Date: Sun, 31 Mar 2024 09:00:00 +0000
 Message-ID: <MSG-000147@redwoodindustrial.example>
+In-Reply-To: <MSG-000131@oakfieldfabrication.example>
+References: <MSG-000127@oakfieldfabrication.example>
+ <MSG-000128@redwoodindustrial.example>
+ <MSG-000131@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000147"
+
+--=-PTB-MSG-000147
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-MIME-Version: 1.0
 
 Victor,
 
-Given our trading volume this year, we would like to revise payment terms fro=
-m 60 to 15 days going forward.
+Please find attached invoice INV-2024-0032 against PO-2024-0021-A1 for $864.0=
+5.
+Payment is due by 2024-05-30 per our NET60 terms.
 
 Regards,
 Iris
-Redwood Industrial
+Yellowstone Supplies
+
+--=-PTB-MSG-000147
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0032.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0032
+Date: 2024-03-31
+Party: Redwood Industrial
+
+Invoice number: INV-2024-0032
+Issuer: Redwood Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-03-31
+Due date: 2024-05-30
+Terms: NET60
+Total: $864.05
+Po ref: PO-2024-0021-A1
+
+--=-PTB-MSG-000147--

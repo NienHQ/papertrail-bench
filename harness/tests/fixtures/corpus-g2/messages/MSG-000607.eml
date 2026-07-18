@@ -1,0 +1,46 @@
+From: Mona Yates <mona.yates@cardinalcomponents.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0108 - hex bolts M8
+Date: Tue, 20 Aug 2024 09:00:00 +0000
+Message-ID: <MSG-000607@cardinalcomponents.example>
+In-Reply-To: <MSG-000587@junctionfabrication.example>
+References: <MSG-000568@junctionfabrication.example>
+ <MSG-000569@cardinalcomponents.example>
+ <MSG-000587@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000607"
+
+--=-PTB-MSG-000607
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Ava,
+
+Please find attached invoice INV-2024-0141 against PO-2024-0108-A1 for $458.7=
+5.
+Payment is due by 2024-09-19 per our NET30 terms.
+
+Best,
+Mona
+Cardinal Components
+
+--=-PTB-MSG-000607
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0141.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0141
+Date: 2024-08-20
+Party: Cardinal Components
+
+Invoice number: INV-2024-0141
+Issuer: Cardinal Components
+Bill to: Junction Fabrication
+Issue date: 2024-08-20
+Due date: 2024-09-19
+Terms: NET30
+Total: $458.75
+Po ref: PO-2024-0108-A1
+
+--=-PTB-MSG-000607--

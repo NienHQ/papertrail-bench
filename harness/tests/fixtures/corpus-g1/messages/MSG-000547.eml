@@ -1,42 +1,21 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Re: Purchase order PO-2024-0094 - rubber gaskets
-Date: Tue, 20 Aug 2024 09:07:00 +0000
-Message-ID: <MSG-000547@vantagefabrication.example>
-In-Reply-To: <MSG-000530@bluepinematerials.example>
-References: <MSG-000529@vantagefabrication.example>
- <MSG-000530@bluepinematerials.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000547"
-
---=-PTB-MSG-000547
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0091 - safety gloves
+Date: Wed, 11 Sep 2024 09:00:00 +0000
+Message-ID: <MSG-000547@quarrypackaging.example>
+In-Reply-To: <MSG-000535@vantagefabrication.example>
+References: <MSG-000514@vantagefabrication.example>
+ <MSG-000515@quarrypackaging.example> <MSG-000530@quarrypackaging.example>
+ <MSG-000535@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-
-Hello Rosa,
-
-Please amend PO-2024-0094: quantity is now 135 units of rubber gaskets, revis=
-ed order total $8,469.90.
-The amended purchase order is attached as PO-2024-0094-A1.
-
-Kind regards,
-Hugo
-Vantage Fabrication
-
---=-PTB-MSG-000547
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0094-A1.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0094-A1
-Date: 2024-08-20
-Party: Bluepine Materials
+Carla,
 
-Po number: PO-2024-0094
-Item: rubber gaskets
-Qty: 135
-Unit price: $62.74
-Total: $8,469.90
+We accept the dispute on INV-2024-0131; credit note CN-2024-0015 for $56.69 f=
+ollows.
 
---=-PTB-MSG-000547--
+Regards,
+Jonas
+Quarry Packaging

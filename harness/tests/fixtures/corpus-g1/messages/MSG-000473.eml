@@ -1,44 +1,42 @@
-From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0083 - rubber gaskets
-Date: Sat, 20 Jul 2024 09:07:00 +0000
-Message-ID: <MSG-000473@bluepinematerials.example>
-In-Reply-To: <MSG-000462@bluepinematerials.example>
-References: <MSG-000461@vantagefabrication.example>
- <MSG-000462@bluepinematerials.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+Subject: Re: Purchase order PO-2024-0083 - copper wire 12AWG
+Date: Fri, 02 Aug 2024 09:00:00 +0000
+Message-ID: <MSG-000473@vantagefabrication.example>
+In-Reply-To: <MSG-000465@yellowstonecomponents.example>
+References: <MSG-000464@vantagefabrication.example>
+ <MSG-000465@yellowstonecomponents.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000473"
 
 --=-PTB-MSG-000473
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Carla,
+Hello Dev,
 
-Please find attached invoice INV-2024-0112 against PO-2024-0083 for $941.10.
-Payment is due by 2024-08-04 per our NET15 terms.
+Please amend PO-2024-0083: quantity is now 65 units of copper wire 12AWG, rev=
+ised order total $5,086.90.
+The amended purchase order is attached as PO-2024-0083-A1.
 
-Best,
-Rosa
-Bluepine Materials
+Best regards,
+Hugo
+Vantage Fabrication
 
 --=-PTB-MSG-000473
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0112.txt"
+Content-Disposition: attachment; filename="PO-2024-0083-A1.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0112
-Date: 2024-07-20
-Party: Bluepine Materials
+PURCHASE ORDER PO-2024-0083-A1
+Date: 2024-08-02
+Party: Yellowstone Components
 
-Invoice number: INV-2024-0112
-Issuer: Bluepine Materials
-Bill to: Vantage Fabrication
-Issue date: 2024-07-20
-Due date: 2024-08-04
-Terms: NET15
-Total: $941.10
-Po ref: PO-2024-0083
+Po number: PO-2024-0083
+Item: copper wire 12AWG
+Qty: 65
+Unit price: $78.26
+Total: $5,086.90
 
 --=-PTB-MSG-000473--

@@ -1,11 +1,8 @@
-From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0029 - rubber gaskets
-Date: Sun, 24 Mar 2024 09:07:00 +0000
-Message-ID: <MSG-000195@bluepinematerials.example>
-In-Reply-To: <MSG-000181@bluepinematerials.example>
-References: <MSG-000180@vantagefabrication.example>
- <MSG-000181@bluepinematerials.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+Subject: Purchase order PO-2024-0041 - copper wire 12AWG
+Date: Thu, 11 Apr 2024 09:14:00 +0000
+Message-ID: <MSG-000195@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000195"
 
@@ -13,33 +10,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000195"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Carla,
+Hugo,
 
-Please find attached invoice INV-2024-0040 against PO-2024-0029 for $10,038.4=
-0.
-Payment is due by 2024-04-08 per our NET15 terms.
+Please find attached purchase order PO-2024-0041 for 60 units of copper wire =
+12AWG at $78.26 per unit.
+The order total is $4,695.60.
 
 Kind regards,
-Rosa
-Bluepine Materials
+Hugo
+Vantage Fabrication
 
 --=-PTB-MSG-000195
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0040.txt"
+Content-Disposition: attachment; filename="PO-2024-0041.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0040
-Date: 2024-03-24
-Party: Bluepine Materials
+PURCHASE ORDER PO-2024-0041
+Date: 2024-04-11
+Party: Yellowstone Components
 
-Invoice number: INV-2024-0040
-Issuer: Bluepine Materials
-Bill to: Vantage Fabrication
-Issue date: 2024-03-24
-Due date: 2024-04-08
-Terms: NET15
-Total: $10,038.40
-Po ref: PO-2024-0029
+Po number: PO-2024-0041
+Item: copper wire 12AWG
+Qty: 60
+Unit price: $78.26
+Total: $4,695.60
 
 --=-PTB-MSG-000195--

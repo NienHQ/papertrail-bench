@@ -1,44 +1,40 @@
-From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0013 - LED panels
-Date: Sun, 10 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000097@yellowstonesupplies.example>
-In-Reply-To: <MSG-000090@yellowstonesupplies.example>
-References: <MSG-000068@oakfieldfabrication.example>
- <MSG-000069@yellowstonesupplies.example>
- <MSG-000073@oakfieldfabrication.example>
- <MSG-000082@oakfieldfabrication.example>
- <MSG-000087@oakfieldfabrication.example>
- <MSG-000090@yellowstonesupplies.example>
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Grace Whitfield <grace.whitfield@quarrytrading.example>
+Subject: Invoice INV-2024-0042 from Oakfield Fabrication
+Date: Fri, 01 Mar 2024 09:07:00 +0000
+Message-ID: <MSG-000097@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000097"
 
 --=-PTB-MSG-000097
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Dear Victor,
+Grace,
 
-We have issued credit note CN-2024-0002 for $1,204.56 against invoice INV-202=
-4-0018 (damaged goods).
+Please find attached invoice INV-2024-0042 for $6,180.00.
+Payment is due by 2024-03-16 per our NET15 terms.
 
 Regards,
-Ava
-Yellowstone Supplies
+Tara
+Oakfield Fabrication
 
 --=-PTB-MSG-000097
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0002.txt"
+Content-Disposition: attachment; filename="INV-2024-0042.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0002
-Date: 2024-03-10
-Party: Yellowstone Supplies
+INVOICE INV-2024-0042
+Date: 2024-03-01
+Party: Quarry Trading
 
-Credit note number: CN-2024-0002
-Invoice ref: INV-2024-0018
-Amount: $1,204.56
-Reason: damaged goods
+Invoice number: INV-2024-0042
+Issuer: Oakfield Fabrication
+Bill to: Quarry Trading
+Issue date: 2024-03-01
+Due date: 2024-03-16
+Terms: NET15
+Total: $6,180.00
 
 --=-PTB-MSG-000097--

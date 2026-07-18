@@ -1,7 +1,9 @@
-# Internal baselines: B0 scorecards
+# Internal baselines: scorecards
 
-Milestone H2. Three reference systems live in `harness/src/baselines/` and
-are registered as built-in adapters in the harness CLI:
+Milestone H2, refreshed after G2 (six categories live; earlier revisions
+of this file predate categories 4 to 6). Three reference systems live in
+`harness/src/baselines/` and are registered as built-in adapters in the
+harness CLI:
 
 - `bm25`: sqlite FTS5 (porter tokenizer) over message-body and attachment
   chunks; the query is an OR of stopword-filtered question tokens; answers
@@ -16,83 +18,61 @@ are registered as built-in adapters in the harness CLI:
 
 All three ingest only `messages/` and `attachments/` (the SystemCorpus).
 They never read ground truth; a test greps their sources to prove it.
-`oracle` (answers straight from ground truth) and `refuse` (answers null to
-everything) bracket the table from above and below.
+`oracle` (answers straight from ground truth) brackets the table from
+above; a refuse-everything system would score 100 on category 6 and 0
+everywhere else.
 
-Accuracy is per category (mean per-question score). Citation precision and
-recall are micro-averaged over all questions: precision is the share of
-predicted citations that hit the question's evidence set, recall is the
-share of evidence items covered by at least one predicted citation. The
-harness reports both per category; the tables below show category accuracy
-plus the overall citation columns.
+## Fixture corpus-h1 (seed 11, 323 messages, 21 questions)
 
-## Committed fixture: harness/tests/fixtures/corpus-h1
+Reproduce:
 
-Seed 11, 295 messages, 24 questions (categories 1 to 3: n = 12, 8, 4).
-
-| Adapter | Cat 1 acc | Cat 2 acc | Cat 3 acc | Citation P | Citation R |
-|---|---:|---:|---:|---:|---:|
-| oracle | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 |
-| refuse | 0.0 | 0.0 | 0.0 | n/a | 0.0 |
-| bm25 | 100.0 | 100.0 | 100.0 | 85.4 | 74.5 |
-| naive-vector | 25.0 | 75.0 | 100.0 | 64.5 | 42.6 |
-| hybrid-rrf | 100.0 | 100.0 | 100.0 | 100.0 | 74.5 |
-
-Reproduction (the corpus is committed; the first command regenerates the
-identical fixture from its manifest config):
-
-```
+```sh
 cd generator && .venv/bin/python -m papertrail generate --seed 11 --months 6 \
-  --vendors 3 --customers 2 --questions 24 --out ../harness/tests/fixtures/corpus-h1
-cd harness && pnpm build && node dist/cli.js \
-  --corpus tests/fixtures/corpus-h1 --adapter bm25
+  --vendors 3 --customers 2 --questions 24 --out /tmp/corpus-h1
+cd ../harness && pnpm build && node dist/cli.js --corpus /tmp/corpus-h1 --adapter bm25
 ```
 
-## Regenerated default corpus (seed 42, not committed)
+| Adapter | Cat 1 | Cat 2 | Cat 3 | Cat 4 | Cat 5 | Cat 6 | Cit. P | Cit. R |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| oracle | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 |
+| bm25 | 100.0 | 100.0 | 100.0 | 0.0 | 0.0 | 100.0 | 58.8 | 27.8 |
+| naive-vector | 50.0 | 62.5 | 100.0 | 0.0 | 0.0 | 100.0 | 52.0 | 18.1 |
+| hybrid-rrf | 100.0 | 100.0 | 100.0 | 0.0 | 0.0 | 100.0 | 71.9 | 31.9 |
 
-Default config: 1712 messages, 50 questions (n = 18, 16, 16).
+## Default corpus (seed 42, 1672 messages, 96 questions)
 
-| Adapter | Cat 1 acc | Cat 2 acc | Cat 3 acc | Citation P | Citation R |
-|---|---:|---:|---:|---:|---:|
-| oracle | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 |
-| refuse | 0.0 | 0.0 | 0.0 | n/a | 0.0 |
-| bm25 | 100.0 | 100.0 | 100.0 | 87.9 | 81.6 |
-| naive-vector | 0.0 | 9.4 | 75.0 | 29.4 | 15.3 |
-| hybrid-rrf | 100.0 | 100.0 | 93.8 | 98.8 | 80.6 |
+Reproduce:
 
-Reproduction:
-
-```
+```sh
 cd generator && .venv/bin/python -m papertrail generate --seed 42 --out /tmp/corpus-b0
-cd harness && pnpm build && node dist/cli.js --corpus /tmp/corpus-b0 --adapter bm25
+cd ../harness && pnpm build && node dist/cli.js --corpus /tmp/corpus-b0 --adapter bm25
 ```
 
-Swap `--adapter` for `oracle`, `refuse`, `naive-vector`, or `hybrid-rrf`
-for the other rows; add `--out report.json` for the full per-question JSON.
+| Adapter | Cat 1 | Cat 2 | Cat 3 | Cat 4 | Cat 5 | Cat 6 | Cit. P | Cit. R |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| oracle | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 |
+| bm25 | 100.0 | 100.0 | 100.0 | 0.0 | 0.0 | 100.0 | 59.3 | 15.3 |
+| naive-vector | 6.3 | 31.3 | 81.3 | 0.0 | 0.0 | 100.0 | 27.5 | 5.1 |
+| hybrid-rrf | 100.0 | 100.0 | 100.0 | 0.0 | 0.0 | 100.0 | 65.2 | 15.8 |
 
-## Analysis
+## Reading the table
 
-bm25 beats naive-vector on category 1, as the plan expected: 100.0 vs 25.0
-on the fixture and 100.0 vs 0.0 on the default corpus. Document ids like
-INV-2024-0074 are exact-match tokens, and FTS5 keeps them discriminative
-(the quoted id becomes a phrase query that only the right invoice message
-and its attachment satisfy). The 64-dim hash embedder destroys exactly that
-signal: every id collapses into a handful of collision-prone dimensions, so
-cosine ranking cannot tell one invoice number from another, and the gap
-widens on the larger corpus (18x more invoices competing for the same 64
-dims). naive-vector stays respectable only on category 3, where the
-question shares many ordinary words (vendor name, "payment terms") with the
-right statements. hybrid-rrf tracks bm25 almost everywhere and repairs most
-of bm25's citation precision losses (spurious amendment-chunk citations get
-fused out of the top ranks), at the cost of one category 3 miss on the
-default corpus where fusion pushed the deciding statement out of the top
-10.
-
-Two things to read off the citation columns: the refusal row shows the
-floor behavior (null answers, no citations, so precision is undefined and
-recall is 0, and every accuracy is 0 until an abstention category exists);
-and the baselines' category 1 citation recall sits near 50 percent by
-construction, because they cite only the message a value was parsed from
-while the evidence set also contains the attachment's doc field. Answer
-accuracy and citation quality really are separate axes, which is the point
-of reporting them separately.
+- Categories 1 to 3 saturate for keyword systems: document ids are
+  exact-match tokens, so bm25 (and hybrid, which contains it) answer
+  everything. That was the B0 state of the bench and is why categories
+  4 to 6 exist.
+- Category 4 (cross-thread aggregation) and category 5 (entity
+  resolution across addresses and employers) drop every baseline to
+  zero: no single chunk contains the answer, and address-as-identity
+  retrieval cannot follow a person across domains. These are the
+  categories that separate engines from search boxes.
+- The baselines' 100 on category 6 (abstention) is partly accidental:
+  they refuse whenever no extraction family matches, which happens to be
+  correct for never-issued ids. Score abstention together with the other
+  categories or it rewards timidity.
+- bm25 beats naive-vector on category 1 on both corpora (100 vs 50 and
+  100 vs 6.3): exact identifiers drown in a weak hash embedding space.
+  Fusion recovers bm25's accuracy and improves citation precision.
+- Citation precision and recall stay well under oracle for every
+  baseline even where accuracy is 100: finding the right answer is not
+  the same as citing all of its evidence.

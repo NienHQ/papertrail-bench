@@ -1,19 +1,44 @@
-From: Jonas Drake <jonas.drake@silvertontrading.example>
-To: Tara Drake <tara.drake@oakfieldfabrication.example>
-Subject: Re: Invoice INV-2024-0067 from Oakfield Fabrication
-Date: Mon, 10 Jun 2024 09:07:00 +0000
-Message-ID: <MSG-000245@silvertontrading.example>
-In-Reply-To: <MSG-000206@oakfieldfabrication.example>
-References: <MSG-000206@oakfieldfabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+From: Victor Tanaka <victor.tanaka@redwoodindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0038 - safety gloves
+Date: Sat, 25 May 2024 09:00:00 +0000
+Message-ID: <MSG-000245@redwoodindustrial.example>
+In-Reply-To: <MSG-000233@redwoodindustrial.example>
+References: <MSG-000232@oakfieldfabrication.example>
+ <MSG-000233@redwoodindustrial.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000245"
 
-Dear Tara,
+--=-PTB-MSG-000245
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
 
-Payment of $7,300.00 for invoice INV-2024-0067 was sent today by bank transfe=
-r.
+Dear Victor,
+
+Please find attached invoice INV-2024-0058 against PO-2024-0038 for $2,199.40.
+Payment is due by 2024-06-09 per our NET15 terms.
 
 Regards,
-Jonas
-Silverton Trading
+Victor
+Redwood Industrial
+
+--=-PTB-MSG-000245
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0058.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0058
+Date: 2024-05-25
+Party: Redwood Industrial
+
+Invoice number: INV-2024-0058
+Issuer: Redwood Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-05-25
+Due date: 2024-06-09
+Terms: NET15
+Total: $2,199.40
+Po ref: PO-2024-0038
+
+--=-PTB-MSG-000245--

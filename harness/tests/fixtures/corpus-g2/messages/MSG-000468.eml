@@ -1,0 +1,40 @@
+From: Kira Novak <knovak@silvertonsupplies.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0083 - steel brackets
+Date: Sat, 29 Jun 2024 09:07:00 +0000
+Message-ID: <MSG-000468@silvertonsupplies.example>
+In-Reply-To: <MSG-000463@silvertonsupplies.example>
+References: <MSG-000437@junctionfabrication.example>
+ <MSG-000438@silvertonsupplies.example> <MSG-000463@silvertonsupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000468"
+
+--=-PTB-MSG-000468
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Ava,
+
+We have issued credit note CN-2024-0016 for $1,162.34 against invoice INV-202=
+4-0106 (short delivery).
+
+Best,
+Kira
+Silverton Supplies
+
+--=-PTB-MSG-000468
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0016.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0016
+Date: 2024-06-29
+Party: Silverton Supplies
+
+Credit note number: CN-2024-0016
+Invoice ref: INV-2024-0106
+Amount: $1,162.34
+Reason: short delivery
+
+--=-PTB-MSG-000468--

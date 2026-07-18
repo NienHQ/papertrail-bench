@@ -22,7 +22,24 @@ Claim tasks here per the plan.
 
 ## In progress
 
-- G2 category 5 entity resolution (claimed 2026-07-18)
+(nothing claimed)
+
+## 2026-07-18 - task G2 done: category 5 entity resolution
+
+- Person model gains employment periods; CONTACT_CHANGED (same person,
+  new address, announced once) and PERSON_MOVED (person changes vendor,
+  farewell from the old address, replacement hired, new domain just
+  starts appearing). All renderer scripts are date-aware senders now.
+- Category 5 questions (PO count / invoice list / address-at across a
+  person, independent recomputes, name-uniqueness guard). Default
+  category_counts now 16 x 6 = 96 questions.
+- Fixtures regenerated (new events shift the rng stream): corpus-h1 and
+  corpus-g1 rebuilt with recorded flags, consumers updated; new
+  corpus-g2 fixture (853 messages, 89 questions, one person move).
+- Done criterion: oracle 100 on category 5; bm25 scores 0.0 there while
+  holding 100 on category 1. Baselines doc refreshed: every baseline is
+  at 0 on categories 4 and 5 on both corpora; the bench now separates
+  engines from search boxes. Generator 22 tests, harness 70 tests.
 
 ## 2026-07-18 - task G1 done: categories 4 and 6
 

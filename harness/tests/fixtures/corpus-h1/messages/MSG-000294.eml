@@ -1,20 +1,43 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-Subject: Re: Purchase order PO-2024-0049 - shipping cartons
-Date: Thu, 08 Aug 2024 09:00:00 +0000
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Quinn Tanaka <qtanaka@vantageindustrial.example>
+Subject: Re: Purchase order PO-2024-0052 - shipping cartons
+Date: Fri, 21 Jun 2024 09:07:00 +0000
 Message-ID: <MSG-000294@oakfieldfabrication.example>
-In-Reply-To: <MSG-000271@vantageindustrial.example>
-References: <MSG-000260@oakfieldfabrication.example>
- <MSG-000261@vantageindustrial.example> <MSG-000271@vantageindustrial.example>
+In-Reply-To: <MSG-000284@oakfieldfabrication.example>
+References: <MSG-000271@oakfieldfabrication.example>
+ <MSG-000272@vantageindustrial.example>
+ <MSG-000284@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000294"
+
+--=-PTB-MSG-000294
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
+
+Hi Quinn,
+
+Please amend PO-2024-0052: quantity is now 5 units of shipping cartons, revis=
+ed order total $367.30.
+The amended purchase order is attached as PO-2024-0052-A2.
+
+Best regards,
+Quinn
+Oakfield Fabrication
+
+--=-PTB-MSG-000294
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0052-A2.txt"
 MIME-Version: 1.0
 
-Dear Quinn,
+PURCHASE ORDER PO-2024-0052-A2
+Date: 2024-06-21
+Party: Vantage Industrial
 
-Payment of $2,571.10 for invoice INV-2024-0075 was sent today by bank transfe=
-r.
+Po number: PO-2024-0052
+Item: shipping cartons
+Qty: 5
+Unit price: $73.46
+Total: $367.30
 
-Best,
-Victor
-Oakfield Fabrication
+--=-PTB-MSG-000294--

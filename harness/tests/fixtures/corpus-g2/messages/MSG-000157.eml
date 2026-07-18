@@ -1,0 +1,40 @@
+From: Ben Okafor <ben.okafor@junctionfabrication.example>
+To: Grace Novak <grace.novak@quarrydistribution.example>
+Subject: Invoice INV-2024-0056 from Junction Fabrication
+Date: Fri, 08 Mar 2024 09:21:00 +0000
+Message-ID: <MSG-000157@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000157"
+
+--=-PTB-MSG-000157
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Grace,
+
+Please find attached invoice INV-2024-0056 for $8,915.00.
+Payment is due by 2024-03-23 per our NET15 terms.
+
+Best,
+Ben
+Junction Fabrication
+
+--=-PTB-MSG-000157
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0056.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0056
+Date: 2024-03-08
+Party: Quarry Distribution
+
+Invoice number: INV-2024-0056
+Issuer: Junction Fabrication
+Bill to: Quarry Distribution
+Issue date: 2024-03-08
+Due date: 2024-03-23
+Terms: NET15
+Total: $8,915.00
+
+--=-PTB-MSG-000157--

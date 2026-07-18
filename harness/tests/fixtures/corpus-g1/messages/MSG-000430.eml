@@ -1,22 +1,44 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Re: Purchase order PO-2024-0069 - rubber gaskets
-Date: Thu, 04 Jul 2024 09:00:00 +0000
-Message-ID: <MSG-000430@vantagefabrication.example>
-In-Reply-To: <MSG-000398@bluepinematerials.example>
-References: <MSG-000375@vantagefabrication.example>
- <MSG-000376@bluepinematerials.example>
- <MSG-000388@vantagefabrication.example>
- <MSG-000398@bluepinematerials.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0073 - rubber gaskets
+Date: Sun, 14 Jul 2024 09:00:00 +0000
+Message-ID: <MSG-000430@bluepinematerials.example>
+In-Reply-To: <MSG-000416@bluepinematerials.example>
+References: <MSG-000415@vantagefabrication.example>
+ <MSG-000416@bluepinematerials.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000430"
 
-Hi Rosa,
+--=-PTB-MSG-000430
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
 
-Payment of $4,078.10 for invoice INV-2024-0094 was sent today by bank transfe=
-r.
+Hi Carla,
+
+Please find attached invoice INV-2024-0107 against PO-2024-0073 for $941.10.
+Payment is due by 2024-07-29 per our NET15 terms.
 
 Regards,
-Carla
-Vantage Fabrication
+Rosa
+Bluepine Materials
+
+--=-PTB-MSG-000430
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0107.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0107
+Date: 2024-07-14
+Party: Bluepine Materials
+
+Invoice number: INV-2024-0107
+Issuer: Bluepine Materials
+Bill to: Vantage Fabrication
+Issue date: 2024-07-14
+Due date: 2024-07-29
+Terms: NET15
+Total: $941.10
+Po ref: PO-2024-0073
+
+--=-PTB-MSG-000430--

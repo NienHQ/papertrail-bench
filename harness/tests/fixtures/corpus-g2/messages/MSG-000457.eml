@@ -1,0 +1,43 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Carla Okafor <carla.okafor@yellowstonematerials.example>
+Subject: Re: Purchase order PO-2024-0086 - pallet wrap
+Date: Mon, 24 Jun 2024 09:14:00 +0000
+Message-ID: <MSG-000457@junctionfabrication.example>
+In-Reply-To: <MSG-000445@junctionfabrication.example>
+References: <MSG-000439@junctionfabrication.example>
+ <MSG-000440@yellowstonematerials.example>
+ <MSG-000445@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000457"
+
+--=-PTB-MSG-000457
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Carla,
+
+Please amend PO-2024-0086: quantity is now 180 units of pallet wrap, revised =
+order total $10,553.40.
+The amended purchase order is attached as PO-2024-0086-A2.
+
+Best,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000457
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0086-A2.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0086-A2
+Date: 2024-06-24
+Party: Yellowstone Materials
+
+Po number: PO-2024-0086
+Item: pallet wrap
+Qty: 180
+Unit price: $58.63
+Total: $10,553.40
+
+--=-PTB-MSG-000457--

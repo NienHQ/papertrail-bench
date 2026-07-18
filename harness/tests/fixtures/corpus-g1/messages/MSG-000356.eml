@@ -1,7 +1,7 @@
 From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Purchase order PO-2024-0075 - LED panels
-Date: Mon, 03 Jun 2024 09:21:00 +0000
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Purchase order PO-2024-0060 - rubber gaskets
+Date: Mon, 17 Jun 2024 09:00:00 +0000
 Message-ID: <MSG-000356@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000356"
@@ -10,11 +10,11 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000356"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dev,
+Rosa,
 
-Please find attached purchase order PO-2024-0075 for 105 units of LED panels =
-at $50.28 per unit.
-The order total is $5,279.40.
+Please find attached purchase order PO-2024-0060 for 75 units of rubber gaske=
+ts at $62.74 per unit.
+The order total is $4,705.50.
 
 Best regards,
 Hugo
@@ -23,17 +23,17 @@ Vantage Fabrication
 --=-PTB-MSG-000356
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0075.txt"
+Content-Disposition: attachment; filename="PO-2024-0060.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0075
-Date: 2024-06-03
-Party: Delta Ridge Supplies
+PURCHASE ORDER PO-2024-0060
+Date: 2024-06-17
+Party: Bluepine Materials
 
-Po number: PO-2024-0075
-Item: LED panels
-Qty: 105
-Unit price: $50.28
-Total: $5,279.40
+Po number: PO-2024-0060
+Item: rubber gaskets
+Qty: 75
+Unit price: $62.74
+Total: $4,705.50
 
 --=-PTB-MSG-000356--

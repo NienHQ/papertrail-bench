@@ -1,21 +1,42 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0059 - safety gloves
-Date: Tue, 04 Jun 2024 09:14:00 +0000
-Message-ID: <MSG-000362@quarrypackaging.example>
-In-Reply-To: <MSG-000347@vantagefabrication.example>
-References: <MSG-000323@vantagefabrication.example>
- <MSG-000324@quarrypackaging.example> <MSG-000330@quarrypackaging.example>
- <MSG-000347@vantagefabrication.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Jonas Sato <jonas.sato@quarrypackaging.example>
+Subject: Re: Purchase order PO-2024-0064 - safety gloves
+Date: Wed, 19 Jun 2024 09:00:00 +0000
+Message-ID: <MSG-000362@vantagefabrication.example>
+In-Reply-To: <MSG-000344@quarrypackaging.example>
+References:
+ <MSG-000343@vantagefabrication.example> <MSG-000344@quarrypackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000362"
+
+--=-PTB-MSG-000362
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-MIME-Version: 1.0
 
-Hello Carla,
+Hello Jonas,
 
-We accept the dispute on INV-2024-0079; credit note CN-2024-0012 for $51.23 f=
-ollows.
+Please amend PO-2024-0064: quantity is now 115 units of safety gloves, revise=
+d order total $504.85.
+The amended purchase order is attached as PO-2024-0064-A1.
 
 Best regards,
-Jonas
-Quarry Packaging
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000362
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0064-A1.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0064-A1
+Date: 2024-06-19
+Party: Quarry Packaging
+
+Po number: PO-2024-0064
+Item: safety gloves
+Qty: 115
+Unit price: $4.39
+Total: $504.85
+
+--=-PTB-MSG-000362--

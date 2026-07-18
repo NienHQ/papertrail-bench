@@ -1,8 +1,11 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Dev Ueda <dev.ueda@granitedistribution.example>
-Subject: Invoice INV-2024-0034 from Vantage Fabrication
-Date: Mon, 26 Feb 2024 09:07:00 +0000
-Message-ID: <MSG-000123@vantagefabrication.example>
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0027 - safety gloves
+Date: Sun, 10 Mar 2024 09:07:00 +0000
+Message-ID: <MSG-000123@quarrypackaging.example>
+In-Reply-To: <MSG-000110@quarrypackaging.example>
+References:
+ <MSG-000109@vantagefabrication.example> <MSG-000110@quarrypackaging.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000123"
 
@@ -10,31 +13,32 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000123"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 
-Hello Dev,
+Hello Carla,
 
-Please find attached invoice INV-2024-0034 for $2,990.00.
-Payment is due by 2024-04-26 per our NET60 terms.
+Please find attached invoice INV-2024-0038 against PO-2024-0027 for $153.65.
+Payment is due by 2024-04-24 per our NET45 terms.
 
 Regards,
-Uma
-Vantage Fabrication
+Jonas
+Quarry Packaging
 
 --=-PTB-MSG-000123
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0034.txt"
+Content-Disposition: attachment; filename="INV-2024-0038.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0034
-Date: 2024-02-26
-Party: Granite Distribution
+INVOICE INV-2024-0038
+Date: 2024-03-10
+Party: Quarry Packaging
 
-Invoice number: INV-2024-0034
-Issuer: Vantage Fabrication
-Bill to: Granite Distribution
-Issue date: 2024-02-26
-Due date: 2024-04-26
-Terms: NET60
-Total: $2,990.00
+Invoice number: INV-2024-0038
+Issuer: Quarry Packaging
+Bill to: Vantage Fabrication
+Issue date: 2024-03-10
+Due date: 2024-04-24
+Terms: NET45
+Total: $153.65
+Po ref: PO-2024-0027
 
 --=-PTB-MSG-000123--

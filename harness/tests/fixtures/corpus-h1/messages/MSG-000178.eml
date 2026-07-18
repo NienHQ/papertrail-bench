@@ -1,19 +1,40 @@
-From: Jonas Drake <jonas.drake@silvertontrading.example>
-To: Tara Drake <tara.drake@oakfieldfabrication.example>
-Subject: Re: Invoice INV-2024-0054 from Oakfield Fabrication
-Date: Sun, 28 Apr 2024 09:14:00 +0000
-Message-ID: <MSG-000178@silvertontrading.example>
-In-Reply-To: <MSG-000139@oakfieldfabrication.example>
-References: <MSG-000139@oakfieldfabrication.example>
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Grace Whitfield <grace.whitfield@quarrytrading.example>
+Subject: Invoice INV-2024-0054 from Oakfield Fabrication
+Date: Tue, 16 Apr 2024 09:14:00 +0000
+Message-ID: <MSG-000178@oakfieldfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000178"
+
+--=-PTB-MSG-000178
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
+
+Hello Grace,
+
+Please find attached invoice INV-2024-0054 for $7,300.00.
+Payment is due by 2024-05-01 per our NET15 terms.
+
+Best,
+Tara
+Oakfield Fabrication
+
+--=-PTB-MSG-000178
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0054.txt"
 MIME-Version: 1.0
 
-Tara,
+INVOICE INV-2024-0054
+Date: 2024-04-16
+Party: Quarry Trading
 
-Payment of $7,910.00 for invoice INV-2024-0054 was sent today by bank transfe=
-r.
+Invoice number: INV-2024-0054
+Issuer: Oakfield Fabrication
+Bill to: Quarry Trading
+Issue date: 2024-04-16
+Due date: 2024-05-01
+Terms: NET15
+Total: $7,300.00
 
-Kind regards,
-Jonas
-Silverton Trading
+--=-PTB-MSG-000178--

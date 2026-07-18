@@ -26,8 +26,8 @@ describe("internal baselines on corpus-h1", () => {
       const report = await runAdapter(adapter, FIXTURE);
       expect(report.adapter).toBe(adapter.name);
       expect(report.harness).toBe("papertrail-harness v1");
-      expect(report.questionCount).toBe(24);
-      expect(report.categories.map((c) => c.category)).toEqual([1, 2, 3]);
+      expect(report.questionCount).toBe(21);
+      expect(report.categories.map((c) => c.category)).toEqual([1, 2, 3, 4, 5, 6]);
       expect(report.notes).toEqual([]);
       for (const q of report.questions) {
         expect(q.error, q.questionId).toBeUndefined();

@@ -1,20 +1,39 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
 To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Re: Purchase order PO-2024-0008 - LED panels
-Date: Tue, 06 Feb 2024 09:00:00 +0000
+Subject: Purchase order PO-2024-0017 - LED panels
+Date: Mon, 12 Feb 2024 09:00:00 +0000
 Message-ID: <MSG-000072@vantagefabrication.example>
-In-Reply-To: <MSG-000068@deltaridgesupplies.example>
-References: <MSG-000039@vantagefabrication.example>
- <MSG-000040@deltaridgesupplies.example>
- <MSG-000068@deltaridgesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000072"
+
+--=-PTB-MSG-000072
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Dev,
+
+Please find attached purchase order PO-2024-0017 for 120 units of LED panels =
+at $50.28 per unit.
+The order total is $6,033.60.
+
+Regards,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000072
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0017.txt"
 MIME-Version: 1.0
 
-Dev,
+PURCHASE ORDER PO-2024-0017
+Date: 2024-02-12
+Party: Delta Ridge Supplies
 
-We dispute $1,291.25 on invoice INV-2024-0008: price does not match agreement.
+Po number: PO-2024-0017
+Item: LED panels
+Qty: 120
+Unit price: $50.28
+Total: $6,033.60
 
-Kind regards,
-Carla
-Vantage Fabrication
+--=-PTB-MSG-000072--

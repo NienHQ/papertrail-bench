@@ -1,39 +1,44 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Iris Vance <iris.vance@redwoodindustrial.example>
-Subject: Purchase order PO-2024-0021 - safety gloves
-Date: Tue, 12 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000101@oakfieldfabrication.example>
+From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0017 - shipping cartons
+Date: Sun, 03 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000101@vantageindustrial.example>
+In-Reply-To: <MSG-000087@vantageindustrial.example>
+References: <MSG-000086@oakfieldfabrication.example>
+ <MSG-000087@vantageindustrial.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000101"
 
 --=-PTB-MSG-000101
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Dear Iris,
+Dear Victor,
 
-Please find attached purchase order PO-2024-0021 for 55 units of safety glove=
-s at $15.71 per unit.
-The order total is $864.05.
+Please find attached invoice INV-2024-0022 against PO-2024-0017 for $3,305.70.
+Payment is due by 2024-04-17 per our NET45 terms.
 
-Kind regards,
+Thanks,
 Quinn
-Oakfield Fabrication
+Vantage Industrial
 
 --=-PTB-MSG-000101
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0021.txt"
+Content-Disposition: attachment; filename="INV-2024-0022.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0021
-Date: 2024-03-12
-Party: Redwood Industrial
+INVOICE INV-2024-0022
+Date: 2024-03-03
+Party: Vantage Industrial
 
-Po number: PO-2024-0021
-Item: safety gloves
-Qty: 55
-Unit price: $15.71
-Total: $864.05
+Invoice number: INV-2024-0022
+Issuer: Vantage Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-03-03
+Due date: 2024-04-17
+Terms: NET45
+Total: $3,305.70
+Po ref: PO-2024-0017
 
 --=-PTB-MSG-000101--

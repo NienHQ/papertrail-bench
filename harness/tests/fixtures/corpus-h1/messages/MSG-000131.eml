@@ -1,20 +1,42 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-Subject: Re: Purchase order PO-2024-0016 - shipping cartons
-Date: Thu, 28 Mar 2024 09:00:00 +0000
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@redwoodindustrial.example>
+Subject: Re: Purchase order PO-2024-0021 - safety gloves
+Date: Fri, 22 Mar 2024 09:00:00 +0000
 Message-ID: <MSG-000131@oakfieldfabrication.example>
-In-Reply-To: <MSG-000066@vantageindustrial.example>
-References: <MSG-000058@oakfieldfabrication.example>
- <MSG-000059@vantageindustrial.example> <MSG-000066@vantageindustrial.example>
+In-Reply-To: <MSG-000128@redwoodindustrial.example>
+References: <MSG-000127@oakfieldfabrication.example>
+ <MSG-000128@redwoodindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000131"
+
+--=-PTB-MSG-000131
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-MIME-Version: 1.0
 
-Dear Quinn,
+Hi Iris,
 
-Payment of $12,855.50 for invoice INV-2024-0021 was sent today by bank transf=
-er.
+Please amend PO-2024-0021: quantity is now 55 units of safety gloves, revised=
+ order total $864.05.
+The amended purchase order is attached as PO-2024-0021-A1.
 
 Thanks,
-Victor
+Quinn
 Oakfield Fabrication
+
+--=-PTB-MSG-000131
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0021-A1.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0021-A1
+Date: 2024-03-22
+Party: Redwood Industrial
+
+Po number: PO-2024-0021
+Item: safety gloves
+Qty: 55
+Unit price: $15.71
+Total: $864.05
+
+--=-PTB-MSG-000131--

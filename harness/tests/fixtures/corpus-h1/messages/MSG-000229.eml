@@ -1,40 +1,43 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Grace Whitfield <grace.whitfield@quarrytrading.example>
-Subject: Invoice INV-2024-0065 from Oakfield Fabrication
-Date: Mon, 27 May 2024 09:07:00 +0000
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Quinn Tanaka <qtanaka@vantageindustrial.example>
+Subject: Re: Purchase order PO-2024-0044 - shipping cartons
+Date: Wed, 15 May 2024 09:07:00 +0000
 Message-ID: <MSG-000229@oakfieldfabrication.example>
+In-Reply-To: <MSG-000223@oakfieldfabrication.example>
+References: <MSG-000212@oakfieldfabrication.example>
+ <MSG-000213@vantageindustrial.example>
+ <MSG-000223@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000229"
 
 --=-PTB-MSG-000229
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Grace,
+Hello Quinn,
 
-Please find attached invoice INV-2024-0065 for $8,860.00.
-Payment is due by 2024-06-11 per our NET15 terms.
+Please amend PO-2024-0044: quantity is now 90 units of shipping cartons, revi=
+sed order total $6,611.40.
+The amended purchase order is attached as PO-2024-0044-A2.
 
-Regards,
-Tara
+Best regards,
+Quinn
 Oakfield Fabrication
 
 --=-PTB-MSG-000229
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0065.txt"
+Content-Disposition: attachment; filename="PO-2024-0044-A2.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0065
-Date: 2024-05-27
-Party: Quarry Trading
+PURCHASE ORDER PO-2024-0044-A2
+Date: 2024-05-15
+Party: Vantage Industrial
 
-Invoice number: INV-2024-0065
-Issuer: Oakfield Fabrication
-Bill to: Quarry Trading
-Issue date: 2024-05-27
-Due date: 2024-06-11
-Terms: NET15
-Total: $8,860.00
+Po number: PO-2024-0044
+Item: shipping cartons
+Qty: 90
+Unit price: $73.46
+Total: $6,611.40
 
 --=-PTB-MSG-000229--

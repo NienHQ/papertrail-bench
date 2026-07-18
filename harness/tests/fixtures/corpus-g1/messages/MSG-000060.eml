@@ -1,10 +1,8 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Mona Joshi <mona.joshi@meridiandistribution.example>
-Subject: Re: Invoice INV-2024-0019 from Vantage Fabrication
-Date: Thu, 01 Feb 2024 09:14:00 +0000
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Purchase order PO-2024-0013 - rubber gaskets
+Date: Mon, 05 Feb 2024 09:14:00 +0000
 Message-ID: <MSG-000060@vantagefabrication.example>
-In-Reply-To: <MSG-000055@vantagefabrication.example>
-References: <MSG-000055@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000060"
 
@@ -12,28 +10,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000060"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hi Mona,
+Hello Rosa,
 
-We have issued credit note CN-2024-0004 for $20.05 against invoice INV-2024-0=
-019 (short delivery).
+Please find attached purchase order PO-2024-0013 for 90 units of rubber gaske=
+ts at $62.74 per unit.
+The order total is $5,646.60.
 
-Thanks,
-Uma
+Regards,
+Hugo
 Vantage Fabrication
 
 --=-PTB-MSG-000060
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0004.txt"
+Content-Disposition: attachment; filename="PO-2024-0013.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0004
-Date: 2024-02-01
-Party: Meridian Distribution
+PURCHASE ORDER PO-2024-0013
+Date: 2024-02-05
+Party: Bluepine Materials
 
-Credit note number: CN-2024-0004
-Invoice ref: INV-2024-0019
-Amount: $20.05
-Reason: short delivery
+Po number: PO-2024-0013
+Item: rubber gaskets
+Qty: 90
+Unit price: $62.74
+Total: $5,646.60
 
 --=-PTB-MSG-000060--

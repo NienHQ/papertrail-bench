@@ -1,0 +1,44 @@
+From: Jonas Tanaka <jonas.tanaka@nightingalepackaging.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0043 - aluminum sheet 2mm
+Date: Thu, 21 Mar 2024 09:21:00 +0000
+Message-ID: <MSG-000195@nightingalepackaging.example>
+In-Reply-To: <MSG-000166@nightingalepackaging.example>
+References: <MSG-000165@junctionfabrication.example>
+ <MSG-000166@nightingalepackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000195"
+
+--=-PTB-MSG-000195
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Ava,
+
+Please find attached invoice INV-2024-0051 against PO-2024-0043 for $7,646.10.
+Payment is due by 2024-04-20 per our NET30 terms.
+
+Kind regards,
+Jonas
+Northgate Packaging
+
+--=-PTB-MSG-000195
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0051.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0051
+Date: 2024-03-21
+Party: Nightingale Packaging
+
+Invoice number: INV-2024-0051
+Issuer: Nightingale Packaging
+Bill to: Junction Fabrication
+Issue date: 2024-03-21
+Due date: 2024-04-20
+Terms: NET30
+Total: $7,646.10
+Po ref: PO-2024-0043
+
+--=-PTB-MSG-000195--

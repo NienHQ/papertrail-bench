@@ -1,19 +1,46 @@
-From: Dev Ueda <dev.ueda@granitedistribution.example>
-To: Uma Garvey <uma.garvey@vantagefabrication.example>
-Subject: Re: Payment terms review - Granite Distribution
-Date: Mon, 13 May 2024 09:00:00 +0000
-Message-ID: <MSG-000311@granitedistribution.example>
-In-Reply-To: <MSG-000310@vantagefabrication.example>
-References: <MSG-000310@vantagefabrication.example>
+From: Kira Novak <kira.novak@deltaridgesupplies.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0053 - LED panels
+Date: Sun, 02 Jun 2024 09:21:00 +0000
+Message-ID: <MSG-000311@deltaridgesupplies.example>
+In-Reply-To: <MSG-000290@vantagefabrication.example>
+References: <MSG-000286@vantagefabrication.example>
+ <MSG-000287@deltaridgesupplies.example>
+ <MSG-000290@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000311"
+
+--=-PTB-MSG-000311
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-MIME-Version: 1.0
 
-Dear Uma,
+Hello Carla,
 
-Confirmed - payment terms between Vantage Fabrication and Granite Distributio=
-n are NET 45 effective 2024-05-13.
+Please find attached invoice INV-2024-0076 against PO-2024-0053-A1 for $4,022=
+.40.
+Payment is due by 2024-07-17 per our NET45 terms.
 
 Regards,
-Dev
-Granite Distribution
+Kira
+Delta Ridge Supplies
+
+--=-PTB-MSG-000311
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0076.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0076
+Date: 2024-06-02
+Party: Delta Ridge Supplies
+
+Invoice number: INV-2024-0076
+Issuer: Delta Ridge Supplies
+Bill to: Vantage Fabrication
+Issue date: 2024-06-02
+Due date: 2024-07-17
+Terms: NET45
+Total: $4,022.40
+Po ref: PO-2024-0053-A1
+
+--=-PTB-MSG-000311--

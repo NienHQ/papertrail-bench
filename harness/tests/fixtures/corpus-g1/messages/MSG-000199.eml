@@ -1,39 +1,44 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Purchase order PO-2024-0031 - rubber gaskets
-Date: Tue, 26 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000199@vantagefabrication.example>
+From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0042 - copper wire 12AWG
+Date: Sun, 14 Apr 2024 09:14:00 +0000
+Message-ID: <MSG-000199@yellowstonecomponents.example>
+In-Reply-To: <MSG-000189@yellowstonecomponents.example>
+References: <MSG-000188@vantagefabrication.example>
+ <MSG-000189@yellowstonecomponents.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000199"
 
 --=-PTB-MSG-000199
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Dear Rosa,
+Dear Carla,
 
-Please find attached purchase order PO-2024-0031 for 145 units of rubber gask=
-ets at $62.74 per unit.
-The order total is $9,097.30.
+Please find attached invoice INV-2024-0059 against PO-2024-0042 for $3,913.00.
+Payment is due by 2024-06-13 per our NET60 terms.
 
 Kind regards,
 Hugo
-Vantage Fabrication
+Yellowstone Components
 
 --=-PTB-MSG-000199
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0031.txt"
+Content-Disposition: attachment; filename="INV-2024-0059.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0031
-Date: 2024-03-26
-Party: Bluepine Materials
+INVOICE INV-2024-0059
+Date: 2024-04-14
+Party: Yellowstone Components
 
-Po number: PO-2024-0031
-Item: rubber gaskets
-Qty: 145
-Unit price: $62.74
-Total: $9,097.30
+Invoice number: INV-2024-0059
+Issuer: Yellowstone Components
+Bill to: Vantage Fabrication
+Issue date: 2024-04-14
+Due date: 2024-06-13
+Terms: NET60
+Total: $3,913.00
+Po ref: PO-2024-0042
 
 --=-PTB-MSG-000199--

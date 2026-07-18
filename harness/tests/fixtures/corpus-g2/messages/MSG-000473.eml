@@ -1,0 +1,42 @@
+From: Carla Okafor <carla.okafor@yellowstonematerials.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0087 - pallet wrap
+Date: Tue, 02 Jul 2024 09:14:00 +0000
+Message-ID: <MSG-000473@yellowstonematerials.example>
+In-Reply-To: <MSG-000459@yellowstonematerials.example>
+References: <MSG-000441@junctionfabrication.example>
+ <MSG-000442@yellowstonematerials.example>
+ <MSG-000450@junctionfabrication.example>
+ <MSG-000459@yellowstonematerials.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000473"
+
+--=-PTB-MSG-000473
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Ava,
+
+We have issued credit note CN-2024-0017 for $712.50 against invoice INV-2024-=
+0110 (damaged goods).
+
+Thanks,
+Carla
+Yellowstone Materials
+
+--=-PTB-MSG-000473
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0017.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0017
+Date: 2024-07-02
+Party: Yellowstone Materials
+
+Credit note number: CN-2024-0017
+Invoice ref: INV-2024-0110
+Amount: $712.50
+Reason: damaged goods
+
+--=-PTB-MSG-000473--

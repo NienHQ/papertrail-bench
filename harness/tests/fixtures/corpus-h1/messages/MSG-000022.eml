@@ -1,39 +1,18 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-Subject: Purchase order PO-2024-0007 - shipping cartons
-Date: Mon, 22 Jan 2024 09:14:00 +0000
-Message-ID: <MSG-000022@oakfieldfabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000022"
-
---=-PTB-MSG-000022
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Hi Quinn,
-
-Please find attached purchase order PO-2024-0007 for 115 units of shipping ca=
-rtons at $73.46 per unit.
-The order total is $8,447.90.
-
-Best,
-Quinn
-Oakfield Fabrication
-
---=-PTB-MSG-000022
+From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0007 - LED panels
+Date: Tue, 23 Jan 2024 04:14:00 +0000
+Message-ID: <MSG-000022@yellowstonesupplies.example>
+In-Reply-To: <MSG-000021@oakfieldfabrication.example>
+References: <MSG-000021@oakfieldfabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0007.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0007
-Date: 2024-01-22
-Party: Vantage Industrial
+Quinn,
 
-Po number: PO-2024-0007
-Item: shipping cartons
-Qty: 115
-Unit price: $73.46
-Total: $8,447.90
+Confirming receipt of PO-2024-0007; we will schedule this for delivery.
 
---=-PTB-MSG-000022--
+Regards,
+Ava
+Yellowstone Supplies

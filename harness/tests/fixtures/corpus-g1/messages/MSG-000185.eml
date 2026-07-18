@@ -1,41 +1,17 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
 To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0042 - copper wire 12AWG
-Date: Mon, 18 Mar 2024 09:28:00 +0000
-Message-ID: <MSG-000185@yellowstonecomponents.example>
-In-Reply-To: <MSG-000170@yellowstonecomponents.example>
-References: <MSG-000134@vantagefabrication.example>
- <MSG-000135@yellowstonecomponents.example>
- <MSG-000170@yellowstonecomponents.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000185"
-
---=-PTB-MSG-000185
+Subject: Payment terms review - Vantage Fabrication
+Date: Sat, 06 Apr 2024 09:00:00 +0000
+Message-ID: <MSG-000185@quarrypackaging.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-
-Dear Carla,
-
-We have issued credit note CN-2024-0009 for $200.25 against invoice INV-2024-=
-0053 (short delivery).
-
-Best regards,
-Hugo
-Yellowstone Components
-
---=-PTB-MSG-000185
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0009.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0009
-Date: 2024-03-18
-Party: Yellowstone Components
+Carla,
 
-Credit note number: CN-2024-0009
-Invoice ref: INV-2024-0053
-Amount: $200.25
-Reason: short delivery
+Given our trading volume this year, we would like to revise payment terms fro=
+m 45 to 30 days going forward.
 
---=-PTB-MSG-000185--
+Best,
+Jonas
+Quarry Packaging

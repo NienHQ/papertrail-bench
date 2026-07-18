@@ -1,18 +1,44 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
-To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0059 - safety gloves
-Date: Tue, 21 May 2024 14:00:00 +0000
-Message-ID: <MSG-000324@quarrypackaging.example>
-In-Reply-To: <MSG-000323@vantagefabrication.example>
-References: <MSG-000323@vantagefabrication.example>
+From: Kira Novak <kira.novak@deltaridgesupplies.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0051 - LED panels
+Date: Thu, 06 Jun 2024 09:07:00 +0000
+Message-ID: <MSG-000324@deltaridgesupplies.example>
+In-Reply-To: <MSG-000296@deltaridgesupplies.example>
+References: <MSG-000295@vantagefabrication.example>
+ <MSG-000296@deltaridgesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000324"
+
+--=-PTB-MSG-000324
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-MIME-Version: 1.0
 
-Dear Hugo,
+Hi Carla,
 
-Confirming receipt of PO-2024-0059; we will schedule this for delivery.
+Please find attached invoice INV-2024-0074 against PO-2024-0051 for $8,799.00.
+Payment is due by 2024-07-21 per our NET45 terms.
 
 Thanks,
-Jonas
-Quarry Packaging
+Kira
+Delta Ridge Supplies
+
+--=-PTB-MSG-000324
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0074.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0074
+Date: 2024-06-06
+Party: Delta Ridge Supplies
+
+Invoice number: INV-2024-0074
+Issuer: Delta Ridge Supplies
+Bill to: Vantage Fabrication
+Issue date: 2024-06-06
+Due date: 2024-07-21
+Terms: NET45
+Total: $8,799.00
+Po ref: PO-2024-0051
+
+--=-PTB-MSG-000324--

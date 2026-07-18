@@ -1,0 +1,41 @@
+From: Quinn Whitfield <quinn.whitfield@northgatepackaging.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0063 - shipping cartons
+Date: Tue, 04 Jun 2024 09:14:00 +0000
+Message-ID: <MSG-000398@northgatepackaging.example>
+In-Reply-To: <MSG-000382@northgatepackaging.example>
+References: <MSG-000354@junctionfabrication.example>
+ <MSG-000355@northgatepackaging.example>
+ <MSG-000382@northgatepackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000398"
+
+--=-PTB-MSG-000398
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Ava,
+
+We have issued credit note CN-2024-0014 for $356.62 against invoice INV-2024-=
+0082 (short delivery).
+
+Regards,
+Quinn
+Northgate Packaging
+
+--=-PTB-MSG-000398
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0014.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0014
+Date: 2024-06-04
+Party: Northgate Packaging
+
+Credit note number: CN-2024-0014
+Invoice ref: INV-2024-0082
+Amount: $356.62
+Reason: short delivery
+
+--=-PTB-MSG-000398--

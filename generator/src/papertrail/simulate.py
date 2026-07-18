@@ -11,15 +11,16 @@ import random
 from dataclasses import dataclass, field
 from datetime import date, datetime, time, timedelta, timezone
 
-from .model import Document, Event
-from .world import World, build_world
+from .model import AddressPeriod, Document, EmploymentPeriod, Event
+from .world import World, _addr, build_world
 
 TERMS_CHOICES = ["NET15", "NET30", "NET45", "NET60"]
 DISPUTE_REASONS = ["quantity mismatch", "price does not match agreement",
                    "goods returned", "duplicate line item"]
 
 # Shipped question categories and their default per-category counts.
-DEFAULT_CATEGORY_COUNTS: dict[int, int] = {1: 16, 2: 16, 3: 16, 4: 16, 6: 16}
+DEFAULT_CATEGORY_COUNTS: dict[int, int] = {1: 16, 2: 16, 3: 16, 4: 16,
+                                           5: 16, 6: 16}
 
 
 @dataclass
@@ -36,6 +37,9 @@ class Config:
     credit_note_prob: float = 0.08
     dispute_prob: float = 0.12  # vendor invoices that get disputed
     renegotiate_frac: float = 0.5  # parties whose payment terms change mid-year
+    # Category 5 world churn (entity resolution).
+    contact_change_frac: float = 0.25  # contacts whose address changes mid-corpus
+    person_move_count: int = 1  # capped by vendor count - 1
     # Per-category question counts (schema doc section 7).
     category_counts: dict[int, int] = field(
         default_factory=lambda: dict(DEFAULT_CATEGORY_COUNTS))
@@ -203,6 +207,14 @@ class _Sim:
                        "previous": old, "renegotiation": True})
             self.set_fact(p.party_id, "payment_terms", new, d)
 
+        # Category 5 world churn: PERSON_MOVED then CONTACT_CHANGED. Drawn
+        # AFTER the renegotiation scheduling so all pre-existing rng draws
+        # (and therefore earlier-seed corpora) shift as little as possible,
+        # and BEFORE the trading loop so date-aware contact and address
+        # lookups during rendering are consistent for every event date.
+        self._schedule_person_moves()
+        self._schedule_contact_changes()
+
         # Monthly trading loop.
         for month in range(1, cfg.months + 1):
             for v in w.vendors():
@@ -216,6 +228,89 @@ class _Sim:
         self.events.sort(key=lambda e: (e.event_time, e.event_id))
         return SimResult(config=cfg, world=self.world, events=self.events,
                          documents=self.documents)
+
+    def _mid_month(self) -> int:
+        """A month in the middle third of the corpus."""
+        lo = self.cfg.months // 3 + 1
+        hi = max(lo, (2 * self.cfg.months) // 3)
+        return self.rng.randint(lo, hi)
+
+    def _schedule_person_moves(self) -> None:
+        """PERSON_MOVED: a vendor contact leaves for a different vendor.
+
+        Closes the mover's address and employment periods, opens new ones at
+        the destination (new domain address), updates person.party_id, and
+        hires a replacement contact at the old vendor whose periods start at
+        the move date. The destination's existing contact remains employed;
+        the renderer's date-aware contact rule (most recent joiner wins)
+        makes the mover the sender for the destination's mail from the move
+        date on.
+        """
+        cfg, rng, w = self.cfg, self.rng, self.world
+        us = w.self_party.party_id
+        vendors = w.vendors()
+        n = min(cfg.person_move_count, max(0, len(vendors) - 1))
+        if n <= 0:
+            return
+        for src in rng.sample(vendors, n):
+            mover = w.contact_for(src.party_id)
+            dest = rng.choice([v for v in vendors
+                               if v.party_id != src.party_id])
+            d = self.biz_day(self._mid_month(), 1, 20)
+            mover.addresses[-1].to_date = d
+            mover.employments[-1].to_date = d
+            mover.addresses.append(
+                AddressPeriod(_addr(mover.name, dest.domain), d, None))
+            mover.employments.append(
+                EmploymentPeriod(dest.party_id, d, None))
+            mover.party_id = dest.party_id
+            replacement = w.hire(src, mover.role, d)
+            self.emit(d, "PERSON_MOVED", src.party_id, us,
+                      {"person_id": mover.person_id,
+                       "from_party": src.party_id,
+                       "to_party": dest.party_id,
+                       "replacement_person_id": replacement.person_id})
+
+    def _schedule_contact_changes(self) -> None:
+        """CONTACT_CHANGED: same person, same domain, new local part.
+
+        Applies to a fraction of trading-party contacts that have not moved
+        (single address period starting at corpus start). Closes the current
+        address period and opens a new one at the same domain with a
+        different local part (first initial + last name instead of
+        first.last).
+        """
+        cfg, rng, w = self.cfg, self.rng, self.world
+        us = w.self_party.party_id
+        trading = {p.party_id for p in w.vendors() + w.customers()}
+        eligible = [p for p in w.people
+                    if p.party_id in trading and len(p.addresses) == 1
+                    and p.addresses[0].from_date == self.year_start]
+        n = round(len(eligible) * cfg.contact_change_frac)
+        if n <= 0:
+            return
+        # at least one changed contact is a vendor contact: vendor mail
+        # (POs, invoices) is what the category 5 questions aggregate over
+        vendor_ids = {v.party_id for v in w.vendors()}
+        picks = []
+        vendor_eligible = [p for p in eligible if p.party_id in vendor_ids]
+        if vendor_eligible:
+            picks.append(rng.choice(vendor_eligible))
+        rest = [p for p in eligible if p not in picks]
+        picks.extend(rng.sample(rest, min(n - len(picks), len(rest))))
+        for person in picks:
+            d = self.biz_day(self._mid_month(), 1, 20)
+            old_address = person.addresses[-1].address
+            domain = old_address.split("@", 1)[1]
+            parts = person.name.lower().split()
+            new_address = f"{parts[0][0]}{parts[-1]}@{domain}"
+            assert new_address != old_address
+            person.addresses[-1].to_date = d
+            person.addresses.append(AddressPeriod(new_address, d, None))
+            self.emit(d, "CONTACT_CHANGED", person.party_id, us,
+                      {"person_id": person.person_id,
+                       "old_address": old_address,
+                       "new_address": new_address})
 
     def _po_cycle(self, month: int, vendor: str, item: str) -> None:
         cfg, rng = self.cfg, self.rng

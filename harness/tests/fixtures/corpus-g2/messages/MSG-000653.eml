@@ -1,0 +1,39 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Carla Okafor <carla.okafor@yellowstonematerials.example>
+Subject: Purchase order PO-2024-0131 - pallet wrap
+Date: Thu, 05 Sep 2024 09:35:00 +0000
+Message-ID: <MSG-000653@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000653"
+
+--=-PTB-MSG-000653
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Carla,
+
+Please find attached purchase order PO-2024-0131 for 85 units of pallet wrap =
+at $58.63 per unit.
+The order total is $4,983.55.
+
+Kind regards,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000653
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0131.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0131
+Date: 2024-09-05
+Party: Yellowstone Materials
+
+Po number: PO-2024-0131
+Item: pallet wrap
+Qty: 85
+Unit price: $58.63
+Total: $4,983.55
+
+--=-PTB-MSG-000653--

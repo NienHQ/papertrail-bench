@@ -1,20 +1,40 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Re: Purchase order PO-2024-0055 - rubber gaskets
-Date: Sun, 26 May 2024 09:00:00 +0000
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Dev Ueda <dev.ueda@granitedistribution.example>
+Subject: Invoice INV-2024-0101 from Vantage Fabrication
+Date: Mon, 10 Jun 2024 09:21:00 +0000
 Message-ID: <MSG-000337@vantagefabrication.example>
-In-Reply-To: <MSG-000312@bluepinematerials.example>
-References: <MSG-000298@vantagefabrication.example>
- <MSG-000299@bluepinematerials.example> <MSG-000312@bluepinematerials.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000337"
 
-Rosa,
+--=-PTB-MSG-000337
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
 
-Payment of $5,646.60 for invoice INV-2024-0075 was sent today by bank transfe=
-r.
+Dev,
+
+Please find attached invoice INV-2024-0101 for $3,045.00.
+Payment is due by 2024-07-25 per our NET45 terms.
 
 Regards,
-Carla
+Uma
 Vantage Fabrication
+
+--=-PTB-MSG-000337
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0101.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0101
+Date: 2024-06-10
+Party: Granite Distribution
+
+Invoice number: INV-2024-0101
+Issuer: Vantage Fabrication
+Bill to: Granite Distribution
+Issue date: 2024-06-10
+Due date: 2024-07-25
+Terms: NET45
+Total: $3,045.00
+
+--=-PTB-MSG-000337--

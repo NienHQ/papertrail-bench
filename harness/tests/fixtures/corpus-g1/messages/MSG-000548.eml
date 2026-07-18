@@ -1,8 +1,12 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Purchase order PO-2024-0103 - LED panels
-Date: Tue, 20 Aug 2024 09:14:00 +0000
-Message-ID: <MSG-000548@vantagefabrication.example>
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0091 - safety gloves
+Date: Wed, 11 Sep 2024 09:07:00 +0000
+Message-ID: <MSG-000548@quarrypackaging.example>
+In-Reply-To: <MSG-000547@quarrypackaging.example>
+References: <MSG-000514@vantagefabrication.example>
+ <MSG-000515@quarrypackaging.example> <MSG-000530@quarrypackaging.example>
+ <MSG-000535@vantagefabrication.example> <MSG-000547@quarrypackaging.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000548"
 
@@ -10,30 +14,28 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000548"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hello Dev,
+Hi Carla,
 
-Please find attached purchase order PO-2024-0103 for 165 units of LED panels =
-at $50.28 per unit.
-The order total is $8,296.20.
+We have issued credit note CN-2024-0015 for $56.69 against invoice INV-2024-0=
+131 (price does not match agreement).
 
-Regards,
-Hugo
-Vantage Fabrication
+Best regards,
+Jonas
+Quarry Packaging
 
 --=-PTB-MSG-000548
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0103.txt"
+Content-Disposition: attachment; filename="CN-2024-0015.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0103
-Date: 2024-08-20
-Party: Delta Ridge Supplies
+CREDIT NOTE CN-2024-0015
+Date: 2024-09-11
+Party: Quarry Packaging
 
-Po number: PO-2024-0103
-Item: LED panels
-Qty: 165
-Unit price: $50.28
-Total: $8,296.20
+Credit note number: CN-2024-0015
+Invoice ref: INV-2024-0131
+Amount: $56.69
+Reason: price does not match agreement
 
 --=-PTB-MSG-000548--

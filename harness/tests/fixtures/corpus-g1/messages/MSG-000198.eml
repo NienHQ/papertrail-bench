@@ -1,43 +1,20 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0040 - copper wire 12AWG
-Date: Mon, 25 Mar 2024 09:14:00 +0000
-Message-ID: <MSG-000198@yellowstonecomponents.example>
-In-Reply-To: <MSG-000197@yellowstonecomponents.example>
-References: <MSG-000158@vantagefabrication.example>
- <MSG-000159@yellowstonecomponents.example>
- <MSG-000176@yellowstonecomponents.example>
- <MSG-000187@vantagefabrication.example>
- <MSG-000197@yellowstonecomponents.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000198"
-
---=-PTB-MSG-000198
+From: Carla Costa <carla.costa@vantagefabrication.example>
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Re: Purchase order PO-2024-0025 - rubber gaskets
+Date: Sun, 14 Apr 2024 09:07:00 +0000
+Message-ID: <MSG-000198@vantagefabrication.example>
+In-Reply-To: <MSG-000167@bluepinematerials.example>
+References: <MSG-000153@vantagefabrication.example>
+ <MSG-000154@bluepinematerials.example> <MSG-000167@bluepinematerials.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-
-Carla,
-
-We have issued credit note CN-2024-0008 for $1,626.27 against invoice INV-202=
-4-0051 (goods returned).
-
-Regards,
-Hugo
-Yellowstone Components
-
---=-PTB-MSG-000198
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0008.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0008
-Date: 2024-03-25
-Party: Yellowstone Components
+Rosa,
 
-Credit note number: CN-2024-0008
-Invoice ref: INV-2024-0051
-Amount: $1,626.27
-Reason: goods returned
+Payment of $3,137.00 for invoice INV-2024-0036 was sent today by bank transfe=
+r.
 
---=-PTB-MSG-000198--
+Regards,
+Carla
+Vantage Fabrication

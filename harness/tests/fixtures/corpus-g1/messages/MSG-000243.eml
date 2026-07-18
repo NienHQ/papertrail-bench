@@ -1,7 +1,7 @@
 From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Purchase order PO-2024-0049 - LED panels
-Date: Wed, 17 Apr 2024 09:21:00 +0000
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Purchase order PO-2024-0050 - LED panels
+Date: Wed, 08 May 2024 09:14:00 +0000
 Message-ID: <MSG-000243@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000243"
@@ -10,30 +10,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000243"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hi Dev,
+Kira,
 
-Please find attached purchase order PO-2024-0049 for 100 units of LED panels =
+Please find attached purchase order PO-2024-0050 for 140 units of LED panels =
 at $50.28 per unit.
-The order total is $5,028.00.
+The order total is $7,039.20.
 
-Regards,
+Best,
 Hugo
 Vantage Fabrication
 
 --=-PTB-MSG-000243
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0049.txt"
+Content-Disposition: attachment; filename="PO-2024-0050.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0049
-Date: 2024-04-17
+PURCHASE ORDER PO-2024-0050
+Date: 2024-05-08
 Party: Delta Ridge Supplies
 
-Po number: PO-2024-0049
+Po number: PO-2024-0050
 Item: LED panels
-Qty: 100
+Qty: 140
 Unit price: $50.28
-Total: $5,028.00
+Total: $7,039.20
 
 --=-PTB-MSG-000243--

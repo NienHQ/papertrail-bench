@@ -1,25 +1,26 @@
-From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+From: Iris Vance <iris.vance@yellowstonesupplies.example>
 To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0040 - LED panels
-Date: Sat, 01 Jun 2024 09:00:00 +0000
+Subject: Re: Purchase order PO-2024-0041 - LED panels
+Date: Tue, 21 May 2024 09:07:00 +0000
 Message-ID: <MSG-000235@yellowstonesupplies.example>
-In-Reply-To: <MSG-000220@yellowstonesupplies.example>
-References: <MSG-000219@oakfieldfabrication.example>
- <MSG-000220@yellowstonesupplies.example>
+In-Reply-To: <MSG-000225@yellowstonesupplies.example>
+References: <MSG-000224@oakfieldfabrication.example>
+ <MSG-000225@yellowstonesupplies.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000235"
 
 --=-PTB-MSG-000235
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Hi Victor,
+Hello Victor,
 
-Please find attached invoice INV-2024-0061 against PO-2024-0040 for $6,757.50.
-Payment is due by 2024-06-16 per our NET15 terms.
+Please find attached invoice INV-2024-0061 against PO-2024-0041 for $14,310.0=
+0.
+Payment is due by 2024-06-05 per our NET15 terms.
 
-Kind regards,
-Ava
+Best regards,
+Iris
 Yellowstone Supplies
 
 --=-PTB-MSG-000235
@@ -29,16 +30,16 @@ Content-Disposition: attachment; filename="INV-2024-0061.txt"
 MIME-Version: 1.0
 
 INVOICE INV-2024-0061
-Date: 2024-06-01
+Date: 2024-05-21
 Party: Yellowstone Supplies
 
 Invoice number: INV-2024-0061
 Issuer: Yellowstone Supplies
 Bill to: Oakfield Fabrication
-Issue date: 2024-06-01
-Due date: 2024-06-16
+Issue date: 2024-05-21
+Due date: 2024-06-05
 Terms: NET15
-Total: $6,757.50
-Po ref: PO-2024-0040
+Total: $14,310.00
+Po ref: PO-2024-0041
 
 --=-PTB-MSG-000235--

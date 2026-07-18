@@ -1,0 +1,39 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Quinn Whitfield <quinn.whitfield@northgatepackaging.example>
+Subject: Purchase order PO-2024-0033 - shipping cartons
+Date: Thu, 07 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000150@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000150"
+
+--=-PTB-MSG-000150
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Quinn,
+
+Please find attached purchase order PO-2024-0033 for 195 units of shipping ca=
+rtons at $44.94 per unit.
+The order total is $8,763.30.
+
+Regards,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000150
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0033.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0033
+Date: 2024-03-07
+Party: Northgate Packaging
+
+Po number: PO-2024-0033
+Item: shipping cartons
+Qty: 195
+Unit price: $44.94
+Total: $8,763.30
+
+--=-PTB-MSG-000150--

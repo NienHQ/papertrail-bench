@@ -1,44 +1,45 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
 To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0097 - safety gloves
-Date: Sun, 18 Aug 2024 09:14:00 +0000
-Message-ID: <MSG-000534@quarrypackaging.example>
-In-Reply-To: <MSG-000526@quarrypackaging.example>
-References:
- <MSG-000525@vantagefabrication.example> <MSG-000526@quarrypackaging.example>
+Subject: Re: Purchase order PO-2024-0087 - rubber gaskets
+Date: Sun, 01 Sep 2024 09:00:00 +0000
+Message-ID: <MSG-000534@bluepinematerials.example>
+In-Reply-To: <MSG-000525@bluepinematerials.example>
+References: <MSG-000524@vantagefabrication.example>
+ <MSG-000525@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000534"
 
 --=-PTB-MSG-000534
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
 Hello Carla,
 
-Please find attached invoice INV-2024-0131 against PO-2024-0097 for $197.55.
-Payment is due by 2024-09-17 per our NET30 terms.
+Please find attached invoice INV-2024-0127 against PO-2024-0087 for $12,234.3=
+0.
+Payment is due by 2024-09-16 per our NET15 terms.
 
 Thanks,
-Jonas
-Quarry Packaging
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000534
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0131.txt"
+Content-Disposition: attachment; filename="INV-2024-0127.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0131
-Date: 2024-08-18
-Party: Quarry Packaging
+INVOICE INV-2024-0127
+Date: 2024-09-01
+Party: Bluepine Materials
 
-Invoice number: INV-2024-0131
-Issuer: Quarry Packaging
+Invoice number: INV-2024-0127
+Issuer: Bluepine Materials
 Bill to: Vantage Fabrication
-Issue date: 2024-08-18
-Due date: 2024-09-17
-Terms: NET30
-Total: $197.55
-Po ref: PO-2024-0097
+Issue date: 2024-09-01
+Due date: 2024-09-16
+Terms: NET15
+Total: $12,234.30
+Po ref: PO-2024-0087
 
 --=-PTB-MSG-000534--

@@ -1,0 +1,42 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Jonas Tanaka <jonas.tanaka@nightingalepackaging.example>
+Subject: Re: Purchase order PO-2024-0029 - aluminum sheet 2mm
+Date: Tue, 13 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000087@junctionfabrication.example>
+In-Reply-To: <MSG-000075@nightingalepackaging.example>
+References: <MSG-000074@junctionfabrication.example>
+ <MSG-000075@nightingalepackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000087"
+
+--=-PTB-MSG-000087
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Jonas,
+
+Please amend PO-2024-0029: quantity is now 20 units of aluminum sheet 2mm, re=
+vised order total $1,456.40.
+The amended purchase order is attached as PO-2024-0029-A1.
+
+Thanks,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000087
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0029-A1.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0029-A1
+Date: 2024-02-13
+Party: Nightingale Packaging
+
+Po number: PO-2024-0029
+Item: aluminum sheet 2mm
+Qty: 20
+Unit price: $72.82
+Total: $1,456.40
+
+--=-PTB-MSG-000087--

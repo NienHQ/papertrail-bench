@@ -1,39 +1,44 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Purchase order PO-2024-0028 - rubber gaskets
-Date: Mon, 04 Mar 2024 09:07:00 +0000
-Message-ID: <MSG-000132@vantagefabrication.example>
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0028 - safety gloves
+Date: Tue, 12 Mar 2024 09:21:00 +0000
+Message-ID: <MSG-000132@quarrypackaging.example>
+In-Reply-To: <MSG-000119@quarrypackaging.example>
+References:
+ <MSG-000118@vantagefabrication.example> <MSG-000119@quarrypackaging.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000132"
 
 --=-PTB-MSG-000132
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Hello Rosa,
+Hi Carla,
 
-Please find attached purchase order PO-2024-0028 for 115 units of rubber gask=
-ets at $62.74 per unit.
-The order total is $7,215.10.
+Please find attached invoice INV-2024-0039 against PO-2024-0028 for $526.80.
+Payment is due by 2024-04-26 per our NET45 terms.
 
-Thanks,
-Hugo
-Vantage Fabrication
+Best regards,
+Jonas
+Quarry Packaging
 
 --=-PTB-MSG-000132
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0028.txt"
+Content-Disposition: attachment; filename="INV-2024-0039.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0028
-Date: 2024-03-04
-Party: Bluepine Materials
+INVOICE INV-2024-0039
+Date: 2024-03-12
+Party: Quarry Packaging
 
-Po number: PO-2024-0028
-Item: rubber gaskets
-Qty: 115
-Unit price: $62.74
-Total: $7,215.10
+Invoice number: INV-2024-0039
+Issuer: Quarry Packaging
+Bill to: Vantage Fabrication
+Issue date: 2024-03-12
+Due date: 2024-04-26
+Terms: NET45
+Total: $526.80
+Po ref: PO-2024-0028
 
 --=-PTB-MSG-000132--

@@ -1,11 +1,11 @@
-From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
 To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0011 - LED panels
-Date: Tue, 30 Jan 2024 09:00:00 +0000
-Message-ID: <MSG-000056@deltaridgesupplies.example>
-In-Reply-To: <MSG-000035@deltaridgesupplies.example>
-References: <MSG-000034@vantagefabrication.example>
- <MSG-000035@deltaridgesupplies.example>
+Subject: Re: Purchase order PO-2024-0012 - copper wire 12AWG
+Date: Sat, 03 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000056@yellowstonecomponents.example>
+In-Reply-To: <MSG-000041@yellowstonecomponents.example>
+References: <MSG-000040@vantagefabrication.example>
+ <MSG-000041@yellowstonecomponents.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000056"
 
@@ -15,30 +15,30 @@ Content-Transfer-Encoding: 7bit
 
 Hello Carla,
 
-Please find attached invoice INV-2024-0011 against PO-2024-0011 for $2,262.60.
-Payment is due by 2024-03-15 per our NET45 terms.
+Please find attached invoice INV-2024-0012 against PO-2024-0012 for $5,478.20.
+Payment is due by 2024-04-03 per our NET60 terms.
 
 Thanks,
-Dev
-Delta Ridge Supplies
+Hugo
+Yellowstone Components
 
 --=-PTB-MSG-000056
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0011.txt"
+Content-Disposition: attachment; filename="INV-2024-0012.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0011
-Date: 2024-01-30
-Party: Delta Ridge Supplies
+INVOICE INV-2024-0012
+Date: 2024-02-03
+Party: Yellowstone Components
 
-Invoice number: INV-2024-0011
-Issuer: Delta Ridge Supplies
+Invoice number: INV-2024-0012
+Issuer: Yellowstone Components
 Bill to: Vantage Fabrication
-Issue date: 2024-01-30
-Due date: 2024-03-15
-Terms: NET45
-Total: $2,262.60
-Po ref: PO-2024-0011
+Issue date: 2024-02-03
+Due date: 2024-04-03
+Terms: NET60
+Total: $5,478.20
+Po ref: PO-2024-0012
 
 --=-PTB-MSG-000056--

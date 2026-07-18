@@ -20,6 +20,13 @@ class AddressPeriod:
 
 
 @dataclass
+class EmploymentPeriod:
+    party_id: str
+    from_date: date
+    to_date: date | None = None
+
+
+@dataclass
 class Party:
     party_id: str
     kind: str  # self | vendor | customer | landlord | bank | payroll
@@ -32,15 +39,22 @@ class Party:
 class Person:
     person_id: str
     name: str
-    party_id: str
+    party_id: str  # CURRENT (latest) employer; history lives in employments
     role: str
     addresses: list[AddressPeriod]
+    employments: list[EmploymentPeriod] = field(default_factory=list)
 
     def address_on(self, d: date) -> str:
         for p in self.addresses:
             if p.from_date <= d and (p.to_date is None or d < p.to_date):
                 return p.address
         raise ValueError(f"{self.person_id} has no address on {d}")
+
+    def party_on(self, d: date) -> str:
+        for e in self.employments:
+            if e.from_date <= d and (e.to_date is None or d < e.to_date):
+                return e.party_id
+        raise ValueError(f"{self.person_id} has no employer on {d}")
 
     @property
     def first(self) -> str:

@@ -1,0 +1,44 @@
+From: Mona Yates <mona.yates@cardinalcomponents.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0108 - hex bolts M8
+Date: Thu, 05 Sep 2024 09:14:00 +0000
+Message-ID: <MSG-000649@cardinalcomponents.example>
+In-Reply-To: <MSG-000648@cardinalcomponents.example>
+References: <MSG-000568@junctionfabrication.example>
+ <MSG-000569@cardinalcomponents.example>
+ <MSG-000587@junctionfabrication.example>
+ <MSG-000607@cardinalcomponents.example>
+ <MSG-000625@junctionfabrication.example>
+ <MSG-000648@cardinalcomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000649"
+
+--=-PTB-MSG-000649
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Ava,
+
+We have issued credit note CN-2024-0020 for $122.89 against invoice INV-2024-=
+0141 (price does not match agreement).
+
+Best regards,
+Mona
+Cardinal Components
+
+--=-PTB-MSG-000649
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0020.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0020
+Date: 2024-09-05
+Party: Cardinal Components
+
+Credit note number: CN-2024-0020
+Invoice ref: INV-2024-0141
+Amount: $122.89
+Reason: price does not match agreement
+
+--=-PTB-MSG-000649--

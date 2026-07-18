@@ -1,44 +1,45 @@
-From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
 To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0008 - LED panels
-Date: Sun, 04 Feb 2024 09:07:00 +0000
-Message-ID: <MSG-000068@deltaridgesupplies.example>
-In-Reply-To: <MSG-000040@deltaridgesupplies.example>
-References: <MSG-000039@vantagefabrication.example>
- <MSG-000040@deltaridgesupplies.example>
+Subject: Re: Purchase order PO-2024-0014 - rubber gaskets
+Date: Fri, 09 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000068@bluepinematerials.example>
+In-Reply-To: <MSG-000063@bluepinematerials.example>
+References: <MSG-000062@vantagefabrication.example>
+ <MSG-000063@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000068"
 
 --=-PTB-MSG-000068
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Carla,
+Dear Carla,
 
-Please find attached invoice INV-2024-0008 against PO-2024-0008 for $4,022.40.
-Payment is due by 2024-03-20 per our NET45 terms.
+Please find attached invoice INV-2024-0019 against PO-2024-0014 for $11,606.9=
+0.
+Payment is due by 2024-02-24 per our NET15 terms.
 
-Thanks,
-Dev
-Delta Ridge Supplies
+Regards,
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000068
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0008.txt"
+Content-Disposition: attachment; filename="INV-2024-0019.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0008
-Date: 2024-02-04
-Party: Delta Ridge Supplies
+INVOICE INV-2024-0019
+Date: 2024-02-09
+Party: Bluepine Materials
 
-Invoice number: INV-2024-0008
-Issuer: Delta Ridge Supplies
+Invoice number: INV-2024-0019
+Issuer: Bluepine Materials
 Bill to: Vantage Fabrication
-Issue date: 2024-02-04
-Due date: 2024-03-20
-Terms: NET45
-Total: $4,022.40
-Po ref: PO-2024-0008
+Issue date: 2024-02-09
+Due date: 2024-02-24
+Terms: NET15
+Total: $11,606.90
+Po ref: PO-2024-0014
 
 --=-PTB-MSG-000068--

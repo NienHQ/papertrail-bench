@@ -1,40 +1,40 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Dev Ueda <dev.ueda@granitedistribution.example>
-Subject: Invoice INV-2024-0035 from Vantage Fabrication
-Date: Mon, 05 Feb 2024 09:07:00 +0000
-Message-ID: <MSG-000071@vantagefabrication.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0014 - rubber gaskets
+Date: Sun, 11 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000071@bluepinematerials.example>
+In-Reply-To: <MSG-000068@bluepinematerials.example>
+References: <MSG-000062@vantagefabrication.example>
+ <MSG-000063@bluepinematerials.example> <MSG-000068@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000071"
 
 --=-PTB-MSG-000071
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Hello Dev,
+Dear Carla,
 
-Please find attached invoice INV-2024-0035 for $1,070.00.
-Payment is due by 2024-04-05 per our NET60 terms.
+We have issued credit note CN-2024-0003 for $84.58 against invoice INV-2024-0=
+019 (pricing error).
 
-Regards,
-Uma
-Vantage Fabrication
+Best regards,
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000071
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0035.txt"
+Content-Disposition: attachment; filename="CN-2024-0003.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0035
-Date: 2024-02-05
-Party: Granite Distribution
+CREDIT NOTE CN-2024-0003
+Date: 2024-02-11
+Party: Bluepine Materials
 
-Invoice number: INV-2024-0035
-Issuer: Vantage Fabrication
-Bill to: Granite Distribution
-Issue date: 2024-02-05
-Due date: 2024-04-05
-Terms: NET60
-Total: $1,070.00
+Credit note number: CN-2024-0003
+Invoice ref: INV-2024-0019
+Amount: $84.58
+Reason: pricing error
 
 --=-PTB-MSG-000071--

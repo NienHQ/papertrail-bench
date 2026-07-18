@@ -1,11 +1,14 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Re: Purchase order PO-2024-0095 - rubber gaskets
-Date: Sun, 18 Aug 2024 09:07:00 +0000
-Message-ID: <MSG-000533@vantagefabrication.example>
-In-Reply-To: <MSG-000522@bluepinematerials.example>
-References: <MSG-000521@vantagefabrication.example>
- <MSG-000522@bluepinematerials.example>
+From: Kira Novak <kira.novak@deltaridgesupplies.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0094 - LED panels
+Date: Sat, 31 Aug 2024 09:14:00 +0000
+Message-ID: <MSG-000533@deltaridgesupplies.example>
+In-Reply-To: <MSG-000532@deltaridgesupplies.example>
+References: <MSG-000499@vantagefabrication.example>
+ <MSG-000500@deltaridgesupplies.example>
+ <MSG-000518@deltaridgesupplies.example>
+ <MSG-000527@vantagefabrication.example>
+ <MSG-000532@deltaridgesupplies.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000533"
 
@@ -13,30 +16,28 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000533"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dear Rosa,
+Dear Carla,
 
-Please amend PO-2024-0095: quantity is now 115 units of rubber gaskets, revis=
-ed order total $7,215.10.
-The amended purchase order is attached as PO-2024-0095-A1.
+We have issued credit note CN-2024-0017 for $1,056.55 against invoice INV-202=
+4-0134 (quantity mismatch).
 
-Regards,
-Hugo
-Vantage Fabrication
+Thanks,
+Kira
+Delta Ridge Supplies
 
 --=-PTB-MSG-000533
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0095-A1.txt"
+Content-Disposition: attachment; filename="CN-2024-0017.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0095-A1
-Date: 2024-08-18
-Party: Bluepine Materials
+CREDIT NOTE CN-2024-0017
+Date: 2024-08-31
+Party: Delta Ridge Supplies
 
-Po number: PO-2024-0095
-Item: rubber gaskets
-Qty: 115
-Unit price: $62.74
-Total: $7,215.10
+Credit note number: CN-2024-0017
+Invoice ref: INV-2024-0134
+Amount: $1,056.55
+Reason: quantity mismatch
 
 --=-PTB-MSG-000533--

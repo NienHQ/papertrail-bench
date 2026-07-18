@@ -1,21 +1,39 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Re: Purchase order PO-2024-0080 - copper wire 12AWG
-Date: Sun, 04 Aug 2024 09:07:00 +0000
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Purchase order PO-2024-0094 - LED panels
+Date: Mon, 19 Aug 2024 09:14:00 +0000
 Message-ID: <MSG-000499@vantagefabrication.example>
-In-Reply-To: <MSG-000374@yellowstonecomponents.example>
-References: <MSG-000358@vantagefabrication.example>
- <MSG-000359@yellowstonecomponents.example>
- <MSG-000374@yellowstonecomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000499"
+
+--=-PTB-MSG-000499
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-MIME-Version: 1.0
 
-Dear Hugo,
+Hello Kira,
 
-Payment of $3,521.70 for invoice INV-2024-0105 was sent today by bank transfe=
-r.
+Please find attached purchase order PO-2024-0094 for 45 units of LED panels a=
+t $50.28 per unit.
+The order total is $2,262.60.
 
 Best regards,
-Carla
+Hugo
 Vantage Fabrication
+
+--=-PTB-MSG-000499
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0094.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0094
+Date: 2024-08-19
+Party: Delta Ridge Supplies
+
+Po number: PO-2024-0094
+Item: LED panels
+Qty: 45
+Unit price: $50.28
+Total: $2,262.60
+
+--=-PTB-MSG-000499--

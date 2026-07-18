@@ -1,7 +1,7 @@
 From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Purchase order PO-2024-0047 - safety gloves
-Date: Thu, 11 Apr 2024 09:00:00 +0000
+To: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+Subject: Purchase order PO-2024-0057 - copper wire 12AWG
+Date: Thu, 02 May 2024 09:07:00 +0000
 Message-ID: <MSG-000231@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000231"
@@ -10,30 +10,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000231"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dear Jonas,
+Hello Dev,
 
-Please find attached purchase order PO-2024-0047 for 155 units of safety glov=
-es at $4.39 per unit.
-The order total is $680.45.
+Please find attached purchase order PO-2024-0057 for 160 units of copper wire=
+ 12AWG at $78.26 per unit.
+The order total is $12,521.60.
 
-Kind regards,
+Best,
 Hugo
 Vantage Fabrication
 
 --=-PTB-MSG-000231
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0047.txt"
+Content-Disposition: attachment; filename="PO-2024-0057.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0047
-Date: 2024-04-11
-Party: Quarry Packaging
+PURCHASE ORDER PO-2024-0057
+Date: 2024-05-02
+Party: Yellowstone Components
 
-Po number: PO-2024-0047
-Item: safety gloves
-Qty: 155
-Unit price: $4.39
-Total: $680.45
+Po number: PO-2024-0057
+Item: copper wire 12AWG
+Qty: 160
+Unit price: $78.26
+Total: $12,521.60
 
 --=-PTB-MSG-000231--

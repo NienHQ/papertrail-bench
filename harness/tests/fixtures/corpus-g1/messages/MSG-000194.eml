@@ -1,20 +1,44 @@
-From: Dev Ueda <dev.ueda@granitedistribution.example>
-To: Uma Garvey <uma.garvey@vantagefabrication.example>
-Subject: Re: Invoice INV-2024-0016 from Vantage Fabrication
-Date: Sun, 24 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000194@granitedistribution.example>
-In-Reply-To: <MSG-000047@vantagefabrication.example>
-References: <MSG-000038@vantagefabrication.example>
- <MSG-000047@vantagefabrication.example>
+From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0039 - LED panels
+Date: Thu, 11 Apr 2024 09:07:00 +0000
+Message-ID: <MSG-000194@deltaridgesupplies.example>
+In-Reply-To: <MSG-000171@deltaridgesupplies.example>
+References: <MSG-000170@vantagefabrication.example>
+ <MSG-000171@deltaridgesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000194"
+
+--=-PTB-MSG-000194
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
+
+Dear Carla,
+
+Please find attached invoice INV-2024-0056 against PO-2024-0039 for $7,542.00.
+Payment is due by 2024-05-26 per our NET45 terms.
+
+Kind regards,
+Dev
+Yellowstone Components
+
+--=-PTB-MSG-000194
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0056.txt"
 MIME-Version: 1.0
 
-Uma,
+INVOICE INV-2024-0056
+Date: 2024-04-11
+Party: Delta Ridge Supplies
 
-Payment of $5,102.71 for invoice INV-2024-0016 was sent today by bank transfe=
-r.
+Invoice number: INV-2024-0056
+Issuer: Delta Ridge Supplies
+Bill to: Vantage Fabrication
+Issue date: 2024-04-11
+Due date: 2024-05-26
+Terms: NET45
+Total: $7,542.00
+Po ref: PO-2024-0039
 
-Best,
-Dev
-Granite Distribution
+--=-PTB-MSG-000194--

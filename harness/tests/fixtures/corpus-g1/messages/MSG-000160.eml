@@ -1,40 +1,39 @@
 From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Dev Ueda <dev.ueda@granitedistribution.example>
-Subject: Invoice INV-2024-0055 from Vantage Fabrication
-Date: Mon, 11 Mar 2024 09:21:00 +0000
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Re: Invoice INV-2024-0049 from Vantage Fabrication
+Date: Tue, 26 Mar 2024 09:00:00 +0000
 Message-ID: <MSG-000160@vantagefabrication.example>
+In-Reply-To: <MSG-000149@vantagefabrication.example>
+References: <MSG-000149@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000160"
 
 --=-PTB-MSG-000160
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Dev,
+Mona,
 
-Please find attached invoice INV-2024-0055 for $3,290.00.
-Payment is due by 2024-05-10 per our NET60 terms.
+We have issued credit note CN-2024-0007 for $605.99 against invoice INV-2024-=
+0049 (returned items).
 
-Kind regards,
+Best,
 Uma
 Vantage Fabrication
 
 --=-PTB-MSG-000160
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0055.txt"
+Content-Disposition: attachment; filename="CN-2024-0007.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0055
-Date: 2024-03-11
-Party: Granite Distribution
+CREDIT NOTE CN-2024-0007
+Date: 2024-03-26
+Party: Meridian Distribution
 
-Invoice number: INV-2024-0055
-Issuer: Vantage Fabrication
-Bill to: Granite Distribution
-Issue date: 2024-03-11
-Due date: 2024-05-10
-Terms: NET60
-Total: $3,290.00
+Credit note number: CN-2024-0007
+Invoice ref: INV-2024-0049
+Amount: $605.99
+Reason: returned items
 
 --=-PTB-MSG-000160--

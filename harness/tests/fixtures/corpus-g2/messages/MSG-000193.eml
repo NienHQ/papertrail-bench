@@ -1,0 +1,43 @@
+From: Quinn Whitfield <quinn.whitfield@northgatepackaging.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0019 - shipping cartons
+Date: Thu, 21 Mar 2024 09:07:00 +0000
+Message-ID: <MSG-000193@northgatepackaging.example>
+In-Reply-To: <MSG-000192@northgatepackaging.example>
+References: <MSG-000128@junctionfabrication.example>
+ <MSG-000129@northgatepackaging.example>
+ <MSG-000152@northgatepackaging.example>
+ <MSG-000171@junctionfabrication.example>
+ <MSG-000192@northgatepackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000193"
+
+--=-PTB-MSG-000193
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Ava,
+
+We have issued credit note CN-2024-0008 for $1,835.07 against invoice INV-202=
+4-0023 (duplicate line item).
+
+Kind regards,
+Quinn
+Northgate Packaging
+
+--=-PTB-MSG-000193
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0008.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0008
+Date: 2024-03-21
+Party: Northgate Packaging
+
+Credit note number: CN-2024-0008
+Invoice ref: INV-2024-0023
+Amount: $1,835.07
+Reason: duplicate line item
+
+--=-PTB-MSG-000193--

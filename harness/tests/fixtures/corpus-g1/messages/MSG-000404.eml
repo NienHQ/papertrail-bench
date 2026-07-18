@@ -1,23 +1,39 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Re: Purchase order PO-2024-0062 - LED panels
-Date: Sat, 22 Jun 2024 09:00:00 +0000
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Dev Ueda <dev.ueda@granitedistribution.example>
+Subject: Re: Invoice INV-2024-0121 from Vantage Fabrication
+Date: Fri, 05 Jul 2024 09:14:00 +0000
 Message-ID: <MSG-000404@vantagefabrication.example>
-In-Reply-To: <MSG-000331@vantagefabrication.example>
-References: <MSG-000287@vantagefabrication.example>
- <MSG-000288@deltaridgesupplies.example>
- <MSG-000305@deltaridgesupplies.example>
- <MSG-000317@vantagefabrication.example>
- <MSG-000331@vantagefabrication.example>
+In-Reply-To: <MSG-000394@vantagefabrication.example>
+References: <MSG-000394@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000404"
+
+--=-PTB-MSG-000404
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
+
+Dev,
+
+We have issued credit note CN-2024-0014 for $1,205.31 against invoice INV-202=
+4-0121 (returned items).
+
+Thanks,
+Uma
+Vantage Fabrication
+
+--=-PTB-MSG-000404
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0014.txt"
 MIME-Version: 1.0
 
-Hello Dev,
+CREDIT NOTE CN-2024-0014
+Date: 2024-07-05
+Party: Granite Distribution
 
-Payment of $8,547.60 for invoice INV-2024-0082 was sent today by bank transfe=
-r.
+Credit note number: CN-2024-0014
+Invoice ref: INV-2024-0121
+Amount: $1,205.31
+Reason: returned items
 
-Regards,
-Carla
-Vantage Fabrication
+--=-PTB-MSG-000404--

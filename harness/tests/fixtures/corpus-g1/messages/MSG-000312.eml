@@ -1,44 +1,17 @@
-From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0055 - rubber gaskets
-Date: Mon, 13 May 2024 09:07:00 +0000
-Message-ID: <MSG-000312@bluepinematerials.example>
-In-Reply-To: <MSG-000299@bluepinematerials.example>
-References: <MSG-000298@vantagefabrication.example>
- <MSG-000299@bluepinematerials.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000312"
-
---=-PTB-MSG-000312
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Payment terms review - Meridian Distribution
+Date: Sat, 01 Jun 2024 09:00:00 +0000
+Message-ID: <MSG-000312@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-
-Carla,
-
-Please find attached invoice INV-2024-0075 against PO-2024-0055 for $5,646.60.
-Payment is due by 2024-05-28 per our NET15 terms.
-
-Best regards,
-Rosa
-Bluepine Materials
-
---=-PTB-MSG-000312
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0075.txt"
+Content-Transfer-Encoding: quoted-printable
 MIME-Version: 1.0
 
-INVOICE INV-2024-0075
-Date: 2024-05-13
-Party: Bluepine Materials
+Dear Mona,
 
-Invoice number: INV-2024-0075
-Issuer: Bluepine Materials
-Bill to: Vantage Fabrication
-Issue date: 2024-05-13
-Due date: 2024-05-28
-Terms: NET15
-Total: $5,646.60
-Po ref: PO-2024-0055
+Given our trading volume this year, we would like to revise payment terms fro=
+m 15 to 30 days going forward.
 
---=-PTB-MSG-000312--
+Regards,
+Uma
+Vantage Fabrication

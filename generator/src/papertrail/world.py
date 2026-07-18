@@ -7,10 +7,10 @@ EML bodies 7bit.
 from __future__ import annotations
 
 import random
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date
 
-from .model import AddressPeriod, Party, Person
+from .model import AddressPeriod, EmploymentPeriod, Party, Person
 
 FIRST_NAMES = [
     "Ava", "Ben", "Carla", "Dev", "Elena", "Farid", "Grace", "Hugo", "Iris",
@@ -44,14 +44,52 @@ class World:
     parties: list[Party]  # includes self
     people: list[Person]
     items: list[str]
+    # unused person names, in draw order, for post-build hires (replacements)
+    name_pool: list[str] = field(default_factory=list)
 
     def party(self, party_id: str) -> Party:
         return next(p for p in self.parties if p.party_id == party_id)
 
-    def contact_for(self, party_id: str, role: str | None = None) -> Person:
-        cands = [p for p in self.people if p.party_id == party_id
-                 and (role is None or p.role == role)]
-        return cands[0]
+    def contact_for(self, party_id: str, role: str | None = None,
+                    on: date | None = None) -> Person:
+        """The acting contact for a party.
+
+        Date-free: whoever is CURRENTLY employed there (used by the renderer
+        for "who sends now" style lookups and by the simulator).
+        Date-aware: whoever was employed there on that date; when several
+        people qualify, the MOST RECENT joiner wins (ties broken by
+        person_id). This is the deterministic sender rule after a
+        PERSON_MOVED: the mover handles the destination party's mail from
+        the move date on, while the destination's original contact remains
+        employed there.
+        """
+        if on is None:
+            cands = [p for p in self.people if p.party_id == party_id
+                     and (role is None or p.role == role)]
+            return cands[0]
+        dated: list[tuple[date, str, Person]] = []
+        for p in self.people:
+            if role is not None and p.role != role:
+                continue
+            for e in p.employments:
+                if (e.party_id == party_id and e.from_date <= on
+                        and (e.to_date is None or on < e.to_date)):
+                    dated.append((e.from_date, p.person_id, p))
+        assert dated, f"no contact for {party_id} on {on}"
+        dated.sort(key=lambda t: (t[0], t[1]))
+        return dated[-1][2]
+
+    def hire(self, party: Party, role: str, from_date: date) -> Person:
+        """Add a replacement contact at a party mid-corpus."""
+        name = self.name_pool.pop(0)
+        person = Person(
+            person_id=f"PER-{len(self.people) + 1:04d}", name=name,
+            party_id=party.party_id, role=role,
+            addresses=[AddressPeriod(_addr(name, party.domain), from_date,
+                                     None)],
+            employments=[EmploymentPeriod(party.party_id, from_date, None)])
+        self.people.append(person)
+        return person
 
     def vendors(self) -> list[Party]:
         return [p for p in self.parties if p.kind == "vendor"]
@@ -95,7 +133,8 @@ def build_world(rng: random.Random, n_vendors: int, n_customers: int,
         person = Person(
             person_id=f"PER-{next(pids):04d}", name=name, party_id=party.party_id,
             role=role,
-            addresses=[AddressPeriod(_addr(name, party.domain), year_start, None)])
+            addresses=[AddressPeriod(_addr(name, party.domain), year_start, None)],
+            employments=[EmploymentPeriod(party.party_id, year_start, None)])
         people.append(person)
         return person
 
@@ -115,4 +154,5 @@ def build_world(rng: random.Random, n_vendors: int, n_customers: int,
     add_person(landlord, "property manager")
 
     items = rng.sample(ITEMS, min(len(ITEMS), max(4, n_vendors)))
-    return World(self_party=self_party, parties=parties, people=people, items=items)
+    return World(self_party=self_party, parties=parties, people=people,
+                 items=items, name_pool=list(names_iter))

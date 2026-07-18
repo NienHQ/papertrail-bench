@@ -1,0 +1,44 @@
+From: Carla Okafor <carla.okafor@yellowstonematerials.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0070 - pallet wrap
+Date: Mon, 27 May 2024 09:14:00 +0000
+Message-ID: <MSG-000378@yellowstonematerials.example>
+In-Reply-To: <MSG-000349@yellowstonematerials.example>
+References: <MSG-000348@junctionfabrication.example>
+ <MSG-000349@yellowstonematerials.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000378"
+
+--=-PTB-MSG-000378
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Ava,
+
+Please find attached invoice INV-2024-0089 against PO-2024-0070 for $5,569.85.
+Payment is due by 2024-07-26 per our NET60 terms.
+
+Best,
+Carla
+Yellowstone Materials
+
+--=-PTB-MSG-000378
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0089.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0089
+Date: 2024-05-27
+Party: Yellowstone Materials
+
+Invoice number: INV-2024-0089
+Issuer: Yellowstone Materials
+Bill to: Junction Fabrication
+Issue date: 2024-05-27
+Due date: 2024-07-26
+Terms: NET60
+Total: $5,569.85
+Po ref: PO-2024-0070
+
+--=-PTB-MSG-000378--

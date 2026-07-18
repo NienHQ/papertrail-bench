@@ -1,47 +1,24 @@
-From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0101 - LED panels
-Date: Fri, 23 Aug 2024 09:07:00 +0000
-Message-ID: <MSG-000559@deltaridgesupplies.example>
-In-Reply-To: <MSG-000524@vantagefabrication.example>
-References: <MSG-000506@vantagefabrication.example>
- <MSG-000507@deltaridgesupplies.example>
- <MSG-000515@vantagefabrication.example>
- <MSG-000524@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000559"
-
---=-PTB-MSG-000559
+From: Carla Costa <carla.costa@vantagefabrication.example>
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Re: Purchase order PO-2024-0093 - LED panels
+Date: Mon, 07 Oct 2024 09:00:00 +0000
+Message-ID: <MSG-000559@vantagefabrication.example>
+In-Reply-To: <MSG-000539@deltaridgesupplies.example>
+References: <MSG-000497@vantagefabrication.example>
+ <MSG-000498@deltaridgesupplies.example>
+ <MSG-000516@deltaridgesupplies.example>
+ <MSG-000528@vantagefabrication.example>
+ <MSG-000538@deltaridgesupplies.example>
+ <MSG-000539@deltaridgesupplies.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-
-Hello Carla,
-
-Please find attached invoice INV-2024-0135 against PO-2024-0101-A2 for $2,011=
-.20.
-Payment is due by 2024-10-07 per our NET45 terms.
-
-Kind regards,
-Dev
-Delta Ridge Supplies
-
---=-PTB-MSG-000559
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0135.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0135
-Date: 2024-08-23
-Party: Delta Ridge Supplies
+Dear Kira,
 
-Invoice number: INV-2024-0135
-Issuer: Delta Ridge Supplies
-Bill to: Vantage Fabrication
-Issue date: 2024-08-23
-Due date: 2024-10-07
-Terms: NET45
-Total: $2,011.20
-Po ref: PO-2024-0101-A2
+Payment of $1,166.32 for invoice INV-2024-0133 was sent today by bank transfe=
+r.
 
---=-PTB-MSG-000559--
+Best regards,
+Carla
+Vantage Fabrication

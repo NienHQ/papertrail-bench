@@ -1,39 +1,20 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Purchase order PO-2024-0106 - copper wire 12AWG
-Date: Thu, 15 Aug 2024 09:07:00 +0000
+From: Carla Costa <carla.costa@vantagefabrication.example>
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Re: Purchase order PO-2024-0094 - LED panels
+Date: Tue, 27 Aug 2024 09:14:00 +0000
 Message-ID: <MSG-000527@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000527"
-
---=-PTB-MSG-000527
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Hi Hugo,
-
-Please find attached purchase order PO-2024-0106 for 160 units of copper wire=
- 12AWG at $78.26 per unit.
-The order total is $12,521.60.
-
-Regards,
-Hugo
-Vantage Fabrication
-
---=-PTB-MSG-000527
+In-Reply-To: <MSG-000518@deltaridgesupplies.example>
+References: <MSG-000499@vantagefabrication.example>
+ <MSG-000500@deltaridgesupplies.example>
+ <MSG-000518@deltaridgesupplies.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0106.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0106
-Date: 2024-08-15
-Party: Yellowstone Components
+Hi Kira,
 
-Po number: PO-2024-0106
-Item: copper wire 12AWG
-Qty: 160
-Unit price: $78.26
-Total: $12,521.60
+We dispute $1,056.55 on invoice INV-2024-0134: quantity mismatch.
 
---=-PTB-MSG-000527--
+Regards,
+Carla
+Vantage Fabrication

@@ -1,19 +1,44 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Iris Vance <iris.vance@redwoodindustrial.example>
-Subject: Re: Purchase order PO-2024-0001 - safety gloves
-Date: Sat, 23 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000117@oakfieldfabrication.example>
-In-Reply-To: <MSG-000037@redwoodindustrial.example>
-References: <MSG-000025@oakfieldfabrication.example>
- <MSG-000026@redwoodindustrial.example> <MSG-000037@redwoodindustrial.example>
+From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0028 - shipping cartons
+Date: Thu, 14 Mar 2024 09:14:00 +0000
+Message-ID: <MSG-000117@vantageindustrial.example>
+In-Reply-To: <MSG-000106@vantageindustrial.example>
+References: <MSG-000105@oakfieldfabrication.example>
+ <MSG-000106@vantageindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000117"
+
+--=-PTB-MSG-000117
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-MIME-Version: 1.0
 
-Hi Iris,
+Hi Victor,
 
-Payment of $157.10 for invoice INV-2024-0001 was sent today by bank transfer.
+Please find attached invoice INV-2024-0039 against PO-2024-0028 for $6,244.10.
+Payment is due by 2024-04-28 per our NET45 terms.
 
 Thanks,
-Victor
-Oakfield Fabrication
+Quinn
+Vantage Industrial
+
+--=-PTB-MSG-000117
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0039.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0039
+Date: 2024-03-14
+Party: Vantage Industrial
+
+Invoice number: INV-2024-0039
+Issuer: Vantage Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-03-14
+Due date: 2024-04-28
+Terms: NET45
+Total: $6,244.10
+Po ref: PO-2024-0028
+
+--=-PTB-MSG-000117--

@@ -1,0 +1,38 @@
+From: Kira Joshi <kira.joshi@lakeshoreproperties.example>
+To: Nils Whitfield <nils.whitfield@junctionfabrication.example>
+Subject: Lease agreement LEASE-2024-001
+Date: Wed, 03 Jan 2024 09:07:00 +0000
+Message-ID: <MSG-000002@lakeshoreproperties.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000002"
+
+--=-PTB-MSG-000002
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Nils,
+
+Please find attached the signed lease LEASE-2024-001 for the premises, with a=
+ term of 36 months.
+Monthly rent is $1,661.71, effective 2024-01-03.
+
+Thanks,
+Kira
+Lakeshore Properties
+
+--=-PTB-MSG-000002
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="LEASE-2024-001.txt"
+MIME-Version: 1.0
+
+LEASE AGREEMENT LEASE-2024-001
+Date: 2024-01-03
+Party: Lakeshore Properties
+
+Lease number: LEASE-2024-001
+Monthly rent: $1,661.71
+Term months: 36
+Start date: 2024-01-03
+
+--=-PTB-MSG-000002--

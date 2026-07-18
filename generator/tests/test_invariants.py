@@ -67,10 +67,60 @@ def test_fact_ledger_intervals(corpus):
 
 
 def test_alias_periods_non_overlapping(corpus):
-    for p in corpus.sim.world.people:
-        periods = sorted(p.addresses, key=lambda a: a.from_date)
-        for prev, cur in zip(periods, periods[1:]):
-            assert prev.to_date is not None and prev.to_date <= cur.from_date
+    """Invariant 7, extended for G2: address AND employment periods are
+    non-overlapping with exactly one open period, the address domain always
+    matches the employer of record for the period, and both period kinds
+    are genuinely exercised (a move and an address change exist)."""
+    world = corpus.sim.world
+    for p in world.people:
+        for periods in (p.addresses, p.employments):
+            ordered = sorted(periods, key=lambda a: a.from_date)
+            assert ordered[-1].to_date is None
+            for prev, cur in zip(ordered, ordered[1:]):
+                assert prev.to_date is not None
+                assert prev.to_date <= cur.from_date
+        for a in p.addresses:
+            employer = world.party(p.party_on(a.from_date))
+            assert a.address.endswith("@" + employer.domain)
+        assert p.party_id == p.employments[-1].party_id
+    assert any(len(p.employments) > 1 for p in world.people)
+    assert any(len(p.addresses) > len(p.employments) for p in world.people)
+
+
+def test_person_move_and_contact_change_render(corpus):
+    """CONTACT_CHANGED announces from the NEW address; PERSON_MOVED sends
+    one farewell from the OLD address before the switch; date-aware contact
+    lookups hand the old party to the replacement and the new party to the
+    mover from the move date on."""
+    world = corpus.sim.world
+    idx = corpus.render_result.evidence_index
+    msgs = {m.message_id: m for m in corpus.render_result.messages}
+    people = {p.person_id: p for p in world.people}
+    moves = [e for e in corpus.sim.events if e.type == "PERSON_MOVED"]
+    changes = [e for e in corpus.sim.events if e.type == "CONTACT_CHANGED"]
+    assert moves and changes
+    for e in changes:
+        occs = idx[("event", e.event_id)]
+        assert len(occs) == 1
+        m = msgs[occs[0][0]]
+        assert m.from_address == e.payload["new_address"]
+        p = people[e.payload["person_id"]]
+        d = e.event_time.date()
+        assert p.address_on(d) == e.payload["new_address"]
+        assert p.address_on(d - timedelta(days=1)) == e.payload["old_address"]
+    for e in moves:
+        occs = idx[("event", e.event_id)]
+        assert len(occs) == 1
+        m = msgs[occs[0][0]]
+        mover = people[e.payload["person_id"]]
+        d = e.event_time.date()
+        assert m.from_person == mover.person_id
+        assert m.from_address == mover.address_on(d - timedelta(days=1))
+        replacement = people[e.payload["replacement_person_id"]]
+        assert world.contact_for(e.payload["from_party"], on=d) is replacement
+        assert world.contact_for(e.payload["to_party"], on=d) is mover
+        assert world.contact_for(e.payload["from_party"],
+                                 on=d - timedelta(days=1)) is mover
 
 
 def test_internal_consistency_invoice_due_dates(corpus):

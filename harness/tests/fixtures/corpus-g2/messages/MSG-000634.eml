@@ -1,0 +1,43 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Mona Yates <mona.yates@cardinalcomponents.example>
+Subject: Re: Purchase order PO-2024-0109 - hex bolts M8
+Date: Wed, 28 Aug 2024 09:00:00 +0000
+Message-ID: <MSG-000634@junctionfabrication.example>
+In-Reply-To: <MSG-000621@junctionfabrication.example>
+References: <MSG-000608@junctionfabrication.example>
+ <MSG-000609@cardinalcomponents.example>
+ <MSG-000621@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000634"
+
+--=-PTB-MSG-000634
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Mona,
+
+Please amend PO-2024-0109: quantity is now 70 units of hex bolts M8, revised =
+order total $1,284.50.
+The amended purchase order is attached as PO-2024-0109-A2.
+
+Best regards,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000634
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0109-A2.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0109-A2
+Date: 2024-08-28
+Party: Cardinal Components
+
+Po number: PO-2024-0109
+Item: hex bolts M8
+Qty: 70
+Unit price: $18.35
+Total: $1,284.50
+
+--=-PTB-MSG-000634--

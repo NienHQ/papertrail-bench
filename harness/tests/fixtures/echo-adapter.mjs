@@ -8,8 +8,8 @@ import { createInterface } from "node:readline";
 
 const KNOWN = {
   "Q-0001": {
-    answer: "$9,549.80",
-    citations: ["INV-2024-0074", "MSG-000280:MSG-000280-S1"],
+    answer: "$12,322.50",
+    citations: ["INV-2024-0074", "MSG-000291:MSG-000291-S1"],
   },
 };
 

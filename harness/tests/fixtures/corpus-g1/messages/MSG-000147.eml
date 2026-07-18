@@ -1,20 +1,39 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Re: Purchase order PO-2024-0004 - safety gloves
-Date: Thu, 07 Mar 2024 09:00:00 +0000
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Purchase order PO-2024-0026 - rubber gaskets
+Date: Fri, 22 Mar 2024 09:14:00 +0000
 Message-ID: <MSG-000147@vantagefabrication.example>
-In-Reply-To: <MSG-000061@quarrypackaging.example>
-References: <MSG-000012@vantagefabrication.example>
- <MSG-000013@quarrypackaging.example> <MSG-000043@quarrypackaging.example>
- <MSG-000061@quarrypackaging.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000147"
 
-Dear Jonas,
+--=-PTB-MSG-000147
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Payment of $201.99 for invoice INV-2024-0004 was sent today by bank transfer.
+Hello Rosa,
+
+Please find attached purchase order PO-2024-0026 for 50 units of rubber gaske=
+ts at $62.74 per unit.
+The order total is $3,137.00.
 
 Best,
-Carla
+Hugo
 Vantage Fabrication
+
+--=-PTB-MSG-000147
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0026.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0026
+Date: 2024-03-22
+Party: Bluepine Materials
+
+Po number: PO-2024-0026
+Item: rubber gaskets
+Qty: 50
+Unit price: $62.74
+Total: $3,137.00
+
+--=-PTB-MSG-000147--

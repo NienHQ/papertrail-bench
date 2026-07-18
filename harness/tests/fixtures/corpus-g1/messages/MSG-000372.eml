@@ -1,21 +1,39 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Re: Purchase order PO-2024-0048 - LED panels
-Date: Sun, 09 Jun 2024 09:00:00 +0000
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Purchase order PO-2024-0058 - rubber gaskets
+Date: Mon, 24 Jun 2024 09:07:00 +0000
 Message-ID: <MSG-000372@vantagefabrication.example>
-In-Reply-To: <MSG-000268@deltaridgesupplies.example>
-References: <MSG-000254@vantagefabrication.example>
- <MSG-000255@deltaridgesupplies.example>
- <MSG-000268@deltaridgesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000372"
+
+--=-PTB-MSG-000372
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-MIME-Version: 1.0
 
-Dear Dev,
+Dear Rosa,
 
-Payment of $4,273.80 for invoice INV-2024-0064 was sent today by bank transfe=
-r.
+Please find attached purchase order PO-2024-0058 for 140 units of rubber gask=
+ets at $62.74 per unit.
+The order total is $8,783.60.
 
 Kind regards,
-Carla
+Hugo
 Vantage Fabrication
+
+--=-PTB-MSG-000372
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0058.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0058
+Date: 2024-06-24
+Party: Bluepine Materials
+
+Po number: PO-2024-0058
+Item: rubber gaskets
+Qty: 140
+Unit price: $62.74
+Total: $8,783.60
+
+--=-PTB-MSG-000372--

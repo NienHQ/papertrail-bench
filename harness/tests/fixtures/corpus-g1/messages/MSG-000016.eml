@@ -1,39 +1,40 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Purchase order PO-2024-0005 - safety gloves
-Date: Fri, 19 Jan 2024 09:00:00 +0000
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Invoice INV-2024-0015 from Vantage Fabrication
+Date: Wed, 17 Jan 2024 09:07:00 +0000
 Message-ID: <MSG-000016@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000016"
 
 --=-PTB-MSG-000016
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Dear Jonas,
+Dear Mona,
 
-Please find attached purchase order PO-2024-0005 for 110 units of safety glov=
-es at $4.39 per unit.
-The order total is $482.90.
+Please find attached invoice INV-2024-0015 for $8,920.00.
+Payment is due by 2024-02-01 per our NET15 terms.
 
 Regards,
-Hugo
+Uma
 Vantage Fabrication
 
 --=-PTB-MSG-000016
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0005.txt"
+Content-Disposition: attachment; filename="INV-2024-0015.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0005
-Date: 2024-01-19
-Party: Quarry Packaging
+INVOICE INV-2024-0015
+Date: 2024-01-17
+Party: Meridian Distribution
 
-Po number: PO-2024-0005
-Item: safety gloves
-Qty: 110
-Unit price: $4.39
-Total: $482.90
+Invoice number: INV-2024-0015
+Issuer: Vantage Fabrication
+Bill to: Meridian Distribution
+Issue date: 2024-01-17
+Due date: 2024-02-01
+Terms: NET15
+Total: $8,920.00
 
 --=-PTB-MSG-000016--

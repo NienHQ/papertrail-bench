@@ -1,18 +1,42 @@
-From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0040 - LED panels
-Date: Thu, 23 May 2024 11:07:00 +0000
-Message-ID: <MSG-000220@yellowstonesupplies.example>
-In-Reply-To: <MSG-000219@oakfieldfabrication.example>
-References: <MSG-000219@oakfieldfabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@yellowstonesupplies.example>
+Subject: Re: Purchase order PO-2024-0042 - LED panels
+Date: Sat, 11 May 2024 09:00:00 +0000
+Message-ID: <MSG-000220@oakfieldfabrication.example>
+In-Reply-To: <MSG-000215@yellowstonesupplies.example>
+References: <MSG-000214@oakfieldfabrication.example>
+ <MSG-000215@yellowstonesupplies.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000220"
 
-Quinn,
+--=-PTB-MSG-000220
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Confirming receipt of PO-2024-0040; we will schedule this for delivery.
+Iris,
+
+Please amend PO-2024-0042: quantity is now 95 units of LED panels, revised or=
+der total $7,552.50.
+The amended purchase order is attached as PO-2024-0042-A1.
 
 Regards,
-Ava
-Yellowstone Supplies
+Quinn
+Oakfield Fabrication
+
+--=-PTB-MSG-000220
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0042-A1.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0042-A1
+Date: 2024-05-11
+Party: Yellowstone Supplies
+
+Po number: PO-2024-0042
+Item: LED panels
+Qty: 95
+Unit price: $79.50
+Total: $7,552.50
+
+--=-PTB-MSG-000220--

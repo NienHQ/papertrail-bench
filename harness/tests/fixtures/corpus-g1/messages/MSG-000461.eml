@@ -1,8 +1,12 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Purchase order PO-2024-0083 - rubber gaskets
-Date: Mon, 15 Jul 2024 09:07:00 +0000
-Message-ID: <MSG-000461@vantagefabrication.example>
+From: Kira Novak <kira.novak@deltaridgesupplies.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0081 - LED panels
+Date: Sat, 27 Jul 2024 09:00:00 +0000
+Message-ID: <MSG-000461@deltaridgesupplies.example>
+In-Reply-To: <MSG-000438@vantagefabrication.example>
+References: <MSG-000426@vantagefabrication.example>
+ <MSG-000427@deltaridgesupplies.example>
+ <MSG-000438@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000461"
 
@@ -10,30 +14,33 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000461"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dear Rosa,
+Dear Carla,
 
-Please find attached purchase order PO-2024-0083 for 15 units of rubber gaske=
-ts at $62.74 per unit.
-The order total is $941.10.
+Please find attached invoice INV-2024-0115 against PO-2024-0081-A1 for $9,553=
+.20.
+Payment is due by 2024-09-10 per our NET45 terms.
 
-Best regards,
-Hugo
-Vantage Fabrication
+Regards,
+Kira
+Delta Ridge Supplies
 
 --=-PTB-MSG-000461
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0083.txt"
+Content-Disposition: attachment; filename="INV-2024-0115.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0083
-Date: 2024-07-15
-Party: Bluepine Materials
+INVOICE INV-2024-0115
+Date: 2024-07-27
+Party: Delta Ridge Supplies
 
-Po number: PO-2024-0083
-Item: rubber gaskets
-Qty: 15
-Unit price: $62.74
-Total: $941.10
+Invoice number: INV-2024-0115
+Issuer: Delta Ridge Supplies
+Bill to: Vantage Fabrication
+Issue date: 2024-07-27
+Due date: 2024-09-10
+Terms: NET45
+Total: $9,553.20
+Po ref: PO-2024-0081-A1
 
 --=-PTB-MSG-000461--

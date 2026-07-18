@@ -1,18 +1,44 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
-To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0086 - safety gloves
-Date: Sat, 06 Jul 2024 14:07:00 +0000
-Message-ID: <MSG-000436@quarrypackaging.example>
-In-Reply-To: <MSG-000435@vantagefabrication.example>
-References: <MSG-000435@vantagefabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+Subject: Re: Purchase order PO-2024-0084 - copper wire 12AWG
+Date: Tue, 16 Jul 2024 09:00:00 +0000
+Message-ID: <MSG-000436@vantagefabrication.example>
+In-Reply-To: <MSG-000422@vantagefabrication.example>
+References: <MSG-000396@vantagefabrication.example>
+ <MSG-000397@yellowstonecomponents.example>
+ <MSG-000407@vantagefabrication.example>
+ <MSG-000422@vantagefabrication.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000436"
 
-Hello Hugo,
+--=-PTB-MSG-000436
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Confirming receipt of PO-2024-0086; we will schedule this for delivery.
+Hello Dev,
+
+Please amend PO-2024-0084: quantity is now 175 units of copper wire 12AWG, re=
+vised order total $13,695.50.
+The amended purchase order is attached as PO-2024-0084-A3.
 
 Regards,
-Jonas
-Quarry Packaging
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000436
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0084-A3.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0084-A3
+Date: 2024-07-16
+Party: Yellowstone Components
+
+Po number: PO-2024-0084
+Item: copper wire 12AWG
+Qty: 175
+Unit price: $78.26
+Total: $13,695.50
+
+--=-PTB-MSG-000436--

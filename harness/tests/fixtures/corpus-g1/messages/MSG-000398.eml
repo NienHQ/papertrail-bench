@@ -1,12 +1,8 @@
-From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0069 - rubber gaskets
-Date: Wed, 19 Jun 2024 09:14:00 +0000
-Message-ID: <MSG-000398@bluepinematerials.example>
-In-Reply-To: <MSG-000388@vantagefabrication.example>
-References: <MSG-000375@vantagefabrication.example>
- <MSG-000376@bluepinematerials.example>
- <MSG-000388@vantagefabrication.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+Subject: Purchase order PO-2024-0086 - copper wire 12AWG
+Date: Wed, 03 Jul 2024 09:00:00 +0000
+Message-ID: <MSG-000398@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000398"
 
@@ -14,33 +10,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000398"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Carla,
+Dear Dev,
 
-Please find attached invoice INV-2024-0094 against PO-2024-0069-A1 for $4,078=
-.10.
-Payment is due by 2024-07-04 per our NET15 terms.
+Please find attached purchase order PO-2024-0086 for 40 units of copper wire =
+12AWG at $78.26 per unit.
+The order total is $3,130.40.
 
 Best regards,
-Rosa
-Bluepine Materials
+Hugo
+Vantage Fabrication
 
 --=-PTB-MSG-000398
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0094.txt"
+Content-Disposition: attachment; filename="PO-2024-0086.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0094
-Date: 2024-06-19
-Party: Bluepine Materials
+PURCHASE ORDER PO-2024-0086
+Date: 2024-07-03
+Party: Yellowstone Components
 
-Invoice number: INV-2024-0094
-Issuer: Bluepine Materials
-Bill to: Vantage Fabrication
-Issue date: 2024-06-19
-Due date: 2024-07-04
-Terms: NET15
-Total: $4,078.10
-Po ref: PO-2024-0069-A1
+Po number: PO-2024-0086
+Item: copper wire 12AWG
+Qty: 40
+Unit price: $78.26
+Total: $3,130.40
 
 --=-PTB-MSG-000398--

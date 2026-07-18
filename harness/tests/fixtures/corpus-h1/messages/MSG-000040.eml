@@ -1,39 +1,40 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Purchase order PO-2024-0014 - LED panels
-Date: Fri, 02 Feb 2024 09:07:00 +0000
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Jonas Drake <jonas.drake@silvertontrading.example>
+Subject: Invoice INV-2024-0013 from Oakfield Fabrication
+Date: Mon, 29 Jan 2024 09:07:00 +0000
 Message-ID: <MSG-000040@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000040"
 
 --=-PTB-MSG-000040
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Ava,
+Dear Jonas,
 
-Please find attached purchase order PO-2024-0014 for 120 units of LED panels =
-at $79.50 per unit.
-The order total is $9,540.00.
+Please find attached invoice INV-2024-0013 for $5,090.00.
+Payment is due by 2024-02-28 per our NET30 terms.
 
-Best regards,
-Quinn
+Thanks,
+Tara
 Oakfield Fabrication
 
 --=-PTB-MSG-000040
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0014.txt"
+Content-Disposition: attachment; filename="INV-2024-0013.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0014
-Date: 2024-02-02
-Party: Yellowstone Supplies
+INVOICE INV-2024-0013
+Date: 2024-01-29
+Party: Silverton Trading
 
-Po number: PO-2024-0014
-Item: LED panels
-Qty: 120
-Unit price: $79.50
-Total: $9,540.00
+Invoice number: INV-2024-0013
+Issuer: Oakfield Fabrication
+Bill to: Silverton Trading
+Issue date: 2024-01-29
+Due date: 2024-02-28
+Terms: NET30
+Total: $5,090.00
 
 --=-PTB-MSG-000040--

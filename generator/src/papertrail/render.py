@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import random
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 
 from .model import Document, Event, Message, Person, StatementOccurrence, Thread, money
 from .simulate import SimResult
@@ -73,6 +73,7 @@ class _Renderer:
         self._tid = 0
         self._mid = 0
         self.docs_by_id = {d.doc_id: d for d in sim.documents}
+        self.people_by_id = {p.person_id: p for p in sim.world.people}
         # thread reuse: one thread per business object chain / negotiation
         self.threads_by_key: dict[str, Thread] = {}
         self.last_msg_in_thread: dict[str, Message] = {}
@@ -99,9 +100,11 @@ class _Renderer:
         prev = self.last_msg_in_thread.get(thread.thread_id)
         self._mid += 1
         mid = f"MSG-{self._mid:06d}"
-        self.header_mid[mid] = \
-            f"<{mid}@{self.world.party(sender.party_id).domain}>"
         d = ts.date()
+        # Message-ID domain follows the sending address at send time, so a
+        # mover's pre-move mail carries the old employer's domain.
+        self.header_mid[mid] = \
+            f"<{mid}@{sender.address_on(d).split('@', 1)[1]}>"
         b = _BodyBuilder(mid)
         recipient = to[0]
         b.raw(self.rng.choice(GREETINGS).format(first=recipient.first) + "\n\n")
@@ -133,8 +136,11 @@ class _Renderer:
     def us(self, role: str) -> Person:
         return self.world.contact_for(self.world.self_party.party_id, role)
 
-    def them(self, party_id: str) -> Person:
-        return self.world.contact_for(party_id)
+    def them(self, party_id: str, on: date | None = None) -> Person:
+        """The counterparty contact, date-aware where the caller knows the
+        message date, so pre-move mail comes from the mover and post-move
+        mail from the replacement (old party) or the mover (new party)."""
+        return self.world.contact_for(party_id, on=on)
 
     def reply_ts(self, ts: datetime) -> datetime:
         return ts + timedelta(hours=self.rng.randint(2, 30))
@@ -157,9 +163,8 @@ class _Renderer:
         entity = ev.actor_party if ev.actor_party != w.self_party.party_id \
             else ev.counterparty
         party = w.party(entity)
-        contact, ours = self.them(entity), self.us("accounts payable" if
-                                                   party.kind == "vendor"
-                                                   else "accounts receivable")
+        ours = self.us("accounts payable" if party.kind == "vendor"
+                       else "accounts receivable")
         fact_t = {"fact": self.event_fact[ev.event_id]}
         value = ev.payload["value"]
         terms_txt = f"NET {value.removeprefix('NET')}"
@@ -169,22 +174,29 @@ class _Renderer:
             subj = f"Payment terms review - {party.name}" \
                 if party.kind == "customer" else \
                 f"Payment terms review - {w.self_party.name}"
-            requester, approver = (contact, ours) if party.kind == "vendor" \
-                else (ours, contact)
+            req_ts = ev.event_time - timedelta(days=2)
+            # contacts resolved per message date: sender and recipient stay
+            # correct across a CONTACT_CHANGED or PERSON_MOVED boundary
+            contact_req = self.them(entity, req_ts.date())
+            contact_conf = self.them(entity, ev.event_time.date())
+            requester, req_to = (contact_req, ours) \
+                if party.kind == "vendor" else (ours, contact_req)
+            approver, conf_to = (ours, contact_conf) \
+                if party.kind == "vendor" else (contact_conf, ours)
             self.compose(
-                key, subj, ev.event_time - timedelta(days=2), requester,
-                [approver],
+                key, subj, req_ts, requester, [req_to],
                 lambda b: b.statement(
                     f"Given our trading volume this year, we would like to "
                     f"revise payment terms from {prev.removeprefix('NET')} to "
                     f"{value.removeprefix('NET')} days going forward.", []))
             self.compose(
-                key, subj, ev.event_time, approver, [requester],
+                key, subj, ev.event_time, approver, [conf_to],
                 lambda b: b.statement(
                     f"Confirmed - payment terms between {w.self_party.name} and "
                     f"{party.name} are {terms_txt} effective "
                     f"{ev.event_time.date().isoformat()}.", [fact_t]))
         else:
+            contact = self.them(entity, ev.event_time.date())
             sender, rcpt = (contact, ours) if party.kind == "vendor" \
                 else (ours, contact)
             self.compose(
@@ -203,7 +215,8 @@ class _Renderer:
         self.compose(
             f"price:{party.party_id}:{ev.event_id}",
             f"Pricing - {item}", ev.event_time,
-            self.them(party.party_id), [self.us("purchasing")],
+            self.them(party.party_id, ev.event_time.date()),
+            [self.us("purchasing")],
             lambda b: b.statement(
                 f"We can confirm a unit price of {money(ev.payload['value'])} "
                 f"per unit for {item}, effective "
@@ -226,7 +239,8 @@ class _Renderer:
                 [fact_t, {"doc_field": [doc.doc_id, "monthly_rent_cents"]}])
 
         self.compose(f"lease:{doc.root_id}", f"Lease agreement {doc.root_id}",
-                     ev.event_time, self.them(doc.party_id),
+                     ev.event_time,
+                     self.them(doc.party_id, ev.event_time.date()),
                      [self.us("operations")], body, attachments=[doc.doc_id])
 
     def _ev_lease_amended(self, ev: Event) -> None:
@@ -245,13 +259,15 @@ class _Renderer:
                 [{"doc_field": [doc.doc_id, "lease_number"]}])
 
         self.compose(f"lease:{doc.root_id}", "", ev.event_time,
-                     self.them(doc.party_id), [self.us("operations")], body,
+                     self.them(doc.party_id, ev.event_time.date()),
+                     [self.us("operations")], body,
                      attachments=[doc.doc_id])
 
     def _ev_po_issued(self, ev: Event) -> None:
         doc = self.docs_by_id[ev.refs["doc"]]
         f = doc.fields
-        buyer, seller = self.us("purchasing"), self.them(doc.party_id)
+        buyer = self.us("purchasing")
+        seller = self.them(doc.party_id, ev.event_time.date())
 
         def body(b):
             b.statement(
@@ -268,8 +284,11 @@ class _Renderer:
                      f"Purchase order {f['po_number']} - {f['item']}",
                      ev.event_time, buyer, [seller], body,
                      attachments=[doc.doc_id])
-        self.compose(f"po:{doc.root_id}", "", self.reply_ts(ev.event_time),
-                     seller, [buyer],
+        # the ack sender is resolved at the ack's own date, so an ack that
+        # lands after a PERSON_MOVED comes from the replacement
+        ack_ts = self.reply_ts(ev.event_time)
+        self.compose(f"po:{doc.root_id}", "", ack_ts,
+                     self.them(doc.party_id, ack_ts.date()), [buyer],
                      lambda b: b.statement(
                          f"Confirming receipt of {f['po_number']}; we will "
                          f"schedule this for delivery.", [{"event": ev.event_id}]))
@@ -289,7 +308,8 @@ class _Renderer:
                 [{"doc_field": [doc.doc_id, "po_number"]}])
 
         self.compose(f"po:{doc.root_id}", "", ev.event_time,
-                     self.us("purchasing"), [self.them(doc.party_id)], body,
+                     self.us("purchasing"),
+                     [self.them(doc.party_id, ev.event_time.date())], body,
                      attachments=[doc.doc_id])
 
     def _ev_invoice_issued(self, ev: Event) -> None:
@@ -297,10 +317,9 @@ class _Renderer:
         doc = self.docs_by_id[ev.refs["doc"]]
         f = doc.fields
         we_issue = ev.actor_party == w.self_party.party_id
-        sender = self.us("accounts receivable") if we_issue \
-            else self.them(doc.party_id)
-        rcpt = self.them(doc.party_id) if we_issue \
-            else self.us("accounts payable")
+        contact = self.them(doc.party_id, ev.event_time.date())
+        sender = self.us("accounts receivable") if we_issue else contact
+        rcpt = contact if we_issue else self.us("accounts payable")
 
         def body(b):
             po_bit = f" against {f['po_ref']}" if "po_ref" in f else ""
@@ -330,10 +349,9 @@ class _Renderer:
         doc = self.docs_by_id[ev.refs["doc"]]
         f = doc.fields
         we_issue = ev.actor_party == self.world.self_party.party_id
-        sender = self.us("accounts receivable") if we_issue \
-            else self.them(doc.party_id)
-        rcpt = self.them(doc.party_id) if we_issue \
-            else self.us("accounts payable")
+        contact = self.them(doc.party_id, ev.event_time.date())
+        sender = self.us("accounts receivable") if we_issue else contact
+        rcpt = contact if we_issue else self.us("accounts payable")
         inv = self.docs_by_id[f["invoice_ref"]]
         thread_key = self.invoice_thread_key(inv)
 
@@ -355,7 +373,7 @@ class _Renderer:
         self.compose(
             self.invoice_thread_key(inv), f"Dispute - invoice {inv.doc_id}",
             ev.event_time, self.us("accounts payable"),
-            [self.them(inv.party_id)],
+            [self.them(inv.party_id, ev.event_time.date())],
             lambda b: b.statement(
                 f"We dispute {money(ev.payload['disputed_cents'])} on invoice "
                 f"{ev.payload['invoice_ref']}: {ev.payload['reason']}.",
@@ -364,7 +382,8 @@ class _Renderer:
     def _ev_dispute_resolved(self, ev: Event) -> None:
         inv = self.docs_by_id[ev.refs["invoice"]]
         thread_key = self.invoice_thread_key(inv)
-        ours, vendor = self.us("accounts payable"), self.them(inv.party_id)
+        ours = self.us("accounts payable")
+        vendor = self.them(inv.party_id, ev.event_time.date())
         if ev.payload["resolution"] == "credit_note":
             cn = self.docs_by_id[ev.payload["credit_note_ref"]]
             self.compose(
@@ -384,6 +403,39 @@ class _Renderer:
                     f"{ev.payload['invoice_ref']}.",
                     [{"event": ev.event_id}]))
 
+    def _ev_contact_changed(self, ev: Event) -> None:
+        """One message from the NEW address on a fresh thread. Every later
+        message from this person picks the new address via address_on."""
+        person = self.people_by_id[ev.payload["person_id"]]
+        kind = self.world.party(person.party_id).kind
+        ours = self.us("accounts payable" if kind == "vendor"
+                       else "accounts receivable")
+        self.compose(
+            f"contact:{ev.event_id}",
+            f"New contact address - {person.name}", ev.event_time,
+            person, [ours],
+            lambda b: b.statement(
+                f"Please note my new address {ev.payload['new_address']} "
+                f"going forward; the old one stops working this week.",
+                [{"event": ev.event_id}]))
+
+    def _ev_person_moved(self, ev: Event) -> None:
+        """ONE farewell/handover message, sent the day before the switch so
+        it leaves from the OLD address. No announcement from the new side:
+        the new domain just starts appearing (the mover is the destination's
+        acting contact from the move date, per World.contact_for)."""
+        mover = self.people_by_id[ev.payload["person_id"]]
+        old_party = self.world.party(ev.payload["from_party"])
+        new_party = self.world.party(ev.payload["to_party"])
+        replacement = self.people_by_id[ev.payload["replacement_person_id"]]
+        self.compose(
+            f"move:{ev.event_id}", f"Handover - {old_party.name} account",
+            ev.event_time - timedelta(days=1), mover, [self.us("purchasing")],
+            lambda b: b.statement(
+                f"I am leaving {old_party.name}; {replacement.name} takes "
+                f"over our account. You can reach me at {new_party.name} "
+                f"going forward.", [{"event": ev.event_id}]))
+
     def _ev_payment_sent(self, ev: Event) -> None:
         self._payment(ev)
 
@@ -394,10 +446,9 @@ class _Renderer:
         w = self.world
         inv = self.docs_by_id[ev.refs["invoice"]]
         we_pay = ev.actor_party == w.self_party.party_id
-        sender = self.us("accounts payable") if we_pay \
-            else self.them(inv.party_id)
-        rcpt = self.them(inv.party_id) if we_pay \
-            else self.us("accounts receivable")
+        contact = self.them(inv.party_id, ev.event_time.date())
+        sender = self.us("accounts payable") if we_pay else contact
+        rcpt = contact if we_pay else self.us("accounts receivable")
         thread_key = self.invoice_thread_key(inv)
         self.compose(
             thread_key, f"Payment - invoice {inv.doc_id}", ev.event_time,
@@ -446,9 +497,9 @@ def render_eml(msg: Message, world: World, docs_by_id: dict[str, Document]
     from email.policy import SMTP
     from email.utils import format_datetime
 
-    domain = world.party(
-        next(p for p in world.people
-             if p.person_id == msg.from_person).party_id).domain
+    # Message-ID domain follows the sending address (matches the renderer's
+    # header_mid rule), not the sender's current employer.
+    domain = msg.from_address.split("@", 1)[1]
     m = EmailMessage(policy=SMTP)
     m["From"] = f"{msg.from_name} <{msg.from_address}>"
     m["To"] = ", ".join(f"{n} <{a}>" for n, a in msg.to)

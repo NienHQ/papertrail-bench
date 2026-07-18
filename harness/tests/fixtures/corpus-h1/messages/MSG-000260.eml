@@ -1,39 +1,21 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-Subject: Purchase order PO-2024-0049 - shipping cartons
-Date: Tue, 18 Jun 2024 09:07:00 +0000
+From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@yellowstonesupplies.example>
+Subject: Re: Purchase order PO-2024-0041 - LED panels
+Date: Wed, 05 Jun 2024 09:00:00 +0000
 Message-ID: <MSG-000260@oakfieldfabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000260"
-
---=-PTB-MSG-000260
+In-Reply-To: <MSG-000235@yellowstonesupplies.example>
+References: <MSG-000224@oakfieldfabrication.example>
+ <MSG-000225@yellowstonesupplies.example>
+ <MSG-000235@yellowstonesupplies.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-
-Quinn,
-
-Please find attached purchase order PO-2024-0049 for 35 units of shipping car=
-tons at $73.46 per unit.
-The order total is $2,571.10.
-
-Regards,
-Quinn
-Oakfield Fabrication
-
---=-PTB-MSG-000260
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0049.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0049
-Date: 2024-06-18
-Party: Vantage Industrial
+Hello Iris,
 
-Po number: PO-2024-0049
-Item: shipping cartons
-Qty: 35
-Unit price: $73.46
-Total: $2,571.10
+Payment of $14,310.00 for invoice INV-2024-0061 was sent today by bank transf=
+er.
 
---=-PTB-MSG-000260--
+Thanks,
+Victor
+Oakfield Fabrication

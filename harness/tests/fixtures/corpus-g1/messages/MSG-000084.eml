@@ -1,21 +1,39 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Re: Purchase order PO-2024-0008 - LED panels
-Date: Sun, 11 Feb 2024 09:07:00 +0000
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Jonas Sato <jonas.sato@quarrypackaging.example>
+Subject: Purchase order PO-2024-0016 - safety gloves
+Date: Mon, 19 Feb 2024 09:00:00 +0000
 Message-ID: <MSG-000084@vantagefabrication.example>
-In-Reply-To: <MSG-000072@vantagefabrication.example>
-References: <MSG-000039@vantagefabrication.example>
- <MSG-000040@deltaridgesupplies.example>
- <MSG-000068@deltaridgesupplies.example>
- <MSG-000072@vantagefabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000084"
 
-Dear Dev,
+--=-PTB-MSG-000084
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-After review we are withdrawing our dispute on invoice INV-2024-0008.
+Hi Jonas,
+
+Please find attached purchase order PO-2024-0016 for 55 units of safety glove=
+s at $4.39 per unit.
+The order total is $241.45.
 
 Best regards,
-Carla
+Hugo
 Vantage Fabrication
+
+--=-PTB-MSG-000084
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0016.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0016
+Date: 2024-02-19
+Party: Quarry Packaging
+
+Po number: PO-2024-0016
+Item: safety gloves
+Qty: 55
+Unit price: $4.39
+Total: $241.45
+
+--=-PTB-MSG-000084--

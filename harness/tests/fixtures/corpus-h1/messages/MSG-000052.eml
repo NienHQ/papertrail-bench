@@ -1,40 +1,18 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Jonas Drake <jonas.drake@silvertontrading.example>
-Subject: Invoice INV-2024-0027 from Oakfield Fabrication
-Date: Fri, 09 Feb 2024 09:07:00 +0000
-Message-ID: <MSG-000052@oakfieldfabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000052"
-
---=-PTB-MSG-000052
+From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0013 - LED panels
+Date: Mon, 05 Feb 2024 13:14:00 +0000
+Message-ID: <MSG-000052@yellowstonesupplies.example>
+In-Reply-To: <MSG-000051@oakfieldfabrication.example>
+References: <MSG-000051@oakfieldfabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-
-Jonas,
-
-Please find attached invoice INV-2024-0027 for $940.00.
-Payment is due by 2024-03-10 per our NET30 terms.
-
-Regards,
-Tara
-Oakfield Fabrication
-
---=-PTB-MSG-000052
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0027.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0027
-Date: 2024-02-09
-Party: Silverton Trading
+Hi Quinn,
 
-Invoice number: INV-2024-0027
-Issuer: Oakfield Fabrication
-Bill to: Silverton Trading
-Issue date: 2024-02-09
-Due date: 2024-03-10
-Terms: NET30
-Total: $940.00
+Confirming receipt of PO-2024-0013; we will schedule this for delivery.
 
---=-PTB-MSG-000052--
+Kind regards,
+Ava
+Yellowstone Supplies

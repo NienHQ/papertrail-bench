@@ -1,18 +1,40 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0027 - copper wire 12AWG
-Date: Tue, 27 Feb 2024 03:00:00 +0000
-Message-ID: <MSG-000122@yellowstonecomponents.example>
-In-Reply-To: <MSG-000121@vantagefabrication.example>
-References: <MSG-000121@vantagefabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0015 - safety gloves
+Date: Sun, 10 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000122@quarrypackaging.example>
+In-Reply-To: <MSG-000117@quarrypackaging.example>
+References: <MSG-000098@vantagefabrication.example>
+ <MSG-000099@quarrypackaging.example> <MSG-000117@quarrypackaging.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000122"
 
-Hi Hugo,
+--=-PTB-MSG-000122
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Confirming receipt of PO-2024-0027; we will schedule this for delivery.
+Hi Carla,
+
+We have issued credit note CN-2024-0004 for $145.11 against invoice INV-2024-=
+0020 (damaged goods).
 
 Best,
-Hugo
-Yellowstone Components
+Jonas
+Quarry Packaging
+
+--=-PTB-MSG-000122
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0004.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0004
+Date: 2024-03-10
+Party: Quarry Packaging
+
+Credit note number: CN-2024-0004
+Invoice ref: INV-2024-0020
+Amount: $145.11
+Reason: damaged goods
+
+--=-PTB-MSG-000122--

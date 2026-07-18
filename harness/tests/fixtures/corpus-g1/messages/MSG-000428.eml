@@ -1,8 +1,12 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Purchase order PO-2024-0090 - LED panels
-Date: Tue, 02 Jul 2024 09:07:00 +0000
-Message-ID: <MSG-000428@vantagefabrication.example>
+From: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0085 - copper wire 12AWG
+Date: Fri, 12 Jul 2024 09:28:00 +0000
+Message-ID: <MSG-000428@yellowstonecomponents.example>
+In-Reply-To: <MSG-000403@vantagefabrication.example>
+References: <MSG-000392@vantagefabrication.example>
+ <MSG-000393@yellowstonecomponents.example>
+ <MSG-000403@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000428"
 
@@ -10,30 +14,33 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000428"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hi Dev,
+Hi Carla,
 
-Please find attached purchase order PO-2024-0090 for 125 units of LED panels =
-at $50.28 per unit.
-The order total is $6,285.00.
+Please find attached invoice INV-2024-0119 against PO-2024-0085-A1 for $14,47=
+8.10.
+Payment is due by 2024-09-10 per our NET60 terms.
 
 Regards,
-Hugo
-Vantage Fabrication
+Dev
+Yellowstone Components
 
 --=-PTB-MSG-000428
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0090.txt"
+Content-Disposition: attachment; filename="INV-2024-0119.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0090
-Date: 2024-07-02
-Party: Delta Ridge Supplies
+INVOICE INV-2024-0119
+Date: 2024-07-12
+Party: Yellowstone Components
 
-Po number: PO-2024-0090
-Item: LED panels
-Qty: 125
-Unit price: $50.28
-Total: $6,285.00
+Invoice number: INV-2024-0119
+Issuer: Yellowstone Components
+Bill to: Vantage Fabrication
+Issue date: 2024-07-12
+Due date: 2024-09-10
+Terms: NET60
+Total: $14,478.10
+Po ref: PO-2024-0085-A1
 
 --=-PTB-MSG-000428--

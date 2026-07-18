@@ -1,0 +1,44 @@
+From: Kira Novak <kira.novak@silvertonsupplies.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0039 - steel brackets
+Date: Mon, 11 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000164@silvertonsupplies.example>
+In-Reply-To: <MSG-000143@silvertonsupplies.example>
+References: <MSG-000142@junctionfabrication.example>
+ <MSG-000143@silvertonsupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000164"
+
+--=-PTB-MSG-000164
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Ava,
+
+Please find attached invoice INV-2024-0047 against PO-2024-0039 for $272.70.
+Payment is due by 2024-04-10 per our NET30 terms.
+
+Best,
+Kira
+Silverton Supplies
+
+--=-PTB-MSG-000164
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0047.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0047
+Date: 2024-03-11
+Party: Silverton Supplies
+
+Invoice number: INV-2024-0047
+Issuer: Silverton Supplies
+Bill to: Junction Fabrication
+Issue date: 2024-03-11
+Due date: 2024-04-10
+Terms: NET30
+Total: $272.70
+Po ref: PO-2024-0039
+
+--=-PTB-MSG-000164--

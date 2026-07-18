@@ -1,40 +1,18 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Grace Whitfield <grace.whitfield@quarrytrading.example>
-Subject: Invoice INV-2024-0010 from Oakfield Fabrication
-Date: Mon, 22 Jan 2024 09:21:00 +0000
-Message-ID: <MSG-000024@oakfieldfabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000024"
-
---=-PTB-MSG-000024
+From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0008 - shipping cartons
+Date: Tue, 23 Jan 2024 11:21:00 +0000
+Message-ID: <MSG-000024@vantageindustrial.example>
+In-Reply-To: <MSG-000023@oakfieldfabrication.example>
+References: <MSG-000023@oakfieldfabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-
-Hi Grace,
-
-Please find attached invoice INV-2024-0010 for $2,765.00.
-Payment is due by 2024-02-06 per our NET15 terms.
-
-Best,
-Tara
-Oakfield Fabrication
-
---=-PTB-MSG-000024
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0010.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0010
-Date: 2024-01-22
-Party: Quarry Trading
+Dear Quinn,
 
-Invoice number: INV-2024-0010
-Issuer: Oakfield Fabrication
-Bill to: Quarry Trading
-Issue date: 2024-01-22
-Due date: 2024-02-06
-Terms: NET15
-Total: $2,765.00
+Confirming receipt of PO-2024-0008; we will schedule this for delivery.
 
---=-PTB-MSG-000024--
+Thanks,
+Quinn
+Vantage Industrial

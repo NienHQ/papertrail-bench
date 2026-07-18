@@ -6,9 +6,10 @@
  *   cd generator && .venv/bin/python -m papertrail generate \
  *     --seed 19 --months 8 --vendors 4 --customers 2 \
  *     --out ../harness/tests/fixtures/corpus-g1
- * Default category_counts {1: 16, 2: 16, 3: 16, 4: 16, 6: 16}; this small
- * world yields questions {1: 16, 2: 16, 3: 8, 4: 12, 6: 16} over 620
- * messages, so every shipped category is populated.
+ * Default category_counts {1: 16, 2: 16, 3: 16, 4: 16, 5: 16, 6: 16}; this
+ * small world yields questions {1: 16, 2: 16, 3: 8, 4: 9, 5: 16, 6: 16}
+ * over 564 messages, so every shipped category is populated. Regenerated
+ * for G2 (category 5 world churn changes the seed 19 event stream).
  */
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
@@ -40,11 +41,11 @@ function expectNoNaN(report: Report): void {
 }
 
 describe("corpus-g1 fixture", () => {
-  it("populates categories 1, 2, 3, 4 and 6", () => {
+  it("populates categories 1 through 6", () => {
     const truth = loadTruthCorpus(FIXTURE);
     const cats = new Set(truth.questions.map((q) => q.category));
-    expect([...cats].sort((a, b) => a - b)).toEqual([1, 2, 3, 4, 6]);
-    for (const cat of [1, 2, 3, 4, 6]) {
+    expect([...cats].sort((a, b) => a - b)).toEqual([1, 2, 3, 4, 5, 6]);
+    for (const cat of [1, 2, 3, 4, 5, 6]) {
       expect(
         truth.questions.filter((q) => q.category === cat).length,
         `category ${String(cat)}`,
@@ -80,7 +81,7 @@ describe("oracle on corpus-g1", () => {
     const report = await runAdapterWithTruth(new OracleAdapter(truth), truth);
 
     expect(report.questionCount).toBe(truth.questions.length);
-    expect(report.categories.map((c) => c.category)).toEqual([1, 2, 3, 4, 6]);
+    expect(report.categories.map((c) => c.category)).toEqual([1, 2, 3, 4, 5, 6]);
     for (const c of report.categories) {
       expect(c.accuracy, `category ${String(c.category)} accuracy`).toBe(1);
       if (c.category === 6) {

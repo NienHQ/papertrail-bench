@@ -1,20 +1,44 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Re: Purchase order PO-2024-0068 - rubber gaskets
-Date: Thu, 11 Jul 2024 09:00:00 +0000
-Message-ID: <MSG-000452@vantagefabrication.example>
-In-Reply-To: <MSG-000418@bluepinematerials.example>
-References: <MSG-000413@vantagefabrication.example>
- <MSG-000414@bluepinematerials.example> <MSG-000418@bluepinematerials.example>
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0077 - safety gloves
+Date: Mon, 22 Jul 2024 09:07:00 +0000
+Message-ID: <MSG-000452@quarrypackaging.example>
+In-Reply-To: <MSG-000431@vantagefabrication.example>
+References: <MSG-000418@vantagefabrication.example>
+ <MSG-000419@quarrypackaging.example> <MSG-000431@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000452"
+
+--=-PTB-MSG-000452
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
+
+Dear Carla,
+
+Please find attached invoice INV-2024-0111 against PO-2024-0077-A1 for $65.85.
+Payment is due by 2024-08-21 per our NET30 terms.
+
+Regards,
+Jonas
+Quarry Packaging
+
+--=-PTB-MSG-000452
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0111.txt"
 MIME-Version: 1.0
 
-Hello Rosa,
+INVOICE INV-2024-0111
+Date: 2024-07-22
+Party: Quarry Packaging
 
-Payment of $10,665.80 for invoice INV-2024-0093 was sent today by bank transf=
-er.
+Invoice number: INV-2024-0111
+Issuer: Quarry Packaging
+Bill to: Vantage Fabrication
+Issue date: 2024-07-22
+Due date: 2024-08-21
+Terms: NET30
+Total: $65.85
+Po ref: PO-2024-0077-A1
 
-Best,
-Carla
-Vantage Fabrication
+--=-PTB-MSG-000452--

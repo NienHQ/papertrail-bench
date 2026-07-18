@@ -1,40 +1,42 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Grace Whitfield <grace.whitfield@quarrytrading.example>
-Subject: Invoice INV-2024-0037 from Oakfield Fabrication
-Date: Mon, 11 Mar 2024 09:07:00 +0000
-Message-ID: <MSG-000100@oakfieldfabrication.example>
+From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0014 - LED panels
+Date: Sat, 02 Mar 2024 09:14:00 +0000
+Message-ID: <MSG-000100@yellowstonesupplies.example>
+In-Reply-To: <MSG-000094@yellowstonesupplies.example>
+References: <MSG-000077@oakfieldfabrication.example>
+ <MSG-000078@yellowstonesupplies.example>
+ <MSG-000080@oakfieldfabrication.example>
+ <MSG-000094@yellowstonesupplies.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000100"
 
 --=-PTB-MSG-000100
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Dear Grace,
+Dear Victor,
 
-Please find attached invoice INV-2024-0037 for $2,465.00.
-Payment is due by 2024-03-26 per our NET15 terms.
+We have issued credit note CN-2024-0003 for $59.68 against invoice INV-2024-0=
+019 (pricing error).
 
-Regards,
-Tara
-Oakfield Fabrication
+Kind regards,
+Ava
+Yellowstone Supplies
 
 --=-PTB-MSG-000100
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0037.txt"
+Content-Disposition: attachment; filename="CN-2024-0003.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0037
-Date: 2024-03-11
-Party: Quarry Trading
+CREDIT NOTE CN-2024-0003
+Date: 2024-03-02
+Party: Yellowstone Supplies
 
-Invoice number: INV-2024-0037
-Issuer: Oakfield Fabrication
-Bill to: Quarry Trading
-Issue date: 2024-03-11
-Due date: 2024-03-26
-Terms: NET15
-Total: $2,465.00
+Credit note number: CN-2024-0003
+Invoice ref: INV-2024-0019
+Amount: $59.68
+Reason: pricing error
 
 --=-PTB-MSG-000100--

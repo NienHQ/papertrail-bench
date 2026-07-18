@@ -1,19 +1,39 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-Subject: Re: Purchase order PO-2024-0006 - shipping cartons
-Date: Thu, 29 Feb 2024 09:00:00 +0000
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@redwoodindustrial.example>
+Subject: Purchase order PO-2024-0012 - safety gloves
+Date: Mon, 26 Feb 2024 09:00:00 +0000
 Message-ID: <MSG-000084@oakfieldfabrication.example>
-In-Reply-To: <MSG-000017@vantageindustrial.example>
-References: <MSG-000010@oakfieldfabrication.example>
- <MSG-000011@vantageindustrial.example> <MSG-000017@vantageindustrial.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000084"
 
-Dear Quinn,
+--=-PTB-MSG-000084
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Payment of $734.60 for invoice INV-2024-0006 was sent today by bank transfer.
+Dear Iris,
+
+Please find attached purchase order PO-2024-0012 for 175 units of safety glov=
+es at $15.71 per unit.
+The order total is $2,749.25.
 
 Best regards,
-Victor
+Quinn
 Oakfield Fabrication
+
+--=-PTB-MSG-000084
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0012.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0012
+Date: 2024-02-26
+Party: Redwood Industrial
+
+Po number: PO-2024-0012
+Item: safety gloves
+Qty: 175
+Unit price: $15.71
+Total: $2,749.25
+
+--=-PTB-MSG-000084--

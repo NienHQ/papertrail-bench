@@ -1,0 +1,41 @@
+From: Quinn Whitfield <quinn.whitfield@northgatepackaging.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0006 - shipping cartons
+Date: Mon, 29 Jan 2024 09:00:00 +0000
+Message-ID: <MSG-000048@northgatepackaging.example>
+In-Reply-To: <MSG-000030@northgatepackaging.example>
+References: <MSG-000016@junctionfabrication.example>
+ <MSG-000017@northgatepackaging.example>
+ <MSG-000030@northgatepackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000048"
+
+--=-PTB-MSG-000048
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Ava,
+
+We have issued credit note CN-2024-0004 for $288.14 against invoice INV-2024-=
+0006 (damaged goods).
+
+Regards,
+Quinn
+Northgate Packaging
+
+--=-PTB-MSG-000048
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0004.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0004
+Date: 2024-01-29
+Party: Northgate Packaging
+
+Credit note number: CN-2024-0004
+Invoice ref: INV-2024-0006
+Amount: $288.14
+Reason: damaged goods
+
+--=-PTB-MSG-000048--

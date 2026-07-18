@@ -1,0 +1,39 @@
+From: Ben Okafor <ben.okafor@junctionfabrication.example>
+To: Wendy Brant <wendy.brant@meridianretail.example>
+Subject: Re: Invoice INV-2024-0035 from Junction Fabrication
+Date: Thu, 15 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000091@junctionfabrication.example>
+In-Reply-To: <MSG-000076@junctionfabrication.example>
+References: <MSG-000076@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000091"
+
+--=-PTB-MSG-000091
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Wendy,
+
+We have issued credit note CN-2024-0010 for $1,563.93 against invoice INV-202=
+4-0035 (pricing error).
+
+Best,
+Ben
+Junction Fabrication
+
+--=-PTB-MSG-000091
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0010.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0010
+Date: 2024-02-15
+Party: Meridian Retail
+
+Credit note number: CN-2024-0010
+Invoice ref: INV-2024-0035
+Amount: $1,563.93
+Reason: pricing error
+
+--=-PTB-MSG-000091--

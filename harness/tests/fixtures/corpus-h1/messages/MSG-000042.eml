@@ -1,19 +1,44 @@
-From: Grace Whitfield <grace.whitfield@quarrytrading.example>
-To: Tara Drake <tara.drake@oakfieldfabrication.example>
-Subject: Re: Invoice INV-2024-0009 from Oakfield Fabrication
-Date: Sat, 03 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000042@quarrytrading.example>
-In-Reply-To: <MSG-000016@oakfieldfabrication.example>
-References: <MSG-000016@oakfieldfabrication.example>
+From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0009 - shipping cartons
+Date: Tue, 30 Jan 2024 09:07:00 +0000
+Message-ID: <MSG-000042@vantageindustrial.example>
+In-Reply-To: <MSG-000029@vantageindustrial.example>
+References: <MSG-000028@oakfieldfabrication.example>
+ <MSG-000029@vantageindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000042"
+
+--=-PTB-MSG-000042
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
+
+Hi Victor,
+
+Please find attached invoice INV-2024-0009 against PO-2024-0009 for $6,978.70.
+Payment is due by 2024-03-15 per our NET45 terms.
+
+Regards,
+Quinn
+Vantage Industrial
+
+--=-PTB-MSG-000042
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0009.txt"
 MIME-Version: 1.0
 
-Hello Tara,
+INVOICE INV-2024-0009
+Date: 2024-01-30
+Party: Vantage Industrial
 
-Payment of $6,835.00 for invoice INV-2024-0009 was sent today by bank transfe=
-r.
+Invoice number: INV-2024-0009
+Issuer: Vantage Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-01-30
+Due date: 2024-03-15
+Terms: NET45
+Total: $6,978.70
+Po ref: PO-2024-0009
 
-Kind regards,
-Grace
-Quarry Trading
+--=-PTB-MSG-000042--

@@ -1,14 +1,8 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0026 - copper wire 12AWG
-Date: Tue, 05 Mar 2024 09:14:00 +0000
-Message-ID: <MSG-000139@yellowstonecomponents.example>
-In-Reply-To: <MSG-000138@yellowstonecomponents.example>
-References: <MSG-000099@vantagefabrication.example>
- <MSG-000100@yellowstonecomponents.example>
- <MSG-000120@yellowstonecomponents.example>
- <MSG-000127@vantagefabrication.example>
- <MSG-000138@yellowstonecomponents.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Jonas Sato <jonas.sato@quarrypackaging.example>
+Subject: Purchase order PO-2024-0030 - safety gloves
+Date: Mon, 18 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000139@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000139"
 
@@ -16,28 +10,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000139"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hello Carla,
+Hello Jonas,
 
-We have issued credit note CN-2024-0007 for $645.92 against invoice INV-2024-=
-0031 (goods returned).
+Please find attached purchase order PO-2024-0030 for 160 units of safety glov=
+es at $4.39 per unit.
+The order total is $702.40.
 
-Best,
+Thanks,
 Hugo
-Yellowstone Components
+Vantage Fabrication
 
 --=-PTB-MSG-000139
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0007.txt"
+Content-Disposition: attachment; filename="PO-2024-0030.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0007
-Date: 2024-03-05
-Party: Yellowstone Components
+PURCHASE ORDER PO-2024-0030
+Date: 2024-03-18
+Party: Quarry Packaging
 
-Credit note number: CN-2024-0007
-Invoice ref: INV-2024-0031
-Amount: $645.92
-Reason: goods returned
+Po number: PO-2024-0030
+Item: safety gloves
+Qty: 160
+Unit price: $4.39
+Total: $702.40
 
 --=-PTB-MSG-000139--

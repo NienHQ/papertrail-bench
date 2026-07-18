@@ -1,42 +1,40 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Re: Purchase order PO-2024-0009 - LED panels
-Date: Fri, 26 Jan 2024 09:14:00 +0000
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Invoice INV-2024-0016 from Vantage Fabrication
+Date: Fri, 26 Jan 2024 09:07:00 +0000
 Message-ID: <MSG-000044@vantagefabrication.example>
-In-Reply-To: <MSG-000028@deltaridgesupplies.example>
-References: <MSG-000027@vantagefabrication.example>
- <MSG-000028@deltaridgesupplies.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000044"
 
 --=-PTB-MSG-000044
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Hi Dev,
+Hi Mona,
 
-Please amend PO-2024-0009: quantity is now 80 units of LED panels, revised or=
-der total $4,022.40.
-The amended purchase order is attached as PO-2024-0009-A1.
+Please find attached invoice INV-2024-0016 for $4,735.00.
+Payment is due by 2024-02-10 per our NET15 terms.
 
 Best,
-Hugo
+Uma
 Vantage Fabrication
 
 --=-PTB-MSG-000044
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0009-A1.txt"
+Content-Disposition: attachment; filename="INV-2024-0016.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0009-A1
+INVOICE INV-2024-0016
 Date: 2024-01-26
-Party: Delta Ridge Supplies
+Party: Meridian Distribution
 
-Po number: PO-2024-0009
-Item: LED panels
-Qty: 80
-Unit price: $50.28
-Total: $4,022.40
+Invoice number: INV-2024-0016
+Issuer: Vantage Fabrication
+Bill to: Meridian Distribution
+Issue date: 2024-01-26
+Due date: 2024-02-10
+Terms: NET15
+Total: $4,735.00
 
 --=-PTB-MSG-000044--

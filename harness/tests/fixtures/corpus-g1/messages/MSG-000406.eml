@@ -1,39 +1,40 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Purchase order PO-2024-0076 - LED panels
-Date: Mon, 24 Jun 2024 09:00:00 +0000
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Invoice INV-2024-0125 from Vantage Fabrication
+Date: Fri, 05 Jul 2024 09:28:00 +0000
 Message-ID: <MSG-000406@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000406"
 
 --=-PTB-MSG-000406
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Dev,
+Dear Mona,
 
-Please find attached purchase order PO-2024-0076 for 145 units of LED panels =
-at $50.28 per unit.
-The order total is $7,290.60.
+Please find attached invoice INV-2024-0125 for $5,310.00.
+Payment is due by 2024-08-04 per our NET30 terms.
 
-Best,
-Hugo
+Kind regards,
+Uma
 Vantage Fabrication
 
 --=-PTB-MSG-000406
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0076.txt"
+Content-Disposition: attachment; filename="INV-2024-0125.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0076
-Date: 2024-06-24
-Party: Delta Ridge Supplies
+INVOICE INV-2024-0125
+Date: 2024-07-05
+Party: Meridian Distribution
 
-Po number: PO-2024-0076
-Item: LED panels
-Qty: 145
-Unit price: $50.28
-Total: $7,290.60
+Invoice number: INV-2024-0125
+Issuer: Vantage Fabrication
+Bill to: Meridian Distribution
+Issue date: 2024-07-05
+Due date: 2024-08-04
+Terms: NET30
+Total: $5,310.00
 
 --=-PTB-MSG-000406--

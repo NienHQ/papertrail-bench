@@ -1,40 +1,48 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Dev Ueda <dev.ueda@granitedistribution.example>
-Subject: Invoice INV-2024-0124 from Vantage Fabrication
-Date: Tue, 09 Jul 2024 09:00:00 +0000
-Message-ID: <MSG-000449@vantagefabrication.example>
+From: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0084 - copper wire 12AWG
+Date: Sun, 21 Jul 2024 09:07:00 +0000
+Message-ID: <MSG-000449@yellowstonecomponents.example>
+In-Reply-To: <MSG-000436@vantagefabrication.example>
+References: <MSG-000396@vantagefabrication.example>
+ <MSG-000397@yellowstonecomponents.example>
+ <MSG-000407@vantagefabrication.example>
+ <MSG-000422@vantagefabrication.example>
+ <MSG-000436@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000449"
 
 --=-PTB-MSG-000449
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Hello Dev,
+Hi Carla,
 
-Please find attached invoice INV-2024-0124 for $1,730.00.
-Payment is due by 2024-08-23 per our NET45 terms.
+Please find attached invoice INV-2024-0118 against PO-2024-0084-A3 for $13,69=
+5.50.
+Payment is due by 2024-09-19 per our NET60 terms.
 
-Thanks,
-Uma
-Vantage Fabrication
+Regards,
+Dev
+Yellowstone Components
 
 --=-PTB-MSG-000449
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0124.txt"
+Content-Disposition: attachment; filename="INV-2024-0118.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0124
-Date: 2024-07-09
-Party: Granite Distribution
+INVOICE INV-2024-0118
+Date: 2024-07-21
+Party: Yellowstone Components
 
-Invoice number: INV-2024-0124
-Issuer: Vantage Fabrication
-Bill to: Granite Distribution
-Issue date: 2024-07-09
-Due date: 2024-08-23
-Terms: NET45
-Total: $1,730.00
+Invoice number: INV-2024-0118
+Issuer: Yellowstone Components
+Bill to: Vantage Fabrication
+Issue date: 2024-07-21
+Due date: 2024-09-19
+Terms: NET60
+Total: $13,695.50
+Po ref: PO-2024-0084-A3
 
 --=-PTB-MSG-000449--

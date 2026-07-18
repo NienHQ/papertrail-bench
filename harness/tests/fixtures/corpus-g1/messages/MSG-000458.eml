@@ -1,46 +1,40 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0072 - safety gloves
-Date: Sat, 13 Jul 2024 09:00:00 +0000
-Message-ID: <MSG-000458@quarrypackaging.example>
-In-Reply-To: <MSG-000431@vantagefabrication.example>
-References: <MSG-000410@vantagefabrication.example>
- <MSG-000411@quarrypackaging.example> <MSG-000421@vantagefabrication.example>
- <MSG-000431@vantagefabrication.example>
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Dev Ueda <dev.ueda@granitedistribution.example>
+Subject: Invoice INV-2024-0122 from Vantage Fabrication
+Date: Wed, 24 Jul 2024 09:14:00 +0000
+Message-ID: <MSG-000458@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000458"
 
 --=-PTB-MSG-000458
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Dear Carla,
+Hello Dev,
 
-Please find attached invoice INV-2024-0097 against PO-2024-0072-A2 for $219.5=
-0.
-Payment is due by 2024-08-12 per our NET30 terms.
+Please find attached invoice INV-2024-0122 for $1,110.00.
+Payment is due by 2024-09-07 per our NET45 terms.
 
 Thanks,
-Jonas
-Quarry Packaging
+Uma
+Vantage Fabrication
 
 --=-PTB-MSG-000458
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0097.txt"
+Content-Disposition: attachment; filename="INV-2024-0122.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0097
-Date: 2024-07-13
-Party: Quarry Packaging
+INVOICE INV-2024-0122
+Date: 2024-07-24
+Party: Granite Distribution
 
-Invoice number: INV-2024-0097
-Issuer: Quarry Packaging
-Bill to: Vantage Fabrication
-Issue date: 2024-07-13
-Due date: 2024-08-12
-Terms: NET30
-Total: $219.50
-Po ref: PO-2024-0072-A2
+Invoice number: INV-2024-0122
+Issuer: Vantage Fabrication
+Bill to: Granite Distribution
+Issue date: 2024-07-24
+Due date: 2024-09-07
+Terms: NET45
+Total: $1,110.00
 
 --=-PTB-MSG-000458--

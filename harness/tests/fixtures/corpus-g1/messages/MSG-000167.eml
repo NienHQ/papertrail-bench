@@ -1,19 +1,44 @@
-From: Dev Ueda <dev.ueda@granitedistribution.example>
-To: Uma Garvey <uma.garvey@vantagefabrication.example>
-Subject: Re: Invoice INV-2024-0017 from Vantage Fabrication
-Date: Thu, 14 Mar 2024 09:14:00 +0000
-Message-ID: <MSG-000167@granitedistribution.example>
-In-Reply-To: <MSG-000022@vantagefabrication.example>
-References: <MSG-000022@vantagefabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0025 - rubber gaskets
+Date: Mon, 01 Apr 2024 09:07:00 +0000
+Message-ID: <MSG-000167@bluepinematerials.example>
+In-Reply-To: <MSG-000154@bluepinematerials.example>
+References: <MSG-000153@vantagefabrication.example>
+ <MSG-000154@bluepinematerials.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000167"
 
-Dear Uma,
+--=-PTB-MSG-000167
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
 
-Payment of $8,460.00 for invoice INV-2024-0017 was sent today by bank transfe=
-r.
+Dear Carla,
+
+Please find attached invoice INV-2024-0036 against PO-2024-0025 for $3,137.00.
+Payment is due by 2024-04-16 per our NET15 terms.
 
 Thanks,
-Dev
-Granite Distribution
+Rosa
+Bluepine Materials
+
+--=-PTB-MSG-000167
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0036.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0036
+Date: 2024-04-01
+Party: Bluepine Materials
+
+Invoice number: INV-2024-0036
+Issuer: Bluepine Materials
+Bill to: Vantage Fabrication
+Issue date: 2024-04-01
+Due date: 2024-04-16
+Terms: NET15
+Total: $3,137.00
+Po ref: PO-2024-0025
+
+--=-PTB-MSG-000167--

@@ -1,21 +1,44 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Re: Purchase order PO-2024-0066 - copper wire 12AWG
-Date: Fri, 07 Jun 2024 09:00:00 +0000
-Message-ID: <MSG-000368@vantagefabrication.example>
-In-Reply-To: <MSG-000348@vantagefabrication.example>
-References: <MSG-000325@vantagefabrication.example>
- <MSG-000326@yellowstonecomponents.example>
- <MSG-000336@yellowstonecomponents.example>
- <MSG-000348@vantagefabrication.example>
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0062 - safety gloves
+Date: Sun, 23 Jun 2024 09:00:00 +0000
+Message-ID: <MSG-000368@quarrypackaging.example>
+In-Reply-To: <MSG-000359@quarrypackaging.example>
+References:
+ <MSG-000358@vantagefabrication.example> <MSG-000359@quarrypackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000368"
+
+--=-PTB-MSG-000368
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-MIME-Version: 1.0
 
-Hugo,
+Carla,
 
-After review we are withdrawing our dispute on invoice INV-2024-0086.
+Please find attached invoice INV-2024-0091 against PO-2024-0062 for $417.05.
+Payment is due by 2024-07-23 per our NET30 terms.
 
 Best regards,
-Carla
-Vantage Fabrication
+Jonas
+Quarry Packaging
+
+--=-PTB-MSG-000368
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0091.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0091
+Date: 2024-06-23
+Party: Quarry Packaging
+
+Invoice number: INV-2024-0091
+Issuer: Quarry Packaging
+Bill to: Vantage Fabrication
+Issue date: 2024-06-23
+Due date: 2024-07-23
+Terms: NET30
+Total: $417.05
+Po ref: PO-2024-0062
+
+--=-PTB-MSG-000368--

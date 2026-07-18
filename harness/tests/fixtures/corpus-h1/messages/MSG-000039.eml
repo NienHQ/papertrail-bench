@@ -1,12 +1,12 @@
 From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-Subject: Re: Purchase order PO-2024-0007 - shipping cartons
-Date: Fri, 02 Feb 2024 09:00:00 +0000
+To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+Subject: Re: Purchase order PO-2024-0005 - LED panels
+Date: Mon, 29 Jan 2024 09:00:00 +0000
 Message-ID: <MSG-000039@oakfieldfabrication.example>
-In-Reply-To: <MSG-000036@oakfieldfabrication.example>
-References: <MSG-000022@oakfieldfabrication.example>
- <MSG-000023@vantageindustrial.example>
- <MSG-000036@oakfieldfabrication.example>
+In-Reply-To: <MSG-000030@oakfieldfabrication.example>
+References: <MSG-000019@oakfieldfabrication.example>
+ <MSG-000020@yellowstonesupplies.example>
+ <MSG-000030@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000039"
 
@@ -14,11 +14,11 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000039"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dear Quinn,
+Hello Ava,
 
-Please amend PO-2024-0007: quantity is now 90 units of shipping cartons, revi=
-sed order total $6,611.40.
-The amended purchase order is attached as PO-2024-0007-A2.
+Please amend PO-2024-0005: quantity is now 205 units of LED panels, revised o=
+rder total $16,297.50.
+The amended purchase order is attached as PO-2024-0005-A2.
 
 Thanks,
 Quinn
@@ -27,17 +27,17 @@ Oakfield Fabrication
 --=-PTB-MSG-000039
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0007-A2.txt"
+Content-Disposition: attachment; filename="PO-2024-0005-A2.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0007-A2
-Date: 2024-02-02
-Party: Vantage Industrial
+PURCHASE ORDER PO-2024-0005-A2
+Date: 2024-01-29
+Party: Yellowstone Supplies
 
-Po number: PO-2024-0007
-Item: shipping cartons
-Qty: 90
-Unit price: $73.46
-Total: $6,611.40
+Po number: PO-2024-0005
+Item: LED panels
+Qty: 205
+Unit price: $79.50
+Total: $16,297.50
 
 --=-PTB-MSG-000039--

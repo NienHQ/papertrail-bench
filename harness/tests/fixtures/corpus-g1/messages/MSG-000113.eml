@@ -1,44 +1,22 @@
-From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0017 - rubber gaskets
-Date: Thu, 22 Feb 2024 09:14:00 +0000
-Message-ID: <MSG-000113@bluepinematerials.example>
-In-Reply-To: <MSG-000094@bluepinematerials.example>
-References: <MSG-000093@vantagefabrication.example>
- <MSG-000094@bluepinematerials.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000113"
-
---=-PTB-MSG-000113
+From: Carla Costa <carla.costa@vantagefabrication.example>
+To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+Subject: Re: Purchase order PO-2024-0008 - LED panels
+Date: Wed, 06 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000113@vantagefabrication.example>
+In-Reply-To: <MSG-000039@deltaridgesupplies.example>
+References: <MSG-000012@vantagefabrication.example>
+ <MSG-000013@deltaridgesupplies.example>
+ <MSG-000029@vantagefabrication.example>
+ <MSG-000039@deltaridgesupplies.example>
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-
-Hi Carla,
-
-Please find attached invoice INV-2024-0022 against PO-2024-0017 for $9,724.70.
-Payment is due by 2024-03-08 per our NET15 terms.
-
-Thanks,
-Rosa
-Bluepine Materials
-
---=-PTB-MSG-000113
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0022.txt"
+Content-Transfer-Encoding: quoted-printable
 MIME-Version: 1.0
 
-INVOICE INV-2024-0022
-Date: 2024-02-22
-Party: Bluepine Materials
+Dear Dev,
 
-Invoice number: INV-2024-0022
-Issuer: Bluepine Materials
-Bill to: Vantage Fabrication
-Issue date: 2024-02-22
-Due date: 2024-03-08
-Terms: NET15
-Total: $9,724.70
-Po ref: PO-2024-0017
+Payment of $6,787.80 for invoice INV-2024-0008 was sent today by bank transfe=
+r.
 
---=-PTB-MSG-000113--
+Best,
+Carla
+Vantage Fabrication

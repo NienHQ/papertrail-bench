@@ -1,40 +1,40 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Mona Joshi <mona.joshi@meridiandistribution.example>
-Subject: Invoice INV-2024-0019 from Vantage Fabrication
-Date: Mon, 29 Jan 2024 09:14:00 +0000
-Message-ID: <MSG-000055@vantagefabrication.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0004 - rubber gaskets
+Date: Sat, 03 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000055@bluepinematerials.example>
+In-Reply-To: <MSG-000045@bluepinematerials.example>
+References: <MSG-000020@vantagefabrication.example>
+ <MSG-000021@bluepinematerials.example> <MSG-000045@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000055"
 
 --=-PTB-MSG-000055
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Dear Mona,
+Hello Carla,
 
-Please find attached invoice INV-2024-0019 for $1,190.00.
-Payment is due by 2024-02-13 per our NET15 terms.
+We have issued credit note CN-2024-0001 for $491.17 against invoice INV-2024-=
+0004 (damaged goods).
 
-Best regards,
-Uma
-Vantage Fabrication
+Regards,
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000055
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0019.txt"
+Content-Disposition: attachment; filename="CN-2024-0001.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0019
-Date: 2024-01-29
-Party: Meridian Distribution
+CREDIT NOTE CN-2024-0001
+Date: 2024-02-03
+Party: Bluepine Materials
 
-Invoice number: INV-2024-0019
-Issuer: Vantage Fabrication
-Bill to: Meridian Distribution
-Issue date: 2024-01-29
-Due date: 2024-02-13
-Terms: NET15
-Total: $1,190.00
+Credit note number: CN-2024-0001
+Invoice ref: INV-2024-0004
+Amount: $491.17
+Reason: damaged goods
 
 --=-PTB-MSG-000055--

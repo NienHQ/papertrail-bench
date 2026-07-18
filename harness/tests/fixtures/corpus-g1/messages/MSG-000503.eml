@@ -1,18 +1,39 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0105 - copper wire 12AWG
-Date: Tue, 06 Aug 2024 15:07:00 +0000
-Message-ID: <MSG-000503@yellowstonecomponents.example>
-In-Reply-To: <MSG-000502@vantagefabrication.example>
-References: <MSG-000502@vantagefabrication.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+Subject: Purchase order PO-2024-0098 - copper wire 12AWG
+Date: Mon, 19 Aug 2024 09:28:00 +0000
+Message-ID: <MSG-000503@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000503"
+
+--=-PTB-MSG-000503
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dev,
+
+Please find attached purchase order PO-2024-0098 for 135 units of copper wire=
+ 12AWG at $78.26 per unit.
+The order total is $10,565.10.
+
+Thanks,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000503
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0098.txt"
 MIME-Version: 1.0
 
-Hello Hugo,
+PURCHASE ORDER PO-2024-0098
+Date: 2024-08-19
+Party: Yellowstone Components
 
-Confirming receipt of PO-2024-0105; we will schedule this for delivery.
+Po number: PO-2024-0098
+Item: copper wire 12AWG
+Qty: 135
+Unit price: $78.26
+Total: $10,565.10
 
-Best,
-Hugo
-Yellowstone Components
+--=-PTB-MSG-000503--

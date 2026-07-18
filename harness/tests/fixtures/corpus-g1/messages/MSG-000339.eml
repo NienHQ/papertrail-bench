@@ -1,8 +1,11 @@
 From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Purchase order PO-2024-0061 - LED panels
-Date: Mon, 27 May 2024 09:00:00 +0000
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Re: Purchase order PO-2024-0066 - LED panels
+Date: Tue, 11 Jun 2024 09:00:00 +0000
 Message-ID: <MSG-000339@vantagefabrication.example>
+In-Reply-To: <MSG-000327@deltaridgesupplies.example>
+References: <MSG-000326@vantagefabrication.example>
+ <MSG-000327@deltaridgesupplies.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000339"
 
@@ -10,11 +13,11 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000339"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hello Dev,
+Hello Kira,
 
-Please find attached purchase order PO-2024-0061 for 195 units of LED panels =
-at $50.28 per unit.
-The order total is $9,804.60.
+Please amend PO-2024-0066: quantity is now 130 units of LED panels, revised o=
+rder total $6,536.40.
+The amended purchase order is attached as PO-2024-0066-A1.
 
 Regards,
 Hugo
@@ -23,17 +26,17 @@ Vantage Fabrication
 --=-PTB-MSG-000339
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0061.txt"
+Content-Disposition: attachment; filename="PO-2024-0066-A1.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0061
-Date: 2024-05-27
+PURCHASE ORDER PO-2024-0066-A1
+Date: 2024-06-11
 Party: Delta Ridge Supplies
 
-Po number: PO-2024-0061
+Po number: PO-2024-0066
 Item: LED panels
-Qty: 195
+Qty: 130
 Unit price: $50.28
-Total: $9,804.60
+Total: $6,536.40
 
 --=-PTB-MSG-000339--

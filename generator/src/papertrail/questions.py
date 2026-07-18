@@ -1,4 +1,4 @@
-"""Layer 4: question generation for categories 1-4 and 6.
+"""Layer 4: question generation for categories 1-6.
 
 Every non-abstention question's answer is recomputed from the ground-truth
 tables through an independent path and asserted equal at generation time, and
@@ -13,7 +13,7 @@ import random
 from datetime import date, timedelta
 
 from .facts import fact_as_of
-from .model import Document, Event, Fact, Question, money
+from .model import Document, Event, Fact, Person, Question, money
 from .render import RenderResult
 from .simulate import SimResult
 from .world import COMPANY_STEMS, VENDOR_SUFFIXES
@@ -198,6 +198,111 @@ class _QGen:
                  self._dispute_evidence(evs),
                  {"vendor": vendor, "year": year})
 
+    # -- category 5: entity resolution across addresses and employers -------
+
+    def _pos_to_person(self, person: Person) -> list[str]:
+        """PO_ISSUED event ids whose carrier message was addressed to this
+        person. Recomputed from the comms ground truth (messages joined to
+        the document table), not from the world's contact bookkeeping;
+        a version-1 po attachment appears only on its PO_ISSUED carrier."""
+        out = []
+        for m in self.rr.messages:
+            if not any(name == person.name for name, _ in m.to):
+                continue
+            for doc_id in m.attachments:
+                d = self.docs_by_id[doc_id]
+                if d.kind == "po" and d.version == 1:
+                    out.append(d.created_event)
+        return out
+
+    def _invoices_from_person(self, person: Person) -> list[tuple]:
+        """(message, invoice doc) pairs for INVOICE_ISSUED carriers sent by
+        this person, in message-time order, across all their addresses and
+        employers."""
+        pairs = []
+        for m in self.rr.messages:  # already sorted by (ts, message_id)
+            if m.from_person != person.person_id:
+                continue
+            for doc_id in m.attachments:
+                d = self.docs_by_id[doc_id]
+                if d.kind == "invoice":
+                    pairs.append((m, d))
+        return pairs
+
+    def q5_person_po_count(self, person: Person) -> bool:
+        evs = self._pos_to_person(person)
+        if not evs:
+            return False
+        # evidence: the person's own ack statement for every counted PO
+        self.add(5, "person_po_count",
+                 f"How many purchase orders did we send to {person.name} "
+                 f"across all their addresses and companies?",
+                 {"type": "int", "value": len(evs)},
+                 _evidence_for(self.rr, *[("event", e) for e in evs]),
+                 {"person_id": person.person_id})
+        return True
+
+    def q5_person_invoices_list(self, person: Person) -> bool:
+        pairs = self._invoices_from_person(person)
+        if not pairs:
+            return False
+        refs = []
+        for m, d in pairs:
+            for mid, sid in self.rr.evidence_index[
+                    ("doc_field", d.doc_id, "total_cents")]:
+                if mid == m.message_id:
+                    refs.append({"message_id": mid, "statement_id": sid})
+        assert len(refs) == len(pairs)
+        self.add(5, "person_invoices_list",
+                 f"Which invoices did {person.name} send us, in order?",
+                 {"type": "ordered_list",
+                  "value": [d.doc_id for _, d in pairs]},
+                 refs, {"person_id": person.person_id})
+        return True
+
+    def q5_person_address_at(self, person: Person, party_id: str) -> bool:
+        emps = [e for e in person.employments if e.party_id == party_id]
+        if len(emps) != 1:
+            return False
+        emp = emps[0]
+        addrs = [a for a in person.addresses
+                 if a.from_date >= emp.from_date
+                 and (emp.to_date is None or a.from_date < emp.to_date)]
+        if len(addrs) != 1:
+            return False  # ambiguous: address changed within this employment
+        address = addrs[0].address
+        evidence = self._address_evidence(person, emp, address)
+        if evidence is None:
+            return False
+        party = self.sim.world.party(party_id)
+        self.add(5, "person_address_at",
+                 f"What email address did {person.name} use while at "
+                 f"{party.name}?",
+                 {"type": "string", "value": address},
+                 evidence,
+                 {"person_id": person.person_id, "party_id": party_id})
+        return True
+
+    def _address_evidence(self, person: Person, emp, address: str
+                          ) -> list[dict] | None:
+        """The change-announcement statement when the period started with
+        one (PERSON_MOVED farewell; CONTACT_CHANGED periods are never
+        sampled because they make the address question ambiguous), else a
+        canonical statement from a message the person sent at that
+        address."""
+        for e in self.sim.events:
+            if (e.type == "PERSON_MOVED"
+                    and e.payload["person_id"] == person.person_id
+                    and e.payload["to_party"] == emp.party_id
+                    and e.event_time.date() == emp.from_date):
+                return _evidence_for(self.rr, ("event", e.event_id))
+        for m in self.rr.messages:
+            if (m.from_person == person.person_id
+                    and m.from_address == address and m.statements):
+                return [{"message_id": m.message_id,
+                         "statement_id": m.statements[0].statement_id}]
+        return None
+
     # -- category 6: abstention on plausible but nonexistent ids ------------
 
     def _assert_absent_doc(self, doc_id: str) -> None:
@@ -293,6 +398,43 @@ class _QGen:
         pairs = [(tmpl, v) for tmpl in q4_templates for v in disputed_vendors]
         for tmpl, vendor in pairs[:counts.get(4, 0)]:
             tmpl(vendor)
+
+        # category 5: keyed to people, not addresses. The moved person is
+        # the interesting case and contributes up to 4 questions; contact
+        # changed people cover cross-address aggregation; plain people fill.
+        c5 = counts.get(5, 0)
+        if c5 > 0:
+            people = self.sim.world.people
+            # ambiguity guard: display names are the join key in question
+            # text, so they must be unique in this world
+            assert len({p.name for p in people}) == len(people)
+            self_id = self.sim.world.self_party.party_id
+            movers = [p for p in people if len(p.employments) > 1]
+            changed = [p for p in people
+                       if len(p.employments) == 1 and len(p.addresses) > 1]
+            plain = [p for p in people
+                     if len(p.employments) == 1 and len(p.addresses) == 1
+                     and p.party_id != self_id]
+            planned: list[tuple] = []
+            for p in movers:
+                planned.append((self.q5_person_po_count, p))
+                planned.append((self.q5_person_invoices_list, p))
+                for emp in p.employments:
+                    planned.append((self.q5_person_address_at, p,
+                                    emp.party_id))
+            for p in changed:
+                planned.append((self.q5_person_po_count, p))
+                planned.append((self.q5_person_invoices_list, p))
+            for p in plain:
+                planned.append((self.q5_person_po_count, p))
+                planned.append((self.q5_person_invoices_list, p))
+                planned.append((self.q5_person_address_at, p, p.party_id))
+            emitted = 0
+            for fn, *fn_args in planned:
+                if emitted >= c5:
+                    break
+                if fn(*fn_args):
+                    emitted += 1
 
         # category 6: ids continuing the real numbering series, names from
         # the unused portion of the company stem pool

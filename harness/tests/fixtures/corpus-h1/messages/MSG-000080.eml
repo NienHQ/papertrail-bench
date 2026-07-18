@@ -1,12 +1,11 @@
-From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0012 - LED panels
-Date: Sat, 24 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000080@yellowstonesupplies.example>
-In-Reply-To: <MSG-000065@oakfieldfabrication.example>
-References: <MSG-000056@oakfieldfabrication.example>
- <MSG-000057@yellowstonesupplies.example>
- <MSG-000065@oakfieldfabrication.example>
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+Subject: Re: Purchase order PO-2024-0014 - LED panels
+Date: Fri, 23 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000080@oakfieldfabrication.example>
+In-Reply-To: <MSG-000078@yellowstonesupplies.example>
+References: <MSG-000077@oakfieldfabrication.example>
+ <MSG-000078@yellowstonesupplies.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000080"
 
@@ -14,33 +13,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000080"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hello Victor,
+Hello Ava,
 
-Please find attached invoice INV-2024-0017 against PO-2024-0012-A1 for $6,757=
-.50.
-Payment is due by 2024-04-24 per our NET60 terms.
+Please amend PO-2024-0014: quantity is now 175 units of LED panels, revised o=
+rder total $13,912.50.
+The amended purchase order is attached as PO-2024-0014-A1.
 
 Regards,
-Ava
-Yellowstone Supplies
+Quinn
+Oakfield Fabrication
 
 --=-PTB-MSG-000080
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0017.txt"
+Content-Disposition: attachment; filename="PO-2024-0014-A1.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0017
-Date: 2024-02-24
+PURCHASE ORDER PO-2024-0014-A1
+Date: 2024-02-23
 Party: Yellowstone Supplies
 
-Invoice number: INV-2024-0017
-Issuer: Yellowstone Supplies
-Bill to: Oakfield Fabrication
-Issue date: 2024-02-24
-Due date: 2024-04-24
-Terms: NET60
-Total: $6,757.50
-Po ref: PO-2024-0012-A1
+Po number: PO-2024-0014
+Item: LED panels
+Qty: 175
+Unit price: $79.50
+Total: $13,912.50
 
 --=-PTB-MSG-000080--

@@ -1,40 +1,39 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Grace Whitfield <grace.whitfield@quarrytrading.example>
-Subject: Invoice INV-2024-0025 from Oakfield Fabrication
-Date: Thu, 22 Feb 2024 09:21:00 +0000
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+Subject: Purchase order PO-2024-0014 - LED panels
+Date: Mon, 19 Feb 2024 09:07:00 +0000
 Message-ID: <MSG-000077@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000077"
 
 --=-PTB-MSG-000077
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Grace,
+Ava,
 
-Please find attached invoice INV-2024-0025 for $600.00.
-Payment is due by 2024-03-08 per our NET15 terms.
+Please find attached purchase order PO-2024-0014 for 195 units of LED panels =
+at $79.50 per unit.
+The order total is $15,502.50.
 
 Best,
-Tara
+Quinn
 Oakfield Fabrication
 
 --=-PTB-MSG-000077
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0025.txt"
+Content-Disposition: attachment; filename="PO-2024-0014.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0025
-Date: 2024-02-22
-Party: Quarry Trading
+PURCHASE ORDER PO-2024-0014
+Date: 2024-02-19
+Party: Yellowstone Supplies
 
-Invoice number: INV-2024-0025
-Issuer: Oakfield Fabrication
-Bill to: Quarry Trading
-Issue date: 2024-02-22
-Due date: 2024-03-08
-Terms: NET15
-Total: $600.00
+Po number: PO-2024-0014
+Item: LED panels
+Qty: 195
+Unit price: $79.50
+Total: $15,502.50
 
 --=-PTB-MSG-000077--

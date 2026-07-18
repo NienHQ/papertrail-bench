@@ -1,39 +1,40 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-Subject: Purchase order PO-2024-0024 - shipping cartons
-Date: Wed, 27 Mar 2024 09:07:00 +0000
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Jonas Drake <jonas.drake@silvertontrading.example>
+Subject: Invoice INV-2024-0044 from Oakfield Fabrication
+Date: Tue, 19 Mar 2024 09:00:00 +0000
 Message-ID: <MSG-000129@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000129"
 
 --=-PTB-MSG-000129
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Quinn,
+Hello Jonas,
 
-Please find attached purchase order PO-2024-0024 for 10 units of shipping car=
-tons at $73.46 per unit.
-The order total is $734.60.
+Please find attached invoice INV-2024-0044 for $2,610.00.
+Payment is due by 2024-04-18 per our NET30 terms.
 
 Kind regards,
-Quinn
+Tara
 Oakfield Fabrication
 
 --=-PTB-MSG-000129
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0024.txt"
+Content-Disposition: attachment; filename="INV-2024-0044.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0024
-Date: 2024-03-27
-Party: Vantage Industrial
+INVOICE INV-2024-0044
+Date: 2024-03-19
+Party: Silverton Trading
 
-Po number: PO-2024-0024
-Item: shipping cartons
-Qty: 10
-Unit price: $73.46
-Total: $734.60
+Invoice number: INV-2024-0044
+Issuer: Oakfield Fabrication
+Bill to: Silverton Trading
+Issue date: 2024-03-19
+Due date: 2024-04-18
+Terms: NET30
+Total: $2,610.00
 
 --=-PTB-MSG-000129--

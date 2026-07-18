@@ -1,18 +1,39 @@
-From: Iris Vance <iris.vance@redwoodindustrial.example>
-To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0035 - safety gloves
-Date: Mon, 20 May 2024 21:07:00 +0000
-Message-ID: <MSG-000212@redwoodindustrial.example>
-In-Reply-To: <MSG-000211@oakfieldfabrication.example>
-References: <MSG-000211@oakfieldfabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Quinn Tanaka <qtanaka@vantageindustrial.example>
+Subject: Purchase order PO-2024-0044 - shipping cartons
+Date: Tue, 07 May 2024 09:00:00 +0000
+Message-ID: <MSG-000212@oakfieldfabrication.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000212"
+
+--=-PTB-MSG-000212
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
 Hello Quinn,
 
-Confirming receipt of PO-2024-0035; we will schedule this for delivery.
+Please find attached purchase order PO-2024-0044 for 135 units of shipping ca=
+rtons at $73.46 per unit.
+The order total is $9,917.10.
 
 Best regards,
-Iris
-Redwood Industrial
+Quinn
+Oakfield Fabrication
+
+--=-PTB-MSG-000212
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0044.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0044
+Date: 2024-05-07
+Party: Vantage Industrial
+
+Po number: PO-2024-0044
+Item: shipping cartons
+Qty: 135
+Unit price: $73.46
+Total: $9,917.10
+
+--=-PTB-MSG-000212--

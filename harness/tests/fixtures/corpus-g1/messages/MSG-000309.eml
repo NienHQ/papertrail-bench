@@ -1,19 +1,41 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
 Subject: Re: Purchase order PO-2024-0047 - safety gloves
-Date: Sun, 12 May 2024 09:00:00 +0000
-Message-ID: <MSG-000309@vantagefabrication.example>
-In-Reply-To: <MSG-000238@quarrypackaging.example>
-References: <MSG-000231@vantagefabrication.example>
- <MSG-000232@quarrypackaging.example> <MSG-000238@quarrypackaging.example>
+Date: Sun, 02 Jun 2024 09:07:00 +0000
+Message-ID: <MSG-000309@quarrypackaging.example>
+In-Reply-To: <MSG-000308@quarrypackaging.example>
+References: <MSG-000266@vantagefabrication.example>
+ <MSG-000267@quarrypackaging.example> <MSG-000285@quarrypackaging.example>
+ <MSG-000300@vantagefabrication.example> <MSG-000308@quarrypackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000309"
+
+--=-PTB-MSG-000309
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Carla,
+
+We have issued credit note CN-2024-0011 for $39.45 against invoice INV-2024-0=
+070 (price does not match agreement).
+
+Thanks,
+Jonas
+Quarry Packaging
+
+--=-PTB-MSG-000309
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0011.txt"
 MIME-Version: 1.0
 
-Jonas,
+CREDIT NOTE CN-2024-0011
+Date: 2024-06-02
+Party: Quarry Packaging
 
-Payment of $680.45 for invoice INV-2024-0063 was sent today by bank transfer.
+Credit note number: CN-2024-0011
+Invoice ref: INV-2024-0070
+Amount: $39.45
+Reason: price does not match agreement
 
-Best regards,
-Carla
-Vantage Fabrication
+--=-PTB-MSG-000309--

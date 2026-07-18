@@ -1,18 +1,39 @@
-From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0041 - shipping cartons
-Date: Fri, 24 May 2024 15:14:00 +0000
-Message-ID: <MSG-000224@vantageindustrial.example>
-In-Reply-To: <MSG-000223@oakfieldfabrication.example>
-References: <MSG-000223@oakfieldfabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@yellowstonesupplies.example>
+Subject: Purchase order PO-2024-0041 - LED panels
+Date: Mon, 13 May 2024 09:00:00 +0000
+Message-ID: <MSG-000224@oakfieldfabrication.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000224"
 
-Quinn,
+--=-PTB-MSG-000224
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Confirming receipt of PO-2024-0041; we will schedule this for delivery.
+Hello Iris,
+
+Please find attached purchase order PO-2024-0041 for 180 units of LED panels =
+at $79.50 per unit.
+The order total is $14,310.00.
 
 Kind regards,
 Quinn
-Vantage Industrial
+Oakfield Fabrication
+
+--=-PTB-MSG-000224
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0041.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0041
+Date: 2024-05-13
+Party: Yellowstone Supplies
+
+Po number: PO-2024-0041
+Item: LED panels
+Qty: 180
+Unit price: $79.50
+Total: $14,310.00
+
+--=-PTB-MSG-000224--

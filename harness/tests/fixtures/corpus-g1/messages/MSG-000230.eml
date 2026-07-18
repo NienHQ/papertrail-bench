@@ -1,42 +1,44 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Re: Purchase order PO-2024-0046 - safety gloves
-Date: Wed, 10 Apr 2024 09:07:00 +0000
-Message-ID: <MSG-000230@vantagefabrication.example>
-In-Reply-To: <MSG-000221@quarrypackaging.example>
-References:
- <MSG-000220@vantagefabrication.example> <MSG-000221@quarrypackaging.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0035 - rubber gaskets
+Date: Thu, 02 May 2024 09:00:00 +0000
+Message-ID: <MSG-000230@bluepinematerials.example>
+In-Reply-To: <MSG-000221@bluepinematerials.example>
+References: <MSG-000220@vantagefabrication.example>
+ <MSG-000221@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000230"
 
 --=-PTB-MSG-000230
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Dear Jonas,
+Hi Carla,
 
-Please amend PO-2024-0046: quantity is now 120 units of safety gloves, revise=
-d order total $526.80.
-The amended purchase order is attached as PO-2024-0046-A1.
+Please find attached invoice INV-2024-0052 against PO-2024-0035 for $4,391.80.
+Payment is due by 2024-05-17 per our NET15 terms.
 
-Regards,
-Hugo
-Vantage Fabrication
+Thanks,
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000230
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0046-A1.txt"
+Content-Disposition: attachment; filename="INV-2024-0052.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0046-A1
-Date: 2024-04-10
-Party: Quarry Packaging
+INVOICE INV-2024-0052
+Date: 2024-05-02
+Party: Bluepine Materials
 
-Po number: PO-2024-0046
-Item: safety gloves
-Qty: 120
-Unit price: $4.39
-Total: $526.80
+Invoice number: INV-2024-0052
+Issuer: Bluepine Materials
+Bill to: Vantage Fabrication
+Issue date: 2024-05-02
+Due date: 2024-05-17
+Terms: NET15
+Total: $4,391.80
+Po ref: PO-2024-0035
 
 --=-PTB-MSG-000230--

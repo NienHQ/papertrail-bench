@@ -1,8 +1,11 @@
 From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Purchase order PO-2024-0107 - copper wire 12AWG
-Date: Tue, 06 Aug 2024 09:14:00 +0000
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Re: Purchase order PO-2024-0088 - rubber gaskets
+Date: Wed, 21 Aug 2024 09:00:00 +0000
 Message-ID: <MSG-000508@vantagefabrication.example>
+In-Reply-To: <MSG-000492@bluepinematerials.example>
+References: <MSG-000491@vantagefabrication.example>
+ <MSG-000492@bluepinematerials.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000508"
 
@@ -10,30 +13,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000508"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hugo,
+Rosa,
 
-Please find attached purchase order PO-2024-0107 for 15 units of copper wire =
-12AWG at $78.26 per unit.
-The order total is $1,173.90.
+Please amend PO-2024-0088: quantity is now 10 units of rubber gaskets, revise=
+d order total $627.40.
+The amended purchase order is attached as PO-2024-0088-A1.
 
-Best regards,
+Thanks,
 Hugo
 Vantage Fabrication
 
 --=-PTB-MSG-000508
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0107.txt"
+Content-Disposition: attachment; filename="PO-2024-0088-A1.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0107
-Date: 2024-08-06
-Party: Yellowstone Components
+PURCHASE ORDER PO-2024-0088-A1
+Date: 2024-08-21
+Party: Bluepine Materials
 
-Po number: PO-2024-0107
-Item: copper wire 12AWG
-Qty: 15
-Unit price: $78.26
-Total: $1,173.90
+Po number: PO-2024-0088
+Item: rubber gaskets
+Qty: 10
+Unit price: $62.74
+Total: $627.40
 
 --=-PTB-MSG-000508--

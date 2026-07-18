@@ -1,0 +1,43 @@
+From: Carla Okafor <carla.okafor@yellowstonematerials.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0149 - pallet wrap
+Date: Sat, 02 Nov 2024 09:07:00 +0000
+Message-ID: <MSG-000812@yellowstonematerials.example>
+In-Reply-To: <MSG-000811@yellowstonematerials.example>
+References: <MSG-000763@junctionfabrication.example>
+ <MSG-000764@yellowstonematerials.example>
+ <MSG-000790@yellowstonematerials.example>
+ <MSG-000804@junctionfabrication.example>
+ <MSG-000811@yellowstonematerials.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000812"
+
+--=-PTB-MSG-000812
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Ava,
+
+We have issued credit note CN-2024-0028 for $2,149.19 against invoice INV-202=
+4-0192 (price does not match agreement).
+
+Best regards,
+Carla
+Yellowstone Materials
+
+--=-PTB-MSG-000812
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0028.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0028
+Date: 2024-11-02
+Party: Yellowstone Materials
+
+Credit note number: CN-2024-0028
+Invoice ref: INV-2024-0192
+Amount: $2,149.19
+Reason: price does not match agreement
+
+--=-PTB-MSG-000812--

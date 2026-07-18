@@ -1,46 +1,21 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0041 - copper wire 12AWG
-Date: Sat, 23 Mar 2024 09:07:00 +0000
-Message-ID: <MSG-000193@yellowstonecomponents.example>
-In-Reply-To: <MSG-000177@vantagefabrication.example>
-References: <MSG-000168@vantagefabrication.example>
- <MSG-000169@yellowstonecomponents.example>
- <MSG-000177@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000193"
-
---=-PTB-MSG-000193
+From: Carla Costa <carla.costa@vantagefabrication.example>
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Re: Purchase order PO-2024-0026 - rubber gaskets
+Date: Thu, 11 Apr 2024 09:00:00 +0000
+Message-ID: <MSG-000193@vantagefabrication.example>
+In-Reply-To: <MSG-000182@bluepinematerials.example>
+References: <MSG-000147@vantagefabrication.example>
+ <MSG-000148@bluepinematerials.example> <MSG-000165@bluepinematerials.example>
+ <MSG-000182@bluepinematerials.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-
-Dear Carla,
-
-Please find attached invoice INV-2024-0052 against PO-2024-0041-A1 for $11,34=
-7.70.
-Payment is due by 2024-05-22 per our NET60 terms.
-
-Thanks,
-Hugo
-Yellowstone Components
-
---=-PTB-MSG-000193
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0052.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0052
-Date: 2024-03-23
-Party: Yellowstone Components
+Dear Rosa,
 
-Invoice number: INV-2024-0052
-Issuer: Yellowstone Components
-Bill to: Vantage Fabrication
-Issue date: 2024-03-23
-Due date: 2024-05-22
-Terms: NET60
-Total: $11,347.70
-Po ref: PO-2024-0041-A1
+Payment of $2,341.98 for invoice INV-2024-0037 was sent today by bank transfe=
+r.
 
---=-PTB-MSG-000193--
+Thanks,
+Carla
+Vantage Fabrication

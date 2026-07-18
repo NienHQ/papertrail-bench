@@ -1,0 +1,40 @@
+From: Ben Okafor <ben.okafor@junctionfabrication.example>
+To: Wendy Brant <wendy.brant@meridianretail.example>
+Subject: Invoice INV-2024-0095 from Junction Fabrication
+Date: Fri, 17 May 2024 09:07:00 +0000
+Message-ID: <MSG-000350@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000350"
+
+--=-PTB-MSG-000350
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Wendy,
+
+Please find attached invoice INV-2024-0095 for $2,920.00.
+Payment is due by 2024-07-01 per our NET45 terms.
+
+Thanks,
+Ben
+Junction Fabrication
+
+--=-PTB-MSG-000350
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0095.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0095
+Date: 2024-05-17
+Party: Meridian Retail
+
+Invoice number: INV-2024-0095
+Issuer: Junction Fabrication
+Bill to: Meridian Retail
+Issue date: 2024-05-17
+Due date: 2024-07-01
+Terms: NET45
+Total: $2,920.00
+
+--=-PTB-MSG-000350--

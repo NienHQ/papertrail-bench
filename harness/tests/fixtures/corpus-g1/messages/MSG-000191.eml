@@ -1,44 +1,39 @@
-From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0038 - LED panels
-Date: Fri, 22 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000191@deltaridgesupplies.example>
-In-Reply-To: <MSG-000183@deltaridgesupplies.example>
-References: <MSG-000182@vantagefabrication.example>
- <MSG-000183@deltaridgesupplies.example>
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Purchase order PO-2024-0036 - rubber gaskets
+Date: Wed, 10 Apr 2024 09:07:00 +0000
+Message-ID: <MSG-000191@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000191"
 
 --=-PTB-MSG-000191
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Carla,
+Dear Rosa,
 
-Please find attached invoice INV-2024-0049 against PO-2024-0038 for $4,525.20.
-Payment is due by 2024-05-06 per our NET45 terms.
+Please find attached purchase order PO-2024-0036 for 20 units of rubber gaske=
+ts at $62.74 per unit.
+The order total is $1,254.80.
 
 Kind regards,
-Dev
-Delta Ridge Supplies
+Hugo
+Vantage Fabrication
 
 --=-PTB-MSG-000191
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0049.txt"
+Content-Disposition: attachment; filename="PO-2024-0036.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0049
-Date: 2024-03-22
-Party: Delta Ridge Supplies
+PURCHASE ORDER PO-2024-0036
+Date: 2024-04-10
+Party: Bluepine Materials
 
-Invoice number: INV-2024-0049
-Issuer: Delta Ridge Supplies
-Bill to: Vantage Fabrication
-Issue date: 2024-03-22
-Due date: 2024-05-06
-Terms: NET45
-Total: $4,525.20
-Po ref: PO-2024-0038
+Po number: PO-2024-0036
+Item: rubber gaskets
+Qty: 20
+Unit price: $62.74
+Total: $1,254.80
 
 --=-PTB-MSG-000191--

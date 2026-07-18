@@ -1,39 +1,19 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
-Subject: Purchase order PO-2024-0030 - rubber gaskets
-Date: Wed, 06 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000143@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000143"
-
---=-PTB-MSG-000143
+From: Mona Joshi <mona.joshi@meridiandistribution.example>
+To: Uma Garvey <uma.garvey@vantagefabrication.example>
+Subject: Re: Invoice INV-2024-0050 from Vantage Fabrication
+Date: Tue, 19 Mar 2024 09:14:00 +0000
+Message-ID: <MSG-000143@meridiandistribution.example>
+In-Reply-To: <MSG-000116@vantagefabrication.example>
+References: <MSG-000116@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-
-Dear Rosa,
-
-Please find attached purchase order PO-2024-0030 for 150 units of rubber gask=
-ets at $62.74 per unit.
-The order total is $9,411.00.
-
-Regards,
-Hugo
-Vantage Fabrication
-
---=-PTB-MSG-000143
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0030.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0030
-Date: 2024-03-06
-Party: Bluepine Materials
+Uma,
 
-Po number: PO-2024-0030
-Item: rubber gaskets
-Qty: 150
-Unit price: $62.74
-Total: $9,411.00
+Payment of $7,605.00 for invoice INV-2024-0050 was sent today by bank transfe=
+r.
 
---=-PTB-MSG-000143--
+Regards,
+Mona
+Meridian Distribution

@@ -1,18 +1,39 @@
-From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0049 - shipping cartons
-Date: Wed, 19 Jun 2024 10:07:00 +0000
-Message-ID: <MSG-000261@vantageindustrial.example>
-In-Reply-To: <MSG-000260@oakfieldfabrication.example>
-References: <MSG-000260@oakfieldfabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Quinn Tanaka <qtanaka@vantageindustrial.example>
+Subject: Purchase order PO-2024-0053 - shipping cartons
+Date: Thu, 06 Jun 2024 09:00:00 +0000
+Message-ID: <MSG-000261@oakfieldfabrication.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000261"
 
-Hi Quinn,
+--=-PTB-MSG-000261
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Confirming receipt of PO-2024-0049; we will schedule this for delivery.
+Quinn,
+
+Please find attached purchase order PO-2024-0053 for 70 units of shipping car=
+tons at $73.46 per unit.
+The order total is $5,142.20.
 
 Regards,
 Quinn
-Vantage Industrial
+Oakfield Fabrication
+
+--=-PTB-MSG-000261
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0053.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0053
+Date: 2024-06-06
+Party: Vantage Industrial
+
+Po number: PO-2024-0053
+Item: shipping cartons
+Qty: 70
+Unit price: $73.46
+Total: $5,142.20
+
+--=-PTB-MSG-000261--

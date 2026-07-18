@@ -1,18 +1,40 @@
-From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0050 - LED panels
-Date: Mon, 15 Apr 2024 22:00:00 +0000
-Message-ID: <MSG-000237@deltaridgesupplies.example>
-In-Reply-To: <MSG-000236@vantagefabrication.example>
-References: <MSG-000236@vantagefabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0035 - rubber gaskets
+Date: Tue, 07 May 2024 09:00:00 +0000
+Message-ID: <MSG-000237@bluepinematerials.example>
+In-Reply-To: <MSG-000230@bluepinematerials.example>
+References: <MSG-000220@vantagefabrication.example>
+ <MSG-000221@bluepinematerials.example> <MSG-000230@bluepinematerials.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000237"
 
-Dear Hugo,
+--=-PTB-MSG-000237
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Confirming receipt of PO-2024-0050; we will schedule this for delivery.
+Hi Carla,
+
+We have issued credit note CN-2024-0008 for $474.66 against invoice INV-2024-=
+0052 (pricing error).
 
 Thanks,
-Dev
-Delta Ridge Supplies
+Rosa
+Bluepine Materials
+
+--=-PTB-MSG-000237
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0008.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0008
+Date: 2024-05-07
+Party: Bluepine Materials
+
+Credit note number: CN-2024-0008
+Invoice ref: INV-2024-0052
+Amount: $474.66
+Reason: pricing error
+
+--=-PTB-MSG-000237--

@@ -1,20 +1,44 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Iris Vance <iris.vance@redwoodindustrial.example>
-Subject: Re: Purchase order PO-2024-0043 - safety gloves
-Date: Fri, 12 Jul 2024 09:00:00 +0000
-Message-ID: <MSG-000290@oakfieldfabrication.example>
-In-Reply-To: <MSG-000281@redwoodindustrial.example>
-References: <MSG-000275@oakfieldfabrication.example>
- <MSG-000276@redwoodindustrial.example> <MSG-000281@redwoodindustrial.example>
+From: Victor Tanaka <victor.tanaka@redwoodindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0046 - safety gloves
+Date: Thu, 20 Jun 2024 09:07:00 +0000
+Message-ID: <MSG-000290@redwoodindustrial.example>
+In-Reply-To: <MSG-000274@redwoodindustrial.example>
+References: <MSG-000273@oakfieldfabrication.example>
+ <MSG-000274@redwoodindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000290"
+
+--=-PTB-MSG-000290
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
+
+Hello Victor,
+
+Please find attached invoice INV-2024-0070 against PO-2024-0046 for $1,178.25.
+Payment is due by 2024-07-05 per our NET15 terms.
+
+Best,
+Victor
+Redwood Industrial
+
+--=-PTB-MSG-000290
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0070.txt"
 MIME-Version: 1.0
 
-Hello Iris,
+INVOICE INV-2024-0070
+Date: 2024-06-20
+Party: Redwood Industrial
 
-Payment of $1,099.70 for invoice INV-2024-0069 was sent today by bank transfe=
-r.
+Invoice number: INV-2024-0070
+Issuer: Redwood Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-06-20
+Due date: 2024-07-05
+Terms: NET15
+Total: $1,178.25
+Po ref: PO-2024-0046
 
-Best regards,
-Victor
-Oakfield Fabrication
+--=-PTB-MSG-000290--

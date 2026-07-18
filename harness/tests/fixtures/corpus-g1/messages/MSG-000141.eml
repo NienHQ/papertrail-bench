@@ -1,8 +1,11 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Purchase order PO-2024-0033 - safety gloves
-Date: Tue, 05 Mar 2024 09:28:00 +0000
-Message-ID: <MSG-000141@vantagefabrication.example>
+From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0033 - copper wire 12AWG
+Date: Tue, 19 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000141@yellowstonecomponents.example>
+In-Reply-To: <MSG-000126@yellowstonecomponents.example>
+References: <MSG-000125@vantagefabrication.example>
+ <MSG-000126@yellowstonecomponents.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000141"
 
@@ -10,30 +13,33 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000141"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hello Jonas,
+Dear Carla,
 
-Please find attached purchase order PO-2024-0033 for 100 units of safety glov=
-es at $4.39 per unit.
-The order total is $439.00.
+Please find attached invoice INV-2024-0044 against PO-2024-0033 for $11,347.7=
+0.
+Payment is due by 2024-05-18 per our NET60 terms.
 
-Thanks,
+Regards,
 Hugo
-Vantage Fabrication
+Yellowstone Components
 
 --=-PTB-MSG-000141
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0033.txt"
+Content-Disposition: attachment; filename="INV-2024-0044.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0033
-Date: 2024-03-05
-Party: Quarry Packaging
+INVOICE INV-2024-0044
+Date: 2024-03-19
+Party: Yellowstone Components
 
-Po number: PO-2024-0033
-Item: safety gloves
-Qty: 100
-Unit price: $4.39
-Total: $439.00
+Invoice number: INV-2024-0044
+Issuer: Yellowstone Components
+Bill to: Vantage Fabrication
+Issue date: 2024-03-19
+Due date: 2024-05-18
+Terms: NET60
+Total: $11,347.70
+Po ref: PO-2024-0033
 
 --=-PTB-MSG-000141--

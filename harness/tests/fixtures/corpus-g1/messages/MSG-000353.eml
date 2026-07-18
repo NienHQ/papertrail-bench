@@ -1,19 +1,40 @@
-From: Dev Ueda <dev.ueda@granitedistribution.example>
-To: Uma Garvey <uma.garvey@vantagefabrication.example>
-Subject: Re: Invoice INV-2024-0072 from Vantage Fabrication
-Date: Mon, 03 Jun 2024 09:07:00 +0000
-Message-ID: <MSG-000353@granitedistribution.example>
-In-Reply-To: <MSG-000228@vantagefabrication.example>
-References: <MSG-000228@vantagefabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Invoice INV-2024-0105 from Vantage Fabrication
+Date: Fri, 14 Jun 2024 09:28:00 +0000
+Message-ID: <MSG-000353@vantagefabrication.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000353"
 
-Hello Uma,
+--=-PTB-MSG-000353
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
 
-Payment of $1,875.00 for invoice INV-2024-0072 was sent today by bank transfe=
-r.
+Hello Mona,
+
+Please find attached invoice INV-2024-0105 for $6,670.00.
+Payment is due by 2024-07-14 per our NET30 terms.
 
 Best regards,
-Dev
-Granite Distribution
+Uma
+Vantage Fabrication
+
+--=-PTB-MSG-000353
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0105.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0105
+Date: 2024-06-14
+Party: Meridian Distribution
+
+Invoice number: INV-2024-0105
+Issuer: Vantage Fabrication
+Bill to: Meridian Distribution
+Issue date: 2024-06-14
+Due date: 2024-07-14
+Terms: NET30
+Total: $6,670.00
+
+--=-PTB-MSG-000353--

@@ -1,8 +1,10 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Iris Vance <iris.vance@redwoodindustrial.example>
-Subject: Purchase order PO-2024-0001 - safety gloves
-Date: Wed, 24 Jan 2024 09:00:00 +0000
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Grace Whitfield <grace.whitfield@quarrytrading.example>
+Subject: Re: Invoice INV-2024-0010 from Oakfield Fabrication
+Date: Mon, 22 Jan 2024 09:28:00 +0000
 Message-ID: <MSG-000025@oakfieldfabrication.example>
+In-Reply-To: <MSG-000016@oakfieldfabrication.example>
+References: <MSG-000016@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000025"
 
@@ -10,30 +12,28 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000025"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dear Iris,
+Hi Grace,
 
-Please find attached purchase order PO-2024-0001 for 10 units of safety glove=
-s at $15.71 per unit.
-The order total is $157.10.
+We have issued credit note CN-2024-0002 for $1,081.65 against invoice INV-202=
+4-0010 (returned items).
 
-Kind regards,
-Quinn
+Best,
+Tara
 Oakfield Fabrication
 
 --=-PTB-MSG-000025
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0001.txt"
+Content-Disposition: attachment; filename="CN-2024-0002.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0001
-Date: 2024-01-24
-Party: Redwood Industrial
+CREDIT NOTE CN-2024-0002
+Date: 2024-01-22
+Party: Quarry Trading
 
-Po number: PO-2024-0001
-Item: safety gloves
-Qty: 10
-Unit price: $15.71
-Total: $157.10
+Credit note number: CN-2024-0002
+Invoice ref: INV-2024-0010
+Amount: $1,081.65
+Reason: returned items
 
 --=-PTB-MSG-000025--

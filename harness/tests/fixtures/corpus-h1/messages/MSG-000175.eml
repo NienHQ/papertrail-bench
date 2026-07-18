@@ -1,42 +1,18 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Iris Vance <iris.vance@redwoodindustrial.example>
-Subject: Re: Purchase order PO-2024-0029 - safety gloves
-Date: Sat, 27 Apr 2024 09:00:00 +0000
-Message-ID: <MSG-000175@oakfieldfabrication.example>
-In-Reply-To: <MSG-000163@redwoodindustrial.example>
-References: <MSG-000162@oakfieldfabrication.example>
- <MSG-000163@redwoodindustrial.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000175"
-
---=-PTB-MSG-000175
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Dear Iris,
-
-Please amend PO-2024-0029: quantity is now 35 units of safety gloves, revised=
- order total $549.85.
-The amended purchase order is attached as PO-2024-0029-A1.
-
-Kind regards,
-Quinn
-Oakfield Fabrication
-
---=-PTB-MSG-000175
+From: Victor Tanaka <victor.tanaka@redwoodindustrial.example>
+To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0031 - safety gloves
+Date: Tue, 16 Apr 2024 17:00:00 +0000
+Message-ID: <MSG-000175@redwoodindustrial.example>
+In-Reply-To: <MSG-000174@oakfieldfabrication.example>
+References: <MSG-000174@oakfieldfabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0029-A1.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0029-A1
-Date: 2024-04-27
-Party: Redwood Industrial
+Dear Quinn,
 
-Po number: PO-2024-0029
-Item: safety gloves
-Qty: 35
-Unit price: $15.71
-Total: $549.85
+Confirming receipt of PO-2024-0031; we will schedule this for delivery.
 
---=-PTB-MSG-000175--
+Thanks,
+Victor
+Redwood Industrial

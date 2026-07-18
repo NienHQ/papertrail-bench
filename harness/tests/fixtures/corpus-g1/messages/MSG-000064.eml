@@ -1,46 +1,40 @@
-From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0009 - LED panels
-Date: Sat, 03 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000064@deltaridgesupplies.example>
-In-Reply-To: <MSG-000044@vantagefabrication.example>
-References: <MSG-000027@vantagefabrication.example>
- <MSG-000028@deltaridgesupplies.example>
- <MSG-000044@vantagefabrication.example>
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Dev Ueda <dev.ueda@granitedistribution.example>
+Subject: Invoice INV-2024-0028 from Vantage Fabrication
+Date: Mon, 05 Feb 2024 09:28:00 +0000
+Message-ID: <MSG-000064@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000064"
 
 --=-PTB-MSG-000064
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Carla,
+Dev,
 
-Please find attached invoice INV-2024-0009 against PO-2024-0009-A1 for $4,022=
-.40.
-Payment is due by 2024-03-19 per our NET45 terms.
+Please find attached invoice INV-2024-0028 for $3,240.00.
+Payment is due by 2024-04-05 per our NET60 terms.
 
-Kind regards,
-Dev
-Delta Ridge Supplies
+Regards,
+Uma
+Vantage Fabrication
 
 --=-PTB-MSG-000064
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0009.txt"
+Content-Disposition: attachment; filename="INV-2024-0028.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0009
-Date: 2024-02-03
-Party: Delta Ridge Supplies
+INVOICE INV-2024-0028
+Date: 2024-02-05
+Party: Granite Distribution
 
-Invoice number: INV-2024-0009
-Issuer: Delta Ridge Supplies
-Bill to: Vantage Fabrication
-Issue date: 2024-02-03
-Due date: 2024-03-19
-Terms: NET45
-Total: $4,022.40
-Po ref: PO-2024-0009-A1
+Invoice number: INV-2024-0028
+Issuer: Vantage Fabrication
+Bill to: Granite Distribution
+Issue date: 2024-02-05
+Due date: 2024-04-05
+Terms: NET60
+Total: $3,240.00
 
 --=-PTB-MSG-000064--

@@ -1,18 +1,41 @@
-From: Jonas Sato <jonas.sato@quarrypackaging.example>
-To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0072 - safety gloves
-Date: Wed, 26 Jun 2024 15:14:00 +0000
-Message-ID: <MSG-000411@quarrypackaging.example>
-In-Reply-To: <MSG-000410@vantagefabrication.example>
-References: <MSG-000410@vantagefabrication.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+From: Mona Adler <mona.adler@lakeshoreproperties.example>
+To: Mona Lund <mona.lund@vantagefabrication.example>
+Subject: Re: Lease agreement LEASE-2024-001
+Date: Mon, 08 Jul 2024 09:00:00 +0000
+Message-ID: <MSG-000411@lakeshoreproperties.example>
+In-Reply-To: <MSG-000001@lakeshoreproperties.example>
+References: <MSG-000001@lakeshoreproperties.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000411"
 
-Hello Hugo,
+--=-PTB-MSG-000411
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Confirming receipt of PO-2024-0072; we will schedule this for delivery.
+Hello Mona,
+
+As per our review clause, monthly rent under lease LEASE-2024-001 is revised =
+to $2,980.46 effective 2024-07-08.
+The amendment document LEASE-2024-001-A1 is attached.
 
 Best,
-Jonas
-Quarry Packaging
+Mona
+Lakeshore Properties
+
+--=-PTB-MSG-000411
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="LEASE-2024-001-A1.txt"
+MIME-Version: 1.0
+
+LEASE AGREEMENT LEASE-2024-001-A1
+Date: 2024-07-08
+Party: Lakeshore Properties
+
+Lease number: LEASE-2024-001
+Monthly rent: $2,980.46
+Term months: 36
+Start date: 2024-01-03
+Amended date: 2024-07-08
+
+--=-PTB-MSG-000411--

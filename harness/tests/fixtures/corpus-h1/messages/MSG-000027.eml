@@ -1,44 +1,42 @@
-From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0008 - shipping cartons
-Date: Wed, 24 Jan 2024 09:07:00 +0000
-Message-ID: <MSG-000027@vantageindustrial.example>
-In-Reply-To: <MSG-000013@vantageindustrial.example>
-References: <MSG-000012@oakfieldfabrication.example>
- <MSG-000013@vantageindustrial.example>
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@redwoodindustrial.example>
+Subject: Re: Purchase order PO-2024-0003 - safety gloves
+Date: Tue, 23 Jan 2024 09:00:00 +0000
+Message-ID: <MSG-000027@oakfieldfabrication.example>
+In-Reply-To: <MSG-000015@redwoodindustrial.example>
+References: <MSG-000014@oakfieldfabrication.example>
+ <MSG-000015@redwoodindustrial.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000027"
 
 --=-PTB-MSG-000027
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Hi Victor,
+Dear Iris,
 
-Please find attached invoice INV-2024-0008 against PO-2024-0008 for $2,938.40.
-Payment is due by 2024-03-09 per our NET45 terms.
+Please amend PO-2024-0003: quantity is now 105 units of safety gloves, revise=
+d order total $1,649.55.
+The amended purchase order is attached as PO-2024-0003-A1.
 
-Best,
+Thanks,
 Quinn
-Vantage Industrial
+Oakfield Fabrication
 
 --=-PTB-MSG-000027
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0008.txt"
+Content-Disposition: attachment; filename="PO-2024-0003-A1.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0008
-Date: 2024-01-24
-Party: Vantage Industrial
+PURCHASE ORDER PO-2024-0003-A1
+Date: 2024-01-23
+Party: Redwood Industrial
 
-Invoice number: INV-2024-0008
-Issuer: Vantage Industrial
-Bill to: Oakfield Fabrication
-Issue date: 2024-01-24
-Due date: 2024-03-09
-Terms: NET45
-Total: $2,938.40
-Po ref: PO-2024-0008
+Po number: PO-2024-0003
+Item: safety gloves
+Qty: 105
+Unit price: $15.71
+Total: $1,649.55
 
 --=-PTB-MSG-000027--

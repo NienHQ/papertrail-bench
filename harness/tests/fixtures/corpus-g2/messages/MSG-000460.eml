@@ -1,0 +1,41 @@
+From: Rosa Costa <rosa.costa@nightingalepackaging.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0089 - aluminum sheet 2mm
+Date: Wed, 26 Jun 2024 09:14:00 +0000
+Message-ID: <MSG-000460@nightingalepackaging.example>
+In-Reply-To: <MSG-000446@nightingalepackaging.example>
+References: <MSG-000421@junctionfabrication.example>
+ <MSG-000422@nightingalepackaging.example>
+ <MSG-000446@nightingalepackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000460"
+
+--=-PTB-MSG-000460
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Ava,
+
+We have issued credit note CN-2024-0018 for $2,516.93 against invoice INV-202=
+4-0112 (returned items).
+
+Best regards,
+Rosa
+Nightingale Packaging
+
+--=-PTB-MSG-000460
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0018.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0018
+Date: 2024-06-26
+Party: Nightingale Packaging
+
+Credit note number: CN-2024-0018
+Invoice ref: INV-2024-0112
+Amount: $2,516.93
+Reason: returned items
+
+--=-PTB-MSG-000460--

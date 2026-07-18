@@ -1,0 +1,44 @@
+From: Quinn Whitfield <quinn.whitfield@northgatepackaging.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0004 - shipping cartons
+Date: Wed, 24 Jan 2024 09:07:00 +0000
+Message-ID: <MSG-000035@northgatepackaging.example>
+In-Reply-To: <MSG-000023@northgatepackaging.example>
+References: <MSG-000022@junctionfabrication.example>
+ <MSG-000023@northgatepackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000035"
+
+--=-PTB-MSG-000035
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Ava,
+
+Please find attached invoice INV-2024-0004 against PO-2024-0004 for $6,516.30.
+Payment is due by 2024-03-09 per our NET45 terms.
+
+Best regards,
+Quinn
+Northgate Packaging
+
+--=-PTB-MSG-000035
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0004.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0004
+Date: 2024-01-24
+Party: Northgate Packaging
+
+Invoice number: INV-2024-0004
+Issuer: Northgate Packaging
+Bill to: Junction Fabrication
+Issue date: 2024-01-24
+Due date: 2024-03-09
+Terms: NET45
+Total: $6,516.30
+Po ref: PO-2024-0004
+
+--=-PTB-MSG-000035--

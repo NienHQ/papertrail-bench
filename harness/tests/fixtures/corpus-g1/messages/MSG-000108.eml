@@ -1,44 +1,46 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
 To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0024 - copper wire 12AWG
-Date: Tue, 20 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000108@yellowstonecomponents.example>
-In-Reply-To: <MSG-000092@yellowstonecomponents.example>
-References: <MSG-000091@vantagefabrication.example>
- <MSG-000092@yellowstonecomponents.example>
+Subject: Re: Purchase order PO-2024-0018 - LED panels
+Date: Mon, 04 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000108@deltaridgesupplies.example>
+In-Reply-To: <MSG-000104@vantagefabrication.example>
+References: <MSG-000094@vantagefabrication.example>
+ <MSG-000095@deltaridgesupplies.example>
+ <MSG-000104@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000108"
 
 --=-PTB-MSG-000108
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Carla,
+Hello Carla,
 
-Please find attached invoice INV-2024-0029 against PO-2024-0024 for $3,913.00.
-Payment is due by 2024-04-20 per our NET60 terms.
+Please find attached invoice INV-2024-0023 against PO-2024-0018-A1 for $3,771=
+.00.
+Payment is due by 2024-04-18 per our NET45 terms.
 
-Best regards,
-Hugo
+Regards,
+Dev
 Yellowstone Components
 
 --=-PTB-MSG-000108
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0029.txt"
+Content-Disposition: attachment; filename="INV-2024-0023.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0029
-Date: 2024-02-20
-Party: Yellowstone Components
+INVOICE INV-2024-0023
+Date: 2024-03-04
+Party: Delta Ridge Supplies
 
-Invoice number: INV-2024-0029
-Issuer: Yellowstone Components
+Invoice number: INV-2024-0023
+Issuer: Delta Ridge Supplies
 Bill to: Vantage Fabrication
-Issue date: 2024-02-20
-Due date: 2024-04-20
-Terms: NET60
-Total: $3,913.00
-Po ref: PO-2024-0024
+Issue date: 2024-03-04
+Due date: 2024-04-18
+Terms: NET45
+Total: $3,771.00
+Po ref: PO-2024-0018-A1
 
 --=-PTB-MSG-000108--

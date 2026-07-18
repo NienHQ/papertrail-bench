@@ -1,39 +1,18 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Jonas Drake <jonas.drake@silvertontrading.example>
-Subject: Re: Invoice INV-2024-0026 from Oakfield Fabrication
-Date: Sun, 11 Feb 2024 09:14:00 +0000
-Message-ID: <MSG-000055@oakfieldfabrication.example>
-In-Reply-To: <MSG-000051@oakfieldfabrication.example>
-References: <MSG-000051@oakfieldfabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000055"
-
---=-PTB-MSG-000055
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Jonas,
-
-We have issued credit note CN-2024-0003 for $278.61 against invoice INV-2024-=
-0026 (short delivery).
-
-Best,
-Tara
-Oakfield Fabrication
-
---=-PTB-MSG-000055
+From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0016 - shipping cartons
+Date: Tue, 06 Feb 2024 16:00:00 +0000
+Message-ID: <MSG-000055@vantageindustrial.example>
+In-Reply-To: <MSG-000054@oakfieldfabrication.example>
+References: <MSG-000054@oakfieldfabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0003.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0003
-Date: 2024-02-11
-Party: Silverton Trading
+Quinn,
 
-Credit note number: CN-2024-0003
-Invoice ref: INV-2024-0026
-Amount: $278.61
-Reason: short delivery
+Confirming receipt of PO-2024-0016; we will schedule this for delivery.
 
---=-PTB-MSG-000055--
+Best,
+Quinn
+Vantage Industrial

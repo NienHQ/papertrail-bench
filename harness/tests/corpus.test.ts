@@ -39,9 +39,9 @@ describe("loadTruthCorpus", () => {
     expect(statement?.message_id).toBe("MSG-000001");
   });
 
-  it("only fixture categories 1 to 3 are present", () => {
+  it("all six shipped categories are present", () => {
     const truth = loadTruthCorpus(FIXTURE);
     const categories = new Set(truth.questions.map((q) => q.category));
-    expect([...categories].sort()).toEqual([1, 2, 3]);
+    expect([...categories].sort()).toEqual([1, 2, 3, 4, 5, 6]);
   });
 });

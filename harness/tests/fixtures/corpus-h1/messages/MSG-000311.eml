@@ -1,0 +1,40 @@
+From: Victor Tanaka <victor.tanaka@redwoodindustrial.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0048 - safety gloves
+Date: Tue, 02 Jul 2024 09:00:00 +0000
+Message-ID: <MSG-000311@redwoodindustrial.example>
+In-Reply-To: <MSG-000300@redwoodindustrial.example>
+References: <MSG-000287@oakfieldfabrication.example>
+ <MSG-000288@redwoodindustrial.example> <MSG-000300@redwoodindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000311"
+
+--=-PTB-MSG-000311
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Victor,
+
+We have issued credit note CN-2024-0006 for $139.69 against invoice INV-2024-=
+0072 (damaged goods).
+
+Kind regards,
+Victor
+Redwood Industrial
+
+--=-PTB-MSG-000311
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0006.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0006
+Date: 2024-07-02
+Party: Redwood Industrial
+
+Credit note number: CN-2024-0006
+Invoice ref: INV-2024-0072
+Amount: $139.69
+Reason: damaged goods
+
+--=-PTB-MSG-000311--

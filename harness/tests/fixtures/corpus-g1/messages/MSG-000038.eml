@@ -1,40 +1,46 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Dev Ueda <dev.ueda@granitedistribution.example>
-Subject: Invoice INV-2024-0016 from Vantage Fabrication
-Date: Wed, 24 Jan 2024 09:21:00 +0000
-Message-ID: <MSG-000038@vantagefabrication.example>
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0001 - rubber gaskets
+Date: Thu, 25 Jan 2024 09:00:00 +0000
+Message-ID: <MSG-000038@bluepinematerials.example>
+In-Reply-To: <MSG-000024@vantagefabrication.example>
+References: <MSG-000018@vantagefabrication.example>
+ <MSG-000019@bluepinematerials.example>
+ <MSG-000024@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000038"
 
 --=-PTB-MSG-000038
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Dev,
+Carla,
 
-Please find attached invoice INV-2024-0016 for $5,150.00.
-Payment is due by 2024-03-24 per our NET60 terms.
+Please find attached invoice INV-2024-0001 against PO-2024-0001-A1 for $941.1=
+0.
+Payment is due by 2024-02-09 per our NET15 terms.
 
-Thanks,
-Uma
-Vantage Fabrication
+Kind regards,
+Rosa
+Bluepine Materials
 
 --=-PTB-MSG-000038
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0016.txt"
+Content-Disposition: attachment; filename="INV-2024-0001.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0016
-Date: 2024-01-24
-Party: Granite Distribution
+INVOICE INV-2024-0001
+Date: 2024-01-25
+Party: Bluepine Materials
 
-Invoice number: INV-2024-0016
-Issuer: Vantage Fabrication
-Bill to: Granite Distribution
-Issue date: 2024-01-24
-Due date: 2024-03-24
-Terms: NET60
-Total: $5,150.00
+Invoice number: INV-2024-0001
+Issuer: Bluepine Materials
+Bill to: Vantage Fabrication
+Issue date: 2024-01-25
+Due date: 2024-02-09
+Terms: NET15
+Total: $941.10
+Po ref: PO-2024-0001-A1
 
 --=-PTB-MSG-000038--

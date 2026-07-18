@@ -1,20 +1,43 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-Subject: Re: Purchase order PO-2024-0062 - LED panels
-Date: Wed, 15 May 2024 09:14:00 +0000
-Message-ID: <MSG-000317@vantagefabrication.example>
-In-Reply-To: <MSG-000305@deltaridgesupplies.example>
-References: <MSG-000287@vantagefabrication.example>
- <MSG-000288@deltaridgesupplies.example>
- <MSG-000305@deltaridgesupplies.example>
+From: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0056 - copper wire 12AWG
+Date: Tue, 04 Jun 2024 09:14:00 +0000
+Message-ID: <MSG-000317@yellowstonecomponents.example>
+In-Reply-To: <MSG-000316@yellowstonecomponents.example>
+References: <MSG-000275@vantagefabrication.example>
+ <MSG-000276@yellowstonecomponents.example>
+ <MSG-000288@yellowstonecomponents.example>
+ <MSG-000305@vantagefabrication.example>
+ <MSG-000316@yellowstonecomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000317"
+
+--=-PTB-MSG-000317
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Carla,
+
+We have issued credit note CN-2024-0013 for $669.82 against invoice INV-2024-=
+0079 (duplicate line item).
+
+Kind regards,
+Dev
+Yellowstone Components
+
+--=-PTB-MSG-000317
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0013.txt"
 MIME-Version: 1.0
 
-Hi Dev,
+CREDIT NOTE CN-2024-0013
+Date: 2024-06-04
+Party: Yellowstone Components
 
-We dispute $1,224.37 on invoice INV-2024-0082: goods returned.
+Credit note number: CN-2024-0013
+Invoice ref: INV-2024-0079
+Amount: $669.82
+Reason: duplicate line item
 
-Thanks,
-Carla
-Vantage Fabrication
+--=-PTB-MSG-000317--

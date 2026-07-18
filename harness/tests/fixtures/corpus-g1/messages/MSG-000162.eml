@@ -1,8 +1,12 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Purchase order PO-2024-0034 - safety gloves
-Date: Wed, 13 Mar 2024 09:07:00 +0000
-Message-ID: <MSG-000162@vantagefabrication.example>
+From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0031 - LED panels
+Date: Wed, 27 Mar 2024 09:07:00 +0000
+Message-ID: <MSG-000162@deltaridgesupplies.example>
+In-Reply-To: <MSG-000144@vantagefabrication.example>
+References: <MSG-000136@vantagefabrication.example>
+ <MSG-000137@deltaridgesupplies.example>
+ <MSG-000144@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000162"
 
@@ -10,30 +14,33 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000162"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Dear Jonas,
+Dear Carla,
 
-Please find attached purchase order PO-2024-0034 for 185 units of safety glov=
-es at $4.39 per unit.
-The order total is $812.15.
+Please find attached invoice INV-2024-0042 against PO-2024-0031-A1 for $10,81=
+0.20.
+Payment is due by 2024-05-11 per our NET45 terms.
 
 Kind regards,
-Hugo
-Vantage Fabrication
+Dev
+Yellowstone Components
 
 --=-PTB-MSG-000162
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0034.txt"
+Content-Disposition: attachment; filename="INV-2024-0042.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0034
-Date: 2024-03-13
-Party: Quarry Packaging
+INVOICE INV-2024-0042
+Date: 2024-03-27
+Party: Delta Ridge Supplies
 
-Po number: PO-2024-0034
-Item: safety gloves
-Qty: 185
-Unit price: $4.39
-Total: $812.15
+Invoice number: INV-2024-0042
+Issuer: Delta Ridge Supplies
+Bill to: Vantage Fabrication
+Issue date: 2024-03-27
+Due date: 2024-05-11
+Terms: NET45
+Total: $10,810.20
+Po ref: PO-2024-0031-A1
 
 --=-PTB-MSG-000162--

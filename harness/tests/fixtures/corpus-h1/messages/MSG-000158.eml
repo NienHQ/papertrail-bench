@@ -1,39 +1,23 @@
-From: Tara Drake <tara.drake@oakfieldfabrication.example>
-To: Jonas Drake <jonas.drake@silvertontrading.example>
-Subject: Re: Invoice INV-2024-0055 from Oakfield Fabrication
-Date: Thu, 18 Apr 2024 09:07:00 +0000
+From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+To: Iris Vance <iris.vance@yellowstonesupplies.example>
+Subject: Re: Purchase order PO-2024-0005 - LED panels
+Date: Sun, 07 Apr 2024 09:00:00 +0000
 Message-ID: <MSG-000158@oakfieldfabrication.example>
-In-Reply-To: <MSG-000155@oakfieldfabrication.example>
-References: <MSG-000155@oakfieldfabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000158"
-
---=-PTB-MSG-000158
+In-Reply-To: <MSG-000056@yellowstonesupplies.example>
+References: <MSG-000019@oakfieldfabrication.example>
+ <MSG-000020@yellowstonesupplies.example>
+ <MSG-000030@oakfieldfabrication.example>
+ <MSG-000039@oakfieldfabrication.example>
+ <MSG-000056@yellowstonesupplies.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-
-Dear Jonas,
-
-We have issued credit note CN-2024-0005 for $1,046.12 against invoice INV-202=
-4-0055 (short delivery).
-
-Thanks,
-Tara
-Oakfield Fabrication
-
---=-PTB-MSG-000158
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0005.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0005
-Date: 2024-04-18
-Party: Silverton Trading
+Dear Iris,
 
-Credit note number: CN-2024-0005
-Invoice ref: INV-2024-0055
-Amount: $1,046.12
-Reason: short delivery
+Payment of $16,297.50 for invoice INV-2024-0005 was sent today by bank transf=
+er.
 
---=-PTB-MSG-000158--
+Thanks,
+Victor
+Oakfield Fabrication

@@ -1,18 +1,44 @@
 From: Iris Vance <iris.vance@redwoodindustrial.example>
-To: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0009 - safety gloves
-Date: Tue, 06 Feb 2024 14:00:00 +0000
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0004 - safety gloves
+Date: Sun, 04 Feb 2024 09:00:00 +0000
 Message-ID: <MSG-000047@redwoodindustrial.example>
-In-Reply-To: <MSG-000046@oakfieldfabrication.example>
-References: <MSG-000046@oakfieldfabrication.example>
+In-Reply-To: <MSG-000034@redwoodindustrial.example>
+References: <MSG-000033@oakfieldfabrication.example>
+ <MSG-000034@redwoodindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000047"
+
+--=-PTB-MSG-000047
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+
+Hi Victor,
+
+Please find attached invoice INV-2024-0004 against PO-2024-0004 for $1,178.25.
+Payment is due by 2024-04-04 per our NET60 terms.
+
+Thanks,
+Iris
+Yellowstone Supplies
+
+--=-PTB-MSG-000047
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0004.txt"
 MIME-Version: 1.0
 
-Hello Quinn,
+INVOICE INV-2024-0004
+Date: 2024-02-04
+Party: Redwood Industrial
 
-Confirming receipt of PO-2024-0009; we will schedule this for delivery.
+Invoice number: INV-2024-0004
+Issuer: Redwood Industrial
+Bill to: Oakfield Fabrication
+Issue date: 2024-02-04
+Due date: 2024-04-04
+Terms: NET60
+Total: $1,178.25
+Po ref: PO-2024-0004
 
-Regards,
-Iris
-Redwood Industrial
+--=-PTB-MSG-000047--

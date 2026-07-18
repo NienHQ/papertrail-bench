@@ -1,8 +1,8 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Re: Purchase order PO-2024-0013 - LED panels
-Date: Thu, 22 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000073@oakfieldfabrication.example>
+From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0015 - LED panels
+Date: Sun, 18 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000073@yellowstonesupplies.example>
 In-Reply-To: <MSG-000069@yellowstonesupplies.example>
 References: <MSG-000068@oakfieldfabrication.example>
  <MSG-000069@yellowstonesupplies.example>
@@ -11,32 +11,34 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000073"
 
 --=-PTB-MSG-000073
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Hi Ava,
+Hi Victor,
 
-Please amend PO-2024-0013: quantity is now 150 units of LED panels, revised o=
-rder total $11,925.00.
-The amended purchase order is attached as PO-2024-0013-A1.
+Please find attached invoice INV-2024-0020 against PO-2024-0015 for $1,192.50.
+Payment is due by 2024-04-18 per our NET60 terms.
 
 Thanks,
-Quinn
-Oakfield Fabrication
+Ava
+Yellowstone Supplies
 
 --=-PTB-MSG-000073
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0013-A1.txt"
+Content-Disposition: attachment; filename="INV-2024-0020.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0013-A1
-Date: 2024-02-22
+INVOICE INV-2024-0020
+Date: 2024-02-18
 Party: Yellowstone Supplies
 
-Po number: PO-2024-0013
-Item: LED panels
-Qty: 150
-Unit price: $79.50
-Total: $11,925.00
+Invoice number: INV-2024-0020
+Issuer: Yellowstone Supplies
+Bill to: Oakfield Fabrication
+Issue date: 2024-02-18
+Due date: 2024-04-18
+Terms: NET60
+Total: $1,192.50
+Po ref: PO-2024-0015
 
 --=-PTB-MSG-000073--

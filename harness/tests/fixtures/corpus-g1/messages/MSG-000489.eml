@@ -1,39 +1,20 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Purchase order PO-2024-0093 - copper wire 12AWG
-Date: Fri, 26 Jul 2024 09:07:00 +0000
+From: Carla Costa <carla.costa@vantagefabrication.example>
+To: Jonas Sato <jonas.sato@quarrypackaging.example>
+Subject: Re: Purchase order PO-2024-0077 - safety gloves
+Date: Fri, 16 Aug 2024 09:00:00 +0000
 Message-ID: <MSG-000489@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000489"
-
---=-PTB-MSG-000489
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Hello Hugo,
-
-Please find attached purchase order PO-2024-0093 for 40 units of copper wire =
-12AWG at $78.26 per unit.
-The order total is $3,130.40.
-
-Best,
-Hugo
-Vantage Fabrication
-
---=-PTB-MSG-000489
+In-Reply-To: <MSG-000452@quarrypackaging.example>
+References: <MSG-000418@vantagefabrication.example>
+ <MSG-000419@quarrypackaging.example> <MSG-000431@vantagefabrication.example>
+ <MSG-000452@quarrypackaging.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0093.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0093
-Date: 2024-07-26
-Party: Yellowstone Components
+Jonas,
 
-Po number: PO-2024-0093
-Item: copper wire 12AWG
-Qty: 40
-Unit price: $78.26
-Total: $3,130.40
+Payment of $65.85 for invoice INV-2024-0111 was sent today by bank transfer.
 
---=-PTB-MSG-000489--
+Thanks,
+Carla
+Vantage Fabrication

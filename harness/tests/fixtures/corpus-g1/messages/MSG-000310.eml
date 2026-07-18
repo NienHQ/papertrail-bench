@@ -1,17 +1,40 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Dev Ueda <dev.ueda@granitedistribution.example>
-Subject: Payment terms review - Granite Distribution
-Date: Sat, 11 May 2024 09:00:00 +0000
-Message-ID: <MSG-000310@vantagefabrication.example>
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0049 - safety gloves
+Date: Sun, 02 Jun 2024 09:14:00 +0000
+Message-ID: <MSG-000310@quarrypackaging.example>
+In-Reply-To: <MSG-000304@quarrypackaging.example>
+References: <MSG-000279@vantagefabrication.example>
+ <MSG-000280@quarrypackaging.example> <MSG-000304@quarrypackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000310"
+
+--=-PTB-MSG-000310
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
+
+Carla,
+
+We have issued credit note CN-2024-0012 for $13.27 against invoice INV-2024-0=
+072 (returned items).
+
+Best regards,
+Jonas
+Quarry Packaging
+
+--=-PTB-MSG-000310
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0012.txt"
 MIME-Version: 1.0
 
-Hello Dev,
+CREDIT NOTE CN-2024-0012
+Date: 2024-06-02
+Party: Quarry Packaging
 
-Given our trading volume this year, we would like to revise payment terms fro=
-m 60 to 45 days going forward.
+Credit note number: CN-2024-0012
+Invoice ref: INV-2024-0072
+Amount: $13.27
+Reason: returned items
 
-Regards,
-Uma
-Vantage Fabrication
+--=-PTB-MSG-000310--

@@ -1,21 +1,39 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Iris Vance <iris.vance@redwoodindustrial.example>
-Subject: Re: Purchase order PO-2024-0027 - safety gloves
-Date: Mon, 20 May 2024 09:00:00 +0000
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Quinn Tanaka <qtanaka@vantageindustrial.example>
+Subject: Purchase order PO-2024-0043 - shipping cartons
+Date: Mon, 06 May 2024 09:07:00 +0000
 Message-ID: <MSG-000210@oakfieldfabrication.example>
-In-Reply-To: <MSG-000195@redwoodindustrial.example>
-References: <MSG-000171@oakfieldfabrication.example>
- <MSG-000172@redwoodindustrial.example>
- <MSG-000176@oakfieldfabrication.example>
- <MSG-000191@redwoodindustrial.example> <MSG-000195@redwoodindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000210"
+
+--=-PTB-MSG-000210
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Quinn,
+
+Please find attached purchase order PO-2024-0043 for 55 units of shipping car=
+tons at $73.46 per unit.
+The order total is $4,040.30.
+
+Best regards,
+Quinn
+Oakfield Fabrication
+
+--=-PTB-MSG-000210
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0043.txt"
 MIME-Version: 1.0
 
-Iris,
+PURCHASE ORDER PO-2024-0043
+Date: 2024-05-06
+Party: Vantage Industrial
 
-Payment of $62.30 for invoice INV-2024-0043 was sent today by bank transfer.
+Po number: PO-2024-0043
+Item: shipping cartons
+Qty: 55
+Unit price: $73.46
+Total: $4,040.30
 
-Regards,
-Victor
-Oakfield Fabrication
+--=-PTB-MSG-000210--

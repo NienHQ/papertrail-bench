@@ -1,0 +1,42 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Quinn Whitfield <quinn.whitfield@northgatepackaging.example>
+Subject: Re: Purchase order PO-2024-0062 - shipping cartons
+Date: Thu, 16 May 2024 09:35:00 +0000
+Message-ID: <MSG-000345@junctionfabrication.example>
+In-Reply-To: <MSG-000336@northgatepackaging.example>
+References: <MSG-000335@junctionfabrication.example>
+ <MSG-000336@northgatepackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000345"
+
+--=-PTB-MSG-000345
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Quinn,
+
+Please amend PO-2024-0062: quantity is now 185 units of shipping cartons, rev=
+ised order total $8,313.90.
+The amended purchase order is attached as PO-2024-0062-A1.
+
+Best,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000345
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0062-A1.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0062-A1
+Date: 2024-05-16
+Party: Northgate Packaging
+
+Po number: PO-2024-0062
+Item: shipping cartons
+Qty: 185
+Unit price: $44.94
+Total: $8,313.90
+
+--=-PTB-MSG-000345--

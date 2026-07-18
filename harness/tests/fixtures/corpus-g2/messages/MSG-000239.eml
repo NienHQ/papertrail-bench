@@ -1,0 +1,39 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Jonas Tanaka <jonas.tanaka@nightingalepackaging.example>
+Subject: Purchase order PO-2024-0058 - aluminum sheet 2mm
+Date: Mon, 08 Apr 2024 09:28:00 +0000
+Message-ID: <MSG-000239@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000239"
+
+--=-PTB-MSG-000239
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Jonas,
+
+Please find attached purchase order PO-2024-0058 for 170 units of aluminum sh=
+eet 2mm at $72.82 per unit.
+The order total is $12,379.40.
+
+Regards,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000239
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0058.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0058
+Date: 2024-04-08
+Party: Nightingale Packaging
+
+Po number: PO-2024-0058
+Item: aluminum sheet 2mm
+Qty: 170
+Unit price: $72.82
+Total: $12,379.40
+
+--=-PTB-MSG-000239--

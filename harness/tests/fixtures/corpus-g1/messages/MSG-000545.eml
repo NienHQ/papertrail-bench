@@ -1,40 +1,21 @@
-From: Uma Garvey <uma.garvey@vantagefabrication.example>
-To: Mona Joshi <mona.joshi@meridiandistribution.example>
-Subject: Invoice INV-2024-0148 from Vantage Fabrication
-Date: Mon, 19 Aug 2024 09:42:00 +0000
+From: Carla Costa <carla.costa@vantagefabrication.example>
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Re: Purchase order PO-2024-0082 - LED panels
+Date: Sat, 07 Sep 2024 09:07:00 +0000
 Message-ID: <MSG-000545@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000545"
-
---=-PTB-MSG-000545
+In-Reply-To: <MSG-000462@deltaridgesupplies.example>
+References: <MSG-000439@vantagefabrication.example>
+ <MSG-000440@deltaridgesupplies.example>
+ <MSG-000462@deltaridgesupplies.example>
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
 
-Hi Mona,
+Hello Kira,
 
-Please find attached invoice INV-2024-0148 for $6,850.00.
-Payment is due by 2024-09-18 per our NET30 terms.
+Payment of $6,787.80 for invoice INV-2024-0116 was sent today by bank transfe=
+r.
 
 Kind regards,
-Uma
+Carla
 Vantage Fabrication
-
---=-PTB-MSG-000545
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0148.txt"
-MIME-Version: 1.0
-
-INVOICE INV-2024-0148
-Date: 2024-08-19
-Party: Meridian Distribution
-
-Invoice number: INV-2024-0148
-Issuer: Vantage Fabrication
-Bill to: Meridian Distribution
-Issue date: 2024-08-19
-Due date: 2024-09-18
-Terms: NET30
-Total: $6,850.00
-
---=-PTB-MSG-000545--

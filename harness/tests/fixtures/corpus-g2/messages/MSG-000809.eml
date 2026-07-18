@@ -1,0 +1,40 @@
+From: Kira Novak <knovak@silvertonsupplies.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0144 - steel brackets
+Date: Thu, 31 Oct 2024 09:07:00 +0000
+Message-ID: <MSG-000809@silvertonsupplies.example>
+In-Reply-To: <MSG-000797@silvertonsupplies.example>
+References: <MSG-000781@junctionfabrication.example>
+ <MSG-000782@silvertonsupplies.example> <MSG-000797@silvertonsupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000809"
+
+--=-PTB-MSG-000809
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Ava,
+
+We have issued credit note CN-2024-0026 for $286.80 against invoice INV-2024-=
+0187 (damaged goods).
+
+Regards,
+Kira
+Silverton Supplies
+
+--=-PTB-MSG-000809
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0026.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0026
+Date: 2024-10-31
+Party: Silverton Supplies
+
+Credit note number: CN-2024-0026
+Invoice ref: INV-2024-0187
+Amount: $286.80
+Reason: damaged goods
+
+--=-PTB-MSG-000809--

@@ -1,0 +1,39 @@
+From: Ben Okafor <ben.okafor@junctionfabrication.example>
+To: Grace Novak <gnovak@quarrydistribution.example>
+Subject: Re: Invoice INV-2024-0176 from Junction Fabrication
+Date: Mon, 23 Sep 2024 09:35:00 +0000
+Message-ID: <MSG-000707@junctionfabrication.example>
+In-Reply-To: <MSG-000694@junctionfabrication.example>
+References: <MSG-000694@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000707"
+
+--=-PTB-MSG-000707
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Grace,
+
+We have issued credit note CN-2024-0024 for $1,311.77 against invoice INV-202=
+4-0176 (pricing error).
+
+Thanks,
+Ben
+Junction Fabrication
+
+--=-PTB-MSG-000707
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0024.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0024
+Date: 2024-09-23
+Party: Quarry Distribution
+
+Credit note number: CN-2024-0024
+Invoice ref: INV-2024-0176
+Amount: $1,311.77
+Reason: pricing error
+
+--=-PTB-MSG-000707--

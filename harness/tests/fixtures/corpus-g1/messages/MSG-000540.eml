@@ -1,8 +1,12 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Purchase order PO-2024-0098 - safety gloves
-Date: Mon, 19 Aug 2024 09:21:00 +0000
-Message-ID: <MSG-000540@vantagefabrication.example>
+From: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0097 - copper wire 12AWG
+Date: Tue, 03 Sep 2024 09:00:00 +0000
+Message-ID: <MSG-000540@yellowstonecomponents.example>
+In-Reply-To: <MSG-000520@vantagefabrication.example>
+References: <MSG-000511@vantagefabrication.example>
+ <MSG-000512@yellowstonecomponents.example>
+ <MSG-000520@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000540"
 
@@ -10,30 +14,33 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000540"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hello Jonas,
+Dear Carla,
 
-Please find attached purchase order PO-2024-0098 for 160 units of safety glov=
-es at $4.39 per unit.
-The order total is $702.40.
+Please find attached invoice INV-2024-0137 against PO-2024-0097-A1 for $3,913=
+.00.
+Payment is due by 2024-11-02 per our NET60 terms.
 
-Best regards,
-Hugo
-Vantage Fabrication
+Thanks,
+Dev
+Yellowstone Components
 
 --=-PTB-MSG-000540
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0098.txt"
+Content-Disposition: attachment; filename="INV-2024-0137.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0098
-Date: 2024-08-19
-Party: Quarry Packaging
+INVOICE INV-2024-0137
+Date: 2024-09-03
+Party: Yellowstone Components
 
-Po number: PO-2024-0098
-Item: safety gloves
-Qty: 160
-Unit price: $4.39
-Total: $702.40
+Invoice number: INV-2024-0137
+Issuer: Yellowstone Components
+Bill to: Vantage Fabrication
+Issue date: 2024-09-03
+Due date: 2024-11-02
+Terms: NET60
+Total: $3,913.00
+Po ref: PO-2024-0097-A1
 
 --=-PTB-MSG-000540--

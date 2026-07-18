@@ -1,8 +1,13 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
-Subject: Purchase order PO-2024-0012 - LED panels
-Date: Mon, 12 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000056@oakfieldfabrication.example>
+From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
+To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
+Subject: Re: Purchase order PO-2024-0005 - LED panels
+Date: Wed, 07 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000056@yellowstonesupplies.example>
+In-Reply-To: <MSG-000039@oakfieldfabrication.example>
+References: <MSG-000019@oakfieldfabrication.example>
+ <MSG-000020@yellowstonesupplies.example>
+ <MSG-000030@oakfieldfabrication.example>
+ <MSG-000039@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000056"
 
@@ -10,30 +15,33 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000056"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hi Ava,
+Hi Victor,
 
-Please find attached purchase order PO-2024-0012 for 100 units of LED panels =
-at $79.50 per unit.
-The order total is $7,950.00.
+Please find attached invoice INV-2024-0005 against PO-2024-0005-A2 for $16,29=
+7.50.
+Payment is due by 2024-04-07 per our NET60 terms.
 
 Regards,
-Quinn
-Oakfield Fabrication
+Ava
+Yellowstone Supplies
 
 --=-PTB-MSG-000056
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0012.txt"
+Content-Disposition: attachment; filename="INV-2024-0005.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0012
-Date: 2024-02-12
+INVOICE INV-2024-0005
+Date: 2024-02-07
 Party: Yellowstone Supplies
 
-Po number: PO-2024-0012
-Item: LED panels
-Qty: 100
-Unit price: $79.50
-Total: $7,950.00
+Invoice number: INV-2024-0005
+Issuer: Yellowstone Supplies
+Bill to: Oakfield Fabrication
+Issue date: 2024-02-07
+Due date: 2024-04-07
+Terms: NET60
+Total: $16,297.50
+Po ref: PO-2024-0005-A2
 
 --=-PTB-MSG-000056--

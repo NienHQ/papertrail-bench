@@ -1,44 +1,20 @@
-From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0062 - LED panels
-Date: Fri, 10 May 2024 09:07:00 +0000
-Message-ID: <MSG-000305@deltaridgesupplies.example>
-In-Reply-To: <MSG-000288@deltaridgesupplies.example>
-References: <MSG-000287@vantagefabrication.example>
- <MSG-000288@deltaridgesupplies.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000305"
-
---=-PTB-MSG-000305
+From: Carla Costa <carla.costa@vantagefabrication.example>
+To: Dev Fontane <dev.fontane@yellowstonecomponents.example>
+Subject: Re: Purchase order PO-2024-0056 - copper wire 12AWG
+Date: Thu, 30 May 2024 09:00:00 +0000
+Message-ID: <MSG-000305@vantagefabrication.example>
+In-Reply-To: <MSG-000288@yellowstonecomponents.example>
+References: <MSG-000275@vantagefabrication.example>
+ <MSG-000276@yellowstonecomponents.example>
+ <MSG-000288@yellowstonecomponents.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-
-Carla,
-
-Please find attached invoice INV-2024-0082 against PO-2024-0062 for $8,547.60.
-Payment is due by 2024-06-24 per our NET45 terms.
-
-Regards,
-Dev
-Delta Ridge Supplies
-
---=-PTB-MSG-000305
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0082.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0082
-Date: 2024-05-10
-Party: Delta Ridge Supplies
+Hello Dev,
 
-Invoice number: INV-2024-0082
-Issuer: Delta Ridge Supplies
-Bill to: Vantage Fabrication
-Issue date: 2024-05-10
-Due date: 2024-06-24
-Terms: NET45
-Total: $8,547.60
-Po ref: PO-2024-0062
+We dispute $669.82 on invoice INV-2024-0079: duplicate line item.
 
---=-PTB-MSG-000305--
+Kind regards,
+Carla
+Vantage Fabrication

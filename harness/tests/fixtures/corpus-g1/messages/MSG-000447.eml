@@ -1,43 +1,44 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Re: Purchase order PO-2024-0092 - copper wire 12AWG
-Date: Mon, 08 Jul 2024 09:14:00 +0000
-Message-ID: <MSG-000447@vantagefabrication.example>
-In-Reply-To: <MSG-000440@vantagefabrication.example>
-References: <MSG-000432@vantagefabrication.example>
- <MSG-000433@yellowstonecomponents.example>
- <MSG-000440@vantagefabrication.example>
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0079 - safety gloves
+Date: Sat, 20 Jul 2024 09:28:00 +0000
+Message-ID: <MSG-000447@quarrypackaging.example>
+In-Reply-To: <MSG-000435@quarrypackaging.example>
+References:
+ <MSG-000434@vantagefabrication.example> <MSG-000435@quarrypackaging.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000447"
 
 --=-PTB-MSG-000447
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Hi Hugo,
+Dear Carla,
 
-Please amend PO-2024-0092: quantity is now 215 units of copper wire 12AWG, re=
-vised order total $16,825.90.
-The amended purchase order is attached as PO-2024-0092-A2.
+Please find attached invoice INV-2024-0113 against PO-2024-0079 for $65.85.
+Payment is due by 2024-08-19 per our NET30 terms.
 
-Regards,
-Hugo
-Vantage Fabrication
+Kind regards,
+Jonas
+Quarry Packaging
 
 --=-PTB-MSG-000447
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0092-A2.txt"
+Content-Disposition: attachment; filename="INV-2024-0113.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0092-A2
-Date: 2024-07-08
-Party: Yellowstone Components
+INVOICE INV-2024-0113
+Date: 2024-07-20
+Party: Quarry Packaging
 
-Po number: PO-2024-0092
-Item: copper wire 12AWG
-Qty: 215
-Unit price: $78.26
-Total: $16,825.90
+Invoice number: INV-2024-0113
+Issuer: Quarry Packaging
+Bill to: Vantage Fabrication
+Issue date: 2024-07-20
+Due date: 2024-08-19
+Terms: NET30
+Total: $65.85
+Po ref: PO-2024-0079
 
 --=-PTB-MSG-000447--

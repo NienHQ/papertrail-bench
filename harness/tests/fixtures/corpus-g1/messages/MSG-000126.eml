@@ -1,44 +1,18 @@
 From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0025 - copper wire 12AWG
-Date: Wed, 28 Feb 2024 09:14:00 +0000
+To: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0033 - copper wire 12AWG
+Date: Mon, 11 Mar 2024 11:07:00 +0000
 Message-ID: <MSG-000126@yellowstonecomponents.example>
-In-Reply-To: <MSG-000125@yellowstonecomponents.example>
-References: <MSG-000069@vantagefabrication.example>
- <MSG-000070@yellowstonecomponents.example>
- <MSG-000082@vantagefabrication.example>
- <MSG-000106@yellowstonecomponents.example>
- <MSG-000109@vantagefabrication.example>
- <MSG-000125@yellowstonecomponents.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000126"
-
---=-PTB-MSG-000126
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Hi Carla,
-
-We have issued credit note CN-2024-0006 for $3,429.02 against invoice INV-202=
-4-0030 (goods returned).
-
-Best regards,
-Hugo
-Yellowstone Components
-
---=-PTB-MSG-000126
+In-Reply-To: <MSG-000125@vantagefabrication.example>
+References: <MSG-000125@vantagefabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0006.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0006
-Date: 2024-02-28
-Party: Yellowstone Components
+Hi Hugo,
 
-Credit note number: CN-2024-0006
-Invoice ref: INV-2024-0030
-Amount: $3,429.02
-Reason: goods returned
+Confirming receipt of PO-2024-0033; we will schedule this for delivery.
 
---=-PTB-MSG-000126--
+Kind regards,
+Hugo
+Yellowstone Components

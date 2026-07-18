@@ -1,0 +1,43 @@
+From: Quinn Whitfield <quinn.whitfield@northgatepackaging.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0004 - shipping cartons
+Date: Mon, 05 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000065@northgatepackaging.example>
+In-Reply-To: <MSG-000064@northgatepackaging.example>
+References: <MSG-000022@junctionfabrication.example>
+ <MSG-000023@northgatepackaging.example>
+ <MSG-000035@northgatepackaging.example>
+ <MSG-000046@junctionfabrication.example>
+ <MSG-000064@northgatepackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000065"
+
+--=-PTB-MSG-000065
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Ava,
+
+We have issued credit note CN-2024-0002 for $2,039.16 against invoice INV-202=
+4-0004 (quantity mismatch).
+
+Best regards,
+Quinn
+Northgate Packaging
+
+--=-PTB-MSG-000065
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0002.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0002
+Date: 2024-02-05
+Party: Northgate Packaging
+
+Credit note number: CN-2024-0002
+Invoice ref: INV-2024-0004
+Amount: $2,039.16
+Reason: quantity mismatch
+
+--=-PTB-MSG-000065--

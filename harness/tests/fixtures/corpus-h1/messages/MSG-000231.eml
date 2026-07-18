@@ -1,44 +1,47 @@
-From: Iris Vance <iris.vance@redwoodindustrial.example>
+From: Quinn Tanaka <qtanaka@vantageindustrial.example>
 To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0035 - safety gloves
-Date: Thu, 30 May 2024 09:00:00 +0000
-Message-ID: <MSG-000231@redwoodindustrial.example>
-In-Reply-To: <MSG-000212@redwoodindustrial.example>
-References: <MSG-000211@oakfieldfabrication.example>
- <MSG-000212@redwoodindustrial.example>
+Subject: Re: Purchase order PO-2024-0044 - shipping cartons
+Date: Sun, 19 May 2024 09:07:00 +0000
+Message-ID: <MSG-000231@vantageindustrial.example>
+In-Reply-To: <MSG-000229@oakfieldfabrication.example>
+References: <MSG-000212@oakfieldfabrication.example>
+ <MSG-000213@vantageindustrial.example>
+ <MSG-000223@oakfieldfabrication.example>
+ <MSG-000229@oakfieldfabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000231"
 
 --=-PTB-MSG-000231
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Hi Victor,
+Victor,
 
-Please find attached invoice INV-2024-0056 against PO-2024-0035 for $1,335.35.
-Payment is due by 2024-06-14 per our NET15 terms.
+Please find attached invoice INV-2024-0064 against PO-2024-0044-A2 for $6,611=
+.40.
+Payment is due by 2024-07-03 per our NET45 terms.
 
-Thanks,
-Iris
-Redwood Industrial
+Best,
+Quinn
+Vantage Industrial
 
 --=-PTB-MSG-000231
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0056.txt"
+Content-Disposition: attachment; filename="INV-2024-0064.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0056
-Date: 2024-05-30
-Party: Redwood Industrial
+INVOICE INV-2024-0064
+Date: 2024-05-19
+Party: Vantage Industrial
 
-Invoice number: INV-2024-0056
-Issuer: Redwood Industrial
+Invoice number: INV-2024-0064
+Issuer: Vantage Industrial
 Bill to: Oakfield Fabrication
-Issue date: 2024-05-30
-Due date: 2024-06-14
-Terms: NET15
-Total: $1,335.35
-Po ref: PO-2024-0035
+Issue date: 2024-05-19
+Due date: 2024-07-03
+Terms: NET45
+Total: $6,611.40
+Po ref: PO-2024-0044-A2
 
 --=-PTB-MSG-000231--

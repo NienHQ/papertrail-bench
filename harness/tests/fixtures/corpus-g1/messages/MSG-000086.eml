@@ -1,43 +1,40 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0014 - copper wire 12AWG
-Date: Sun, 11 Feb 2024 09:21:00 +0000
-Message-ID: <MSG-000086@yellowstonecomponents.example>
-In-Reply-To: <MSG-000085@yellowstonecomponents.example>
-References: <MSG-000036@vantagefabrication.example>
- <MSG-000037@yellowstonecomponents.example>
- <MSG-000059@yellowstonecomponents.example>
- <MSG-000065@vantagefabrication.example>
- <MSG-000085@yellowstonecomponents.example>
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Invoice INV-2024-0031 from Vantage Fabrication
+Date: Mon, 19 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000086@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000086"
 
 --=-PTB-MSG-000086
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
 
-Hi Carla,
+Mona,
 
-We have issued credit note CN-2024-0002 for $1,171.98 against invoice INV-202=
-4-0014 (goods returned).
+Please find attached invoice INV-2024-0031 for $2,315.00.
+Payment is due by 2024-03-05 per our NET15 terms.
 
-Kind regards,
-Hugo
-Yellowstone Components
+Thanks,
+Uma
+Vantage Fabrication
 
 --=-PTB-MSG-000086
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="CN-2024-0002.txt"
+Content-Disposition: attachment; filename="INV-2024-0031.txt"
 MIME-Version: 1.0
 
-CREDIT NOTE CN-2024-0002
-Date: 2024-02-11
-Party: Yellowstone Components
+INVOICE INV-2024-0031
+Date: 2024-02-19
+Party: Meridian Distribution
 
-Credit note number: CN-2024-0002
-Invoice ref: INV-2024-0014
-Amount: $1,171.98
-Reason: goods returned
+Invoice number: INV-2024-0031
+Issuer: Vantage Fabrication
+Bill to: Meridian Distribution
+Issue date: 2024-02-19
+Due date: 2024-03-05
+Terms: NET15
+Total: $2,315.00
 
 --=-PTB-MSG-000086--

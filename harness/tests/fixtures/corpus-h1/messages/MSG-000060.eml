@@ -1,44 +1,42 @@
-From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
-To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0017 - shipping cartons
-Date: Mon, 12 Feb 2024 09:14:00 +0000
-Message-ID: <MSG-000060@vantageindustrial.example>
-In-Reply-To: <MSG-000045@vantageindustrial.example>
-References: <MSG-000044@oakfieldfabrication.example>
- <MSG-000045@vantageindustrial.example>
+From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
+To: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+Subject: Re: Purchase order PO-2024-0016 - shipping cartons
+Date: Sat, 10 Feb 2024 09:14:00 +0000
+Message-ID: <MSG-000060@oakfieldfabrication.example>
+In-Reply-To: <MSG-000055@vantageindustrial.example>
+References: <MSG-000054@oakfieldfabrication.example>
+ <MSG-000055@vantageindustrial.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000060"
 
 --=-PTB-MSG-000060
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Hello Victor,
+Hello Quinn,
 
-Please find attached invoice INV-2024-0022 against PO-2024-0017 for $6,244.10.
-Payment is due by 2024-03-28 per our NET45 terms.
+Please amend PO-2024-0016: quantity is now 225 units of shipping cartons, rev=
+ised order total $16,528.50.
+The amended purchase order is attached as PO-2024-0016-A1.
 
 Regards,
 Quinn
-Vantage Industrial
+Oakfield Fabrication
 
 --=-PTB-MSG-000060
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0022.txt"
+Content-Disposition: attachment; filename="PO-2024-0016-A1.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0022
-Date: 2024-02-12
+PURCHASE ORDER PO-2024-0016-A1
+Date: 2024-02-10
 Party: Vantage Industrial
 
-Invoice number: INV-2024-0022
-Issuer: Vantage Industrial
-Bill to: Oakfield Fabrication
-Issue date: 2024-02-12
-Due date: 2024-03-28
-Terms: NET45
-Total: $6,244.10
-Po ref: PO-2024-0017
+Po number: PO-2024-0016
+Item: shipping cartons
+Qty: 225
+Unit price: $73.46
+Total: $16,528.50
 
 --=-PTB-MSG-000060--

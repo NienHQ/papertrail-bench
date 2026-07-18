@@ -1,0 +1,42 @@
+From: Mona Fontane <mona.fontane@junctionfabrication.example>
+To: Kira Novak <kira.novak@silvertonsupplies.example>
+Subject: Re: Purchase order PO-2024-0022 - steel brackets
+Date: Sat, 10 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000079@junctionfabrication.example>
+In-Reply-To: <MSG-000069@silvertonsupplies.example>
+References: <MSG-000068@junctionfabrication.example>
+ <MSG-000069@silvertonsupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000079"
+
+--=-PTB-MSG-000079
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Kira,
+
+Please amend PO-2024-0022: quantity is now 155 units of steel brackets, revis=
+ed order total $4,226.85.
+The amended purchase order is attached as PO-2024-0022-A1.
+
+Thanks,
+Mona
+Junction Fabrication
+
+--=-PTB-MSG-000079
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0022-A1.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0022-A1
+Date: 2024-02-10
+Party: Silverton Supplies
+
+Po number: PO-2024-0022
+Item: steel brackets
+Qty: 155
+Unit price: $27.27
+Total: $4,226.85
+
+--=-PTB-MSG-000079--

@@ -1,20 +1,40 @@
-From: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-To: Iris Vance <iris.vance@redwoodindustrial.example>
-Subject: Re: Purchase order PO-2024-0036 - safety gloves
-Date: Thu, 06 Jun 2024 09:00:00 +0000
+From: Tara Drake <tara.drake@oakfieldfabrication.example>
+To: Grace Whitfield <grace.whitfield@quarrytrading.example>
+Subject: Invoice INV-2024-0065 from Oakfield Fabrication
+Date: Tue, 21 May 2024 09:21:00 +0000
 Message-ID: <MSG-000237@oakfieldfabrication.example>
-In-Reply-To: <MSG-000227@redwoodindustrial.example>
-References: <MSG-000203@oakfieldfabrication.example>
- <MSG-000204@redwoodindustrial.example> <MSG-000227@redwoodindustrial.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000237"
+
+--=-PTB-MSG-000237
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: 7bit
+
+Grace,
+
+Please find attached invoice INV-2024-0065 for $2,300.00.
+Payment is due by 2024-06-05 per our NET15 terms.
+
+Best regards,
+Tara
+Oakfield Fabrication
+
+--=-PTB-MSG-000237
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0065.txt"
 MIME-Version: 1.0
 
-Hi Iris,
+INVOICE INV-2024-0065
+Date: 2024-05-21
+Party: Quarry Trading
 
-Payment of $1,021.15 for invoice INV-2024-0057 was sent today by bank transfe=
-r.
+Invoice number: INV-2024-0065
+Issuer: Oakfield Fabrication
+Bill to: Quarry Trading
+Issue date: 2024-05-21
+Due date: 2024-06-05
+Terms: NET15
+Total: $2,300.00
 
-Kind regards,
-Victor
-Oakfield Fabrication
+--=-PTB-MSG-000237--

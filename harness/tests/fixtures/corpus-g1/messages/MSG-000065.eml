@@ -1,20 +1,41 @@
-From: Carla Costa <carla.costa@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Re: Purchase order PO-2024-0014 - copper wire 12AWG
-Date: Sat, 03 Feb 2024 09:07:00 +0000
-Message-ID: <MSG-000065@vantagefabrication.example>
-In-Reply-To: <MSG-000059@yellowstonecomponents.example>
-References: <MSG-000036@vantagefabrication.example>
- <MSG-000037@yellowstonecomponents.example>
- <MSG-000059@yellowstonecomponents.example>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0012 - copper wire 12AWG
+Date: Tue, 06 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000065@yellowstonecomponents.example>
+In-Reply-To: <MSG-000056@yellowstonecomponents.example>
+References: <MSG-000040@vantagefabrication.example>
+ <MSG-000041@yellowstonecomponents.example>
+ <MSG-000056@yellowstonecomponents.example>
 MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000065"
 
-Hello Hugo,
+--=-PTB-MSG-000065
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-We dispute $1,171.98 on invoice INV-2024-0014: goods returned.
+Carla,
+
+We have issued credit note CN-2024-0002 for $237.37 against invoice INV-2024-=
+0012 (damaged goods).
 
 Kind regards,
-Carla
-Vantage Fabrication
+Hugo
+Yellowstone Components
+
+--=-PTB-MSG-000065
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0002.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0002
+Date: 2024-02-06
+Party: Yellowstone Components
+
+Credit note number: CN-2024-0002
+Invoice ref: INV-2024-0012
+Amount: $237.37
+Reason: damaged goods
+
+--=-PTB-MSG-000065--

@@ -1,7 +1,7 @@
 From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
-To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
-Subject: Purchase order PO-2024-0051 - copper wire 12AWG
-Date: Thu, 18 Apr 2024 09:00:00 +0000
+To: Kira Novak <kira.novak@deltaridgesupplies.example>
+Subject: Purchase order PO-2024-0052 - LED panels
+Date: Wed, 08 May 2024 09:21:00 +0000
 Message-ID: <MSG-000245@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000245"
@@ -10,30 +10,30 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000245"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hi Hugo,
+Hi Kira,
 
-Please find attached purchase order PO-2024-0051 for 85 units of copper wire =
-12AWG at $78.26 per unit.
-The order total is $6,652.10.
+Please find attached purchase order PO-2024-0052 for 90 units of LED panels a=
+t $50.28 per unit.
+The order total is $4,525.20.
 
-Kind regards,
+Best,
 Hugo
 Vantage Fabrication
 
 --=-PTB-MSG-000245
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0051.txt"
+Content-Disposition: attachment; filename="PO-2024-0052.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0051
-Date: 2024-04-18
-Party: Yellowstone Components
+PURCHASE ORDER PO-2024-0052
+Date: 2024-05-08
+Party: Delta Ridge Supplies
 
-Po number: PO-2024-0051
-Item: copper wire 12AWG
-Qty: 85
-Unit price: $78.26
-Total: $6,652.10
+Po number: PO-2024-0052
+Item: LED panels
+Qty: 90
+Unit price: $50.28
+Total: $4,525.20
 
 --=-PTB-MSG-000245--

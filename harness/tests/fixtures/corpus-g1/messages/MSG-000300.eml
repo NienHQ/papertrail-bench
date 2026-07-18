@@ -1,39 +1,19 @@
-From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+From: Carla Costa <carla.costa@vantagefabrication.example>
 To: Jonas Sato <jonas.sato@quarrypackaging.example>
-Subject: Purchase order PO-2024-0057 - safety gloves
-Date: Wed, 08 May 2024 09:14:00 +0000
+Subject: Re: Purchase order PO-2024-0047 - safety gloves
+Date: Tue, 28 May 2024 09:00:00 +0000
 Message-ID: <MSG-000300@vantagefabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000300"
-
---=-PTB-MSG-000300
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Hi Jonas,
-
-Please find attached purchase order PO-2024-0057 for 150 units of safety glov=
-es at $4.39 per unit.
-The order total is $658.50.
-
-Best regards,
-Hugo
-Vantage Fabrication
-
---=-PTB-MSG-000300
+In-Reply-To: <MSG-000285@quarrypackaging.example>
+References: <MSG-000266@vantagefabrication.example>
+ <MSG-000267@quarrypackaging.example> <MSG-000285@quarrypackaging.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0057.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0057
-Date: 2024-05-08
-Party: Quarry Packaging
+Hello Jonas,
 
-Po number: PO-2024-0057
-Item: safety gloves
-Qty: 150
-Unit price: $4.39
-Total: $658.50
+We dispute $39.45 on invoice INV-2024-0070: price does not match agreement.
 
---=-PTB-MSG-000300--
+Best,
+Carla
+Vantage Fabrication

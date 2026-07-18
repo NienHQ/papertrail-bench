@@ -1,0 +1,39 @@
+From: Ben Okafor <ben.okafor@junctionfabrication.example>
+To: Wendy Brant <wendy.brant@meridianretail.example>
+Subject: Re: Invoice INV-2024-0014 from Junction Fabrication
+Date: Sat, 03 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000062@junctionfabrication.example>
+In-Reply-To: <MSG-000044@junctionfabrication.example>
+References: <MSG-000044@junctionfabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000062"
+
+--=-PTB-MSG-000062
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Wendy,
+
+We have issued credit note CN-2024-0006 for $117.24 against invoice INV-2024-=
+0014 (returned items).
+
+Best,
+Ben
+Junction Fabrication
+
+--=-PTB-MSG-000062
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0006.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0006
+Date: 2024-02-03
+Party: Meridian Retail
+
+Credit note number: CN-2024-0006
+Invoice ref: INV-2024-0014
+Amount: $117.24
+Reason: returned items
+
+--=-PTB-MSG-000062--

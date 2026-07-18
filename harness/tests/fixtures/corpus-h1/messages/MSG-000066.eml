@@ -1,11 +1,11 @@
-From: Quinn Tanaka <quinn.tanaka@vantageindustrial.example>
+From: Ava Tanaka <ava.tanaka@yellowstonesupplies.example>
 To: Victor Okafor <victor.okafor@oakfieldfabrication.example>
-Subject: Re: Purchase order PO-2024-0016 - shipping cartons
-Date: Sat, 17 Feb 2024 09:00:00 +0000
-Message-ID: <MSG-000066@vantageindustrial.example>
-In-Reply-To: <MSG-000059@vantageindustrial.example>
-References: <MSG-000058@oakfieldfabrication.example>
- <MSG-000059@vantageindustrial.example>
+Subject: Re: Purchase order PO-2024-0013 - LED panels
+Date: Tue, 13 Feb 2024 09:07:00 +0000
+Message-ID: <MSG-000066@yellowstonesupplies.example>
+In-Reply-To: <MSG-000052@yellowstonesupplies.example>
+References: <MSG-000051@oakfieldfabrication.example>
+ <MSG-000052@yellowstonesupplies.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000066"
 
@@ -13,33 +13,33 @@ Content-Type: multipart/mixed; boundary="=-PTB-MSG-000066"
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-Hello Victor,
+Hi Victor,
 
-Please find attached invoice INV-2024-0021 against PO-2024-0016 for $12,855.5=
+Please find attached invoice INV-2024-0018 against PO-2024-0013 for $13,515.0=
 0.
-Payment is due by 2024-04-02 per our NET45 terms.
+Payment is due by 2024-04-13 per our NET60 terms.
 
-Regards,
-Quinn
-Vantage Industrial
+Best regards,
+Ava
+Yellowstone Supplies
 
 --=-PTB-MSG-000066
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0021.txt"
+Content-Disposition: attachment; filename="INV-2024-0018.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0021
-Date: 2024-02-17
-Party: Vantage Industrial
+INVOICE INV-2024-0018
+Date: 2024-02-13
+Party: Yellowstone Supplies
 
-Invoice number: INV-2024-0021
-Issuer: Vantage Industrial
+Invoice number: INV-2024-0018
+Issuer: Yellowstone Supplies
 Bill to: Oakfield Fabrication
-Issue date: 2024-02-17
-Due date: 2024-04-02
-Terms: NET45
-Total: $12,855.50
-Po ref: PO-2024-0016
+Issue date: 2024-02-13
+Due date: 2024-04-13
+Terms: NET60
+Total: $13,515.00
+Po ref: PO-2024-0013
 
 --=-PTB-MSG-000066--

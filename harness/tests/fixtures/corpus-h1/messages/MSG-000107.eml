@@ -1,39 +1,19 @@
-From: Quinn Sato <quinn.sato@oakfieldfabrication.example>
-To: Iris Vance <iris.vance@redwoodindustrial.example>
-Subject: Purchase order PO-2024-0019 - safety gloves
-Date: Mon, 18 Mar 2024 09:00:00 +0000
-Message-ID: <MSG-000107@oakfieldfabrication.example>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="=-PTB-MSG-000107"
-
---=-PTB-MSG-000107
+From: Jonas Drake <jonas.drake@silvertontrading.example>
+To: Tara Drake <tara.drake@oakfieldfabrication.example>
+Subject: Re: Invoice INV-2024-0028 from Oakfield Fabrication
+Date: Fri, 08 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000107@silvertontrading.example>
+In-Reply-To: <MSG-000063@oakfieldfabrication.example>
+References: <MSG-000063@oakfieldfabrication.example>
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
-
-Hi Iris,
-
-Please find attached purchase order PO-2024-0019 for 120 units of safety glov=
-es at $15.71 per unit.
-The order total is $1,885.20.
-
-Best regards,
-Quinn
-Oakfield Fabrication
-
---=-PTB-MSG-000107
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="PO-2024-0019.txt"
 MIME-Version: 1.0
 
-PURCHASE ORDER PO-2024-0019
-Date: 2024-03-18
-Party: Redwood Industrial
+Hi Tara,
 
-Po number: PO-2024-0019
-Item: safety gloves
-Qty: 120
-Unit price: $15.71
-Total: $1,885.20
+Payment of $1,660.00 for invoice INV-2024-0028 was sent today by bank transfe=
+r.
 
---=-PTB-MSG-000107--
+Best regards,
+Jonas
+Silverton Trading

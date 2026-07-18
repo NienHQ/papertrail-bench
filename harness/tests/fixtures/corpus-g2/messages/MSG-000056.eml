@@ -1,0 +1,41 @@
+From: Mona Yates <mona.yates@cardinalcomponents.example>
+To: Ava Holt <ava.holt@junctionfabrication.example>
+Subject: Re: Purchase order PO-2024-0001 - hex bolts M8
+Date: Wed, 31 Jan 2024 09:00:00 +0000
+Message-ID: <MSG-000056@cardinalcomponents.example>
+In-Reply-To: <MSG-000045@cardinalcomponents.example>
+References: <MSG-000033@junctionfabrication.example>
+ <MSG-000034@cardinalcomponents.example>
+ <MSG-000045@cardinalcomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000056"
+
+--=-PTB-MSG-000056
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Ava,
+
+We have issued credit note CN-2024-0001 for $585.80 against invoice INV-2024-=
+0001 (short delivery).
+
+Best,
+Mona
+Cardinal Components
+
+--=-PTB-MSG-000056
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0001.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0001
+Date: 2024-01-31
+Party: Cardinal Components
+
+Credit note number: CN-2024-0001
+Invoice ref: INV-2024-0001
+Amount: $585.80
+Reason: short delivery
+
+--=-PTB-MSG-000056--

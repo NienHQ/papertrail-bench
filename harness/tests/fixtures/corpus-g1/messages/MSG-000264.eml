@@ -1,44 +1,46 @@
-From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+From: Dev Fontane <dev.fontane@yellowstonecomponents.example>
 To: Carla Costa <carla.costa@vantagefabrication.example>
-Subject: Re: Purchase order PO-2024-0051 - copper wire 12AWG
-Date: Tue, 23 Apr 2024 09:14:00 +0000
+Subject: Re: Purchase order PO-2024-0055 - copper wire 12AWG
+Date: Wed, 15 May 2024 09:00:00 +0000
 Message-ID: <MSG-000264@yellowstonecomponents.example>
-In-Reply-To: <MSG-000246@yellowstonecomponents.example>
-References: <MSG-000245@vantagefabrication.example>
- <MSG-000246@yellowstonecomponents.example>
+In-Reply-To: <MSG-000238@vantagefabrication.example>
+References: <MSG-000228@vantagefabrication.example>
+ <MSG-000229@yellowstonecomponents.example>
+ <MSG-000238@vantagefabrication.example>
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="=-PTB-MSG-000264"
 
 --=-PTB-MSG-000264
 Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: quoted-printable
 
-Carla,
+Dear Carla,
 
-Please find attached invoice INV-2024-0067 against PO-2024-0051 for $6,652.10.
-Payment is due by 2024-06-22 per our NET60 terms.
+Please find attached invoice INV-2024-0078 against PO-2024-0055-A1 for $10,56=
+5.10.
+Payment is due by 2024-07-14 per our NET60 terms.
 
-Best,
-Hugo
+Regards,
+Dev
 Yellowstone Components
 
 --=-PTB-MSG-000264
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="INV-2024-0067.txt"
+Content-Disposition: attachment; filename="INV-2024-0078.txt"
 MIME-Version: 1.0
 
-INVOICE INV-2024-0067
-Date: 2024-04-23
+INVOICE INV-2024-0078
+Date: 2024-05-15
 Party: Yellowstone Components
 
-Invoice number: INV-2024-0067
+Invoice number: INV-2024-0078
 Issuer: Yellowstone Components
 Bill to: Vantage Fabrication
-Issue date: 2024-04-23
-Due date: 2024-06-22
+Issue date: 2024-05-15
+Due date: 2024-07-14
 Terms: NET60
-Total: $6,652.10
-Po ref: PO-2024-0051
+Total: $10,565.10
+Po ref: PO-2024-0055-A1
 
 --=-PTB-MSG-000264--
