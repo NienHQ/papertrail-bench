@@ -78,10 +78,17 @@ strictly ordered by `(event_time, event_id)`.
 | `INVOICE_ISSUED` | `{total_cents, po_ref, due_date}` | doc |
 | `CREDIT_NOTE_ISSUED` | `{amount_cents, invoice_ref, reason}` | doc |
 | `PAYMENT_SENT` / `PAYMENT_RECEIVED` | `{amount_cents, invoice_ref, method}` | — |
+| `INVOICE_DISPUTED` | `{invoice_ref, disputed_cents, reason}` | dispute thread (category 4) |
+| `DISPUTE_RESOLVED` | `{invoice_ref, resolution: credit_note\|withdrawn, credit_note_ref?}` | closes the dispute |
 
-B1 adds: `INVOICE_DISPUTED` / `DISPUTE_RESOLVED` (category 4 aggregation),
-`CONTACT_CHANGED` / `PERSON_MOVED` (category 5 entity resolution), payroll and bank
-statement events. The envelope does not change.
+Dispute consistency rule: a dispute resolved as `credit_note` produces a
+`CREDIT_NOTE_ISSUED` for the disputed amount against the same invoice, and the
+payment reflects it; a dispute resolved as `withdrawn` changes no amounts.
+Category 4 aggregates ("total disputed with vendor X in the fiscal year")
+recompute from `INVOICE_DISPUTED` events alone.
+
+B1 adds next: `CONTACT_CHANGED` / `PERSON_MOVED` (category 5 entity
+resolution), payroll and bank statement events. The envelope does not change.
 
 **Internal consistency rule:** derived values inside events must agree with the
 ledger as-of the event time. Example: an invoice's `due_date` = issue date + the
@@ -185,7 +192,7 @@ predicted citations are resolved to targets; a citation is a hit if it lands in 
 question's evidence set (canonical or quoted, reported separately). Precision and
 recall over the evidence set are both published.
 
-**B0 categories:**
+**Categories (B0 shipped 1-3; G1 adds 4 and 6):**
 1. *Specific record lookup* — sampled from document rows ("What is the total amount
    of invoice INV-2024-0451?", "Which PO does it reference?", "When was it issued?").
 2. *Lineage* — sampled from version chains with ≥2 versions ("List all versions of
@@ -194,6 +201,20 @@ recall over the evidence set are both published.
 3. *Temporal supersession* — sampled from `(entity, relation)` keys with ≥2 facts,
    with `as_of` dates drawn both before and after each supersession boundary ("What
    were the payment terms with Vendor X as of 2024-09-01?").
+4. *Cross-thread aggregation* — computed over `INVOICE_DISPUTED` events per
+   counterparty ("total disputed amount with Vendor X this year" → money,
+   "how many invoices did we dispute with X" → int, "which invoices were
+   disputed with X, in order" → ordered_list). Evidence = the canonical
+   dispute statements of every contributing event.
+5. *(reserved: entity resolution, G2)*
+6. *Abstention* — questions referencing plausible but never-issued ids
+   (invoice/PO numbers beyond the issued series, company names drawn from
+   the unused name pool). Correct answer is refusal; the evidence set is
+   empty by definition, and citation metrics skip such questions.
+7. *(citation fidelity is an axis on every question, scored by the harness)*
+
+Per-category question counts are config (`category_counts`); the default
+config emits at least 15 questions in every shipped category.
 
 Every generated question is verified answerable: the generator recomputes the answer
 from the tables through an independent code path and asserts equality, and asserts
