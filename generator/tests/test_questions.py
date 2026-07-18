@@ -90,7 +90,9 @@ def test_answers_recompute(corpus):
             got = [doc_id for m in corpus.render_result.messages
                    if m.from_address in addrs
                    for doc_id in m.attachments
-                   if docs[doc_id].kind == "invoice"]
+                   if docs[doc_id].kind == "invoice"
+                   # voided near-duplicates are excluded from sampling
+                   and not docs[doc_id].fields.get("voided_by_correction")]
             assert a["value"] == got
             assert len(got) >= 1
         elif q.template == "person_address_at":

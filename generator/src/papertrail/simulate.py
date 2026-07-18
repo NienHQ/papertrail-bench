@@ -22,6 +22,15 @@ DISPUTE_REASONS = ["quantity mismatch", "price does not match agreement",
 DEFAULT_CATEGORY_COUNTS: dict[int, int] = {1: 16, 2: 16, 3: 16, 4: 16,
                                            5: 16, 6: 16}
 
+# G3 realism screws: the config values the CLI "--preset hard" applies.
+# Explicit per-flag CLI values override these.
+HARD_PRESET: dict[str, object] = {
+    "truncate_references": True,
+    "quoted_replies": True,
+    "near_dup_invoices": 0.15,
+    "format_drift": True,
+}
+
 
 @dataclass
 class Config:
@@ -40,6 +49,12 @@ class Config:
     # Category 5 world churn (entity resolution).
     contact_change_frac: float = 0.25  # contacts whose address changes mid-corpus
     person_move_count: int = 1  # capped by vendor count - 1
+    # G3 realism screws (schema doc section 6). All default OFF, and when
+    # off they consume ZERO rng draws, so pre-G3 seeds stay byte-identical.
+    truncate_references: bool = False  # keep last 2 refs; every 5th reply bare
+    quoted_replies: bool = False  # replies quote the previous body with "> "
+    near_dup_invoices: float = 0.0  # fraction of vendor invoices re-issued
+    format_drift: bool = False  # money prose drifts between three formats
     # Per-category question counts (schema doc section 7).
     category_counts: dict[int, int] = field(
         default_factory=lambda: dict(DEFAULT_CATEGORY_COUNTS))
@@ -368,6 +383,13 @@ class _Sim:
         ev = self.emit(d, "INVOICE_ISSUED", issuer, payer, dict(fields))
         self.add_doc("invoice", inv_id, 1, None, party, d, fields, ev)
 
+        # G3 near-duplicate screw. The flag check comes FIRST so the rng
+        # draw only ever happens with the screw on: flags-off corpora keep
+        # their exact draw sequence.
+        if cfg.near_dup_invoices > 0 and payer == us \
+                and rng.random() < cfg.near_dup_invoices:
+            self._near_dup_invoice(d, inv_id, fields, issuer, payer, party)
+
         # Vendor-side disputes (category 4). Dispute consistency rule: a
         # credit_note resolution reuses the credit-note machinery for exactly
         # disputed_cents against this invoice, and the payment reflects it; a
@@ -429,6 +451,30 @@ class _Sim:
                   {"amount_cents": amount, "invoice_ref": inv_id,
                    "method": "bank transfer"},
                   {"invoice": inv_id})
+
+    def _near_dup_invoice(self, d: date, orig_id: str, fields: dict,
+                          issuer: str, payer: str, party: str) -> None:
+        """The vendor re-sends the invoice verbatim under the next invoice
+        number one day later, then voids it with a correction one day after
+        that. Field content (issue date, due date, terms, total, po ref) is
+        copied verbatim from the original; only the invoice number differs,
+        plus the ground-truth bookkeeping fields duplicate_of and
+        voided_by_correction (never rendered into the corpus). Payments
+        ignore the duplicate and question samplers never touch it, but the
+        duplicate does consume its number in the INV series."""
+        cfg = self.cfg
+        self._inv_n += 1
+        dup_id = f"INV-{cfg.year}-{self._inv_n:04d}"
+        dup_fields = {**fields, "invoice_number": dup_id,
+                      "duplicate_of": orig_id, "voided_by_correction": True}
+        d_dup = min(d + timedelta(days=1), date(cfg.year, 12, 30))
+        ev = self.emit(d_dup, "INVOICE_ISSUED", issuer, payer,
+                       dict(dup_fields))
+        self.add_doc("invoice", dup_id, 1, None, party, d_dup, dup_fields, ev)
+        d_corr = min(d_dup + timedelta(days=1), date(cfg.year, 12, 31))
+        self.emit(d_corr, "INVOICE_CORRECTED", issuer, payer,
+                  {"duplicate_ref": dup_id, "original_ref": orig_id},
+                  {"invoice": dup_id})
 
 
 def simulate(cfg: Config) -> SimResult:

@@ -8,6 +8,7 @@ export interface QuestionResult {
   citations: string[];
   citationPredicted: number;
   citationHits: number;
+  citationCanonicalHits: number;
   evidenceTotal: number;
   evidenceHit: number;
   error?: string;
@@ -22,6 +23,12 @@ export interface CategoryScore {
   citationPrecision: number | null;
   /** Micro-averaged; null when the category has no evidence items. */
   citationRecall: number | null;
+  /**
+   * Of the evidence-hitting citations, the fraction resolving to canonical
+   * occurrences. 1.0 on corpora without quoted occurrences; null when no
+   * citation hit any evidence.
+   */
+  canonicalHitRate: number | null;
 }
 
 /**
@@ -37,6 +44,7 @@ export interface Report {
   categories: CategoryScore[];
   citationPrecision: number | null;
   citationRecall: number | null;
+  canonicalHitRate: number | null;
   notes: string[];
   questions: QuestionResult[];
 }
@@ -66,6 +74,7 @@ export function buildReport(
     const accuracy = n === 0 ? 0 : rows.reduce((s, r) => s + r.score, 0) / n;
     const predicted = rows.reduce((s, r) => s + r.citationPredicted, 0);
     const hits = rows.reduce((s, r) => s + r.citationHits, 0);
+    const canonical = rows.reduce((s, r) => s + r.citationCanonicalHits, 0);
     const evidenceTotal = rows.reduce((s, r) => s + r.evidenceTotal, 0);
     const evidenceHit = rows.reduce((s, r) => s + r.evidenceHit, 0);
     categories.push({
@@ -74,11 +83,13 @@ export function buildReport(
       accuracy,
       citationPrecision: ratio(hits, predicted),
       citationRecall: ratio(evidenceHit, evidenceTotal),
+      canonicalHitRate: ratio(canonical, hits),
     });
   }
 
   const predicted = results.reduce((s, r) => s + r.citationPredicted, 0);
   const hits = results.reduce((s, r) => s + r.citationHits, 0);
+  const canonical = results.reduce((s, r) => s + r.citationCanonicalHits, 0);
   const evidenceTotal = results.reduce((s, r) => s + r.evidenceTotal, 0);
   const evidenceHit = results.reduce((s, r) => s + r.evidenceHit, 0);
 
@@ -91,6 +102,7 @@ export function buildReport(
     categories,
     citationPrecision: ratio(hits, predicted),
     citationRecall: ratio(evidenceHit, evidenceTotal),
+    canonicalHitRate: ratio(canonical, hits),
     notes,
     questions: results,
   };
@@ -108,17 +120,21 @@ export function reportToMarkdown(report: Report): string {
   lines.push(`Corpus: ${report.corpusDir} (seed ${String(report.seed)})`);
   lines.push(`Questions: ${String(report.questionCount)}`);
   lines.push("");
-  lines.push("| Category | N | Accuracy | Citation precision | Citation recall |");
-  lines.push("|---:|---:|---:|---:|---:|");
+  lines.push(
+    "| Category | N | Accuracy | Citation precision | Citation recall | Canonical hit rate |",
+  );
+  lines.push("|---:|---:|---:|---:|---:|---:|");
   for (const c of report.categories) {
     lines.push(
       `| ${String(c.category)} | ${String(c.n)} | ${pct(c.accuracy)} | ` +
-        `${pct(c.citationPrecision)} | ${pct(c.citationRecall)} |`,
+        `${pct(c.citationPrecision)} | ${pct(c.citationRecall)} | ` +
+        `${pct(c.canonicalHitRate)} |`,
     );
   }
   lines.push(
     `| all (citations) | ${String(report.questionCount)} |  | ` +
-      `${pct(report.citationPrecision)} | ${pct(report.citationRecall)} |`,
+      `${pct(report.citationPrecision)} | ${pct(report.citationRecall)} | ` +
+      `${pct(report.canonicalHitRate)} |`,
   );
   if (report.notes.length > 0) {
     lines.push("");

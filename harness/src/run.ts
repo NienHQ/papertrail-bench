@@ -82,7 +82,13 @@ export async function runAdapterWithTruth(
       const cites =
         error === undefined
           ? scoreCitations(q, citations, truth)
-          : { predicted: 0, hits: 0, evidenceTotal: q.evidence.length, evidenceHit: 0 };
+          : {
+              predicted: 0,
+              hits: 0,
+              canonicalHits: 0,
+              evidenceTotal: q.evidence.length,
+              evidenceHit: 0,
+            };
 
       const result: QuestionResult = {
         questionId: q.question_id,
@@ -94,6 +100,7 @@ export async function runAdapterWithTruth(
         citations,
         citationPredicted: cites.predicted,
         citationHits: cites.hits,
+        citationCanonicalHits: cites.canonicalHits,
         evidenceTotal: cites.evidenceTotal,
         evidenceHit: cites.evidenceHit,
       };

@@ -76,3 +76,8 @@ cd ../harness && pnpm build && node dist/cli.js --corpus /tmp/corpus-b0 --adapte
 - Citation precision and recall stay well under oracle for every
   baseline even where accuracy is 100: finding the right answer is not
   the same as citing all of its evidence.
+- Since G3 the scorecard carries one more column, the canonical hit rate
+  (harness/PROTOCOL.md section 4). Both corpora above are clean (no
+  quoted occurrences), so reproducing these tables shows that column at
+  100.0 wherever citations hit and n/a elsewhere; it only becomes
+  informative on `--preset hard` corpora.

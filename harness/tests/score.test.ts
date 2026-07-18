@@ -373,12 +373,12 @@ describe("scoreCitations", () => {
 
   it("statement-level prediction hits exactly its statement", () => {
     const s = scoreCitations(question, ["MSG-000012:MSG-000012-S1"], truth);
-    expect(s).toEqual({ predicted: 1, hits: 1, evidenceTotal: 3, evidenceHit: 1 });
+    expect(s).toEqual({ predicted: 1, hits: 1, canonicalHits: 1, evidenceTotal: 3, evidenceHit: 1 });
   });
 
   it("message-level prediction hits all evidence statements of the message", () => {
     const s = scoreCitations(question, ["MSG-000012", "BOGUS-1"], truth);
-    expect(s).toEqual({ predicted: 2, hits: 1, evidenceTotal: 3, evidenceHit: 2 });
+    expect(s).toEqual({ predicted: 2, hits: 1, canonicalHits: 1, evidenceTotal: 3, evidenceHit: 2 });
   });
 
   it("doc prediction hits every evidence field of the doc", () => {
@@ -390,12 +390,12 @@ describe("scoreCitations", () => {
       ],
     };
     const s = scoreCitations(twoFields, ["INV-2024-0007"], truth);
-    expect(s).toEqual({ predicted: 1, hits: 1, evidenceTotal: 2, evidenceHit: 2 });
+    expect(s).toEqual({ predicted: 1, hits: 1, canonicalHits: 1, evidenceTotal: 2, evidenceHit: 2 });
   });
 
   it("citing a resolvable but non-evidence message costs precision", () => {
     const s = scoreCitations(question, ["MSG-000012-S1", "MSG-000099"], truth);
-    expect(s).toEqual({ predicted: 2, hits: 1, evidenceTotal: 3, evidenceHit: 1 });
+    expect(s).toEqual({ predicted: 2, hits: 1, canonicalHits: 1, evidenceTotal: 3, evidenceHit: 1 });
   });
 
   it("duplicate predictions are deduplicated before scoring", () => {
@@ -404,11 +404,11 @@ describe("scoreCitations", () => {
       ["MSG-000012:MSG-000012-S1", "MSG-000012-S1", "<MSG-000012-S1>"],
       truth,
     );
-    expect(s).toEqual({ predicted: 1, hits: 1, evidenceTotal: 3, evidenceHit: 1 });
+    expect(s).toEqual({ predicted: 1, hits: 1, canonicalHits: 1, evidenceTotal: 3, evidenceHit: 1 });
   });
 
   it("no predictions means zero hits and untouched evidence", () => {
     const s = scoreCitations(question, [], truth);
-    expect(s).toEqual({ predicted: 0, hits: 0, evidenceTotal: 3, evidenceHit: 0 });
+    expect(s).toEqual({ predicted: 0, hits: 0, canonicalHits: 0, evidenceTotal: 3, evidenceHit: 0 });
   });
 });

@@ -225,7 +225,8 @@ class _QGen:
                 continue
             for doc_id in m.attachments:
                 d = self.docs_by_id[doc_id]
-                if d.kind == "invoice":
+                if d.kind == "invoice" and \
+                        not d.fields.get("voided_by_correction"):
                     pairs.append((m, d))
         return pairs
 
@@ -337,7 +338,9 @@ class _QGen:
     def run(self) -> list[Question]:
         rng = self.rng
         counts = self.sim.config.resolved_category_counts()
-        invoices = [d for d in self.docs if d.kind == "invoice"]
+        # near-dup screw: voided duplicates are never sampled anywhere
+        invoices = [d for d in self.docs if d.kind == "invoice"
+                    and not d.fields.get("voided_by_correction")]
         cns = [d for d in self.docs if d.kind == "credit_note"]
         amended_roots = sorted({d.root_id for d in self.docs
                                 if d.kind == "po" and d.version > 1})

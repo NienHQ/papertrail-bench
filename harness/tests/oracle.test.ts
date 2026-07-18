@@ -41,7 +41,9 @@ describe("oracle self-test (the done criterion)", () => {
     const truth = loadTruthCorpus(FIXTURE);
     const report = await runAdapterWithTruth(new OracleAdapter(truth), truth);
     const md = reportToMarkdown(report);
-    expect(md).toContain("| Category | N | Accuracy | Citation precision | Citation recall |");
+    expect(md).toContain(
+      "| Category | N | Accuracy | Citation precision | Citation recall | Canonical hit rate |",
+    );
     expect(md).toContain("| 1 |");
     expect(md).toContain("100.0");
     expect(md).not.toMatch(/overall accuracy/i);

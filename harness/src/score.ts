@@ -3,6 +3,7 @@ import type {
   MoneyValue,
   Question,
   QuestionAnswer,
+  StatementRow,
   TruthCorpus,
 } from "./corpus.js";
 import { isMessageEvidenceRef } from "./corpus.js";
@@ -381,10 +382,60 @@ export interface CitationScore {
   predicted: number;
   /** Predictions that hit at least one evidence item. */
   hits: number;
+  /**
+   * Evidence-hitting predictions that resolve to a canonical occurrence
+   * (or to a message/document containing one). A prediction whose only
+   * support is a quoted copy of the evidence is a hit but not canonical.
+   */
+  canonicalHits: number;
   /** Distinct evidence items in the question's evidence set. */
   evidenceTotal: number;
   /** Distinct evidence items hit by at least one prediction. */
   evidenceHit: number;
+}
+
+/** Stable string key for a statement target ref. */
+function targetKey(t: Record<string, unknown>): string | null {
+  const fact = t["fact"];
+  if (typeof fact === "string") return `f:${fact}`;
+  const event = t["event"];
+  if (typeof event === "string") return `e:${event}`;
+  const df = t["doc_field"];
+  if (Array.isArray(df) && df.length === 2) {
+    return `d:${String(df[0])}#${String(df[1])}`;
+  }
+  return null;
+}
+
+function statementTargetKeys(s: StatementRow | undefined): Set<string> {
+  const out = new Set<string>();
+  if (s === undefined) return out;
+  for (const t of s.targets) {
+    const key = targetKey(t);
+    if (key !== null) out.add(key);
+  }
+  return out;
+}
+
+function intersects(a: Set<string>, b: Set<string>): boolean {
+  for (const k of a) if (b.has(k)) return true;
+  return false;
+}
+
+/** Quoted statements of a message asserting any of the given targets. */
+function messageQuotesTargets(
+  messageId: string,
+  refTargets: Set<string>,
+  truth: TruthCorpus,
+): boolean {
+  if (refTargets.size === 0) return false;
+  const msg = truth.messages.get(messageId);
+  if (msg === undefined) return false;
+  for (const s of msg.statements) {
+    if (s.occurrence !== "quoted") continue;
+    if (intersects(statementTargetKeys(s), refTargets)) return true;
+  }
+  return false;
 }
 
 /**
@@ -394,6 +445,13 @@ export interface CitationScore {
  * message-level prediction hits every evidence statement of that message.
  * A doc-level prediction hits every evidence field of that doc. Unresolved
  * predictions count against precision and hit nothing.
+ *
+ * Quoted occurrences (PROTOCOL.md section 4): a prediction resolving to a
+ * quoted copy of an evidence statement, or to a message containing such a
+ * copy, is a HIT for precision and recall, but only predictions that
+ * resolve canonically count toward canonicalHits. The link between a
+ * quoted copy and its original is target identity: quoted rows carry the
+ * original statement's targets.
  */
 export function scoreCitations(
   question: Question,
@@ -403,6 +461,13 @@ export function scoreCitations(
   const evidence = new Map<string, EvidenceRef>();
   for (const ref of question.evidence) evidence.set(evidenceKey(ref), ref);
 
+  const refTargets = new Map<string, Set<string>>();
+  for (const [key, ref] of evidence) {
+    if (isMessageEvidenceRef(ref)) {
+      refTargets.set(key, statementTargetKeys(truth.statements.get(ref.statement_id)));
+    }
+  }
+
   const resolved = new Map<string, ResolvedCitation>();
   for (const raw of citations) {
     const c = resolveCitation(raw, truth);
@@ -411,27 +476,51 @@ export function scoreCitations(
 
   const covered = new Set<string>();
   let hits = 0;
+  let canonicalHits = 0;
   for (const c of resolved.values()) {
     let hit = false;
+    let canonical = false;
     for (const [key, ref] of evidence) {
       let match = false;
+      let matchCanonical = false;
       if (isMessageEvidenceRef(ref)) {
-        if (c.kind === "statement") match = c.statementId === ref.statement_id;
-        else if (c.kind === "message") match = c.messageId === ref.message_id;
+        const targets = refTargets.get(key) ?? new Set<string>();
+        if (c.kind === "statement") {
+          if (c.statementId === ref.statement_id) {
+            match = matchCanonical = true;
+          } else {
+            const cited = truth.statements.get(c.statementId);
+            match =
+              cited !== undefined &&
+              cited.occurrence === "quoted" &&
+              intersects(statementTargetKeys(cited), targets);
+          }
+        } else if (c.kind === "message") {
+          if (c.messageId === ref.message_id) {
+            match = matchCanonical = true;
+          } else {
+            match = messageQuotesTargets(c.messageId, targets, truth);
+          }
+        }
       } else if (c.kind === "doc") {
-        match = c.docId === ref.doc_id;
+        match = matchCanonical = c.docId === ref.doc_id;
       }
       if (match) {
         hit = true;
+        canonical = canonical || matchCanonical;
         covered.add(key);
       }
     }
-    if (hit) hits += 1;
+    if (hit) {
+      hits += 1;
+      if (canonical) canonicalHits += 1;
+    }
   }
 
   return {
     predicted: resolved.size,
     hits,
+    canonicalHits,
     evidenceTotal: evidence.size,
     evidenceHit: covered.size,
   };

@@ -22,7 +22,22 @@ Claim tasks here per the plan.
 
 ## In progress
 
-- G3 realism screws (claimed 2026-07-18)
+(nothing claimed)
+
+## 2026-07-18 - task G3 done: realism screws
+
+- Four flags, all off by default with zero rng draws when off (seed-42
+  output byte-identical, manifest hash frozen in a test; no fixture
+  churn): truncated References + every-5th-reply header drop,
+  quoted replies emitting occurrence: quoted evidence rows, near-dup
+  voided invoices with an INVOICE_CORRECTED event (payments and
+  samplers ignore duplicates), deterministic money format drift in
+  prose only. --preset hard turns them all on.
+- Harness reports canonical hit rate per category (PROTOCOL.md section
+  4: quoted citations are correct, canonical rate is the tiebreaker).
+- Done criterion: bm25 on a hard-preset corpus drops category 3 from
+  100 to 50 (drift defeats money regexes) and canonical hit rate to
+  63.6. Generator 47 tests, harness 78 tests.
 
 ## 2026-07-18 - task G2 done: category 5 entity resolution
 

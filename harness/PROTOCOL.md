@@ -107,10 +107,24 @@ Scoring, applied to every question:
 - Precision = predictions that hit at least one evidence item / distinct
   predictions. Recall = distinct evidence items hit / total evidence items.
   Both are micro-averaged per category and overall.
-- Canonical vs quoted occurrences are NOT yet split: current corpora only
-  emit canonical statement occurrences. Once quoted occurrences exist, the
-  canonical hit rate will be reported separately; the evidence rows already
-  reserve the `occurrence` field for this.
+- Canonical vs quoted occurrences: corpora generated with the
+  `quoted_replies` realism screw (part of the generator's `--preset hard`)
+  emit `occurrence: quoted` evidence rows for the reply-quoted copies of
+  earlier statements. Citing a quoted copy of the right statement is
+  CORRECT and counts for precision and recall exactly like the canonical
+  original: a statement-level prediction resolving to a quoted row hits
+  the evidence refs whose statement asserts the same targets (quoted rows
+  carry the original statement's targets; target identity is the link),
+  and a message-level prediction hits when the cited message contains such
+  a quoted copy.
+- The canonical hit rate is reported separately, per category and overall:
+  of the evidence-hitting predictions, the fraction resolving to a
+  canonical occurrence. A prediction whose only support is a quoted copy
+  (including a message-level citation of a message containing only quoted
+  copies of the evidence) is a hit but counts against the rate. On corpora
+  with no quoted occurrences the rate reads 100.0 wherever at least one
+  prediction hits; it reads n/a where no prediction hits anything (refuse
+  adapters, abstention categories, empty citation lists).
 
 ## 5. Answer normalization
 
@@ -150,5 +164,6 @@ categories 1 to 3 and 6.
 
 The harness emits a JSON report and a markdown scorecard: per-category N
 and accuracy (mean per-question score), citation precision and recall per
-category and overall, plus per-question rows and notes for timeouts and
-protocol errors. There is never a single blended number.
+category and overall, the canonical hit rate per category and overall
+(section 4), plus per-question rows and notes for timeouts and protocol
+errors. There is never a single blended number.

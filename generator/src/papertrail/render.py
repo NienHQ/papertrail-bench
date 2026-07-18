@@ -11,6 +11,7 @@ text/plain attachments. Realism screws land in B1 without schema changes.
 """
 from __future__ import annotations
 
+import hashlib
 import random
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta
@@ -35,8 +36,9 @@ class RenderResult:
 class _BodyBuilder:
     """Assembles a body string while recording statement spans."""
 
-    def __init__(self, message_id: str):
+    def __init__(self, message_id: str, format_drift: bool = False):
         self.message_id = message_id
+        self.format_drift = format_drift
         self.parts: list[str] = []
         self.pos = 0
         self.statements: list[StatementOccurrence] = []
@@ -45,6 +47,24 @@ class _BodyBuilder:
     def raw(self, text: str) -> None:
         self.parts.append(text)
         self.pos += len(text)
+
+    def money(self, cents: int) -> str:
+        """Money as statement prose. With the format_drift screw on, the
+        form is picked deterministically from a hash of (message id, index
+        of the statement about to be written): no rng draws either way, so
+        the screw never shifts the generator's random sequence. All three
+        forms are within what the harness money scorer normalizes."""
+        if not self.format_drift or cents < 0:
+            return money(cents)
+        digest = hashlib.sha256(
+            f"{self.message_id}:{self._sid + 1}".encode("ascii")).digest()
+        form = digest[0] % 3
+        if form == 0:
+            return money(cents)
+        if form == 1:
+            return (f"{cents // 100} USD" if cents % 100 == 0
+                    else f"{cents // 100}.{cents % 100:02d} USD")
+        return f"USD {cents // 100:,}.{cents % 100:02d}"
 
     def statement(self, text: str, targets: list[dict]) -> None:
         self._sid += 1
@@ -64,6 +84,7 @@ class _BodyBuilder:
 class _Renderer:
     def __init__(self, sim: SimResult, event_fact: dict[str, str], seed: int):
         self.sim = sim
+        self.cfg = sim.config
         self.world: World = sim.world
         self.event_fact = event_fact
         self.rng = random.Random(seed ^ 0x5AFE)
@@ -72,6 +93,9 @@ class _Renderer:
         self.evidence_index: dict[tuple, list[tuple[str, str]]] = {}
         self._tid = 0
         self._mid = 0
+        # per-thread message count, for the truncate_references screw's
+        # deterministic every-5th-reply header drop (no rng involved)
+        self.thread_msg_no: dict[str, int] = {}
         self.docs_by_id = {d.doc_id: d for d in sim.documents}
         self.people_by_id = {p.person_id: p for p in sim.world.people}
         # thread reuse: one thread per business object chain / negotiation
@@ -105,33 +129,84 @@ class _Renderer:
         # mover's pre-move mail carries the old employer's domain.
         self.header_mid[mid] = \
             f"<{mid}@{sender.address_on(d).split('@', 1)[1]}>"
-        b = _BodyBuilder(mid)
+        b = _BodyBuilder(mid, self.cfg.format_drift)
         recipient = to[0]
         b.raw(self.rng.choice(GREETINGS).format(first=recipient.first) + "\n\n")
         write_body(b)
         b.raw(f"\n{self.rng.choice(CLOSINGS)},\n{sender.first}\n"
               f"{self.world.party(sender.party_id).name}\n")
+        body = b.build()
+        statements = list(b.statements)
+        if self.cfg.quoted_replies and prev is not None:
+            body, statements = self._append_quote(mid, body, statements, prev)
+
+        in_reply_to = self.header_mid[prev.message_id] if prev else None
+        references = (prev.references + [self.header_mid[prev.message_id]]) \
+            if prev else []
+        if self.cfg.truncate_references and prev is not None:
+            # reply index within the thread (root = message 0); every 5th
+            # reply continues by subject only, per the schema doc screw
+            reply_no = self.thread_msg_no.get(thread.thread_id, 1)
+            if reply_no % 5 == 0:
+                in_reply_to, references = None, []
+            else:
+                references = references[-2:]
+
         msg = Message(
             message_id=mid, thread_id=thread.thread_id, ts=ts,
             from_person=sender.person_id, from_address=sender.address_on(d),
             from_name=sender.name,
             to=[(p.name, p.address_on(d)) for p in to],
             subject=(f"Re: {thread.subject}" if is_reply else subject),
-            in_reply_to=self.header_mid[prev.message_id] if prev else None,
-            references=(prev.references + [self.header_mid[prev.message_id]])
-            if prev else [],
+            in_reply_to=in_reply_to,
+            references=references,
             attachments=list(attachments or []),
-            body=b.build(), statements=b.statements)
+            body=body, statements=statements)
         self.messages.append(msg)
         self.last_msg_in_thread[thread.thread_id] = msg
+        self.thread_msg_no[thread.thread_id] = \
+            self.thread_msg_no.get(thread.thread_id, 0) + 1
         for p in [sender] + to:
             if p.person_id not in thread.participants:
                 thread.participants.append(p.person_id)
+        # Only canonical statements enter the evidence index: question
+        # evidence sets never point at quoted copies (schema doc 6.1).
         for s in b.statements:
             for t in s.targets:
                 self.evidence_index.setdefault(_target_key(t), []).append(
                     (mid, s.statement_id))
         return msg
+
+    def _append_quote(self, mid: str, body: str,
+                      statements: list[StatementOccurrence],
+                      prev: Message) -> tuple[str, list[StatementOccurrence]]:
+        """quoted_replies screw: append the previous message's body with
+        every line prefixed "> ", and re-emit each of its statements as an
+        occurrence: quoted row of THIS message. Statement texts never
+        contain newlines (asserted), so each quoted statement stays
+        contiguous in the prefixed block and the span invariant
+        body[start:end] == text keeps holding."""
+        header = f"\n\nOn {prev.ts.date().isoformat()}, " \
+                 f"{prev.from_name} wrote:\n"
+        prefixed = "\n".join("> " + line for line in prev.body.split("\n"))
+        block_start = len(body) + len(header)
+        # bodies must end with a newline: MIME serialization appends one
+        # to unterminated text and would break the roundtrip invariant
+        new_body = body + header + prefixed + "\n"
+        out = list(statements)
+        for qn, s in enumerate(prev.statements, start=1):
+            assert "\n" not in s.text, s.statement_id
+            start = s.span[0]
+            # one "> " prefix for every line up to and including the
+            # statement's own line
+            offset = block_start + start + 2 * (prev.body.count("\n", 0, start) + 1)
+            occ = StatementOccurrence(
+                statement_id=f"{mid}-Q{qn}", message_id=mid,
+                span=(offset, offset + len(s.text)), occurrence="quoted",
+                targets=[dict(t) for t in s.targets], text=s.text)
+            assert new_body[occ.span[0]:occ.span[1]] == s.text
+            out.append(occ)
+        return new_body, out
 
     def us(self, role: str) -> Person:
         return self.world.contact_for(self.world.self_party.party_id, role)
@@ -218,7 +293,7 @@ class _Renderer:
             self.them(party.party_id, ev.event_time.date()),
             [self.us("purchasing")],
             lambda b: b.statement(
-                f"We can confirm a unit price of {money(ev.payload['value'])} "
+                f"We can confirm a unit price of {b.money(ev.payload['value'])} "
                 f"per unit for {item}, effective "
                 f"{ev.event_time.date().isoformat()}.", [fact_t]))
 
@@ -234,7 +309,7 @@ class _Renderer:
                 f"premises, with a term of {ev.payload['term_months']} months.",
                 [{"doc_field": [doc.doc_id, "term_months"]}])
             b.statement(
-                f"Monthly rent is {money(rent)}, effective "
+                f"Monthly rent is {b.money(rent)}, effective "
                 f"{ev.event_time.date().isoformat()}.",
                 [fact_t, {"doc_field": [doc.doc_id, "monthly_rent_cents"]}])
 
@@ -251,7 +326,7 @@ class _Renderer:
         def body(b):
             b.statement(
                 f"As per our review clause, monthly rent under lease "
-                f"{doc.root_id} is revised to {money(rent)} effective "
+                f"{doc.root_id} is revised to {b.money(rent)} effective "
                 f"{ev.event_time.date().isoformat()}.",
                 [fact_t, {"doc_field": [doc.doc_id, "monthly_rent_cents"]}])
             b.statement(
@@ -325,7 +400,7 @@ class _Renderer:
             po_bit = f" against {f['po_ref']}" if "po_ref" in f else ""
             b.statement(
                 f"Please find attached invoice {f['invoice_number']}{po_bit} "
-                f"for {money(f['total_cents'])}.",
+                f"for {b.money(f['total_cents'])}.",
                 [{"doc_field": [doc.doc_id, "total_cents"]}] +
                 ([{"doc_field": [doc.doc_id, "po_ref"]}] if "po_ref" in f else []))
             b.statement(
@@ -375,8 +450,22 @@ class _Renderer:
             ev.event_time, self.us("accounts payable"),
             [self.them(inv.party_id, ev.event_time.date())],
             lambda b: b.statement(
-                f"We dispute {money(ev.payload['disputed_cents'])} on invoice "
+                f"We dispute {b.money(ev.payload['disputed_cents'])} on invoice "
                 f"{ev.payload['invoice_ref']}: {ev.payload['reason']}.",
+                [{"event": ev.event_id}]))
+
+    def _ev_invoice_corrected(self, ev: Event) -> None:
+        """near_dup_invoices screw: the vendor voids the duplicate on the
+        same thread the day after re-sending it."""
+        dup = self.docs_by_id[ev.refs["invoice"]]
+        self.compose(
+            self.invoice_thread_key(dup),
+            f"Correction - invoice {dup.doc_id}", ev.event_time,
+            self.them(dup.party_id, ev.event_time.date()),
+            [self.us("accounts payable")],
+            lambda b: b.statement(
+                f"Please disregard invoice {ev.payload['duplicate_ref']}; "
+                f"it duplicates {ev.payload['original_ref']}.",
                 [{"event": ev.event_id}]))
 
     def _ev_dispute_resolved(self, ev: Event) -> None:
@@ -477,6 +566,9 @@ _DOC_TITLES = {"po": "PURCHASE ORDER", "invoice": "INVOICE",
                "credit_note": "CREDIT NOTE", "lease": "LEASE AGREEMENT"}
 _MONEY_FIELDS = {"unit_price_cents", "total_cents", "amount_cents",
                  "monthly_rent_cents"}
+# Ground-truth bookkeeping on near-duplicate invoices; a real re-sent
+# invoice would not announce itself, so these never render.
+_HIDDEN_FIELDS = {"duplicate_of", "voided_by_correction"}
 
 
 def render_attachment(doc: Document, world: World) -> bytes:
@@ -484,6 +576,8 @@ def render_attachment(doc: Document, world: World) -> bytes:
              f"Date: {doc.issued_date.isoformat()}",
              f"Party: {world.party(doc.party_id).name}", ""]
     for k, v in doc.fields.items():
+        if k in _HIDDEN_FIELDS:
+            continue
         label = k.removesuffix("_cents").replace("_", " ").capitalize()
         if isinstance(v, str) and v.startswith("PTY-"):
             v = world.party(v).name  # documents show names, ground truth keeps ids
