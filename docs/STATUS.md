@@ -22,7 +22,7 @@ Claim tasks here per the plan.
 
 ## In progress
 
-(nothing claimed)
+- H3 protocol freeze + tag (claimed 2026-07-18; Docket-side 3.3 runs in the docket repo)
 
 ## 2026-07-17 - task H2 done: internal baselines
 
