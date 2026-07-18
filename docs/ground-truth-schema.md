@@ -146,8 +146,26 @@ Each event renders to zero or more messages via a per-type communication script
 **Message** — `{message_id, thread_id, ts, from_person, from_address, to, subject,
 in_reply_to, references[], attachments[doc_id], body}`
 
-Threading headers are generated correctly in B0 (full `References` chains); B1
-screws truncate/mangle them and add subject-only continuation, per JWZ.
+Threading headers are generated correctly by default (full `References`
+chains). Realism screws are config flags, all OFF by default so existing
+seeds stay byte-identical; the `hard` preset turns them all on:
+
+- `truncate_references`: References keeps only the last 2 entries; a fraction
+  of replies drop In-Reply-To/References entirely and continue by subject
+  only (per JWZ, headers are unreliable).
+- `quoted_replies`: replies append the quoted body of the previous message
+  with "> " prefixes. Quoted statements emit `occurrence: quoted` evidence
+  rows (section 6.1); citing a quoted copy is correct, and the harness
+  reports the canonical-hit rate separately.
+- `near_dup_invoices`: a fraction of vendor invoices are re-sent as an exact
+  duplicate under the next invoice number one day later, then voided by a
+  correction message ("please disregard {dup}, it duplicates {orig}"). The
+  duplicate document row carries `voided_by_correction: true`; voided
+  invoices are never sampled for questions and payments ignore them.
+- `format_drift`: money amounts in message prose render in drifting formats
+  ("$1,250.00", "1250 USD", "USD 1,250.00") chosen deterministically per
+  statement. Ground-truth values stay canonical cents; document attachments
+  keep the canonical format.
 
 ### 6.1 Statements and spans
 

@@ -22,7 +22,7 @@ Claim tasks here per the plan.
 
 ## In progress
 
-(nothing claimed)
+- G3 realism screws (claimed 2026-07-18)
 
 ## 2026-07-18 - task G2 done: category 5 entity resolution
 
