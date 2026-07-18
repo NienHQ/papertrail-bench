@@ -30,6 +30,13 @@ A system under test sees only the rendered corpus. The harness sees everything.
 - Single integer seed drives everything via `random.Random(seed)`. No wall clock,
   no environment reads, no third-party data generators (name/company/item pools are
   vendored word lists), so a corpus is byte-reproducible across machines and time.
+- Multi-year corpora: config carries `start_year` and `years`. Business document
+  numbering restarts per year (`PO-2025-0001` after `PO-2024-xxxx`); agreements,
+  renegotiations, lease amendments, contact changes, and person moves are
+  scheduled per year so supersession chains and entity churn span the corpus.
+  `years = 1` output is byte-identical to the single-year generator. The `bench`
+  preset is the publication configuration: 3 years, a larger world, all realism
+  screws on, and 300+ questions; its exact flags live in docs/presets.md.
 - All IDs are deterministic, prefixed, zero-padded sequence numbers:
   `PTY-0001` (party), `PER-0001` (person), `EVT-000001` (event), `FCT-000001`
   (fact), `THR-0001` (thread), `MSG-000001` (message), `Q-0001` (question).

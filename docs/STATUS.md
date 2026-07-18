@@ -22,7 +22,7 @@ Claim tasks here per the plan.
 
 ## In progress
 
-(nothing claimed)
+- G4 multi-year corpus + bench preset (claimed 2026-07-18)
 
 ## 2026-07-18 - task G3 done: realism screws
 
