@@ -1,0 +1,39 @@
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+Subject: Purchase order PO-2024-0078 - copper wire 12AWG
+Date: Mon, 10 Jun 2024 09:21:00 +0000
+Message-ID: <MSG-000381@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000381"
+
+--=-PTB-MSG-000381
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Hugo,
+
+Please find attached purchase order PO-2024-0078 for 15 units of copper wire =
+12AWG at $78.26 per unit.
+The order total is $1,173.90.
+
+Kind regards,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000381
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0078.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0078
+Date: 2024-06-10
+Party: Yellowstone Components
+
+Po number: PO-2024-0078
+Item: copper wire 12AWG
+Qty: 15
+Unit price: $78.26
+Total: $1,173.90
+
+--=-PTB-MSG-000381--

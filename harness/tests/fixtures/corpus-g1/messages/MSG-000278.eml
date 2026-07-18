@@ -1,0 +1,42 @@
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0046 - safety gloves
+Date: Tue, 30 Apr 2024 09:14:00 +0000
+Message-ID: <MSG-000278@quarrypackaging.example>
+In-Reply-To: <MSG-000277@quarrypackaging.example>
+References: <MSG-000220@vantagefabrication.example>
+ <MSG-000221@quarrypackaging.example> <MSG-000230@vantagefabrication.example>
+ <MSG-000242@quarrypackaging.example> <MSG-000263@vantagefabrication.example>
+ <MSG-000277@quarrypackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000278"
+
+--=-PTB-MSG-000278
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Carla,
+
+We have issued credit note CN-2024-0010 for $189.23 against invoice INV-2024-=
+0062 (quantity mismatch).
+
+Best,
+Jonas
+Quarry Packaging
+
+--=-PTB-MSG-000278
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0010.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0010
+Date: 2024-04-30
+Party: Quarry Packaging
+
+Credit note number: CN-2024-0010
+Invoice ref: INV-2024-0062
+Amount: $189.23
+Reason: quantity mismatch
+
+--=-PTB-MSG-000278--

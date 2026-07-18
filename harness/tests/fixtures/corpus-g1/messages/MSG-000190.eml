@@ -1,0 +1,40 @@
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Invoice INV-2024-0058 from Vantage Fabrication
+Date: Thu, 21 Mar 2024 09:07:00 +0000
+Message-ID: <MSG-000190@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000190"
+
+--=-PTB-MSG-000190
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Mona,
+
+Please find attached invoice INV-2024-0058 for $1,605.00.
+Payment is due by 2024-04-05 per our NET15 terms.
+
+Kind regards,
+Uma
+Vantage Fabrication
+
+--=-PTB-MSG-000190
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0058.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0058
+Date: 2024-03-21
+Party: Meridian Distribution
+
+Invoice number: INV-2024-0058
+Issuer: Vantage Fabrication
+Bill to: Meridian Distribution
+Issue date: 2024-03-21
+Due date: 2024-04-05
+Terms: NET15
+Total: $1,605.00
+
+--=-PTB-MSG-000190--

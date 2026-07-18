@@ -1,0 +1,42 @@
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Jonas Sato <jonas.sato@quarrypackaging.example>
+Subject: Re: Purchase order PO-2024-0072 - safety gloves
+Date: Mon, 01 Jul 2024 09:21:00 +0000
+Message-ID: <MSG-000421@vantagefabrication.example>
+In-Reply-To: <MSG-000411@quarrypackaging.example>
+References:
+ <MSG-000410@vantagefabrication.example> <MSG-000411@quarrypackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000421"
+
+--=-PTB-MSG-000421
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Jonas,
+
+Please amend PO-2024-0072: quantity is now 60 units of safety gloves, revised=
+ order total $263.40.
+The amended purchase order is attached as PO-2024-0072-A1.
+
+Kind regards,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000421
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0072-A1.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0072-A1
+Date: 2024-07-01
+Party: Quarry Packaging
+
+Po number: PO-2024-0072
+Item: safety gloves
+Qty: 60
+Unit price: $4.39
+Total: $263.40
+
+--=-PTB-MSG-000421--

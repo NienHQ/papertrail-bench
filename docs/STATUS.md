@@ -22,7 +22,26 @@ Claim tasks here per the plan.
 
 ## In progress
 
-- G1 categories 4 and 6 (claimed 2026-07-18)
+(nothing claimed)
+
+## 2026-07-18 - task G1 done: categories 4 and 6
+
+- Disputes: INVOICE_DISPUTED / DISPUTE_RESOLVED on vendor invoices
+  (dispute_prob 0.12), credit_note resolutions reuse the existing CN
+  machinery for exactly the disputed amount, withdrawn changes nothing;
+  rendered as replies on the invoice thread. Dispute-consistency
+  invariant test added.
+- Questions: category 4 (disputed total/count/list per vendor, evidence
+  = every contributing dispute statement) and category 6 (abstention:
+  ids continuing real series past issuance, names from unused stems,
+  structural-absence asserts, empty evidence). category_counts config
+  (default 16 each for 1,2,3,4,6); n_questions deprecated even-split.
+- Default seed-42 corpus: 16 questions per category, 1672 messages.
+  New fixture harness/tests/fixtures/corpus-g1 (620 messages, 68
+  questions, all 5 categories); harness g1 tests close the H1 promise:
+  oracle 100 everywhere including abstention, refuse 100 on category 6
+  only, no NaN citation metrics on empty evidence. Generator 19 tests,
+  harness 65 tests.
 
 ## 2026-07-18 - task H3 done: protocol freeze + Docket ablations landed
 

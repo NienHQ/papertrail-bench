@@ -1,0 +1,40 @@
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0004 - safety gloves
+Date: Fri, 02 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000061@quarrypackaging.example>
+In-Reply-To: <MSG-000043@quarrypackaging.example>
+References: <MSG-000012@vantagefabrication.example>
+ <MSG-000013@quarrypackaging.example> <MSG-000043@quarrypackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000061"
+
+--=-PTB-MSG-000061
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Carla,
+
+We have issued credit note CN-2024-0001 for $17.51 against invoice INV-2024-0=
+004 (damaged goods).
+
+Kind regards,
+Jonas
+Quarry Packaging
+
+--=-PTB-MSG-000061
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0001.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0001
+Date: 2024-02-02
+Party: Quarry Packaging
+
+Credit note number: CN-2024-0001
+Invoice ref: INV-2024-0004
+Amount: $17.51
+Reason: damaged goods
+
+--=-PTB-MSG-000061--

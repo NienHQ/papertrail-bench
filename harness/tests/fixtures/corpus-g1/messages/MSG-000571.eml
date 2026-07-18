@@ -1,0 +1,43 @@
+From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0107 - copper wire 12AWG
+Date: Sun, 25 Aug 2024 09:56:00 +0000
+Message-ID: <MSG-000571@yellowstonecomponents.example>
+In-Reply-To: <MSG-000570@yellowstonecomponents.example>
+References: <MSG-000508@vantagefabrication.example>
+ <MSG-000509@yellowstonecomponents.example>
+ <MSG-000523@yellowstonecomponents.example>
+ <MSG-000544@vantagefabrication.example>
+ <MSG-000570@yellowstonecomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000571"
+
+--=-PTB-MSG-000571
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Carla,
+
+We have issued credit note CN-2024-0018 for $521.41 against invoice INV-2024-=
+0141 (price does not match agreement).
+
+Thanks,
+Hugo
+Yellowstone Components
+
+--=-PTB-MSG-000571
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0018.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0018
+Date: 2024-08-25
+Party: Yellowstone Components
+
+Credit note number: CN-2024-0018
+Invoice ref: INV-2024-0141
+Amount: $521.41
+Reason: price does not match agreement
+
+--=-PTB-MSG-000571--

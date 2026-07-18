@@ -1,0 +1,8 @@
+{"domain": "vantagefabrication.example", "is_self": true, "kind": "self", "name": "Vantage Fabrication", "party_id": "PTY-0001"}
+{"domain": "bluepinematerials.example", "is_self": false, "kind": "vendor", "name": "Bluepine Materials", "party_id": "PTY-0002"}
+{"domain": "quarrypackaging.example", "is_self": false, "kind": "vendor", "name": "Quarry Packaging", "party_id": "PTY-0003"}
+{"domain": "deltaridgesupplies.example", "is_self": false, "kind": "vendor", "name": "Delta Ridge Supplies", "party_id": "PTY-0004"}
+{"domain": "yellowstonecomponents.example", "is_self": false, "kind": "vendor", "name": "Yellowstone Components", "party_id": "PTY-0005"}
+{"domain": "granitedistribution.example", "is_self": false, "kind": "customer", "name": "Granite Distribution", "party_id": "PTY-0006"}
+{"domain": "meridiandistribution.example", "is_self": false, "kind": "customer", "name": "Meridian Distribution", "party_id": "PTY-0007"}
+{"domain": "lakeshoreproperties.example", "is_self": false, "kind": "landlord", "name": "Lakeshore Properties", "party_id": "PTY-0008"}

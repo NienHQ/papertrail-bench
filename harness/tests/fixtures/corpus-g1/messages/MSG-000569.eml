@@ -1,0 +1,44 @@
+From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0105 - copper wire 12AWG
+Date: Sun, 25 Aug 2024 09:42:00 +0000
+Message-ID: <MSG-000569@yellowstonecomponents.example>
+In-Reply-To: <MSG-000568@yellowstonecomponents.example>
+References: <MSG-000502@vantagefabrication.example>
+ <MSG-000503@yellowstonecomponents.example>
+ <MSG-000514@vantagefabrication.example>
+ <MSG-000531@yellowstonecomponents.example>
+ <MSG-000535@vantagefabrication.example>
+ <MSG-000568@yellowstonecomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000569"
+
+--=-PTB-MSG-000569
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Carla,
+
+We have issued credit note CN-2024-0017 for $486.86 against invoice INV-2024-=
+0139 (goods returned).
+
+Best regards,
+Hugo
+Yellowstone Components
+
+--=-PTB-MSG-000569
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0017.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0017
+Date: 2024-08-25
+Party: Yellowstone Components
+
+Credit note number: CN-2024-0017
+Invoice ref: INV-2024-0139
+Amount: $486.86
+Reason: goods returned
+
+--=-PTB-MSG-000569--

@@ -1,0 +1,41 @@
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0059 - safety gloves
+Date: Tue, 04 Jun 2024 09:21:00 +0000
+Message-ID: <MSG-000363@quarrypackaging.example>
+In-Reply-To: <MSG-000362@quarrypackaging.example>
+References: <MSG-000323@vantagefabrication.example>
+ <MSG-000324@quarrypackaging.example> <MSG-000330@quarrypackaging.example>
+ <MSG-000347@vantagefabrication.example> <MSG-000362@quarrypackaging.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000363"
+
+--=-PTB-MSG-000363
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Carla,
+
+We have issued credit note CN-2024-0012 for $51.23 against invoice INV-2024-0=
+079 (duplicate line item).
+
+Best,
+Jonas
+Quarry Packaging
+
+--=-PTB-MSG-000363
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0012.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0012
+Date: 2024-06-04
+Party: Quarry Packaging
+
+Credit note number: CN-2024-0012
+Invoice ref: INV-2024-0079
+Amount: $51.23
+Reason: duplicate line item
+
+--=-PTB-MSG-000363--

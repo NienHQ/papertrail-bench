@@ -1,7 +1,7 @@
 """Layer 2: fact ledger derivation.
 
 Deterministic view over the event log. Structural keying on (entity, relation):
-a new value closes the previous fact and opens a new one — superseded, never
+a new value closes the previous fact and opens a new one: superseded, never
 deleted. Returns the ledger plus an event_id -> fact_id map so the renderer can
 anchor statements to the facts they assert.
 """

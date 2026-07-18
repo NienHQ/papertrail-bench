@@ -1,0 +1,40 @@
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Dev Ueda <dev.ueda@granitedistribution.example>
+Subject: Invoice INV-2024-0144 from Vantage Fabrication
+Date: Fri, 09 Aug 2024 09:07:00 +0000
+Message-ID: <MSG-000516@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000516"
+
+--=-PTB-MSG-000516
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Dev,
+
+Please find attached invoice INV-2024-0144 for $6,560.00.
+Payment is due by 2024-09-23 per our NET45 terms.
+
+Thanks,
+Uma
+Vantage Fabrication
+
+--=-PTB-MSG-000516
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0144.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0144
+Date: 2024-08-09
+Party: Granite Distribution
+
+Invoice number: INV-2024-0144
+Issuer: Vantage Fabrication
+Bill to: Granite Distribution
+Issue date: 2024-08-09
+Due date: 2024-09-23
+Terms: NET45
+Total: $6,560.00
+
+--=-PTB-MSG-000516--

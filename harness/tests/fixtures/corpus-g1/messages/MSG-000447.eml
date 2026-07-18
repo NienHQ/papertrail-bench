@@ -1,0 +1,43 @@
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+Subject: Re: Purchase order PO-2024-0092 - copper wire 12AWG
+Date: Mon, 08 Jul 2024 09:14:00 +0000
+Message-ID: <MSG-000447@vantagefabrication.example>
+In-Reply-To: <MSG-000440@vantagefabrication.example>
+References: <MSG-000432@vantagefabrication.example>
+ <MSG-000433@yellowstonecomponents.example>
+ <MSG-000440@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000447"
+
+--=-PTB-MSG-000447
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Hugo,
+
+Please amend PO-2024-0092: quantity is now 215 units of copper wire 12AWG, re=
+vised order total $16,825.90.
+The amended purchase order is attached as PO-2024-0092-A2.
+
+Regards,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000447
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0092-A2.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0092-A2
+Date: 2024-07-08
+Party: Yellowstone Components
+
+Po number: PO-2024-0092
+Item: copper wire 12AWG
+Qty: 215
+Unit price: $78.26
+Total: $16,825.90
+
+--=-PTB-MSG-000447--

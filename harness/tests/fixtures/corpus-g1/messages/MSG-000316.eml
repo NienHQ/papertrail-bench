@@ -1,0 +1,45 @@
+From: Jonas Sato <jonas.sato@quarrypackaging.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0058 - safety gloves
+Date: Wed, 15 May 2024 09:07:00 +0000
+Message-ID: <MSG-000316@quarrypackaging.example>
+In-Reply-To: <MSG-000296@vantagefabrication.example>
+References: <MSG-000282@vantagefabrication.example>
+ <MSG-000283@quarrypackaging.example> <MSG-000296@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000316"
+
+--=-PTB-MSG-000316
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Carla,
+
+Please find attached invoice INV-2024-0078 against PO-2024-0058-A1 for $592.6=
+5.
+Payment is due by 2024-06-14 per our NET30 terms.
+
+Kind regards,
+Jonas
+Quarry Packaging
+
+--=-PTB-MSG-000316
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0078.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0078
+Date: 2024-05-15
+Party: Quarry Packaging
+
+Invoice number: INV-2024-0078
+Issuer: Quarry Packaging
+Bill to: Vantage Fabrication
+Issue date: 2024-05-15
+Due date: 2024-06-14
+Terms: NET30
+Total: $592.65
+Po ref: PO-2024-0058-A1
+
+--=-PTB-MSG-000316--

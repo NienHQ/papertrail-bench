@@ -2,7 +2,7 @@
 
 Produces the canonical event log plus document version chains. Maintains a live
 (entity, relation) -> value map so derived values inside events (e.g. invoice due
-dates) agree with the fact ledger as-of the event time — the internal-consistency
+dates) agree with the fact ledger as-of the event time: the internal-consistency
 rule that makes temporal questions honest.
 """
 from __future__ import annotations
@@ -15,6 +15,11 @@ from .model import Document, Event
 from .world import World, build_world
 
 TERMS_CHOICES = ["NET15", "NET30", "NET45", "NET60"]
+DISPUTE_REASONS = ["quantity mismatch", "price does not match agreement",
+                   "goods returned", "duplicate line item"]
+
+# Shipped question categories and their default per-category counts.
+DEFAULT_CATEGORY_COUNTS: dict[int, int] = {1: 16, 2: 16, 3: 16, 4: 16, 6: 16}
 
 
 @dataclass
@@ -29,8 +34,22 @@ class Config:
     amend_prob: float = 0.25
     second_amend_prob: float = 0.3
     credit_note_prob: float = 0.08
+    dispute_prob: float = 0.12  # vendor invoices that get disputed
     renegotiate_frac: float = 0.5  # parties whose payment terms change mid-year
-    n_questions: int = 50
+    # Per-category question counts (schema doc section 7).
+    category_counts: dict[int, int] = field(
+        default_factory=lambda: dict(DEFAULT_CATEGORY_COUNTS))
+    # Deprecated override: a flat total split evenly across shipped
+    # categories. Kept so the CLI --questions flag stays meaningful.
+    n_questions: int | None = None
+
+    def resolved_category_counts(self) -> dict[int, int]:
+        if self.n_questions is not None:
+            cats = sorted(DEFAULT_CATEGORY_COUNTS)
+            base, extra = divmod(self.n_questions, len(cats))
+            return {c: base + (1 if i < extra else 0)
+                    for i, c in enumerate(cats)}
+        return dict(self.category_counts)
 
 
 @dataclass
@@ -241,6 +260,7 @@ class _Sim:
     def _invoice_and_pay(self, d: date, issuer: str, payer: str, party: str,
                          amount: int, po_ref: str | None) -> None:
         cfg, rng = self.cfg, self.rng
+        us = self.world.self_party.party_id
         self._inv_n += 1
         inv_id = f"INV-{cfg.year}-{self._inv_n:04d}"
         terms = self.get_fact(party, "payment_terms", d)
@@ -253,7 +273,44 @@ class _Sim:
         ev = self.emit(d, "INVOICE_ISSUED", issuer, payer, dict(fields))
         self.add_doc("invoice", inv_id, 1, None, party, d, fields, ev)
 
-        if rng.random() < cfg.credit_note_prob:
+        # Vendor-side disputes (category 4). Dispute consistency rule: a
+        # credit_note resolution reuses the credit-note machinery for exactly
+        # disputed_cents against this invoice, and the payment reflects it; a
+        # disputed invoice never also draws the independent random credit
+        # note below; a withdrawn resolution changes no amounts.
+        disputed = False
+        if payer == us and amount // 2 >= 1_000 \
+                and rng.random() < cfg.dispute_prob:
+            disputed = True
+            d_disp = min(d + timedelta(days=rng.randint(2, 6)),
+                         date(cfg.year, 12, 29))
+            disputed_cents = rng.randrange(1_000, amount // 2 + 1)
+            reason = rng.choice(DISPUTE_REASONS)
+            self.emit(d_disp, "INVOICE_DISPUTED", us, issuer,
+                      {"invoice_ref": inv_id, "disputed_cents": disputed_cents,
+                       "reason": reason}, {"invoice": inv_id})
+            d_res = min(d_disp + timedelta(days=rng.randint(3, 10)),
+                        date(cfg.year, 12, 30))
+            if rng.random() < 0.6:
+                self._cn_n += 1
+                cn_id = f"CN-{cfg.year}-{self._cn_n:04d}"
+                self.emit(d_res, "DISPUTE_RESOLVED", issuer, us,
+                          {"invoice_ref": inv_id, "resolution": "credit_note",
+                           "credit_note_ref": cn_id}, {"invoice": inv_id})
+                cn_fields = {"credit_note_number": cn_id,
+                             "invoice_ref": inv_id,
+                             "amount_cents": disputed_cents, "reason": reason}
+                ev = self.emit(d_res, "CREDIT_NOTE_ISSUED", issuer, payer,
+                               dict(cn_fields), {"invoice": inv_id})
+                self.add_doc("credit_note", cn_id, 1, None, party, d_res,
+                             cn_fields, ev)
+                amount -= disputed_cents
+            else:
+                self.emit(d_res, "DISPUTE_RESOLVED", us, issuer,
+                          {"invoice_ref": inv_id, "resolution": "withdrawn"},
+                          {"invoice": inv_id})
+
+        if not disputed and rng.random() < cfg.credit_note_prob:
             self._cn_n += 1
             cn_id = f"CN-{cfg.year}-{self._cn_n:04d}"
             d_cn = min(d + timedelta(days=rng.randint(2, 8)),

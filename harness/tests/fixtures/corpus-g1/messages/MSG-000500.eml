@@ -1,0 +1,39 @@
+From: Uma Garvey <uma.garvey@vantagefabrication.example>
+To: Mona Joshi <mona.joshi@meridiandistribution.example>
+Subject: Re: Invoice INV-2024-0146 from Vantage Fabrication
+Date: Sun, 04 Aug 2024 09:14:00 +0000
+Message-ID: <MSG-000500@vantagefabrication.example>
+In-Reply-To: <MSG-000495@vantagefabrication.example>
+References: <MSG-000495@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000500"
+
+--=-PTB-MSG-000500
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Mona,
+
+We have issued credit note CN-2024-0019 for $762.58 against invoice INV-2024-=
+0146 (short delivery).
+
+Best,
+Uma
+Vantage Fabrication
+
+--=-PTB-MSG-000500
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0019.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0019
+Date: 2024-08-04
+Party: Meridian Distribution
+
+Credit note number: CN-2024-0019
+Invoice ref: INV-2024-0146
+Amount: $762.58
+Reason: short delivery
+
+--=-PTB-MSG-000500--

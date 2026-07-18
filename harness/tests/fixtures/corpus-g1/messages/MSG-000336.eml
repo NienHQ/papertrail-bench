@@ -1,0 +1,44 @@
+From: Hugo Marsh <hugo.marsh@yellowstonecomponents.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0066 - copper wire 12AWG
+Date: Fri, 24 May 2024 09:28:00 +0000
+Message-ID: <MSG-000336@yellowstonecomponents.example>
+In-Reply-To: <MSG-000326@yellowstonecomponents.example>
+References: <MSG-000325@vantagefabrication.example>
+ <MSG-000326@yellowstonecomponents.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000336"
+
+--=-PTB-MSG-000336
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Carla,
+
+Please find attached invoice INV-2024-0086 against PO-2024-0066 for $9,391.20.
+Payment is due by 2024-07-23 per our NET60 terms.
+
+Best,
+Hugo
+Yellowstone Components
+
+--=-PTB-MSG-000336
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0086.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0086
+Date: 2024-05-24
+Party: Yellowstone Components
+
+Invoice number: INV-2024-0086
+Issuer: Yellowstone Components
+Bill to: Vantage Fabrication
+Issue date: 2024-05-24
+Due date: 2024-07-23
+Terms: NET60
+Total: $9,391.20
+Po ref: PO-2024-0066
+
+--=-PTB-MSG-000336--

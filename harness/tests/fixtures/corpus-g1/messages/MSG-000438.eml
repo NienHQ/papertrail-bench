@@ -1,0 +1,44 @@
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0081 - rubber gaskets
+Date: Sat, 06 Jul 2024 09:00:00 +0000
+Message-ID: <MSG-000438@bluepinematerials.example>
+In-Reply-To: <MSG-000423@bluepinematerials.example>
+References: <MSG-000422@vantagefabrication.example>
+ <MSG-000423@bluepinematerials.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000438"
+
+--=-PTB-MSG-000438
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Carla,
+
+Please find attached invoice INV-2024-0110 against PO-2024-0081 for $941.10.
+Payment is due by 2024-07-21 per our NET15 terms.
+
+Best,
+Rosa
+Bluepine Materials
+
+--=-PTB-MSG-000438
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0110.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0110
+Date: 2024-07-06
+Party: Bluepine Materials
+
+Invoice number: INV-2024-0110
+Issuer: Bluepine Materials
+Bill to: Vantage Fabrication
+Issue date: 2024-07-06
+Due date: 2024-07-21
+Terms: NET15
+Total: $941.10
+Po ref: PO-2024-0081
+
+--=-PTB-MSG-000438--

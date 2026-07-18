@@ -10,8 +10,18 @@ def _docs_by_id(corpus):
 
 def test_question_counts_and_categories(corpus):
     cats = {q.category for q in corpus.questions}
-    assert cats == {1, 2, 3}
+    assert cats == {1, 2, 3, 4, 6}
     assert len(corpus.questions) >= corpus.sim.config.n_questions * 0.8
+
+
+def test_deprecated_n_questions_splits_evenly():
+    from papertrail.simulate import Config
+    assert Config(n_questions=30).resolved_category_counts() == \
+        {1: 6, 2: 6, 3: 6, 4: 6, 6: 6}
+    assert Config(n_questions=32).resolved_category_counts() == \
+        {1: 7, 2: 7, 3: 6, 4: 6, 6: 6}
+    assert Config().resolved_category_counts() == \
+        {1: 16, 2: 16, 3: 16, 4: 16, 6: 16}
 
 
 def test_answers_recompute(corpus):
@@ -52,8 +62,80 @@ def test_answers_recompute(corpus):
             expected = f.value if q.template == "terms_as_of" \
                 else {"amount_cents": f.value, "currency": "USD"}
             assert a["value"] == expected
+        elif q.template in ("disputed_total", "disputed_count",
+                            "disputed_list"):
+            evs = _vendor_disputes(corpus, q.params["vendor"])
+            assert evs, q.question_id
+            if q.template == "disputed_total":
+                assert a["value"]["amount_cents"] == \
+                    sum(e.payload["disputed_cents"] for e in evs)
+            elif q.template == "disputed_count":
+                assert a["value"] == len(evs)
+            else:
+                assert a["value"] == [e.payload["invoice_ref"] for e in evs]
+        elif q.template in ("nonexistent_invoice_total",
+                            "nonexistent_vendor_terms",
+                            "nonexistent_po_chain"):
+            assert a == {"type": "abstain", "value": None}
         else:
             raise AssertionError(f"untested template {q.template}")
+
+
+def _vendor_disputes(corpus, vendor):
+    """Independent recompute: sorted event-log scan."""
+    evs = [e for e in corpus.sim.events if e.type == "INVOICE_DISPUTED"
+           and e.counterparty == vendor]
+    assert evs == sorted(evs, key=lambda e: (e.event_time, e.event_id))
+    return evs
+
+
+def test_dispute_aggregation_evidence_covers_every_event(corpus):
+    """Category 4 evidence = the canonical dispute statement of every
+    contributing INVOICE_DISPUTED event."""
+    stmt_targets = {}
+    for m in corpus.render_result.messages:
+        for s in m.statements:
+            stmt_targets[(s.message_id, s.statement_id)] = s.targets
+    q4 = [q for q in corpus.questions if q.category == 4]
+    assert q4
+    for q in q4:
+        evs = _vendor_disputes(corpus, q.params["vendor"])
+        cited_events = set()
+        for ref in q.evidence:
+            for t in stmt_targets[(ref["message_id"], ref["statement_id"])]:
+                if "event" in t:
+                    cited_events.add(t["event"])
+        assert cited_events == {e.event_id for e in evs}
+
+
+def test_abstention_ids_provably_absent(corpus):
+    doc_ids = {d.doc_id for d in corpus.sim.documents}
+    root_ids = {d.root_id for d in corpus.sim.documents}
+    party_names = {p.name for p in corpus.sim.world.parties}
+    q6 = [q for q in corpus.questions if q.category == 6]
+    assert q6
+    templates = {q.template for q in q6}
+    assert templates == {"nonexistent_invoice_total",
+                        "nonexistent_vendor_terms", "nonexistent_po_chain"}
+    for q in q6:
+        assert q.evidence == []
+        if "missing_id" in q.params:
+            assert q.params["missing_id"] not in doc_ids
+            assert q.params["missing_id"] not in root_ids
+            assert q.params["missing_id"] in q.text
+        else:
+            assert q.params["missing_name"] not in party_names
+            assert q.params["missing_name"] in q.text
+
+
+def test_default_config_emits_15_plus_per_category(default_corpus):
+    """G1 done-when: default config, seed 42, >= 15 questions in each of
+    categories 1, 2, 3, 4, 6."""
+    from collections import Counter
+    by_cat = Counter(q.category for q in default_corpus.questions)
+    assert set(by_cat) == {1, 2, 3, 4, 6}
+    for cat in (1, 2, 3, 4, 6):
+        assert by_cat[cat] >= 15, (cat, by_cat)
 
 
 def test_temporal_questions_straddle_boundaries(corpus):

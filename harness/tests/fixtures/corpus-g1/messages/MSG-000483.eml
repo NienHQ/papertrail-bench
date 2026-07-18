@@ -1,0 +1,39 @@
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Jonas Sato <jonas.sato@quarrypackaging.example>
+Subject: Purchase order PO-2024-0087 - safety gloves
+Date: Thu, 25 Jul 2024 09:07:00 +0000
+Message-ID: <MSG-000483@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000483"
+
+--=-PTB-MSG-000483
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Jonas,
+
+Please find attached purchase order PO-2024-0087 for 105 units of safety glov=
+es at $4.39 per unit.
+The order total is $460.95.
+
+Best,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000483
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0087.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0087
+Date: 2024-07-25
+Party: Quarry Packaging
+
+Po number: PO-2024-0087
+Item: safety gloves
+Qty: 105
+Unit price: $4.39
+Total: $460.95
+
+--=-PTB-MSG-000483--

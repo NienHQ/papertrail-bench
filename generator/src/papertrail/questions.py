@@ -1,8 +1,11 @@
-"""Layer 4: question generation for B0 categories 1-3.
+"""Layer 4: question generation for categories 1-4 and 6.
 
-Every question's answer is recomputed from the ground-truth tables through an
-independent path and asserted equal at generation time, and its evidence set is
-asserted non-empty and resolvable (invariant 3 in the schema doc).
+Every non-abstention question's answer is recomputed from the ground-truth
+tables through an independent path and asserted equal at generation time, and
+its evidence set is asserted non-empty and resolvable (invariant 3 in the
+schema doc). Abstention questions (category 6) invert both guarantees: the
+referenced id or name is asserted structurally absent and the evidence set is
+empty by definition.
 """
 from __future__ import annotations
 
@@ -10,9 +13,10 @@ import random
 from datetime import date, timedelta
 
 from .facts import fact_as_of
-from .model import Document, Fact, Question, money
+from .model import Document, Event, Fact, Question, money
 from .render import RenderResult
 from .simulate import SimResult
+from .world import COMPANY_STEMS, VENDOR_SUFFIXES
 
 
 def _evidence_for(rr: RenderResult, *keys: tuple) -> list[dict]:
@@ -150,20 +154,93 @@ class _QGen:
                  {"entity": landlord.party_id, "as_of": as_of.isoformat(),
                   "fact_id": f.fact_id})
 
+    # -- category 4: cross-thread aggregation over disputes -----------------
+
+    def _disputes_for(self, vendor: str) -> list[Event]:
+        """Independent recompute path: scan the event log directly."""
+        return [e for e in self.sim.events if e.type == "INVOICE_DISPUTED"
+                and e.counterparty == vendor]
+
+    def _dispute_evidence(self, evs: list[Event]) -> list[dict]:
+        return _evidence_for(self.rr, *[("event", e.event_id) for e in evs])
+
+    def q4_disputed_total(self, vendor: str) -> None:
+        evs = self._disputes_for(vendor)
+        total = sum(e.payload["disputed_cents"] for e in evs)
+        party = self.sim.world.party(vendor)
+        year = self.sim.config.year
+        self.add(4, "disputed_total",
+                 f"What is the total amount we disputed with {party.name} "
+                 f"in {year}?",
+                 _money_answer(total), self._dispute_evidence(evs),
+                 {"vendor": vendor, "year": year})
+
+    def q4_disputed_count(self, vendor: str) -> None:
+        evs = self._disputes_for(vendor)
+        party = self.sim.world.party(vendor)
+        year = self.sim.config.year
+        self.add(4, "disputed_count",
+                 f"How many invoices did we dispute with {party.name} "
+                 f"in {year}?",
+                 {"type": "int", "value": len(evs)},
+                 self._dispute_evidence(evs),
+                 {"vendor": vendor, "year": year})
+
+    def q4_disputed_list(self, vendor: str) -> None:
+        evs = self._disputes_for(vendor)  # event-log order == dispute date order
+        party = self.sim.world.party(vendor)
+        year = self.sim.config.year
+        self.add(4, "disputed_list",
+                 f"Which invoices did we dispute with {party.name} in {year}, "
+                 f"in order of dispute date?",
+                 {"type": "ordered_list",
+                  "value": [e.payload["invoice_ref"] for e in evs]},
+                 self._dispute_evidence(evs),
+                 {"vendor": vendor, "year": year})
+
+    # -- category 6: abstention on plausible but nonexistent ids ------------
+
+    def _assert_absent_doc(self, doc_id: str) -> None:
+        assert doc_id not in self.docs_by_id
+        assert all(d.root_id != doc_id for d in self.docs)
+
+    def q6_missing_invoice(self, inv_id: str) -> None:
+        self._assert_absent_doc(inv_id)
+        self.add(6, "nonexistent_invoice_total",
+                 f"What is the total amount of invoice {inv_id}?",
+                 {"type": "abstain", "value": None}, [],
+                 {"missing_id": inv_id})
+
+    def q6_missing_vendor_terms(self, name: str, as_of: date) -> None:
+        assert all(p.name != name for p in self.sim.world.parties)
+        self.add(6, "nonexistent_vendor_terms",
+                 f"What were the agreed payment terms with {name} as of "
+                 f"{as_of.isoformat()}?",
+                 {"type": "abstain", "value": None}, [],
+                 {"missing_name": name, "as_of": as_of.isoformat()})
+
+    def q6_missing_po_chain(self, po_id: str) -> None:
+        self._assert_absent_doc(po_id)
+        self.add(6, "nonexistent_po_chain",
+                 f"List every version of purchase order {po_id}, from the "
+                 f"original to the latest amendment, in order.",
+                 {"type": "abstain", "value": None}, [],
+                 {"missing_id": po_id})
+
     # -- sampling -----------------------------------------------------------
 
-    def run(self, n: int) -> list[Question]:
+    def run(self) -> list[Question]:
         rng = self.rng
+        counts = self.sim.config.resolved_category_counts()
         invoices = [d for d in self.docs if d.kind == "invoice"]
         cns = [d for d in self.docs if d.kind == "credit_note"]
-        po_invoices = [d for d in invoices if "po_ref" in d.fields]
         amended_roots = sorted({d.root_id for d in self.docs
                                 if d.kind == "po" and d.version > 1})
         superseded = self._superseded_terms_entities()
 
-        per_cat = n // 3
         # category 1
-        picks = rng.sample(invoices, min(per_cat, len(invoices)))
+        c1 = counts.get(1, 0)
+        picks = rng.sample(invoices, min(c1, len(invoices)))
         for i, doc in enumerate(picks):
             kind = i % 3
             if kind == 0:
@@ -174,16 +251,17 @@ class _QGen:
                 self.q1_invoice_po(doc)
             else:
                 self.q1_invoice_total(doc)
-        for doc in rng.sample(cns, min(max(0, per_cat - len(picks)), len(cns))):
+        for doc in rng.sample(cns, min(max(0, c1 - len(picks)), len(cns))):
             self.q1_credit_note_amount(doc)
 
         # category 2
-        roots = rng.sample(amended_roots, min(per_cat, len(amended_roots)))
+        c2 = counts.get(2, 0)
+        roots = rng.sample(amended_roots, min(c2, len(amended_roots)))
         for i, root in enumerate(roots):
             (self.q2_chain, self.q2_amend_count, self.q2_final_qty)[i % 3](root)
 
         # category 3: as-of dates straddling each supersession boundary
-        n3 = n - len(self.questions)
+        c3 = counts.get(3, 0)
         boundaries: list[tuple[str, date]] = []
         for entity, boundary in superseded:
             boundaries.append((entity, boundary - timedelta(days=rng.randint(5, 40))))
@@ -192,7 +270,7 @@ class _QGen:
         year_end = date(self.sim.config.year, 12, 31)
         used = 0
         for entity, as_of in boundaries:
-            if used >= max(0, n3 - 2):
+            if used >= max(0, c3 - 2):
                 break
             if as_of > year_end:
                 as_of = year_end
@@ -200,19 +278,54 @@ class _QGen:
             used += 1
         # two rent questions straddling the lease amendment
         rent_facts = [f for f in self.facts if f.relation == "monthly_rent"]
-        if len(rent_facts) > 1:
+        if len(rent_facts) > 1 and c3 > 0:
             b = rent_facts[1].valid_from
             self.q3_rent_as_of(b - timedelta(days=14))
             self.q3_rent_as_of(b + timedelta(days=14))
 
-        # top up to n with category-1 lookups over unused invoices
-        used_docs = {q.params.get("doc_id") for q in self.questions}
-        spare = [d for d in invoices if d.doc_id not in used_docs]
-        rng.shuffle(spare)
-        for doc in spare[:max(0, n - len(self.questions))]:
-            self.q1_invoice_total(doc)
+        # category 4: vendors with at least one dispute; repeat templates
+        # across vendors before shrinking the count
+        disputed_vendors = [v.party_id for v in self.sim.world.vendors()
+                            if self._disputes_for(v.party_id)]
+        rng.shuffle(disputed_vendors)
+        q4_templates = (self.q4_disputed_total, self.q4_disputed_count,
+                        self.q4_disputed_list)
+        pairs = [(tmpl, v) for tmpl in q4_templates for v in disputed_vendors]
+        for tmpl, vendor in pairs[:counts.get(4, 0)]:
+            tmpl(vendor)
+
+        # category 6: ids continuing the real numbering series, names from
+        # the unused portion of the company stem pool
+        year = self.sim.config.year
+        inv_max = self._series_max(f"INV-{year}-")
+        po_max = self._series_max(f"PO-{year}-")
+        party_names = {p.name for p in self.sim.world.parties}
+        used_stems = {s for s in COMPANY_STEMS
+                      if any(n.startswith(s + " ") for n in party_names)}
+        unused_stems = [s for s in COMPANY_STEMS if s not in used_stems]
+        rng.shuffle(unused_stems)
+        k_inv = k_po = 0
+        for i in range(counts.get(6, 0)):
+            kind = i % 3
+            if kind == 1 and not unused_stems:
+                kind = 2
+            if kind == 0:
+                k_inv += 1
+                self.q6_missing_invoice(f"INV-{year}-{inv_max + k_inv:04d}")
+            elif kind == 1:
+                name = f"{unused_stems.pop()} {rng.choice(VENDOR_SUFFIXES)}"
+                as_of = date(year, rng.randint(1, 12), rng.randint(1, 28))
+                self.q6_missing_vendor_terms(name, as_of)
+            else:
+                k_po += 1
+                self.q6_missing_po_chain(f"PO-{year}-{po_max + k_po:04d}")
 
         return self.questions
+
+    def _series_max(self, prefix: str) -> int:
+        ns = [int(d.root_id.removeprefix(prefix)) for d in self.docs
+              if d.root_id.startswith(prefix) and d.version == 1]
+        return max(ns, default=0)
 
     def _superseded_terms_entities(self) -> list[tuple[str, date]]:
         out = []
@@ -224,4 +337,4 @@ class _QGen:
 
 def generate_questions(sim: SimResult, facts: list[Fact],
                        rr: RenderResult) -> list[Question]:
-    return _QGen(sim, facts, rr).run(sim.config.n_questions)
+    return _QGen(sim, facts, rr).run()

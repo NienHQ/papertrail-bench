@@ -1,0 +1,39 @@
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Purchase order PO-2024-0031 - rubber gaskets
+Date: Tue, 26 Mar 2024 09:00:00 +0000
+Message-ID: <MSG-000199@vantagefabrication.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000199"
+
+--=-PTB-MSG-000199
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Rosa,
+
+Please find attached purchase order PO-2024-0031 for 145 units of rubber gask=
+ets at $62.74 per unit.
+The order total is $9,097.30.
+
+Kind regards,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000199
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0031.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0031
+Date: 2024-03-26
+Party: Bluepine Materials
+
+Po number: PO-2024-0031
+Item: rubber gaskets
+Qty: 145
+Unit price: $62.74
+Total: $9,097.30
+
+--=-PTB-MSG-000199--

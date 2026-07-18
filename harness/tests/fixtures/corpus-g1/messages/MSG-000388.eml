@@ -1,0 +1,42 @@
+From: Hugo Fontane <hugo.fontane@vantagefabrication.example>
+To: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+Subject: Re: Purchase order PO-2024-0069 - rubber gaskets
+Date: Wed, 12 Jun 2024 09:14:00 +0000
+Message-ID: <MSG-000388@vantagefabrication.example>
+In-Reply-To: <MSG-000376@bluepinematerials.example>
+References: <MSG-000375@vantagefabrication.example>
+ <MSG-000376@bluepinematerials.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000388"
+
+--=-PTB-MSG-000388
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Rosa,
+
+Please amend PO-2024-0069: quantity is now 65 units of rubber gaskets, revise=
+d order total $4,078.10.
+The amended purchase order is attached as PO-2024-0069-A1.
+
+Best regards,
+Hugo
+Vantage Fabrication
+
+--=-PTB-MSG-000388
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="PO-2024-0069-A1.txt"
+MIME-Version: 1.0
+
+PURCHASE ORDER PO-2024-0069-A1
+Date: 2024-06-12
+Party: Bluepine Materials
+
+Po number: PO-2024-0069
+Item: rubber gaskets
+Qty: 65
+Unit price: $62.74
+Total: $4,078.10
+
+--=-PTB-MSG-000388--

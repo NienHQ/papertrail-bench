@@ -1,0 +1,44 @@
+From: Dev Fontane <dev.fontane@deltaridgesupplies.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0048 - LED panels
+Date: Sat, 27 Apr 2024 09:00:00 +0000
+Message-ID: <MSG-000268@deltaridgesupplies.example>
+In-Reply-To: <MSG-000255@deltaridgesupplies.example>
+References: <MSG-000254@vantagefabrication.example>
+ <MSG-000255@deltaridgesupplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000268"
+
+--=-PTB-MSG-000268
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Carla,
+
+Please find attached invoice INV-2024-0064 against PO-2024-0048 for $4,273.80.
+Payment is due by 2024-06-11 per our NET45 terms.
+
+Best,
+Dev
+Delta Ridge Supplies
+
+--=-PTB-MSG-000268
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="INV-2024-0064.txt"
+MIME-Version: 1.0
+
+INVOICE INV-2024-0064
+Date: 2024-04-27
+Party: Delta Ridge Supplies
+
+Invoice number: INV-2024-0064
+Issuer: Delta Ridge Supplies
+Bill to: Vantage Fabrication
+Issue date: 2024-04-27
+Due date: 2024-06-11
+Terms: NET45
+Total: $4,273.80
+Po ref: PO-2024-0048
+
+--=-PTB-MSG-000268--

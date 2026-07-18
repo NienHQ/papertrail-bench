@@ -1,0 +1,40 @@
+From: Rosa Pratt <rosa.pratt@bluepinematerials.example>
+To: Carla Costa <carla.costa@vantagefabrication.example>
+Subject: Re: Purchase order PO-2024-0018 - rubber gaskets
+Date: Fri, 23 Feb 2024 09:00:00 +0000
+Message-ID: <MSG-000117@bluepinematerials.example>
+In-Reply-To: <MSG-000104@bluepinematerials.example>
+References: <MSG-000095@vantagefabrication.example>
+ <MSG-000096@bluepinematerials.example> <MSG-000104@bluepinematerials.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-PTB-MSG-000117"
+
+--=-PTB-MSG-000117
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Carla,
+
+We have issued credit note CN-2024-0005 for $385.60 against invoice INV-2024-=
+0023 (pricing error).
+
+Best,
+Rosa
+Bluepine Materials
+
+--=-PTB-MSG-000117
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="CN-2024-0005.txt"
+MIME-Version: 1.0
+
+CREDIT NOTE CN-2024-0005
+Date: 2024-02-23
+Party: Bluepine Materials
+
+Credit note number: CN-2024-0005
+Invoice ref: INV-2024-0023
+Amount: $385.60
+Reason: pricing error
+
+--=-PTB-MSG-000117--

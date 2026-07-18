@@ -87,6 +87,57 @@ def test_internal_consistency_invoice_due_dates(corpus):
                 == issue + timedelta(days=terms_days(f.value)))
 
 
+def test_dispute_consistency(corpus):
+    """Schema doc section 4: credit_note resolutions reuse the credit-note
+    machinery for exactly disputed_cents; withdrawn changes no amounts; a
+    disputed invoice never also draws the independent random credit note."""
+    events = corpus.sim.events
+    disputes = {e.payload["invoice_ref"]: e for e in events
+                if e.type == "INVOICE_DISPUTED"}
+    resolutions = defaultdict(list)
+    for e in events:
+        if e.type == "DISPUTE_RESOLVED":
+            resolutions[e.payload["invoice_ref"]].append(e)
+    cns_by_invoice = defaultdict(list)
+    for d in corpus.sim.documents:
+        if d.kind == "credit_note":
+            cns_by_invoice[d.fields["invoice_ref"]].append(d)
+    payments = {e.payload["invoice_ref"]: e for e in events
+                if e.type in ("PAYMENT_SENT", "PAYMENT_RECEIVED")}
+
+    assert disputes, "corpus has no disputes; raise dispute_prob"
+    for inv_ref, disp in disputes.items():
+        res = resolutions[inv_ref]
+        assert len(res) == 1, inv_ref
+        r = res[0]
+        d_disp, d_res = disp.event_time.date(), r.event_time.date()
+        issue = date.fromisoformat(
+            _docs_by_id(corpus)[inv_ref].fields["issue_date"])
+        # 2 to 6 days after issue, clamped to year end
+        assert timedelta(0) <= d_disp - issue <= timedelta(days=6)
+        assert d_res >= d_disp
+        cents = disp.payload["disputed_cents"]
+        total = _docs_by_id(corpus)[inv_ref].fields["total_cents"]
+        assert 1_000 <= cents <= total // 2
+        cns = cns_by_invoice[inv_ref]
+        if r.payload["resolution"] == "credit_note":
+            assert [c.doc_id for c in cns] == [r.payload["credit_note_ref"]]
+            assert cns[0].fields["amount_cents"] == cents
+            assert payments[inv_ref].payload["amount_cents"] == total - cents
+        else:
+            assert r.payload["resolution"] == "withdrawn"
+            assert cns == []  # no amounts changed
+            assert payments[inv_ref].payload["amount_cents"] == total
+    # both resolution kinds occur
+    kinds = {r.payload["resolution"]
+             for rs in resolutions.values() for r in rs}
+    assert kinds == {"credit_note", "withdrawn"}
+
+
+def _docs_by_id(corpus):
+    return {d.doc_id: d for d in corpus.sim.documents}
+
+
 def test_emls_parse_and_thread(corpus, tmp_path):
     write(corpus, tmp_path)
     world = corpus.sim.world
@@ -107,6 +158,10 @@ def test_question_evidence_resolves(corpus):
              for m in corpus.render_result.messages for s in m.statements}
     doc_fields = {(d.doc_id, f) for d in corpus.sim.documents for f in d.fields}
     for q in corpus.questions:
+        if q.category == 6:
+            # abstention: the evidence set is empty by definition
+            assert q.evidence == []
+            continue
         assert q.evidence
         for ev in q.evidence:
             if "message_id" in ev:

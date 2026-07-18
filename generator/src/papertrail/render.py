@@ -139,6 +139,10 @@ class _Renderer:
     def reply_ts(self, ts: datetime) -> datetime:
         return ts + timedelta(hours=self.rng.randint(2, 30))
 
+    def invoice_thread_key(self, inv: Document) -> str:
+        return f"po:{inv.fields['po_ref'].split('-A')[0]}" \
+            if "po_ref" in inv.fields else f"inv:{inv.doc_id}"
+
     # -- event scripts ----------------------------------------------------
 
     def render(self) -> RenderResult:
@@ -331,8 +335,7 @@ class _Renderer:
         rcpt = self.them(doc.party_id) if we_issue \
             else self.us("accounts payable")
         inv = self.docs_by_id[f["invoice_ref"]]
-        thread_key = f"po:{inv.fields['po_ref'].split('-A')[0]}" \
-            if "po_ref" in inv.fields else f"inv:{inv.doc_id}"
+        thread_key = self.invoice_thread_key(inv)
 
         def body(b):
             b.statement(
@@ -346,6 +349,40 @@ class _Renderer:
         self.compose(thread_key, f"Credit note {f['credit_note_number']}",
                      ev.event_time, sender, [rcpt], body,
                      attachments=[doc.doc_id])
+
+    def _ev_invoice_disputed(self, ev: Event) -> None:
+        inv = self.docs_by_id[ev.refs["invoice"]]
+        self.compose(
+            self.invoice_thread_key(inv), f"Dispute - invoice {inv.doc_id}",
+            ev.event_time, self.us("accounts payable"),
+            [self.them(inv.party_id)],
+            lambda b: b.statement(
+                f"We dispute {money(ev.payload['disputed_cents'])} on invoice "
+                f"{ev.payload['invoice_ref']}: {ev.payload['reason']}.",
+                [{"event": ev.event_id}]))
+
+    def _ev_dispute_resolved(self, ev: Event) -> None:
+        inv = self.docs_by_id[ev.refs["invoice"]]
+        thread_key = self.invoice_thread_key(inv)
+        ours, vendor = self.us("accounts payable"), self.them(inv.party_id)
+        if ev.payload["resolution"] == "credit_note":
+            cn = self.docs_by_id[ev.payload["credit_note_ref"]]
+            self.compose(
+                thread_key, f"Dispute resolution - invoice {inv.doc_id}",
+                ev.event_time, vendor, [ours],
+                lambda b: b.statement(
+                    f"We accept the dispute on {ev.payload['invoice_ref']}; "
+                    f"credit note {cn.doc_id} for "
+                    f"{money(cn.fields['amount_cents'])} follows.",
+                    [{"event": ev.event_id}]))
+        else:
+            self.compose(
+                thread_key, f"Dispute resolution - invoice {inv.doc_id}",
+                ev.event_time, ours, [vendor],
+                lambda b: b.statement(
+                    f"After review we are withdrawing our dispute on invoice "
+                    f"{ev.payload['invoice_ref']}.",
+                    [{"event": ev.event_id}]))
 
     def _ev_payment_sent(self, ev: Event) -> None:
         self._payment(ev)
@@ -361,8 +398,7 @@ class _Renderer:
             else self.them(inv.party_id)
         rcpt = self.them(inv.party_id) if we_pay \
             else self.us("accounts receivable")
-        thread_key = f"po:{inv.fields['po_ref'].split('-A')[0]}" \
-            if "po_ref" in inv.fields else f"inv:{inv.doc_id}"
+        thread_key = self.invoice_thread_key(inv)
         self.compose(
             thread_key, f"Payment - invoice {inv.doc_id}", ev.event_time,
             sender, [rcpt],

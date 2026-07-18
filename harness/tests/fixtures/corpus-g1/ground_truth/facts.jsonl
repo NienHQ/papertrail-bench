@@ -1,0 +1,15 @@
+{"entity": "PTY-0008", "fact_id": "FCT-000001", "relation": "monthly_rent", "source_event": "EVT-000011", "valid_from": "2024-01-03", "valid_to": "2024-07-08", "value": 285220}
+{"entity": "PTY-0002", "fact_id": "FCT-000002", "relation": "payment_terms", "source_event": "EVT-000001", "valid_from": "2024-01-04", "valid_to": null, "value": "NET15"}
+{"entity": "PTY-0005", "fact_id": "FCT-000003", "relation": "payment_terms", "source_event": "EVT-000007", "valid_from": "2024-01-04", "valid_to": null, "value": "NET60"}
+{"entity": "PTY-0004", "fact_id": "FCT-000004", "relation": "payment_terms", "source_event": "EVT-000005", "valid_from": "2024-01-08", "valid_to": null, "value": "NET45"}
+{"entity": "PTY-0005", "fact_id": "FCT-000005", "relation": "unit_price:copper wire 12AWG", "source_event": "EVT-000008", "valid_from": "2024-01-08", "valid_to": null, "value": 7826}
+{"entity": "PTY-0006", "fact_id": "FCT-000006", "relation": "payment_terms", "source_event": "EVT-000009", "valid_from": "2024-01-08", "valid_to": "2024-05-13", "value": "NET60"}
+{"entity": "PTY-0007", "fact_id": "FCT-000007", "relation": "payment_terms", "source_event": "EVT-000010", "valid_from": "2024-01-08", "valid_to": "2024-06-03", "value": "NET15"}
+{"entity": "PTY-0003", "fact_id": "FCT-000008", "relation": "payment_terms", "source_event": "EVT-000003", "valid_from": "2024-01-10", "valid_to": "2024-04-08", "value": "NET45"}
+{"entity": "PTY-0004", "fact_id": "FCT-000009", "relation": "unit_price:LED panels", "source_event": "EVT-000006", "valid_from": "2024-01-12", "valid_to": null, "value": 5028}
+{"entity": "PTY-0002", "fact_id": "FCT-000010", "relation": "unit_price:rubber gaskets", "source_event": "EVT-000002", "valid_from": "2024-01-15", "valid_to": null, "value": 6274}
+{"entity": "PTY-0003", "fact_id": "FCT-000011", "relation": "unit_price:safety gloves", "source_event": "EVT-000004", "valid_from": "2024-01-15", "valid_to": null, "value": 439}
+{"entity": "PTY-0003", "fact_id": "FCT-000012", "relation": "payment_terms", "source_event": "EVT-000013", "valid_from": "2024-04-08", "valid_to": null, "value": "NET30"}
+{"entity": "PTY-0006", "fact_id": "FCT-000013", "relation": "payment_terms", "source_event": "EVT-000014", "valid_from": "2024-05-13", "valid_to": null, "value": "NET45"}
+{"entity": "PTY-0007", "fact_id": "FCT-000014", "relation": "payment_terms", "source_event": "EVT-000015", "valid_from": "2024-06-03", "valid_to": null, "value": "NET30"}
+{"entity": "PTY-0008", "fact_id": "FCT-000015", "relation": "monthly_rent", "source_event": "EVT-000012", "valid_from": "2024-07-08", "valid_to": null, "value": 298046}
