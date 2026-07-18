@@ -122,6 +122,14 @@ class _Renderer:
         if thread is None:
             thread = self.new_thread(thread_key, subject)
         prev = self.last_msg_in_thread.get(thread.thread_id)
+        # Per-thread monotone clock: a reply is never dated before the
+        # message it answers. Year-end clamps can put the next event on the
+        # same calendar day as its predecessor while the predecessor's ack
+        # drew a many-hour reply delay; without this bump the reply would
+        # sort before the message its References point at. No-op (and so
+        # byte-identical) for corpora where the inversion never occurs.
+        if prev is not None and ts < prev.ts:
+            ts = prev.ts + timedelta(minutes=1)
         self._mid += 1
         mid = f"MSG-{self._mid:06d}"
         d = ts.date()

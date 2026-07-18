@@ -22,7 +22,26 @@ Claim tasks here per the plan.
 
 ## In progress
 
-- G4 multi-year corpus + bench preset (claimed 2026-07-18)
+(nothing claimed)
+
+B1 MILESTONE COMPLETE (H1-H3, G1-G4). The bench preset is the
+publication configuration; next: B2 launch work (leaderboard page,
+paper-style README, external-system runs) and Track 2 convergence,
+per plan-b1.md milestone C.
+
+## 2026-07-18 - task G4 done: multi-year corpus + bench preset
+
+- Config years (default 1, byte-identical to the single-year
+  generator: frozen-hash test untouched). Per-year passes for
+  agreements, renegotiations, lease reviews, churn, and trading;
+  per-year document numbering; cross-year spillover and 3-interval
+  cross-year supersession chains; a latent same-day message-ordering
+  bug fixed with a per-thread monotone clock.
+- --preset bench: 3 years, 14 vendors, 10 customers, all screws on,
+  55 questions per category. Seed 42: 15,515 messages, 8,104
+  documents, 326 questions, 86 MiB, generated in 11.8s (budget 120s).
+  docs/presets.md records flags, commands, and stats.
+- Generator 73 tests (+ env-gated bench run: 92), harness 78.
 
 ## 2026-07-18 - task G3 done: realism screws
 

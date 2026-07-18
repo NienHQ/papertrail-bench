@@ -31,11 +31,34 @@ HARD_PRESET: dict[str, object] = {
     "format_drift": True,
 }
 
+# G4 publication preset: 3 years, larger world, all screws on, 55 questions
+# per category. Explicit CLI flags override individual entries. The PO and
+# sales rates are part of the preset definition, tuned so the seed-42 bench
+# corpus lands near 15k messages (docs/presets.md records the measurement).
+BENCH_PRESET: dict[str, object] = {
+    **HARD_PRESET,
+    "years": 3,
+    "n_vendors": 14,
+    "n_customers": 10,
+    "pos_per_vendor_month": (4, 6),
+    "sales_per_customer_month": (3, 4),
+    "category_counts": {1: 55, 2: 55, 3: 55, 4: 55, 5: 55, 6: 55},
+}
+
+# Chance that a non-opening year's lease review actually amends the rent.
+LEASE_REVIEW_PROB = 0.8
+
 
 @dataclass
 class Config:
     seed: int = 42
-    year: int = 2024
+    year: int = 2024  # start year of the corpus
+    # Number of simulated years. Non-final years always run 12 months;
+    # `months` applies to the FINAL year, so months=6, years=3 means two
+    # full years plus six months. years=1 output is byte-identical to the
+    # single-year generator (year 1 executes the exact same draw sequence;
+    # later years append their draws strictly after).
+    years: int = 1
     months: int = 12
     n_vendors: int = 8
     n_customers: int = 6
@@ -88,10 +111,21 @@ class _Sim:
         self.cfg = cfg
         self.rng = random.Random(cfg.seed)
         self.year_start = date(cfg.year, 1, 1)
+        # Multi-year bookkeeping. cur_year/cur_months track the year being
+        # scheduled; last_year is the corpus end, which is what the trading
+        # loop clamps against (so a December invoice of a non-final year may
+        # spill into January of the next year, while the final year clamps
+        # exactly as the single-year generator clamps to year end).
+        self.cur_year = cfg.year
+        self.cur_months = cfg.months
+        self.last_year = cfg.year + cfg.years - 1
         self.world = build_world(self.rng, cfg.n_vendors, cfg.n_customers,
                                  self.year_start)
         self.events: list[Event] = []
         self.documents: list[Document] = []
+        self.vendor_items: dict[str, str] = {}
+        self._lease_root: str | None = None
+        self._lease_doc: Document | None = None
         # date-aware agreement history: (entity, relation) -> [(from_date, value)]
         # in chronological order. All agreements are scheduled BEFORE the trading
         # loop runs, so trading events that spill across month boundaries still
@@ -146,7 +180,7 @@ class _Sim:
         return value
 
     def biz_day(self, month: int, lo: int = 1, hi: int = 27) -> date:
-        d = date(self.cfg.year, month, self.rng.randint(lo, hi))
+        d = date(self.cur_year, month, self.rng.randint(lo, hi))
         while d.weekday() >= 5:
             d += timedelta(days=1)
         return d
@@ -154,11 +188,34 @@ class _Sim:
     # -- scenario ---------------------------------------------------------
 
     def run(self) -> SimResult:
+        cfg = self.cfg
+        # Per year: a scheduling pass (agreements or reviews, churn), then
+        # the monthly trading loop. Year 1 executes the exact draw sequence
+        # of the single-year generator; each later year's draws come
+        # strictly after all prior-year draws.
+        for y in range(cfg.year, self.last_year + 1):
+            self.cur_year = y
+            self.cur_months = cfg.months if y == self.last_year else 12
+            if y == cfg.year:
+                self._opening_agreements()
+            else:
+                # PO/INV/CN numbering series restart per year.
+                self._po_n = self._inv_n = self._cn_n = 0
+                self._lease_review()
+            self._schedule_renegotiations()
+            self._schedule_person_moves()
+            self._schedule_contact_changes()
+            self._trading_year()
+
+        self.events.sort(key=lambda e: (e.event_time, e.event_id))
+        return SimResult(config=cfg, world=self.world, events=self.events,
+                         documents=self.documents)
+
+    def _opening_agreements(self) -> None:
+        """Year-1 agreements: payment terms per trading party, unit prices
+        per vendor, the lease (signed, then rent raised mid-year)."""
         cfg, rng, w = self.cfg, self.rng, self.world
         us = w.self_party.party_id
-
-        # Opening agreements: payment terms per trading party, unit prices per vendor.
-        vendor_items: dict[str, str] = {}
         for i, v in enumerate(w.vendors()):
             d = self.biz_day(1, 2, 10)
             terms = rng.choice(TERMS_CHOICES)
@@ -166,7 +223,7 @@ class _Sim:
                       {"relation": "payment_terms", "value": terms})
             self.set_fact(v.party_id, "payment_terms", terms, d)
             item = w.items[i % len(w.items)]
-            vendor_items[v.party_id] = item
+            self.vendor_items[v.party_id] = item
             price = rng.randrange(300, 9000)  # cents
             d2 = self.biz_day(1, 5, 15)
             self.emit(d2, "PRICE_AGREED", v.party_id, us,
@@ -180,7 +237,6 @@ class _Sim:
                       {"relation": "payment_terms", "value": terms})
             self.set_fact(c.party_id, "payment_terms", terms, d)
 
-        # Lease: signed at year start, rent raised mid-year.
         landlord = w.landlord()
         rent = rng.randrange(150_000, 400_000)
         d = self.biz_day(1, 2, 6)
@@ -192,26 +248,55 @@ class _Sim:
                               "monthly_rent_cents": rent, "term_months": 36,
                               "start_date": d.isoformat()}, ev)
         self.set_fact(landlord.party_id, "monthly_rent", rent, d)
-        if cfg.months >= 7:
-            d = self.biz_day(7, 1, 15)
-            new_rent = rent + rng.randrange(5_000, 40_000)
-            ev = self.emit(d, "LEASE_AMENDED", landlord.party_id, us,
-                           {"monthly_rent_cents": new_rent},
-                           {"root": lease_root})
-            self.add_doc("lease", lease_root, 2, lease.doc_id, landlord.party_id,
-                         d, {**lease.fields, "monthly_rent_cents": new_rent,
-                             "amended_date": d.isoformat()}, ev)
-            self.set_fact(landlord.party_id, "monthly_rent", new_rent, d)
+        self._lease_root, self._lease_doc = lease_root, lease
+        if self.cur_months >= 7:
+            self._amend_lease(rent)
 
-        # Mid-year renegotiations (terms supersession) at staggered months.
-        # Scheduled and recorded BEFORE the trading loop so cross-month spillover
-        # (a PO from month m invoiced in month m+1) reads correct as-of terms.
+    def _amend_lease(self, old_rent: int) -> None:
+        """Rent amendment on the SAME root chain: version numbers and the
+        supersedes pointers continue across years."""
+        rng, landlord = self.rng, self.world.landlord()
+        prev = self._lease_doc
+        d = self.biz_day(7, 1, 15)
+        new_rent = old_rent + rng.randrange(5_000, 40_000)
+        ev = self.emit(d, "LEASE_AMENDED", landlord.party_id,
+                       self.world.self_party.party_id,
+                       {"monthly_rent_cents": new_rent},
+                       {"root": self._lease_root})
+        self._lease_doc = self.add_doc(
+            "lease", self._lease_root, prev.version + 1, prev.doc_id,
+            landlord.party_id, d,
+            {**prev.fields, "monthly_rent_cents": new_rent,
+             "amended_date": d.isoformat()}, ev)
+        self.set_fact(landlord.party_id, "monthly_rent", new_rent, d)
+
+    def _lease_review(self) -> None:
+        """Non-opening years: an annual review that amends the rent with
+        probability LEASE_REVIEW_PROB (skipped when the final year is too
+        short to reach the review month, mirroring the year-1 rule)."""
+        if self.cur_months < 7:
+            return
+        if self.rng.random() >= LEASE_REVIEW_PROB:
+            return
+        landlord = self.world.landlord()
+        old_rent = self.get_fact(landlord.party_id, "monthly_rent",
+                                 date(self.cur_year, 1, 1))
+        self._amend_lease(old_rent)
+
+    def _schedule_renegotiations(self) -> None:
+        """Mid-year renegotiations (terms supersession) at staggered months.
+        Scheduled and recorded BEFORE the trading loop so cross-month
+        spillover (a PO from month m invoiced in month m+1) reads correct
+        as-of terms. Runs once per year: a party renegotiated in year 1 may
+        renegotiate again in year 2, producing a 3-interval fact chain."""
+        cfg, rng, w = self.cfg, self.rng, self.world
+        us = w.self_party.party_id
         renegotiable = w.vendors() + w.customers()
         rng.shuffle(renegotiable)
         n_reneg = round(len(renegotiable) * cfg.renegotiate_frac)
         for i, p in enumerate(renegotiable[:n_reneg]):
-            month = 4 + (i % max(1, min(6, cfg.months - 4)))
-            if month > cfg.months:
+            month = 4 + (i % max(1, min(6, self.cur_months - 4)))
+            if month > self.cur_months:
                 continue
             d = self.biz_day(month, 1, 12)
             old = self.get_fact(p.party_id, "payment_terms", d)
@@ -222,32 +307,22 @@ class _Sim:
                        "previous": old, "renegotiation": True})
             self.set_fact(p.party_id, "payment_terms", new, d)
 
-        # Category 5 world churn: PERSON_MOVED then CONTACT_CHANGED. Drawn
-        # AFTER the renegotiation scheduling so all pre-existing rng draws
-        # (and therefore earlier-seed corpora) shift as little as possible,
-        # and BEFORE the trading loop so date-aware contact and address
-        # lookups during rendering are consistent for every event date.
-        self._schedule_person_moves()
-        self._schedule_contact_changes()
-
-        # Monthly trading loop.
-        for month in range(1, cfg.months + 1):
+    def _trading_year(self) -> None:
+        cfg, rng, w = self.cfg, self.rng, self.world
+        for month in range(1, self.cur_months + 1):
             for v in w.vendors():
                 for _ in range(rng.randint(*cfg.pos_per_vendor_month)):
-                    self._po_cycle(month, v.party_id, vendor_items[v.party_id])
+                    self._po_cycle(month, v.party_id,
+                                   self.vendor_items[v.party_id])
 
             for c in w.customers():
                 for _ in range(rng.randint(*cfg.sales_per_customer_month)):
                     self._sales_cycle(month, c.party_id)
 
-        self.events.sort(key=lambda e: (e.event_time, e.event_id))
-        return SimResult(config=cfg, world=self.world, events=self.events,
-                         documents=self.documents)
-
     def _mid_month(self) -> int:
-        """A month in the middle third of the corpus."""
-        lo = self.cfg.months // 3 + 1
-        hi = max(lo, (2 * self.cfg.months) // 3)
+        """A month in the middle third of the current year."""
+        lo = self.cur_months // 3 + 1
+        hi = max(lo, (2 * self.cur_months) // 3)
         return self.rng.randint(lo, hi)
 
     def _schedule_person_moves(self) -> None:
@@ -268,10 +343,16 @@ class _Sim:
         if n <= 0:
             return
         for src in rng.sample(vendors, n):
-            mover = w.contact_for(src.party_id)
             dest = rng.choice([v for v in vendors
                                if v.party_id != src.party_id])
             d = self.biz_day(self._mid_month(), 1, 20)
+            # Year 1 keeps the original date-free pick (byte identity).
+            # Later years pick the ACTING contact at the move date, so a
+            # party that received a mover earlier hands over the person the
+            # renderer's most-recent-joiner rule actually uses.
+            mover = w.contact_for(src.party_id) \
+                if self.cur_year == cfg.year \
+                else w.contact_for(src.party_id, on=d)
             mover.addresses[-1].to_date = d
             mover.employments[-1].to_date = d
             mover.addresses.append(
@@ -289,18 +370,19 @@ class _Sim:
     def _schedule_contact_changes(self) -> None:
         """CONTACT_CHANGED: same person, same domain, new local part.
 
-        Applies to a fraction of trading-party contacts that have not moved
-        (single address period starting at corpus start). Closes the current
-        address period and opens a new one at the same domain with a
-        different local part (first initial + last name instead of
-        first.last).
+        Applies to a per-year fraction of trading-party contacts that have
+        not moved or changed before (single address period, open since
+        before the current year). Closes the current address period and
+        opens a new one at the same domain with a different local part
+        (first initial + last name instead of first.last).
         """
         cfg, rng, w = self.cfg, self.rng, self.world
         us = w.self_party.party_id
         trading = {p.party_id for p in w.vendors() + w.customers()}
+        cur_start = date(self.cur_year, 1, 1)
         eligible = [p for p in w.people
                     if p.party_id in trading and len(p.addresses) == 1
-                    and p.addresses[0].from_date == self.year_start]
+                    and p.addresses[0].from_date <= cur_start]
         n = round(len(eligible) * cfg.contact_change_frac)
         if n <= 0:
             return
@@ -333,7 +415,7 @@ class _Sim:
         # month 1 trading starts after the opening agreements (days 2-15)
         d = self.biz_day(month, 16 if month == 1 else 1)
         self._po_n += 1
-        root = f"PO-{cfg.year}-{self._po_n:04d}"
+        root = f"PO-{self.cur_year}-{self._po_n:04d}"
         qty = rng.randrange(10, 200, 5)
         price = self.get_fact(vendor, f"unit_price:{item}", d)
         fields = {"po_number": root, "item": item, "qty": qty,
@@ -343,8 +425,11 @@ class _Sim:
 
         while rng.random() < (cfg.amend_prob if doc.version == 1
                               else cfg.second_amend_prob):
-            d = min(d + timedelta(days=rng.randint(2, 6)),
-                    date(cfg.year, 12, 28))
+            # clamped to the corpus end; max() keeps the amendment from
+            # landing BEFORE the order when a weekend-shifted December PO
+            # already sits past the clamp date
+            d = max(d, min(d + timedelta(days=rng.randint(2, 6)),
+                           date(self.last_year, 12, 28)))
             qty = max(5, qty + rng.choice([-1, 1]) * rng.randrange(5, 50, 5))
             fields = {**doc.fields, "qty": qty, "total_cents": qty * price}
             ev = self.emit(d, "PO_AMENDED", us, vendor,
@@ -353,9 +438,11 @@ class _Sim:
             doc = self.add_doc("po", root, doc.version + 1, doc.doc_id, vendor,
                                d, fields, ev)
 
-        # Vendor invoices against the final PO state.
+        # Vendor invoices against the final PO state. Clamped to the CORPUS
+        # end only: a December cycle of a non-final year may invoice in
+        # January of the next year (its number stays in the cycle's series).
         d_inv = min(d + timedelta(days=rng.randint(3, 10)),
-                    date(cfg.year, 12, 29))
+                    date(self.last_year, 12, 29))
         self._invoice_and_pay(d_inv, issuer=vendor, payer=us, party=vendor,
                               amount=doc.fields["total_cents"], po_ref=doc.doc_id)
 
@@ -372,7 +459,7 @@ class _Sim:
         cfg, rng = self.cfg, self.rng
         us = self.world.self_party.party_id
         self._inv_n += 1
-        inv_id = f"INV-{cfg.year}-{self._inv_n:04d}"
+        inv_id = f"INV-{self.cur_year}-{self._inv_n:04d}"
         terms = self.get_fact(party, "payment_terms", d)
         due = d + timedelta(days=terms_days(terms))
         fields = {"invoice_number": inv_id, "issuer": issuer, "bill_to": payer,
@@ -400,17 +487,17 @@ class _Sim:
                 and rng.random() < cfg.dispute_prob:
             disputed = True
             d_disp = min(d + timedelta(days=rng.randint(2, 6)),
-                         date(cfg.year, 12, 29))
+                         date(self.last_year, 12, 29))
             disputed_cents = rng.randrange(1_000, amount // 2 + 1)
             reason = rng.choice(DISPUTE_REASONS)
             self.emit(d_disp, "INVOICE_DISPUTED", us, issuer,
                       {"invoice_ref": inv_id, "disputed_cents": disputed_cents,
                        "reason": reason}, {"invoice": inv_id})
             d_res = min(d_disp + timedelta(days=rng.randint(3, 10)),
-                        date(cfg.year, 12, 30))
+                        date(self.last_year, 12, 30))
             if rng.random() < 0.6:
                 self._cn_n += 1
-                cn_id = f"CN-{cfg.year}-{self._cn_n:04d}"
+                cn_id = f"CN-{self.cur_year}-{self._cn_n:04d}"
                 self.emit(d_res, "DISPUTE_RESOLVED", issuer, us,
                           {"invoice_ref": inv_id, "resolution": "credit_note",
                            "credit_note_ref": cn_id}, {"invoice": inv_id})
@@ -429,9 +516,9 @@ class _Sim:
 
         if not disputed and rng.random() < cfg.credit_note_prob:
             self._cn_n += 1
-            cn_id = f"CN-{cfg.year}-{self._cn_n:04d}"
+            cn_id = f"CN-{self.cur_year}-{self._cn_n:04d}"
             d_cn = min(d + timedelta(days=rng.randint(2, 8)),
-                       date(cfg.year, 12, 30))
+                       date(self.last_year, 12, 30))
             cn_amount = min(amount, rng.randrange(1_000, max(2_000, amount // 3)))
             reason = rng.choice(["damaged goods", "short delivery",
                                  "pricing error", "returned items"])
@@ -445,7 +532,7 @@ class _Sim:
         pay_type = "PAYMENT_SENT" if payer == self.world.self_party.party_id \
             else "PAYMENT_RECEIVED"
         d_pay = min(due - timedelta(days=rng.randint(0, 5)),
-                    date(cfg.year, 12, 31))
+                    date(self.last_year, 12, 31))
         d_pay = max(d_pay, d + timedelta(days=1))
         self.emit(d_pay, pay_type, payer, issuer,
                   {"amount_cents": amount, "invoice_ref": inv_id,
@@ -462,16 +549,15 @@ class _Sim:
         voided_by_correction (never rendered into the corpus). Payments
         ignore the duplicate and question samplers never touch it, but the
         duplicate does consume its number in the INV series."""
-        cfg = self.cfg
         self._inv_n += 1
-        dup_id = f"INV-{cfg.year}-{self._inv_n:04d}"
+        dup_id = f"INV-{self.cur_year}-{self._inv_n:04d}"
         dup_fields = {**fields, "invoice_number": dup_id,
                       "duplicate_of": orig_id, "voided_by_correction": True}
-        d_dup = min(d + timedelta(days=1), date(cfg.year, 12, 30))
+        d_dup = min(d + timedelta(days=1), date(self.last_year, 12, 30))
         ev = self.emit(d_dup, "INVOICE_ISSUED", issuer, payer,
                        dict(dup_fields))
         self.add_doc("invoice", dup_id, 1, None, party, d_dup, dup_fields, ev)
-        d_corr = min(d_dup + timedelta(days=1), date(cfg.year, 12, 31))
+        d_corr = min(d_dup + timedelta(days=1), date(self.last_year, 12, 31))
         self.emit(d_corr, "INVOICE_CORRECTED", issuer, payer,
                   {"duplicate_ref": dup_id, "original_ref": orig_id},
                   {"invoice": dup_id})

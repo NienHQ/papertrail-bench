@@ -75,16 +75,18 @@ def write(corpus: Corpus, out: Path) -> dict:
 
     files = sorted(p for p in out.rglob("*")
                    if p.is_file() and p.name != "manifest.json")
-    # G3 realism screws appear in the manifest only when set, so corpora
-    # generated with every screw off keep byte-identical manifests with
-    # pre-G3 generator output (the flags-off determinism contract).
+    # G3 realism screws and the G4 years knob appear in the manifest only
+    # when set, so corpora generated with every screw off and years=1 keep
+    # byte-identical manifests with earlier generator output (the flags-off
+    # determinism contract).
     cfg_dict = dataclasses.asdict(sim.config)
-    for screw, off in (("truncate_references", False),
-                       ("quoted_replies", False),
-                       ("near_dup_invoices", 0.0),
-                       ("format_drift", False)):
-        if cfg_dict.get(screw) == off:
-            del cfg_dict[screw]
+    for knob, default in (("years", 1),
+                          ("truncate_references", False),
+                          ("quoted_replies", False),
+                          ("near_dup_invoices", 0.0),
+                          ("format_drift", False)):
+        if cfg_dict.get(knob) == default:
+            del cfg_dict[knob]
     manifest = {
         "generator_version": GENERATOR_VERSION,
         "seed": sim.config.seed,

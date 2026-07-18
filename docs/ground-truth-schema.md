@@ -30,7 +30,7 @@ A system under test sees only the rendered corpus. The harness sees everything.
 - Single integer seed drives everything via `random.Random(seed)`. No wall clock,
   no environment reads, no third-party data generators (name/company/item pools are
   vendored word lists), so a corpus is byte-reproducible across machines and time.
-- Multi-year corpora: config carries `start_year` and `years`. Business document
+- Multi-year corpora: config carries `year` (the start year) and `years`. Business document
   numbering restarts per year (`PO-2025-0001` after `PO-2024-xxxx`); agreements,
   renegotiations, lease amendments, contact changes, and person moves are
   scheduled per year so supersession chains and entity churn span the corpus.

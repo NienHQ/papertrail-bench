@@ -11,7 +11,8 @@ def _docs_by_id(corpus):
 def test_question_counts_and_categories(corpus):
     cats = {q.category for q in corpus.questions}
     assert cats == {1, 2, 3, 4, 5, 6}
-    assert len(corpus.questions) >= corpus.sim.config.n_questions * 0.8
+    target = sum(corpus.sim.config.resolved_category_counts().values())
+    assert len(corpus.questions) >= target * 0.8
 
 
 def test_deprecated_n_questions_splits_evenly():
@@ -64,7 +65,8 @@ def test_answers_recompute(corpus):
             assert a["value"] == expected
         elif q.template in ("disputed_total", "disputed_count",
                             "disputed_list"):
-            evs = _vendor_disputes(corpus, q.params["vendor"])
+            evs = _vendor_disputes(corpus, q.params["vendor"],
+                                   q.params["year"])
             assert evs, q.question_id
             if q.template == "disputed_total":
                 assert a["value"]["amount_cents"] == \
@@ -114,10 +116,10 @@ def _person(corpus, person_id):
                 if p.person_id == person_id)
 
 
-def _vendor_disputes(corpus, vendor):
-    """Independent recompute: sorted event-log scan."""
+def _vendor_disputes(corpus, vendor, year):
+    """Independent recompute: sorted event-log scan, per dispute year."""
     evs = [e for e in corpus.sim.events if e.type == "INVOICE_DISPUTED"
-           and e.counterparty == vendor]
+           and e.counterparty == vendor and e.event_time.year == year]
     assert evs == sorted(evs, key=lambda e: (e.event_time, e.event_id))
     return evs
 
@@ -132,7 +134,7 @@ def test_dispute_aggregation_evidence_covers_every_event(corpus):
     q4 = [q for q in corpus.questions if q.category == 4]
     assert q4
     for q in q4:
-        evs = _vendor_disputes(corpus, q.params["vendor"])
+        evs = _vendor_disputes(corpus, q.params["vendor"], q.params["year"])
         cited_events = set()
         for ref in q.evidence:
             for t in stmt_targets[(ref["message_id"], ref["statement_id"])]:
@@ -172,22 +174,41 @@ def test_default_config_emits_15_plus_per_category(default_corpus):
 
 
 def test_category5_covers_the_mover(corpus):
-    """The moved person is the interesting case: they anchor at least 4 of
-    the category 5 questions, and their invoice list spans both employers
-    (two sending addresses at two domains)."""
+    """The moved person is the interesting case: they anchor category 5
+    questions, and their invoice list spans employers (sending addresses at
+    several domains). Multi-year corpora schedule person_move_count moves
+    PER YEAR, so they may have several movers (or one person moving more
+    than once); single-year corpora keep the strict one-mover shape."""
     movers = [p for p in corpus.sim.world.people if len(p.employments) > 1]
-    assert len(movers) == 1
-    mover = movers[0]
+    years = corpus.sim.config.years
+    if years == 1:
+        assert len(movers) == 1
+    else:
+        assert len(movers) >= 1
+        total_moves = sum(len(p.employments) - 1 for p in movers)
+        assert total_moves >= years * min(
+            corpus.sim.config.person_move_count,
+            len(corpus.sim.world.vendors()) - 1)
     q5 = [q for q in corpus.questions if q.category == 5]
     assert len(q5) >= 4
-    mover_qs = [q for q in q5 if q.params["person_id"] == mover.person_id]
-    assert len(mover_qs) >= 4
-    inv_senders = {m.from_address
-                   for m in corpus.render_result.messages
-                   if m.from_person == mover.person_id
-                   and any(d.startswith("INV-") for d in m.attachments)}
-    assert len(inv_senders) == 2
-    assert len({s.split("@", 1)[1] for s in inv_senders}) == 2
+    mover_ids = {p.person_id for p in movers}
+    mover_qs = [q for q in q5 if q.params["person_id"] in mover_ids]
+    if years == 1:
+        assert len(mover_qs) >= 4
+    else:
+        assert len(mover_qs) >= 1
+    domain_counts = []
+    for mover in movers:
+        inv_senders = {m.from_address
+                       for m in corpus.render_result.messages
+                       if m.from_person == mover.person_id
+                       and any(d.startswith("INV-") for d in m.attachments)}
+        domain_counts.append(len({s.split("@", 1)[1] for s in inv_senders}))
+    if years == 1:
+        assert domain_counts == [2]
+    else:
+        # at least one mover demonstrably sent invoices from two employers
+        assert max(domain_counts) >= 2
 
 
 def test_person_names_unique(corpus):

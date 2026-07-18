@@ -28,6 +28,24 @@ COMPANY_STEMS = [
     "Meridian", "Nightingale", "Oakfield", "Pinnacle", "Quarry", "Redwood",
     "Silverton", "Truman", "Umber", "Vantage", "Westbrook", "Yellowstone",
 ]
+# Overflow stems for worlds larger than COMPANY_STEMS can seat. Kept in a
+# separate pool: rng.sample draws depend on the population size, so growing
+# COMPANY_STEMS itself would shift every existing seed's world. Small worlds
+# keep sampling from the original 24 and stay byte-identical.
+EXTRA_COMPANY_STEMS = [
+    "Alderbrook", "Baxter", "Coppermine", "Dunmore", "Elmcrest", "Foxglove",
+    "Grayling", "Hollowell", "Ivybridge", "Juniper", "Kingsford", "Larkspur",
+    "Millbrook", "Norwich", "Ottershaw", "Pembroke",
+]
+
+
+def company_stem_pool(n_parties: int) -> list[str]:
+    """The stem population for a world with n_parties companies (self,
+    vendors, customers, landlord). Question sampling (category 6 unused
+    names) must use the same pool the world was built from."""
+    if n_parties <= len(COMPANY_STEMS):
+        return list(COMPANY_STEMS)
+    return COMPANY_STEMS + EXTRA_COMPANY_STEMS
 VENDOR_SUFFIXES = ["Supplies", "Industrial", "Components", "Materials", "Logistics", "Packaging"]
 CUSTOMER_SUFFIXES = ["Retail", "Trading", "Distribution", "Outfitters", "Wholesale", "Stores"]
 ITEMS = [
@@ -114,7 +132,8 @@ def build_world(rng: random.Random, n_vendors: int, n_customers: int,
                 year_start: date) -> World:
     ids = iter(range(1, 10_000))
     pids = iter(range(1, 10_000))
-    stems = rng.sample(COMPANY_STEMS, n_vendors + n_customers + 2)
+    n_parties = n_vendors + n_customers + 2
+    stems = rng.sample(company_stem_pool(n_parties), n_parties)
     names = [f"{f} {l}" for f in FIRST_NAMES for l in LAST_NAMES]
     rng.shuffle(names)
     names_iter = iter(names)

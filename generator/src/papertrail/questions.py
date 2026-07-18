@@ -16,7 +16,7 @@ from .facts import fact_as_of
 from .model import Document, Event, Fact, Person, Question, money
 from .render import RenderResult
 from .simulate import SimResult
-from .world import COMPANY_STEMS, VENDOR_SUFFIXES
+from .world import VENDOR_SUFFIXES, company_stem_pool
 
 
 def _evidence_for(rr: RenderResult, *keys: tuple) -> list[dict]:
@@ -156,29 +156,31 @@ class _QGen:
 
     # -- category 4: cross-thread aggregation over disputes -----------------
 
-    def _disputes_for(self, vendor: str) -> list[Event]:
-        """Independent recompute path: scan the event log directly."""
+    def _disputes_for(self, vendor: str, year: int | None = None
+                      ) -> list[Event]:
+        """Independent recompute path: scan the event log directly. Filtered
+        by the dispute event's year when given: multi-year corpora ask the
+        question per (vendor, year) so text and answer stay honest."""
         return [e for e in self.sim.events if e.type == "INVOICE_DISPUTED"
-                and e.counterparty == vendor]
+                and e.counterparty == vendor
+                and (year is None or e.event_time.year == year)]
 
     def _dispute_evidence(self, evs: list[Event]) -> list[dict]:
         return _evidence_for(self.rr, *[("event", e.event_id) for e in evs])
 
-    def q4_disputed_total(self, vendor: str) -> None:
-        evs = self._disputes_for(vendor)
+    def q4_disputed_total(self, vendor: str, year: int) -> None:
+        evs = self._disputes_for(vendor, year)
         total = sum(e.payload["disputed_cents"] for e in evs)
         party = self.sim.world.party(vendor)
-        year = self.sim.config.year
         self.add(4, "disputed_total",
                  f"What is the total amount we disputed with {party.name} "
                  f"in {year}?",
                  _money_answer(total), self._dispute_evidence(evs),
                  {"vendor": vendor, "year": year})
 
-    def q4_disputed_count(self, vendor: str) -> None:
-        evs = self._disputes_for(vendor)
+    def q4_disputed_count(self, vendor: str, year: int) -> None:
+        evs = self._disputes_for(vendor, year)
         party = self.sim.world.party(vendor)
-        year = self.sim.config.year
         self.add(4, "disputed_count",
                  f"How many invoices did we dispute with {party.name} "
                  f"in {year}?",
@@ -186,10 +188,9 @@ class _QGen:
                  self._dispute_evidence(evs),
                  {"vendor": vendor, "year": year})
 
-    def q4_disputed_list(self, vendor: str) -> None:
-        evs = self._disputes_for(vendor)  # event-log order == dispute date order
+    def q4_disputed_list(self, vendor: str, year: int) -> None:
+        evs = self._disputes_for(vendor, year)  # event-log order == date order
         party = self.sim.world.party(vendor)
-        year = self.sim.config.year
         self.add(4, "disputed_list",
                  f"Which invoices did we dispute with {party.name} in {year}, "
                  f"in order of dispute date?",
@@ -375,7 +376,9 @@ class _QGen:
             boundaries.append((entity, boundary - timedelta(days=rng.randint(5, 40))))
             boundaries.append((entity, boundary + timedelta(days=rng.randint(5, 40))))
         rng.shuffle(boundaries)
-        year_end = date(self.sim.config.year, 12, 31)
+        cfg = self.sim.config
+        last_year = cfg.year + cfg.years - 1
+        year_end = date(last_year, 12, 31)
         used = 0
         for entity, as_of in boundaries:
             if used >= max(0, c3 - 2):
@@ -391,16 +394,20 @@ class _QGen:
             self.q3_rent_as_of(b - timedelta(days=14))
             self.q3_rent_as_of(b + timedelta(days=14))
 
-        # category 4: vendors with at least one dispute; repeat templates
-        # across vendors before shrinking the count
+        # category 4: (vendor, year) pairs with at least one dispute; repeat
+        # templates across pairs before shrinking the count. Single-year
+        # corpora reduce to the vendor list exactly as before.
         disputed_vendors = [v.party_id for v in self.sim.world.vendors()
                             if self._disputes_for(v.party_id)]
         rng.shuffle(disputed_vendors)
         q4_templates = (self.q4_disputed_total, self.q4_disputed_count,
                         self.q4_disputed_list)
-        pairs = [(tmpl, v) for tmpl in q4_templates for v in disputed_vendors]
-        for tmpl, vendor in pairs[:counts.get(4, 0)]:
-            tmpl(vendor)
+        years = range(cfg.year, cfg.year + cfg.years)
+        pairs = [(tmpl, v, y) for tmpl in q4_templates
+                 for v in disputed_vendors for y in years
+                 if self._disputes_for(v, y)]
+        for tmpl, vendor, year in pairs[:counts.get(4, 0)]:
+            tmpl(vendor, year)
 
         # category 5: keyed to people, not addresses. The moved person is
         # the interesting case and contributes up to 4 questions; contact
@@ -440,14 +447,16 @@ class _QGen:
                     emitted += 1
 
         # category 6: ids continuing the real numbering series, names from
-        # the unused portion of the company stem pool
-        year = self.sim.config.year
+        # the unused portion of the company stem pool. Series restart per
+        # year, so never-issued ids continue the LAST year's series.
+        year = last_year
         inv_max = self._series_max(f"INV-{year}-")
         po_max = self._series_max(f"PO-{year}-")
         party_names = {p.name for p in self.sim.world.parties}
-        used_stems = {s for s in COMPANY_STEMS
+        stem_pool = company_stem_pool(len(self.sim.world.parties))
+        used_stems = {s for s in stem_pool
                       if any(n.startswith(s + " ") for n in party_names)}
-        unused_stems = [s for s in COMPANY_STEMS if s not in used_stems]
+        unused_stems = [s for s in stem_pool if s not in used_stems]
         rng.shuffle(unused_stems)
         k_inv = k_po = 0
         for i in range(counts.get(6, 0)):
