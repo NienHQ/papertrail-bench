@@ -22,7 +22,7 @@ Claim tasks here per the plan.
 
 ## In progress
 
-(nothing claimed)
+- G2 category 5 entity resolution (claimed 2026-07-18)
 
 ## 2026-07-18 - task G1 done: categories 4 and 6
 

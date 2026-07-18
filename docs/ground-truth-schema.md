@@ -49,11 +49,17 @@ The simulated SME ("us") plus its counterparties.
 `is_self = true`. Domains use invented names under `.example` in B0 (realistic TLD
 collisions and lookalike domains are a B1 realism screw for entity resolution).
 
-**Person** — `{person_id, name, party_id, addresses: [AddressPeriod]}`
-`AddressPeriod = {address, from_date, to_date|null}`. Periods are non-overlapping
-and cover the person's active span. In B0 each person has one address for the whole
-year; the period structure exists so B1 can introduce address changes and company
-moves (question category 5, entity resolution) without a schema change.
+**Person** — `{person_id, name, party_id, addresses: [AddressPeriod],
+employments: [EmploymentPeriod]}`
+`AddressPeriod = {address, from_date, to_date|null}`;
+`EmploymentPeriod = {party_id, from_date, to_date|null}`. Both period lists are
+non-overlapping and cover the person's active span; `party_id` remains the
+person's current (latest) employer for compatibility. Address changes and
+company moves (question category 5) are represented as period boundaries:
+after a `CONTACT_CHANGED` the same person continues at the same party under a
+new address; after a `PERSON_MOVED` the person's next employment period starts
+at the new party and their mail flows from the new domain, while the old party
+gains a replacement contact.
 
 ## 4. Layer 1 — the event log
 
@@ -80,6 +86,8 @@ strictly ordered by `(event_time, event_id)`.
 | `PAYMENT_SENT` / `PAYMENT_RECEIVED` | `{amount_cents, invoice_ref, method}` | — |
 | `INVOICE_DISPUTED` | `{invoice_ref, disputed_cents, reason}` | dispute thread (category 4) |
 | `DISPUTE_RESOLVED` | `{invoice_ref, resolution: credit_note\|withdrawn, credit_note_ref?}` | closes the dispute |
+| `CONTACT_CHANGED` | `{person_id, old_address, new_address}` | address boundary + a "note my new address" line (category 5) |
+| `PERSON_MOVED` | `{person_id, from_party, to_party, replacement_person_id}` | employment boundary; announced once, then the new domain just starts appearing |
 
 Dispute consistency rule: a dispute resolved as `credit_note` produces a
 `CREDIT_NOTE_ISSUED` for the disputed amount against the same invoice, and the
@@ -206,7 +214,14 @@ recall over the evidence set are both published.
    "how many invoices did we dispute with X" → int, "which invoices were
    disputed with X, in order" → ordered_list). Evidence = the canonical
    dispute statements of every contributing event.
-5. *(reserved: entity resolution, G2)*
+5. *Entity resolution* — questions keyed to a PERSON across their address and
+   employment periods ("How many purchase orders did we send to {person}
+   across all their addresses?" → int, "Which invoices did {person} send us,
+   in order?" → ordered_list, "What was {person}'s address while at
+   {company}?" → string). Answers derive from the ground-truth message and
+   period tables; evidence = canonical statements in the person's messages
+   (or the address-change announcement for address questions). The category
+   exists to punish systems that treat addresses as identities.
 6. *Abstention* — questions referencing plausible but never-issued ids
    (invoice/PO numbers beyond the issued series, company names drawn from
    the unused name pool). Correct answer is refusal; the evidence set is
