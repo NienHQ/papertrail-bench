@@ -22,7 +22,17 @@ Claim tasks here per the plan.
 
 ## In progress
 
-- H3 protocol freeze + tag (claimed 2026-07-18; Docket-side 3.3 runs in the docket repo)
+(nothing claimed)
+
+## 2026-07-18 - task H3 done: protocol freeze + Docket ablations landed
+
+- papertrail-protocol v1 frozen and tagged (harness-protocol-v1).
+- The first external consumer exists: Docket (github.com/NienHQ/docket)
+  ships a protocol-v1 adapter and committed ablation tables
+  (docket docs/ablations.md). Its results confirm the bench needs the
+  G milestone: categories 1 to 3 saturate for competent systems; the
+  differentiating axis today is citation precision/recall.
+  Next: G1 (categories 4 and 6).
 
 ## 2026-07-17 - task H2 done: internal baselines
 
